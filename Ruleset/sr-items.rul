@@ -135,12 +135,17 @@ items:
     # weighs 800g and matches with 3 in-game weight unit
   
   - type: STR_LASER_PISTOL
+    shotgunBehavior: 1
+    shotgunSpread: 60
+    shotgunChoke: 50
+    shotgunPellets: 10
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 2
+    power: 12
+    explosionSpeed:  2
     ammo:
-      0:
-        compatibleAmmo: [ STR_PROTOTYPE_LASER_CAPACITOR ]
       1:
         compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
-
     confSnap:
       ammoSlot: 0
       name: STR_SHOT_TYPE_SPECTRUM_LASER
@@ -165,20 +170,10 @@ items:
     invWidth: 1
     invHeight: 1
     listOrder: 1
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 2
-  
-  - type: STR_PROTOTYPE_LASER_CAPACITOR
-    refNode: *STR_LASER_COMP
-    shotgunBehavior: 1
-    shotgunSpread: 80
-    shotgunChoke: 50
-    shotgunPellets: 6
-    power: 12
-    listOrder: 2
     
   - type: STR_LASER_ADVANCED_LENS
     refNode: *STR_LASER_COMP
+    shotgunBehavior: 0
     vaporDensitySurface: 3
     vaporProbabilitySurface: 16
     listOrder: 3
