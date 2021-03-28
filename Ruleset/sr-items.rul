@@ -1,0 +1,410 @@
+items:
+  # Deleted Deleted
+    # - delete: STR_AUTO_CANNON
+    # - delete: STR_AC_AP_AMMO
+    # - delete: STR_AC_I_AMMO
+    # - delete: STR_AC_HE_AMMO
+    # - delete: STR_PSI_AMP
+    # - delete: STR_HEAVY_PLASMA
+    # - delete: STR_LASER_RIFLE
+    # - delete: STR_LASER_PISTOL
+    # - delete: STR_HEAVY_LASER
+    # - delete: STR_PLASMA_BEAM
+    # - delete: STR_HWP_FUSION_BOMB
+    # - delete: STR_HOVERTANK_LAUNCHER
+    # - delete: STR_HEAVY_CANNON
+    # - delete: STR_HC_AP_AMMO
+    # - delete: STR_HC_HE_AMMO
+    # - delete: STR_HC_I_AMMO
+    # - delete: STR_LASER_PISTOL
+    # - delete: STR_LASER_RIFLE
+    # - delete: STR_PERSONAL_ARMOR
+    # - delete: STR_ALIEN_REPRODUCTION
+    # - delete: STR_UFO_CONSTRUCTION
+    # - delete: HOVERTANK_CORPSE_1
+    # - delete: HOVERTANK_CORPSE_2
+    # - delete: HOVERTANK_CORPSE_3
+    # - delete: HOVERTANK_CORPSE_4
+    # - delete: STR_TANK_ROCKET_LAUNCHER
+    # - delete: STR_HWP_ROCKETS
+  
+  # - type: STR_A_GRENADE_LAUNCHER
+    # weight: 3
+    # costBuy: 400
+    # costSell: 300
+    # bigSprite: 113
+    # listOrder: 2220
+  # - type: STR_A_SHOTGUN
+    # weight: 3
+    # costBuy: 400
+    # costSell: 300
+    # bigSprite: 112
+    # listOrder: 2250
+  # - type: STR_CORPSE_SPACE_SUIT
+    # name: STR_CORPSE
+    # weight: 100
+    # bigSprite: 301
+    # floorSprite: 301
+    # invWidth: 2
+    # invHeight: 3
+    # armor: 90
+    # recover: false
+    
+
+  - type: STR_PISTOL # Glock 18
+    weight: 3 # glock is surprisingly light 
+    accuracyAuto: 15
+    tuAuto: 40
+    confAuto:
+      followProjectiles: false
+      shots: 6 # CQB
+      
+  - type: STR_PISTOL_CLIP
+    clipSize: 17
+    power: 20 # 9x19mm parabellum; 750J
+  
+  - &STR_RIFLE
+    type: STR_RIFLE # AR-10
+    size: 0.2
+    costBuy: 3000
+    costSell: 2250
+    weight: 12
+    bigSprite: 201
+    floorSprite: 300
+    handSprite: 310
+    bulletSprite: 2
+    fireSound: 4
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    kneelBonus: 130
+    sprayWaypoints: 2
+    invWidth: 1
+    invHeight: 3
+    listOrder: 2100
+    compatibleAmmo: 
+      - STR_RIFLE_CLIP
+    accuracyAuto: 15
+    accuracySnap: 40
+    accuracyAimed: 70
+    tuAuto: 80
+    tuSnap: 33
+    tuAimed: 75
+    accuracyMultiplier:
+      firing: 1
+      morale: 0.1
+      strength: 0.2
+      psiSkill: 0.2
+    confSnap: # Burst fire
+      name: STR_SHOT_TYPE_SNAP_BURST
+      followProjectiles: false
+      shots: 3 
+    confAuto: # Full automatic firing
+      followProjectiles: false
+      shots: 10 
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+    
+  - type: STR_RIFLE_DMR # LM308, it's... 2009 variant but let's move on
+    refNode: *STR_RIFLE
+    costBuy: 5000
+    costSell: 3750
+    weight: 15
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 110
+    tuAuto: 0
+    tuSnap: 30
+    tuAimed: 80
+    bigSprite: 211
+    floorSprite: 301
+    handSprite: 301
+    listOrder: 2110
+    confSnap:
+      name: STR_SHOT_TYPE_SNAP
+      followProjectiles: true
+      shots: 1
+      
+  - type: STR_RIFLE_CLIP
+    weight: 4
+    power: 42
+    tags:
+      OFFSET_BIGOB_WEAPON: 1
+      CURRENT_MOD_OFFSET: current
+    # Increased damage using 7.62mm ammunition; 3500J v 1700J
+    # weighs 800g and matches with 3 in-game weight unit
+  
+  - type: STR_LASER_PISTOL
+    ammo:
+      0:
+        compatibleAmmo: [ STR_PROTOTYPE_LASER_CAPACITOR ]
+      1:
+        compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
+
+    confSnap:
+      ammoSlot: 0
+      name: STR_SHOT_TYPE_SPECTRUM_LASER
+    confAimed:
+      ammoSlot: 1
+      # powerRangeThreshold: 8
+      # powerRangeReduction: 5
+  
+  
+  - &STR_LASER_COMP
+    type: STR_LASER_COMP
+    size: 0.1
+    weight: 3
+    clipSize: -1
+    power: 42
+    bigSprite: 2
+    floorSprite: 2
+    hitSound: 19
+    hitAnimation: 36
+    damageType: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    listOrder: 1
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 2
+  
+  - type: STR_PROTOTYPE_LASER_CAPACITOR
+    refNode: *STR_LASER_COMP
+    shotgunBehavior: 1
+    shotgunSpread: 80
+    shotgunChoke: 50
+    shotgunPellets: 6
+    power: 12
+    listOrder: 2
+    
+  - type: STR_LASER_ADVANCED_LENS
+    refNode: *STR_LASER_COMP
+    vaporDensitySurface: 3
+    vaporProbabilitySurface: 16
+    listOrder: 3
+    
+  # HIDE
+    # - type: STR_RIFLE_G
+      # size: 0.2
+      # costSell: 1250
+      # weight: 11
+      # bigSprite: 108
+      # floorSprite: 1
+      # handSprite: 120
+      # bulletSprite: 2
+      # fireSound: 4
+      # ammo:
+        # 0:
+          # compatibleAmmo: [STR_RIFLE_CLIP,STR_AA_RIFLE_CLIP]
+        # 1:
+          # compatibleAmmo: [STR_40MM_GRENADE,STR_40MM_GRENADE_I]
+          # tuLoad: 16
+      # confSnap:
+        # shots: 3
+        # ammoSlot: 0
+      # confAimed:
+        # shots: 1
+        # ammoSlot: 0
+      # confAuto:
+        # shots: 1
+        # name: STR_LAUNCH_GRENADE
+        # ammoSlot: 1
+        # arcing: true
+      # accuracyMultiplier:
+        # psiStrength: 0.1
+        # firing: 1
+        # morale: 0.1
+        # bravery: 0.1
+      # accuracySnap: 40
+      # accuracyAuto: 80
+      # accuracyAimed: 90
+      # tuSnap: 35
+      # tuAuto: 40
+      # tuAimed: 40 
+      # snapRange: 15
+      # battleType: 1
+      # twoHanded: true
+      # invWidth: 1
+      # invHeight: 3
+      # dropoff: 1
+      # autoRange: 15
+      # meleeType: 6
+      # meleePower: 50
+      # meleeAlter:
+        # ToHealth: 0
+        # ToArmor: 0
+        # ToWound: 0
+        # ToStun: 1
+      # meleeBonus:
+        # strength: 0.2
+      # tuMelee: 30
+      # accuracyMelee: 100
+      # listOrder: 2110
+    # - type: STR_RIFLE_S
+      # size: 0.2
+      # costSell: 1250
+      # weight: 11
+      # bigSprite: 109
+      # floorSprite: 1
+      # handSprite: 120
+      # bulletSprite: 2
+      # fireSound: 4
+      # ammo:
+        # 0:
+          # compatibleAmmo: [STR_RIFLE_CLIP,STR_AA_RIFLE_CLIP]
+        # 1:
+          # compatibleAmmo: [STR_SHOTGUN_AMMO,STR_SHOTGUN_AA_AMMO]
+          # tuLoad: 20
+      # confSnap:
+        # shots: 3
+        # ammoSlot: 0
+      # confAimed:
+        # shots: 1
+        # ammoSlot: 0
+      # confAuto:
+        # shots: 1
+        # name: STR_SHOTGUN_SHOT
+        # ammoSlot: 1
+      # accuracyMultiplier:
+        # psiStrength: 0.1
+        # firing: 1
+        # morale: 0.1
+        # bravery: 0.1
+      # accuracySnap: 40
+      # accuracyAuto: 88
+      # accuracyAimed: 90
+      # tuSnap: 35
+      # tuAuto: 25
+      # tuAimed: 40 
+      # shotgunChoke: 200
+      # snapRange: 15
+      # accuracyMultiplier:
+        # psiStrength: 0.1
+        # firing: 1
+        # morale: 0.1
+        # bravery: 0.1  
+      # battleType: 1
+      # twoHanded: true
+      # invWidth: 1
+      # invHeight: 3
+      # dropoff: 1
+      # autoRange: 8
+      # meleeType: 6
+      # meleePower: 50
+      # meleeAlter:
+        # ToHealth: 0
+        # ToArmor: 0
+        # ToWound: 0
+        # ToStun: 1
+      # meleeBonus:
+        # strength: 0.2
+      # tuMelee: 30
+      # accuracyMelee: 100
+      # listOrder: 2120
+    # - type: STR_40MM_GRENADE
+      # size: 0.1
+      # costBuy: 300
+      # costSell: 240
+      # weight: 3
+      # bigSprite: 12
+      # floorSprite: 12
+      # handSprite: 144
+      # power: 46
+      # damageType: 3
+      # damageAlter:
+        # RandomType: 3
+      # battleType: 2
+      # clipSize: 1
+      # invWidth: 1
+      # invHeight: 1
+      # listOrder: 2230
+    # - type: STR_40MM_GRENADE_I
+      # size: 0.1
+      # costBuy: 300
+      # costSell: 240
+      # weight: 3
+      # bigSprite: 13
+      # floorSprite: 13
+      # handSprite: 152
+      # power: 42
+      # damageType: 2
+      # damageAlter:
+        # RandomType: 3
+      # battleType: 2
+      # clipSize: 1
+      # invWidth: 1
+      # invHeight: 1
+      # listOrder: 2240
+    # - type: STR_SHOTGUN_AMMO
+      # size: 0.1
+      # costBuy: 100
+      # costSell: 75
+      # weight: 1
+      # bigSprite: 14
+      # floorSprite: 14
+      # handSprite: 160
+      # hitSound: 22
+      # hitAnimation: 26
+      # power: 14
+      # damageType: 1
+      # damageAlter:
+        # RandomType: 3
+      # clipSize: 5
+      # battleType: 2
+      # shotgunBehavior: 1
+      # shotgunSpread: 30
+      # shotgunPellets: 5
+      # powerRangeThreshold: 8
+      # powerRangeReduction: 5
+      # invWidth: 1
+      # invHeight: 1
+      # listOrder: 2260
+
+    # - type: STR_SMALL_LAUNCHER
+      # requires:
+        # - STR_SMALL_LAUNCHER
+      # compatibleAmmo:
+        # - STR_STUN_BOMB
+        # - STR_ALIEN_GRENADE
+
+
+# For some strange reason the scripts gets broke 
+# when tags and scripts and items are not together
+extended: 
+  tags: # Remember to add these tags to the same file as items ruleset
+    RuleItem:
+      ALLOW_AMMO_TO_RESPRITE: int
+      OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
+      #NEW_FLOOROB_FOR_WEAPON: int
+      #NEW_HANDOB_FOR_WEAPON: int
+      CURRENT_MOD_OFFSET: RuleList
+  scripts:
+    selectItemSprite:
+# Select weapon bigSprite based on ammo item
+      - offset: 1
+        code: |
+          var ptr BattleItem ammoItem;
+          var ptr RuleItem weaponRuleset;
+          var ptr RuleItem ammoRuleset;
+          var int changeSprite;
+          
+          var int base_index;
+          var int ammo_offset;
+          var int temp;
+
+          if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
+            item.getRuleItem weaponRuleset; # get ruleset of item as weaponRuleset
+            weaponRuleset.getTag changeSprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
+            
+            if eq changeSprite 1; # if changeSprite == 1; -> tagged as resprite
+              debug_log "the what";
+              item.getAmmoItem ammoItem; # get ammo item as ammoItem
+              ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset
+              ammoRuleset.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset valuse as ammo_offset
+              add sprite_index -1; # Simulates ammo done
+              add sprite_index ammo_offset; # ammo offset applied to sprite_index
+              rules.getSpriteOffsetBigobs sprite_index temp;
+              return sprite_index;
+            end;
+          end;
+          return sprite_index;

@@ -1,0 +1,10 @@
+transparencyLUTs:
+  - colors:
+      - [  8,  8, 12, 2 ] # 0 "white"
+      - [ 16,  8,  0, 8 ] # 1 orange
+      - [  0, 12, 12, 2 ] # 2 cyan
+      - [  4, 16,  4, 8 ] # 3 green
+      - [ 16,  4,  2, 2 ] # 4 red
+      - [ 12, 12, 12, 2 ] # 5 white
+      - [ 12,  8,  8, 6 ] # 6 ballistic tracer
+      - [ 12,  8, 16, 2 ] # 7 purple

@@ -1,0 +1,112 @@
+## Change 'explosionSpeed = n' to desired speed.
+
+items:
+###HWPS
+  - type: STR_HWP_CANNON_SHELLS
+    explosionSpeed:  10
+  - type: STR_HWP_ROCKETS
+    #explosionSpeed:  10 
+  - type: STR_TANK_LASER_CANNON
+    explosionSpeed:  10 
+  - type: STR_HOVERTANK_PLASMA
+    explosionSpeed:  10
+  - type: STR_HOVERTANK_LAUNCHER
+    #explosionSpeed:  10
+  - type: STR_HWP_FUSION_BOMB
+    #explosionSpeed:  10
+
+###FIREARMS
+  - type: STR_PISTOL_CLIP
+    #explosionSpeed:  4
+    bulletSpeed: 9000
+    hitAnimation: -1
+  - type: STR_RIFLE_CLIP
+    explosionSpeed:  4
+    bulletSpeed: 1800
+    #hitAnimation: -1
+     
+  - type: STR_HC_AP_AMMO
+    explosionSpeed: 2
+    bulletSpeed: 20
+  - type: STR_HC_HE_AMMO
+    bulletSpeed: 20
+  - type: STR_HC_I_AMMO
+    bulletSpeed: 20
+     
+  - type: STR_AC_AP_AMMO
+    explosionSpeed: 10
+    bulletSpeed: 60
+  - type: STR_AC_HE_AMMO
+    explosionSpeed: 3
+    bulletSpeed: 60
+    explosionSpeed: 2
+  - type: STR_AC_I_AMMO
+    explosionSpeed: 3
+    bulletSpeed: 60
+     
+#    explosionSpeed:  10
+  - type: STR_SMALL_ROCKET
+    bulletSpeed: 0
+  - type: STR_LARGE_ROCKET
+    bulletSpeed: 0
+  - type: STR_INCENDIARY_ROCKET
+    bulletSpeed: 0
+
+  - type: STR_LASER_PISTOL
+    explosionSpeed:  3
+    bulletSpeed: 200
+  - type: STR_LASER_RIFLE
+    explosionSpeed:  3
+    bulletSpeed: 200
+  - type: STR_HEAVY_LASER
+    explosionSpeed:  3
+    bulletSpeed: 200
+     
+  - type: STR_GRENADE
+#    explosionSpeed: 2
+  - type: STR_SMOKE_GRENADE
+    explosionSpeed: 2
+  - type: STR_PROXIMITY_GRENADE
+#    explosionSpeed: 2
+  - type: STR_HIGH_EXPLOSIVE
+#    explosionSpeed: 2
+  - type: STR_STUN_ROD
+#    hitAnimFrames = -1
+
+  - type: STR_HEAVY_PLASMA_CLIP
+    explosionSpeed: 2
+    bulletSpeed: 40
+  - type: STR_PLASMA_RIFLE_CLIP
+    explosionSpeed: 2
+    bulletSpeed: 40
+  - type: STR_PLASMA_PISTOL_CLIP
+    explosionSpeed: 2
+    bulletSpeed: 40
+
+###Alien Weapons
+  - type: STR_HWP_CANNON_SHELLS
+    explosionSpeed: 2
+    bulletSpeed: 100
+  - type: STR_HWP_ROCKETS
+    #explosionSpeed: 2
+    #bulletSpeed: 100
+  - type: STR_TANK_LASER_CANNON
+    #explosionSpeed: 2
+    bulletSpeed: 200
+    
+  - type: STR_HOVERTANK_PLASMA
+    #explosionSpeed:  2
+    #bulletSpeed: 100
+  - type: STR_HWP_FUSION_BOMB
+    #explosionSpeed:  2
+    #bulletSpeed: 100
+
+  - type: CYBERDISC_WEAPON
+    explosionSpeed:  2
+    bulletSpeed: 40
+  - type: SECTOPOD_WEAPON
+    explosionSpeed:  2
+    bulletSpeed: 40
+  - type: CELATID_WEAPON
+    explosionSpeed:  2
+    bulletSpeed: 20

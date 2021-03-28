@@ -1,0 +1,114 @@
+### INDEX ###
+#B : Ballistic
+#E : Explosive
+#I : Incendiary
+#R : Rocket
+#L : Laser
+#P : Plasma
+#S : Stun
+
+items:
+###### BUILT-IN WEAPONS ######
+# HWP
+  - type: STR_HWP_CANNON_SHELLS
+    vaporColorSurface: 2 #E
+    vaporDensitySurface: 10
+  - type: STR_HWP_ROCKETS
+    vaporColorSurface: 0 #R
+    vaporDensitySurface: 120
+  - type: STR_TANK_LASER_CANNON
+    vaporColorSurface: 1 #L
+    vaporDensitySurface: 10
+    
+  - type: STR_HOVERTANK_PLASMA
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 15
+  - type: STR_HWP_FUSION_BOMB
+    vaporColorSurface: 2 #E
+    vaporDensitySurface: 100
+
+  - type: CYBERDISC_WEAPON
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 10
+  - type: SECTOPOD_WEAPON
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 10
+  - type: CELATID_WEAPON
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 10   
+    
+###### PERSONAL WEAPONS  ######
+# Conventional
+  - type: STR_PISTOL_CLIP
+    vaporColorSurface: 6 #B
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 20
+  - type: STR_RIFLE_CLIP
+    vaporColorSurface: 6 #B
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 20
+  # Auto Cannon
+  - type: STR_AC_AP_AMMO
+    vaporColorSurface: 6 #B
+    vaporDensitySurface: 3
+  - type: STR_AC_HE_AMMO
+    vaporColorSurface: 2 #E
+    vaporDensitySurface: 3
+  - type: STR_AC_I_AMMO
+    vaporColorSurface: 4 #I
+    vaporDensitySurface: 3
+  # Heavy Cannon
+  - type: STR_HC_AP_AMMO
+    vaporColorSurface: 6 #B
+    vaporDensitySurface: 7
+  - type: STR_HC_HE_AMMO
+    vaporColorSurface: 2 #E
+    vaporDensitySurface: 7
+  - type: STR_HC_I_AMMO
+    vaporColorSurface: 4 #I
+    vaporDensitySurface: 7
+# Rocket Launcher
+  - type: STR_SMALL_ROCKET
+    vaporColorSurface: 0 #R
+    vaporDensitySurface: 30
+  - type: STR_LARGE_ROCKET
+    vaporColorSurface: 0 #R
+    vaporDensitySurface: 100
+  - type: STR_INCENDIARY_ROCKET
+    vaporColorSurface: 4 #I
+    vaporDensitySurface: 100
+    
+# Laser Weapons
+  - type: STR_LASER_PISTOL
+    vaporColorSurface: 1 #L
+    # vaporDensitySurface: 2
+    # vaporProbabilitySurface: 15
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 1
+  - type: STR_LASER_RIFLE
+    vaporColorSurface: 1 #L
+    vaporDensitySurface: 3
+    vaporProbabilitySurface: 20
+  - type: STR_HEAVY_LASER
+    vaporColorSurface: 1 #L
+    vaporDensitySurface: 5
+    vaporProbabilitySurface: 20
+# Plasma Weapons
+  - type: STR_PLASMA_PISTOL_CLIP
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 10
+  - type: STR_PLASMA_RIFLE_CLIP
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 10
+  - type: STR_HEAVY_PLASMA_CLIP
+    vaporColorSurface: 3 #P
+    vaporDensitySurface: 15
+# Blaster Launcher
+  - type: STR_BLASTER_BOMB
+    vaporColorSurface: 2 #E
+    vaporDensitySurface: 120
+    
+# Stun Weapons
+  - type: STR_STUN_BOMB
+    vaporColorSurface: 7 #S
+    vaporDensitySurface: 7

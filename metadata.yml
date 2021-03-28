@@ -1,0 +1,7 @@
+name: "scarfCom"
+version: 0.0.2
+author: greenscarf
+description: "security council antialien recon force command"
+id: xcom1-scarfcom
+master: xcom1
+resourceConfig: transparency.rul
