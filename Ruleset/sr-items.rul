@@ -51,7 +51,7 @@ items:
     # recover: false
     
 
-# I think pistols are okay as-is? they should be magnum anyway and it's around 2000J
+  # I think pistols are okay as-is? they should be magnum anyway and it's around 2000J
   - type: STR_PISTOL # Glock 18
     clipSize: 17
   #   weight: 3 # glock is surprisingly light 
@@ -226,11 +226,16 @@ items:
     bulletSpeed: 65535
     hitAnimation: -1    
 
+  - type: STR_STUN_BOMB
+
   - type: STR_GRENADE
     fuseType: 0
-      
+
+# THROWN WEAPONS
   - type: STR_SMOKE_GRENADE
     fuseType: 0
+    #tags:
+      #START_PRIMED: 1
 
   - type: STR_SMALL_LAUNCHER
     compatibleAmmo: [ STR_STUN_BOMB, STR_ALIEN_GRENADE ]
@@ -240,15 +245,16 @@ items:
     accuracySnap: 40
     accuracyAimed: 75
     arcingShot: true
-
-  - type: STR_STUN_BOMB
+    tuSnap: 24
+    tuLoad: 20
 
   - type: STR_ALIEN_GRENADE
     clipSize: 1
     fuseType: 0
-    isExplodingInHands: true
-    tuPrime: 20
+    #tuPrime: 20
     tuThrow: 25
+    tags:
+      START_PRIMED: 1
 
   # HIDE
     # - type: STR_RIFLE_G
@@ -440,14 +446,28 @@ items:
 extended: 
   tags: # Remember to add these tags to the same file as items ruleset
     RuleItem:
+      ACCURACY_BONUS: int
+      START_PRIMED: int
       ALLOW_AMMO_TO_RESPRITE: int
       OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
       #NEW_FLOOROB_FOR_WEAPON: int
       #NEW_HANDOB_FOR_WEAPON: int
       CURRENT_MOD_OFFSET: RuleList
+  
   scripts:
+    createItem:
+      - offset: 51
+        code: |
+          var int start_primed;
+          item.getTag start_primed Tag.START_PRIMED;
+
+          if eq start_primed 1;
+            item.setFuseTimer 0;
+            end;
+          return;
+    
     selectItemSprite:
-# Select weapon bigSprite based on ammo item
+    # Select weapon bigSprite based on ammo item
       - offset: 1
         code: |
           var ptr BattleItem ammoItem;
@@ -464,7 +484,6 @@ extended:
             weaponRuleset.getTag changeSprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
             
             if eq changeSprite 1; # if changeSprite == 1; -> tagged as resprite
-              debug_log "the what";
               item.getAmmoItem ammoItem; # get ammo item as ammoItem
               ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset
               ammoRuleset.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset valuse as ammo_offset

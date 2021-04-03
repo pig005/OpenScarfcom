@@ -1,38 +1,11 @@
-extended: # For some reason the scripts gets broke when tags and scripts are not together
-  tags: # Remember to add these tags to the same file as items ruleset
-    RuleItem:
-      ALLOW_AMMO_TO_RESPRITE: int
-      OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
-      #NEW_FLOOROB_FOR_WEAPON: int
-      #NEW_HANDOB_FOR_WEAPON: int
-      CURRENT_MOD_OFFSET: RuleList
+### GLOBAL SCRIPTS GO HERE ###
+extended:
   scripts:
-    selectItemSprite:
-# Select weapon bigSprite based on ammo item
-      - offset: 1
-        code: |
-          var ptr BattleItem ammoItem;
-          var ptr RuleItem weaponRuleset;
-          var ptr RuleItem ammoRuleset;
-          var int changeSprite;
+    # newTurnUnit:
+    #   - offset: 50
+    #     code: |
+    #       var int original_accuracy;
+    #       return;
+    
           
-          var int base_index;
-          var int ammo_offset;
-          var int temp;
-
-          if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
-            item.getRuleItem weaponRuleset; # get ruleset of item as weaponRuleset
-            weaponRuleset.getTag changeSprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
-            
-            if eq changeSprite 1; # if changeSprite == 1; -> tagged as resprite
-              debug_log "the what";
-              item.getAmmoItem ammoItem; # get ammo item as ammoItem
-              ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset
-              ammoRuleset.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset valuse as ammo_offset
-              add sprite_index -1; # Simulates ammo done
-              add sprite_index ammo_offset; # ammo offset applied to sprite_index
-              rules.getSpriteOffsetBigobs sprite_index temp;
-              return sprite_index;
-            end;
-          end;
-          return sprite_index;
+    
