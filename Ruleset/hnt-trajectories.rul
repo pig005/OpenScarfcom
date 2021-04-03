@@ -80,17 +80,18 @@ items:
     
 # Laser Weapons
   - type: STR_LASER_PISTOL
-    vaporColorSurface: 1 #L
+    #vaporColorSurface: 1 #L
     # vaporDensitySurface: 2
     # vaporProbabilitySurface: 15
     vaporDensitySurface: 1
-    vaporProbabilitySurface: 1
+    vaporProbabilitySurface: 5
   - type: STR_LASER_RIFLE
-    vaporColorSurface: 1 #L
+    #vaporColorSurface: 1 #L
     vaporDensitySurface: 3
-    vaporProbabilitySurface: 20
+    #vaporProbabilitySurface: 20
+    vaporProbabilitySurface: 10
   - type: STR_HEAVY_LASER
-    vaporColorSurface: 1 #L
+    #vaporColorSurface: 1 #L
     vaporDensitySurface: 5
     vaporProbabilitySurface: 20
 # Plasma Weapons

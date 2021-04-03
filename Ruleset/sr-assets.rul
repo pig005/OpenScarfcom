@@ -1,16 +1,16 @@
 extraSprites:
   - type: BIGOBS.PCK # How it shows on inventory
     files:
-      02: Resources/ballistic-weapons/Big/RifleClip.png # overrides default rifle clip
+      02: Resources/ballistic_weapons/Big/RifleClip.png # overrides default rifle clip
       
-      201: Resources/ballistic-weapons/Big/AR10.png 
-      200: Resources/ballistic-weapons/Big/AR10-Empty.png
-      211: Resources/ballistic-weapons/Big/M16-MR.png #placeholder image
+      201: Resources/ballistic_weapons/Big/AR10.png 
+      200: Resources/ballistic_weapons/Big/AR10-Empty.png
+      211: Resources/ballistic_weapons/Big/M16-MR.png #placeholder image
   
   - type: FLOOROB.PCK # How it shows on battlescape floor
     files:
-      300: Resources/ballistic-weapons/Floor/M16.png
-      301: Resources/ballistic-weapons/Floor/M16-MR.png
+      300: Resources/ballistic_weapons/Floor/M16.png
+      301: Resources/ballistic_weapons/Floor/M16-MR.png
       
   - type: HANDOB.PCK # How it shows on battlescape soldier's hand
     width: 256
@@ -18,5 +18,5 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      300: Resources/ballistic-weapons/Hand/M16.png
-      310: Resources/ballistic-weapons/Hand/M16-MR.png
+      300: Resources/ballistic_weapons/Hand/M16.png
+      310: Resources/ballistic_weapons/Hand/M16-MR.png

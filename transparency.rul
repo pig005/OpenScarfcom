@@ -8,3 +8,4 @@ transparencyLUTs:
       - [ 12, 12, 12, 2 ] # 5 white
       - [ 12,  8,  8, 6 ] # 6 ballistic tracer
       - [ 12,  8, 16, 2 ] # 7 purple
+      - [ 16,  8,  0, 1 ] # 8 faint orange

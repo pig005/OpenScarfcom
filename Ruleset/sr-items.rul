@@ -51,17 +51,19 @@ items:
     # recover: false
     
 
+# I think pistols are okay as-is? they should be magnum anyway and it's around 2000J
   - type: STR_PISTOL # Glock 18
-    weight: 3 # glock is surprisingly light 
-    accuracyAuto: 15
-    tuAuto: 40
-    confAuto:
-      followProjectiles: false
-      shots: 6 # CQB
-      
-  - type: STR_PISTOL_CLIP
     clipSize: 17
-    power: 20 # 9x19mm parabellum; 750J
+  #   weight: 3 # glock is surprisingly light 
+  #   accuracyAuto: 15
+  #   tuAuto: 40
+  #   confAuto:
+  #     followProjectiles: false
+  #     shots: 6 # CQB
+      
+  # - type: STR_PISTOL_CLIP
+  #   clipSize: 17
+  #   power: 20 # 9x19mm parabellum; 750J
   
   - &STR_RIFLE
     type: STR_RIFLE # AR-10
@@ -76,14 +78,17 @@ items:
     fireSound: 4
     battleType: 1
     twoHanded: true
-    oneHandedPenalty: 40
-    kneelBonus: 130
+    oneHandedPenalty: 30
+    kneelBonus: 120
     sprayWaypoints: 2
     invWidth: 1
     invHeight: 3
     listOrder: 2100
-    compatibleAmmo: 
-      - STR_RIFLE_CLIP
+    ammo:
+      0:
+        compatibleAmmo: [ STR_RIFLE_CLIP ]
+      # 1:
+      #   compatibleAmmo: [ STR_PISTOL ]
     accuracyAuto: 15
     accuracySnap: 40
     accuracyAimed: 70
@@ -92,18 +97,22 @@ items:
     tuAimed: 75
     accuracyMultiplier:
       firing: 1
-      morale: 0.1
       strength: 0.2
       psiSkill: 0.2
     confSnap: # Burst fire
       name: STR_SHOT_TYPE_SNAP_BURST
       followProjectiles: false
+      ammoSlot: 0
       shots: 3 
     confAuto: # Full automatic firing
       followProjectiles: false
+      ammoSlot: 0
       shots: 10 
     tags:
       ALLOW_AMMO_TO_RESPRITE: 1
+    # confAimed:
+    #   ammoSlot: 1
+    #   shots: 3
     
   - type: STR_RIFLE_DMR # LM308, it's... 2009 variant but let's move on
     refNode: *STR_RIFLE
@@ -118,7 +127,7 @@ items:
     tuAimed: 80
     bigSprite: 211
     floorSprite: 301
-    handSprite: 301
+    handSprite: 300
     listOrder: 2110
     confSnap:
       name: STR_SHOT_TYPE_SNAP
@@ -138,9 +147,12 @@ items:
     shotgunBehavior: 1
     shotgunSpread: 60
     shotgunChoke: 50
-    shotgunPellets: 10
+    shotgunPellets: 8
+    vaporColorSurface: 8
     vaporDensitySurface: 1
     vaporProbabilitySurface: 2
+    powerRangeThreshold: 6
+    powerRangeReduction: 3
     power: 12
     explosionSpeed:  2
     ammo:
@@ -151,9 +163,23 @@ items:
       name: STR_SHOT_TYPE_SPECTRUM_LASER
     confAimed:
       ammoSlot: 1
+    confAuto:
+      ammoSlot: 1
       # powerRangeThreshold: 8
       # powerRangeReduction: 5
   
+  - type: STR_LASER_RIFLE
+    shotgunBehavior: 1
+    shotgunSpread: 30
+    shotgunChoke: 80
+    shotgunPellets: 10
+    powerRangeThreshold: 8
+    powerRangeReduction: 2
+    power: 24
+    vaporColorSurface: 8
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 2
+    explosionSpeed:  2
   
   - &STR_LASER_COMP
     type: STR_LASER_COMP
@@ -170,6 +196,7 @@ items:
     invWidth: 1
     invHeight: 1
     listOrder: 1
+    vaporColorSurface: 1
     
   - type: STR_LASER_ADVANCED_LENS
     refNode: *STR_LASER_COMP
@@ -177,7 +204,52 @@ items:
     vaporDensitySurface: 3
     vaporProbabilitySurface: 16
     listOrder: 3
-    
+
+  - &STR_PLASMA_ACCURACY_MODULE
+    type: STR_PLASMA_ACCURACY_MODULE
+    accuracyMultiplier:
+      firing: 1
+      psiSkill: 0.3
+      psiStrength: 0.2
+  
+  - type: STR_PLASMA_PISTOL # plasma weapons get huge bonus from psi
+    refNode: *STR_PLASMA_ACCURACY_MODULE
+  
+  - type: STR_PLASMA_RIFLE
+    refNode: *STR_PLASMA_ACCURACY_MODULE
+
+  - type: STR_HEAVY_PLASMA
+    refNode: *STR_PLASMA_ACCURACY_MODULE
+
+  - type: STR_HEAVY_PLASMA_CLIP
+    #explosionSpeed: 2
+    bulletSpeed: 65535
+    hitAnimation: -1    
+
+  - type: STR_GRENADE
+    fuseType: 0
+      
+  - type: STR_SMOKE_GRENADE
+    fuseType: 0
+
+  - type: STR_SMALL_LAUNCHER
+    compatibleAmmo: [ STR_STUN_BOMB, STR_ALIEN_GRENADE ]
+
+    aimRange: 12
+    dropoff: 4
+    accuracySnap: 40
+    accuracyAimed: 75
+    arcingShot: true
+
+  - type: STR_STUN_BOMB
+
+  - type: STR_ALIEN_GRENADE
+    clipSize: 1
+    fuseType: 0
+    isExplodingInHands: true
+    tuPrime: 20
+    tuThrow: 25
+
   # HIDE
     # - type: STR_RIFLE_G
       # size: 0.2

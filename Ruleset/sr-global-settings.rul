@@ -1,0 +1,20 @@
+fixedUserOptions:
+   battleUFOExtenderAccuracy: true
+
+lighting:
+   enhanced: 4
+
+kneelBonusGlobal: 120
+
+minReactionAccuracy: 40
+#extendedItemReloadCost: true
+
+ai:
+  useDelayBlaster: 0
+  useDelayFirearm: 0
+  useDelayGrenade: 0
+  useDelayMelee: 0
+  useDelayPsionic: 0
+
+  fireChoiceIntelCoeff: 5
+  fireChoiceAggroCoeff: 5
