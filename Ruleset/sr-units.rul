@@ -52,9 +52,10 @@ units:
       tu: 65
       reactions: 63
       firing: 52
+      bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 3
-    aggression: 2
+    aggression: 4
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_ENGINEER
@@ -62,9 +63,10 @@ units:
       tu: 65
       reactions: 63
       firing: 52
+      bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 6
-    aggression: 2
+    aggression: 3
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_MEDIC
@@ -72,9 +74,10 @@ units:
       tu: 65
       reactions: 63
       firing: 52
+      bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 5
-    aggression: 1
+    aggression: 2
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_NAVIGATOR
@@ -82,6 +85,7 @@ units:
       tu: 65
       reactions: 63
       firing: 52
+      bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 4
     aggression: 2
@@ -92,6 +96,7 @@ units:
       tu: 65
       reactions: 63
       firing: 52
+      bravery: 60
     armor: SECTOID_ARMOR0
     intelligence: 7
     aggression: 1
@@ -102,6 +107,7 @@ units:
       tu: 65
       reactions: 63
       firing: 52
+      bravery: 70
     armor: SECTOID_ARMOR0
     intelligence: 8
     aggression: 0
@@ -253,7 +259,7 @@ units:
       firing: 54
     armor: MUTON_ARMOR0
     intelligence: 2
-    aggression: 4
+    aggression: 10
     autoSurrender: false
     canSurrender: true
   - type: STR_MUTON_NAVIGATOR
@@ -263,7 +269,7 @@ units:
       firing: 54
     armor: MUTON_ARMOR1
     intelligence: 3
-    aggression: 2
+    aggression: 4
     autoSurrender: false
     canSurrender: true
   - type: STR_MUTON_ENGINEER

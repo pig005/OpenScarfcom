@@ -1,8 +1,9 @@
 minReactionAccuracy: 40
 surrenderMode: 1
 
-ai: 
+ai:
   extendedFireModeChoice: true
+  pickUpWeaponsMoreActively: true
   fireChoiceIntelCoeff: 5
   fireChoiceAggroCoeff: 5
 
