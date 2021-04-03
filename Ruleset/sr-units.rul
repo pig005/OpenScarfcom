@@ -55,7 +55,7 @@ units:
     armor: SECTOID_ARMOR0
     intelligence: 3
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_ENGINEER
     stats:
@@ -65,7 +65,7 @@ units:
     armor: SECTOID_ARMOR0
     intelligence: 6
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_MEDIC
     stats:
@@ -75,7 +75,7 @@ units:
     armor: SECTOID_ARMOR0
     intelligence: 5
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_NAVIGATOR
     stats:
@@ -85,7 +85,7 @@ units:
     armor: SECTOID_ARMOR0
     intelligence: 4
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_LEADER
     stats:
@@ -95,7 +95,7 @@ units:
     armor: SECTOID_ARMOR0
     intelligence: 7
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_COMMANDER
     stats:
@@ -105,7 +105,7 @@ units:
     armor: SECTOID_ARMOR0
     intelligence: 8
     aggression: 0
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #CYBERDISK
   - type: STR_CYBERDISC_TERRORIST
@@ -124,7 +124,7 @@ units:
     armor: FLOATER_ARMOR0
     intelligence: 4
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_FLOATER_ENGINEER
     stats:
@@ -134,7 +134,7 @@ units:
     armor: FLOATER_ARMOR0
     intelligence: 7
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_FLOATER_NAVIGATOR
     stats:
@@ -144,7 +144,7 @@ units:
     armor: FLOATER_ARMOR0
     intelligence: 5
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_FLOATER_MEDIC
     stats:
@@ -154,7 +154,7 @@ units:
     armor: FLOATER_ARMOR0
     intelligence: 6
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_FLOATER_LEADER
     stats:
@@ -164,7 +164,7 @@ units:
     armor: FLOATER_ARMOR1
     intelligence: 8
     aggression: 0
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_FLOATER_COMMANDER
     stats:
@@ -174,7 +174,7 @@ units:
     armor: FLOATER_ARMOR2
     intelligence: 8
     aggression: 0
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #REAPER
   - type: STR_REAPER_TERRORIST
@@ -194,7 +194,7 @@ units:
     armor: SNAKEMAN_ARMOR0
     intelligence: 5
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_NAVIGATOR
     stats:
@@ -204,7 +204,7 @@ units:
     armor: SNAKEMAN_ARMOR0
     intelligence: 6
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_ENGINEER
     stats:
@@ -214,7 +214,7 @@ units:
     armor: SNAKEMAN_ARMOR0
     intelligence: 7
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_LEADER
     stats:
@@ -224,7 +224,7 @@ units:
     armor: SNAKEMAN_ARMOR1
     intelligence: 7
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_COMMANDER
     stats:
@@ -234,7 +234,7 @@ units:
     armor: SNAKEMAN_ARMOR2
     intelligence: 8
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #CHRYSSALID
   - type: STR_CHRYSSALID_TERRORIST
@@ -254,7 +254,7 @@ units:
     armor: MUTON_ARMOR0
     intelligence: 2
     aggression: 4
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_MUTON_NAVIGATOR
     stats:
@@ -264,7 +264,7 @@ units:
     armor: MUTON_ARMOR1
     intelligence: 3
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_MUTON_ENGINEER
     stats:
@@ -274,7 +274,7 @@ units:
     armor: MUTON_ARMOR2
     intelligence: 4
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #SILACOID
   - type: STR_SILACOID_TERRORIST
@@ -285,7 +285,7 @@ units:
     armor: SILACOID_ARMOR
     intelligence: 3
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #CELATID
   - type: STR_CELATID_TERRORIST
@@ -296,7 +296,7 @@ units:
     armor: CELATID_ARMOR
     intelligence: 3
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #ETHEREAL
   - type: STR_ETHEREAL_SOLDIER
@@ -307,7 +307,7 @@ units:
     armor: ETHEREAL_ARMOR0
     intelligence: 10
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_ETHEREAL_LEADER
     stats:
@@ -317,7 +317,7 @@ units:
     armor: ETHEREAL_ARMOR1
     intelligence: 12
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
   - type: STR_ETHEREAL_COMMANDER
     stats:
@@ -327,7 +327,7 @@ units:
     armor: ETHEREAL_ARMOR2
     intelligence: 15
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #SECTOPOD
   - type: STR_SECTOPOD_TERRORIST
@@ -338,7 +338,7 @@ units:
     armor: SECTOPOD_ARMOR
     intelligence: 4
     aggression: 1
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
 #ZOMBIE
   - type: STR_ZOMBIE
@@ -349,7 +349,7 @@ units:
     armor: ZOMBIE_ARMOR
     intelligence: 3
     aggression: 2
-    autoSurrender: true
+    autoSurrender: false
     canSurrender: true
     spawnUnit: STR_CHRYSSALID_TERRORIST
     # Zombies are silent on death, no deathSound
