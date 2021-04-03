@@ -1,20 +1,34 @@
+#OPTIONS
 fixedUserOptions:
+   strafe: true
    battleUFOExtenderAccuracy: true
+   alienBleeding: true
+
+recommendedUserOptions:
+   allowBuildingQueue: true
+   craftLaunchAlways: true
+   customInitialBase: true
+   battleExplosionHeight: 3
+   allowPsionicCapture: true
+   canSellLiveAliens: true
+
+# GEOSCAPE
+chanceToStopRetaliation: 40
+lessAliensDuringBaseDefense: true
+buildInfiltrationBaseCloseToTheCountry: true
+allowCountriesToCancelAlienPact: true
+#list by https://github.com/kmkingsbury/xcom-mission-name-generator
+# BATTLESCAPE
+kneelBonusGlobal: 120
+difficultyDemigod: true
 
 lighting:
    enhanced: 4
 
-kneelBonusGlobal: 120
-
-minReactionAccuracy: 40
+constants:
+   # BATTLESCAPE
+   extendedItemReloadCost: true
+   extendedTerrainMelee: 1
+   extendedMeleeReactions: 1
+   extendedUnderwaterThrowFactor: 60
 #extendedItemReloadCost: true
-
-ai:
-  useDelayBlaster: 0
-  useDelayFirearm: 0
-  useDelayGrenade: 0
-  useDelayMelee: 0
-  useDelayPsionic: 0
-
-  fireChoiceIntelCoeff: 5
-  fireChoiceAggroCoeff: 5
