@@ -27,7 +27,6 @@ items:
     # - delete: HOVERTANK_CORPSE_4
     # - delete: STR_TANK_ROCKET_LAUNCHER
     # - delete: STR_HWP_ROCKETS
-  
   # - type: STR_A_GRENADE_LAUNCHER
     # weight: 3
     # costBuy: 400
@@ -49,31 +48,31 @@ items:
     # invHeight: 3
     # armor: 90
     # recover: false
-    
 
+# BALLISTIC FIREARMS
   # I think pistols are okay as-is? they should be magnum anyway and it's around 2000J
   - type: STR_PISTOL # Glock 18
     clipSize: 17
-  #   weight: 3 # glock is surprisingly light 
+  #   weight: 3 # glock is surprisingly light
   #   accuracyAuto: 15
   #   tuAuto: 40
   #   confAuto:
   #     followProjectiles: false
   #     shots: 6 # CQB
-      
+
   # - type: STR_PISTOL_CLIP
   #   clipSize: 17
   #   power: 20 # 9x19mm parabellum; 750J
-  
+
   - &STR_RIFLE
     type: STR_RIFLE # AR-10
     size: 0.2
     costBuy: 3000
     costSell: 2250
     weight: 12
-    bigSprite: 201
+    bigSprite: 301
     floorSprite: 300
-    handSprite: 310
+    handSprite: 300
     bulletSprite: 2
     fireSound: 4
     battleType: 1
@@ -103,17 +102,17 @@ items:
       name: STR_SHOT_TYPE_SNAP_BURST
       followProjectiles: false
       ammoSlot: 0
-      shots: 3 
+      shots: 3
     confAuto: # Full automatic firing
       followProjectiles: false
       ammoSlot: 0
-      shots: 10 
+      shots: 10
     tags:
       ALLOW_AMMO_TO_RESPRITE: 1
     # confAimed:
     #   ammoSlot: 1
     #   shots: 3
-    
+
   - type: STR_RIFLE_DMR # LM308, it's... 2009 variant but let's move on
     refNode: *STR_RIFLE
     costBuy: 5000
@@ -125,15 +124,15 @@ items:
     tuAuto: 0
     tuSnap: 30
     tuAimed: 80
-    bigSprite: 211
-    floorSprite: 301
-    handSprite: 300
+    #bigSprite: 211
+    #floorSprite: 301
+    #handSprite: 300
     listOrder: 2110
     confSnap:
       name: STR_SHOT_TYPE_SNAP
       followProjectiles: true
       shots: 1
-      
+
   - type: STR_RIFLE_CLIP
     weight: 4
     power: 42
@@ -142,8 +141,9 @@ items:
       CURRENT_MOD_OFFSET: current
     # Increased damage using 7.62mm ammunition; 3500J v 1700J
     # weighs 800g and matches with 3 in-game weight unit
-  
-  - type: STR_LASER_PISTOL
+
+  - &STR_LASER_CLASS
+    type: STR_LASER_CLASS
     shotgunBehavior: 1
     shotgunSpread: 60
     shotgunChoke: 50
@@ -153,11 +153,8 @@ items:
     vaporProbabilitySurface: 2
     powerRangeThreshold: 6
     powerRangeReduction: 3
-    power: 12
+    power: 14
     explosionSpeed:  2
-    ammo:
-      1:
-        compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
     confSnap:
       ammoSlot: 0
       name: STR_SHOT_TYPE_SPECTRUM_LASER
@@ -165,9 +162,21 @@ items:
       ammoSlot: 1
     confAuto:
       ammoSlot: 1
+
+  - type: STR_LASER_PISTOL
+
+    ammo:
+      2:
+        compatibleAmmo: [ STR_LASER_ELERIUM_BATTERY ]
+        tuLoad: 200
+        tuUnload: 200
+      1:
+        compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
       # powerRangeThreshold: 8
       # powerRangeReduction: 5
-  
+    weight: 20
+
+# LASER FIREARMS
   - type: STR_LASER_RIFLE
     shotgunBehavior: 1
     shotgunSpread: 30
@@ -180,9 +189,10 @@ items:
     vaporDensitySurface: 1
     vaporProbabilitySurface: 2
     explosionSpeed:  2
-  
-  - &STR_LASER_COMP
-    type: STR_LASER_COMP
+    weight: 28
+
+  - &STR_LASER_ATTACHMENT
+    type: STR_LASER_ATTACHMENT
     size: 0.1
     weight: 3
     clipSize: -1
@@ -197,45 +207,34 @@ items:
     invHeight: 1
     listOrder: 1
     vaporColorSurface: 1
-    
+
   - type: STR_LASER_ADVANCED_LENS
-    refNode: *STR_LASER_COMP
+    refNode: *STR_LASER_ATTACHMENT
     shotgunBehavior: 0
     vaporDensitySurface: 3
     vaporProbabilitySurface: 16
     listOrder: 3
 
+  - type: STR_LASER_ELERIUM_BATTERY
+    refNode: *STR_LASER_ATTACHMENT
+    weight: -14
+
+# PLASMA FIREARMS
   - &STR_PLASMA_ACCURACY_MODULE
     type: STR_PLASMA_ACCURACY_MODULE
     accuracyMultiplier:
       firing: 1
       psiSkill: 0.3
       psiStrength: 0.2
-  
+
   - type: STR_PLASMA_PISTOL # plasma weapons get huge bonus from psi
     refNode: *STR_PLASMA_ACCURACY_MODULE
-  
+
   - type: STR_PLASMA_RIFLE
     refNode: *STR_PLASMA_ACCURACY_MODULE
 
   - type: STR_HEAVY_PLASMA
     refNode: *STR_PLASMA_ACCURACY_MODULE
-
-  - type: STR_HEAVY_PLASMA_CLIP
-    #explosionSpeed: 2
-    bulletSpeed: 65535
-    hitAnimation: -1    
-
-  - type: STR_STUN_BOMB
-
-  - type: STR_GRENADE
-    fuseType: 0
-
-# THROWN WEAPONS
-  - type: STR_SMOKE_GRENADE
-    fuseType: 0
-    #tags:
-      #START_PRIMED: 1
 
   - type: STR_SMALL_LAUNCHER
     compatibleAmmo: [ STR_STUN_BOMB, STR_ALIEN_GRENADE ]
@@ -248,13 +247,186 @@ items:
     tuSnap: 24
     tuLoad: 20
 
+# THROWN WEAPONS
+
+  - type: STR_GRENADE
+    power: 70
+    fuseType: 0
+    explosionSpeed: 3
+    damageType: 3
+    damageAlter:
+      FixRadius: 6
+      RandomType: 7
+      ResistType: 1
+      RadiusReduction: 10
+      ToTile: 0.2
+      ToHealth: 1.5
+      ToArmor: 0.05
+      ArmorEffectiveness: 2.0
+      ToWound: 5.0
+      RandomWound: false
+
+  - type: STR_SMOKE_GRENADE
+    fuseType: 0
+    #tags:
+      #START_PRIMED: 1
+
   - type: STR_ALIEN_GRENADE
     clipSize: 1
+    explosionSpeed: 3
     fuseType: 0
     #tuPrime: 20
     tuThrow: 25
     tags:
       START_PRIMED: 1
+
+# TERROR UNIT WEAPONS
+  - type: SECTOPOD_HEAVY_PLASMA
+    weight: 3
+    bigSprite: 1
+    floorSprite: 31
+    handSprite: 104
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    damageType: 4
+    accuracyAuto: 50
+    accuracySnap: 75
+    #accuracyAimed: 110
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: 10
+    bulletSprite: 8
+    recover: false
+    #aimRange: 10
+    power: 60
+    #tuAuto: 0
+    tuSnap: 80
+    tuAimed: 0
+    tuAuto: 0
+    #confAuto:
+    #  shots: 2
+    #shotgunBehavior: 1
+    #shotgunPellets: 2
+    #shotgunSpread: 80
+    bulletSpeed: 60
+    explosionSpeed: 3
+
+  - &STR_SECTOPOD_AUX_WEAPON
+    type: STR_SECTOPOD_AUX_WEAPON
+    weight: 16
+    invWidth: 2
+    invHeight: 3
+    battleType: 1
+    bigSprite: 35
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 10
+    fireSound: 53
+    recover: false
+    fixedWeapon: true
+    bulletSpeed: 20
+    blastRadius: -1
+    clipSize: 6
+    power: 120
+    accuracySnap: 40
+    accuracyAuto: 30
+    tuSnap: 50
+
+  - &STR_SECTOPOD_AUX_EXPLOSIVE
+    refNode: *STR_SECTOPOD_AUX_WEAPON
+    type: STR_SECTOPOD_AUX_EXPLOSIVE
+    confAuto:
+      followProjectiles: false
+    #minRange: 5
+    #dropoff: 5
+    vaporColorSurface: 0
+    vaporDensitySurface: 40
+    damageType: 3
+    arcingShot: true
+
+  - type: STR_SECTOPOD_MULTI_LAUNCHER
+    refNode: *STR_SECTOPOD_AUX_EXPLOSIVE
+    tuSnap: 10
+    accuracySnap: 99
+    snapRange: 15
+    confSnap:
+      shots: 4
+      followProjectiles: false
+    explosionSpeed: 4
+    #waypoints: 2
+    #minRange: 4
+
+  - type: STR_SECTOPOD_BLASTER_LAUNCHER
+    refNode: *STR_SECTOPOD_AUX_EXPLOSIVE
+    confAimed:
+      followProjectiles: true
+    maxRange: 200
+    aimRange: 200
+    accuracyAimed: 140
+    tuAimed: 1
+    power: 200
+    clipSize: 1
+    bulletSpeed: 0
+    vaporColorSurface: 2
+    vaporDensitySurface: 100
+
+### HWP WEAPONS ###
+  - &STR_HWP_HEAVY_MACHINEGUN
+    type: STR_HWP_HEAVY_MACHINEGUN #100, 32 for grenade machinegun
+    hitSound: 13
+    hitAnimation: 36
+    bigSprite: 43
+    bulletSprite: 4
+    bulletSpeed: 2000
+    explosionSpeed: 4
+    vaporDensitySurface: 7
+    vaporColorSurface: 0
+    battleType: 1
+    fixedWeapon: true
+    turretType: 0
+    accuracySnap: 65
+    accuracyAuto: 40
+    tuSnap: 18
+    tuAuto: 45
+    tuAimed: 0
+    confSnap:
+      shots: 3
+      followProjectiles: false
+    confAuto:
+      shots: 10
+      followProjectiles: false
+    clipSize: 100
+    power: 60
+    damageType: 1
+    damageAlter:
+      RandomType: 7
+      ToTile: 0.6
+
+  - type: STR_HWP_GRENADE_MACHINEGUN
+    refNode: *STR_HWP_HEAVY_MACHINEGUN
+    turretType: -1
+    bigSprite: 11
+    hitAnimation: 0
+    bulletSpeed: 40
+    explosionSpeed: 3
+    vaporDensitySurface: 10
+    tuSnap: 20
+    tuAuto: 33
+    accuracySnap: 60
+    accuracyAuto: 35
+    confSnap:
+      shots: 1
+    confAuto:
+      shots: 3
+    clipSize: 32
+    power: 50
+    damageType: 3
+    damageAlter:
+      FixRadius: -1
+      ToTile: 0.6
 
   # HIDE
     # - type: STR_RIFLE_G
@@ -293,7 +465,7 @@ items:
       # accuracyAimed: 90
       # tuSnap: 35
       # tuAuto: 40
-      # tuAimed: 40 
+      # tuAimed: 40
       # snapRange: 15
       # battleType: 1
       # twoHanded: true
@@ -348,14 +520,14 @@ items:
       # accuracyAimed: 90
       # tuSnap: 35
       # tuAuto: 25
-      # tuAimed: 40 
+      # tuAimed: 40
       # shotgunChoke: 200
       # snapRange: 15
       # accuracyMultiplier:
         # psiStrength: 0.1
         # firing: 1
         # morale: 0.1
-        # bravery: 0.1  
+        # bravery: 0.1
       # battleType: 1
       # twoHanded: true
       # invWidth: 1
@@ -441,9 +613,9 @@ items:
         # - STR_ALIEN_GRENADE
 
 
-# For some strange reason the scripts gets broke 
+# For some strange reason the scripts gets broke
 # when tags and scripts and items are not together
-extended: 
+extended:
   tags: # Remember to add these tags to the same file as items ruleset
     RuleItem:
       ACCURACY_BONUS: int
@@ -453,7 +625,7 @@ extended:
       #NEW_FLOOROB_FOR_WEAPON: int
       #NEW_HANDOB_FOR_WEAPON: int
       CURRENT_MOD_OFFSET: RuleList
-  
+
   scripts:
     createItem:
       - offset: 51
@@ -465,7 +637,7 @@ extended:
             item.setFuseTimer 0;
             end;
           return;
-    
+
     selectItemSprite:
     # Select weapon bigSprite based on ammo item
       - offset: 1
@@ -474,7 +646,7 @@ extended:
           var ptr RuleItem weaponRuleset;
           var ptr RuleItem ammoRuleset;
           var int changeSprite;
-          
+
           var int base_index;
           var int ammo_offset;
           var int temp;
@@ -482,7 +654,7 @@ extended:
           if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
             item.getRuleItem weaponRuleset; # get ruleset of item as weaponRuleset
             weaponRuleset.getTag changeSprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
-            
+
             if eq changeSprite 1; # if changeSprite == 1; -> tagged as resprite
               item.getAmmoItem ammoItem; # get ammo item as ammoItem
               ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset

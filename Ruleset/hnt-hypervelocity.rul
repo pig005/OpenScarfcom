@@ -1,111 +1,191 @@
-## Change 'explosionSpeed = n' to desired speed.
-
 items:
-###HWPS
-  - type: STR_HWP_CANNON_SHELLS
-    explosionSpeed:  10
-  - type: STR_HWP_ROCKETS
-    #explosionSpeed:  10 
-  - type: STR_TANK_LASER_CANNON
-    explosionSpeed:  10 
-  - type: STR_HOVERTANK_PLASMA
-    explosionSpeed:  10
-  - type: STR_HOVERTANK_LAUNCHER
-    #explosionSpeed:  10
-  - type: STR_HWP_FUSION_BOMB
-    #explosionSpeed:  10
-
-###FIREARMS
-  - type: STR_PISTOL_CLIP
-    #explosionSpeed:  4
-    bulletSpeed: 9000
-    hitAnimation: -1
-  - type: STR_RIFLE_CLIP
-    explosionSpeed:  4
-    bulletSpeed: 1800
-    #hitAnimation: -1
-     
-  - type: STR_HC_AP_AMMO
+# ═════════════════════════════════════════════════════════════
+#  ██████╗ ██████╗ ███████╗███████╗███████╗████████╗███████╗
+#  ██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝██╔════╝
+#  ██████╔╝██████╔╝█████╗  ███████╗█████╗     ██║   ███████╗
+#  ██╔═══╝ ██╔══██╗██╔══╝  ╚════██║██╔══╝     ██║   ╚════██║
+#  ██║     ██║  ██║███████╗███████║███████╗   ██║   ███████║
+#  ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   ╚══════╝
+# ═════════════════════════════════════════════════════════════
+ #  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+ #  ║ ╦║  ║ ║╠╩╗╠═╣║
+ #  ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+  - &VELOCITY_GLOBAL
+    type: HYPERVELOCITY_GLOBAL
+    confAuto:
+      followProjectiles: false
     explosionSpeed: 2
     bulletSpeed: 20
-  - type: STR_HC_HE_AMMO
+ #  ┌┐ ┌─┐┬  ┬  ┬┌─┐┌┬┐┬┌─┐
+ #  ├┴┐├─┤│  │  │└─┐ │ ││
+ #  └─┘┴ ┴┴─┘┴─┘┴└─┘ ┴ ┴└─┘
+  - &VELOCITY_BALLISTIC
+    type: VELOCITY_BALLISTIC
+    refNode: *VELOCITY_GLOBAL
+    explosionSpeed:  2
+  - &VELOCITY_BALLISTIC_LO
+    type: VELOCITY_BALLISTIC_LO
+    refNode: *VELOCITY_BALLISTIC
     bulletSpeed: 20
-  - type: STR_HC_I_AMMO
-    bulletSpeed: 20
-     
-  - type: STR_AC_AP_AMMO
-    explosionSpeed: 10
-    bulletSpeed: 60
-  - type: STR_AC_HE_AMMO
-    bulletSpeed: 60
-    explosionSpeed: 2
-  - type: STR_AC_I_AMMO
     explosionSpeed: 3
+  - &VELOCITY_BALLISTIC_HI
+    type: VELOCITY_BALLISTIC_HI
+    refNode: *VELOCITY_BALLISTIC
     bulletSpeed: 60
-     
-#    explosionSpeed:  10
-  - type: STR_SMALL_ROCKET
-    bulletSpeed: 0
-  - type: STR_LARGE_ROCKET
-    bulletSpeed: 0
-  - type: STR_INCENDIARY_ROCKET
-    bulletSpeed: 0
-
-  - type: STR_LASER_PISTOL
-    explosionSpeed:  3
-    bulletSpeed: 200
-  - type: STR_LASER_RIFLE
-    explosionSpeed:  3
-    bulletSpeed: 200
-  - type: STR_HEAVY_LASER
-    explosionSpeed:  3
-    bulletSpeed: 200
-     
-  - type: STR_GRENADE
-#    explosionSpeed: 2
-  - type: STR_SMOKE_GRENADE
-    explosionSpeed: 2
-  - type: STR_PROXIMITY_GRENADE
-#    explosionSpeed: 2
-  - type: STR_HIGH_EXPLOSIVE
-#    explosionSpeed: 2
-  - type: STR_STUN_ROD
-#    hitAnimFrames = -1
-
-  - type: STR_HEAVY_PLASMA_CLIP
-    explosionSpeed: 2
+    explosionSpeed: 3
+  - &VELOCITY_BALLISTIC_HYPER
+    type: VELOCITY_BALLISTIC_HYPER
+    refNode: *VELOCITY_BALLISTIC
+    bulletSpeed: 2000
+    explosionSpeed: 4
+ #  ┬  ┌─┐┌─┐┌─┐┬─┐
+ #  │  ├─┤└─┐├┤ ├┬┘
+ #  ┴─┘┴ ┴└─┘└─┘┴└─
+  - &VELOCITY_LASER
+    type: VELOCITY_LASER
+    refNode: *VELOCITY_GLOBAL
+    bulletSpeed: 2000
+ #  ┌─┐┬  ┌─┐┌─┐┌┬┐┌─┐
+ #  ├─┘│  ├─┤└─┐│││├─┤
+ #  ┴  ┴─┘┴ ┴└─┘┴ ┴┴ ┴
+  - &VELOCITY_PLASMA
+    type: VELOCITY_PLASMA
+    refNode: *VELOCITY_GLOBAL
     bulletSpeed: 40
-  - type: STR_PLASMA_RIFLE_CLIP
+ #  ┌─┐─┐ ┬┌─┐┬  ┌─┐┌─┐┬┬  ┬┌─┐
+ #  ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤
+ #  └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘
+  - &VELOCITY_ROCKET
+    type: VELOCITY_ROCKET
+    refNode: *VELOCITY_GLOBAL
+    bulletSpeed: 15
+  - &VELOCITY_EXPLOSIVE_LO
+    type: VELOCITY_EXPLOSIVE_LO
+    refNode: *VELOCITY_GLOBAL
     explosionSpeed: 2
-    bulletSpeed: 40
-  - type: STR_PLASMA_PISTOL_CLIP
+  - &VELOCITY_EXPLOSIVE_HI
+    type: VELOCITY_EXPLOSIVE_HI
+    refNode: *VELOCITY_GLOBAL
+    explosionSpeed: 3
+  - &VELOCITY_EXPLOSIVE_HYPER
+    type: VELOCITY_EXPLOSIVE_HYPER
+    refNode: *VELOCITY_GLOBAL
+    explosionSpeed: 4
+ #  ┌─┐┌┬┐┬ ┬┌─┐┬─┐
+ #  │ │ │ ├─┤├┤ ├┬┘
+ #  └─┘ ┴ ┴ ┴└─┘┴└─
+  - &VELOCITY_MELEE
+    type: VELOCITY_MELEE
+    refNode: *VELOCITY_GLOBAL
     explosionSpeed: 2
-    bulletSpeed: 40
-
-###Alien Weapons
+# ═══════════════════════════════════════════════════════════════════════════
+#  ██╗    ██╗██████╗ ███╗   ██╗    ███████╗██████╗ ███████╗███████╗██████╗
+#  ██║    ██║██╔══██╗████╗  ██║    ██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗
+#  ██║ █╗ ██║██████╔╝██╔██╗ ██║    ███████╗██████╔╝█████╗  █████╗  ██║  ██║
+#  ██║███╗██║██╔═══╝ ██║╚██╗██║    ╚════██║██╔═══╝ ██╔══╝  ██╔══╝  ██║  ██║
+#  ╚███╔███╔╝██║     ██║ ╚████║    ███████║██║     ███████╗███████╗██████╔╝
+#   ╚══╝╚══╝ ╚═╝     ╚═╝  ╚═══╝    ╚══════╝╚═╝     ╚══════╝╚══════╝╚═════╝
+# ═══════════════════════════════════════════════════════════════════════════
+ #  ┬ ┬┬ ┬┌─┐  ┬ ┬┌─┐┌─┐┌─┐┌─┐┌┐┌┌─┐
+ #  ├─┤│││├─┘  │││├┤ ├─┤├─┘│ ││││└─┐
+ #  ┴ ┴└┴┘┴    └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
+  # Tank Chasis
   - type: STR_HWP_CANNON_SHELLS
-    explosionSpeed: 2
-    bulletSpeed: 100
+    refNode: *VELOCITY_BALLISTIC_HI
   - type: STR_HWP_ROCKETS
-    #explosionSpeed: 2
-    #bulletSpeed: 100
+    refNode: *VELOCITY_ROCKET
   - type: STR_TANK_LASER_CANNON
-    #explosionSpeed: 2
-    bulletSpeed: 200
-    
+    refNode: *VELOCITY_LASER
+  # Hovertank Chasis
   - type: STR_HOVERTANK_PLASMA
-    #explosionSpeed:  2
-    #bulletSpeed: 100
+    refNode: *VELOCITY_PLASMA
   - type: STR_HWP_FUSION_BOMB
-    #explosionSpeed:  2
-    #bulletSpeed: 100
-
+    refNode: *VELOCITY_EXPLOSIVE_HI
+ #  ┌┬┐┌─┐┬─┐┬─┐┌─┐┬─┐  ┬ ┬┌─┐┌─┐┌─┐┌─┐┌┐┌┌─┐
+ #   │ ├┤ ├┬┘├┬┘│ │├┬┘  │││├┤ ├─┤├─┘│ ││││└─┐
+ #   ┴ └─┘┴└─┴└─└─┘┴└─  └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
+  # Ranged Attack Terrorists
   - type: CYBERDISC_WEAPON
-    explosionSpeed:  2
-    bulletSpeed: 40
+    refNode: *VELOCITY_PLASMA
   - type: SECTOPOD_WEAPON
-    explosionSpeed:  2
-    bulletSpeed: 40
+    refNode: *VELOCITY_PLASMA
   - type: CELATID_WEAPON
-    explosionSpeed:  2
-    bulletSpeed: 20
+    refNode: *VELOCITY_PLASMA
+  # Melee Terrorists
+  - type: REAPER_WEAPON
+    refNode: *VELOCITY_MELEE
+  - type: ZOMBIE_WEAPON
+    refNode: *VELOCITY_MELEE
+  - type: CHRYSSALID_WEAPON
+    refNode: *VELOCITY_MELEE
+  - type: SILACOID_WEAPON
+    refNode: *VELOCITY_MELEE
+ #  ┌─┐┌─┐┌┐┌┬ ┬┌─┐┌┐┌┌┬┐┬┌─┐┌┐┌┌─┐┬
+ #  │  │ │││││ │├┤ │││ │ ││ ││││├─┤│
+ #  └─┘└─┘┘└┘└─┘└─┘┘└┘ ┴ ┴└─┘┘└┘┴ ┴┴─┘
+  # Firearms
+  - type: STR_PISTOL_CLIP
+    refNode: *VELOCITY_BALLISTIC_HYPER
+  - type: STR_RIFLE_CLIP
+    refNode: *VELOCITY_BALLISTIC_HYPER
+  # Heavy Cannon
+  - type: STR_HC_AP_AMMO
+    refNode: *VELOCITY_BALLISTIC_LO
+    explosionSpeed: 4
+  - type: STR_HC_HE_AMMO
+    refNode: *VELOCITY_BALLISTIC_LO
+  - type: STR_HC_I_AMMO
+    refNode: *VELOCITY_BALLISTIC_LO
+  # Auto Cannon
+  - type: STR_AC_AP_AMMO
+    refNode: *VELOCITY_BALLISTIC_HI
+    explosionSpeed: 4
+  - type: STR_AC_HE_AMMO
+    refNode: *VELOCITY_BALLISTIC_HI
+  - type: STR_AC_I_AMMO
+    refNode: *VELOCITY_BALLISTIC_HI
+  # Rocket Launcher
+  - type: STR_SMALL_ROCKET
+    refNode: *VELOCITY_ROCKET
+  - type: STR_LARGE_ROCKET
+    refNode: *VELOCITY_ROCKET
+  - type: STR_INCENDIARY_ROCKET
+    refNode: *VELOCITY_ROCKET
+ #  ┌─┐─┐ ┬┌─┐┬  ┌─┐┌─┐┬┬  ┬┌─┐
+ #  ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤
+ #  └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘
+  - type: STR_GRENADE
+    refNode: *VELOCITY_EXPLOSIVE_HI
+  - type: STR_SMOKE_GRENADE
+    refNode: *VELOCITY_EXPLOSIVE_HI
+  - type: STR_PROXIMITY_GRENADE
+    refNode: *VELOCITY_EXPLOSIVE_HI
+  - type: STR_HIGH_EXPLOSIVE
+    refNode: *VELOCITY_EXPLOSIVE_HI
+  - type: STR_STUN_BOMB
+    refNode: *VELOCITY_EXPLOSIVE_HI
+  - type: STR_ALIEN_GRENADE
+    refNode: *VELOCITY_EXPLOSIVE_HI
+ #  ┬  ┌─┐┌─┐┌─┐┬─┐
+ #  │  ├─┤└─┐├┤ ├┬┘
+ #  ┴─┘┴ ┴└─┘└─┘┴└─
+  - type: STR_LASER_PISTOL
+    refNode: *VELOCITY_LASER
+  - type: STR_LASER_RIFLE
+    refNode: *VELOCITY_LASER
+  - type: STR_HEAVY_LASER
+    refNode: *VELOCITY_LASER
+ #  ┌─┐┬  ┌─┐┌─┐┌┬┐┌─┐
+ #  ├─┘│  ├─┤└─┐│││├─┤
+ #  ┴  ┴─┘┴ ┴└─┘┴ ┴┴ ┴
+  - type: STR_HEAVY_PLASMA_CLIP
+    refNode: *VELOCITY_PLASMA
+  - type: STR_PLASMA_RIFLE_CLIP
+    refNode: *VELOCITY_PLASMA
+  - type: STR_PLASMA_PISTOL_CLIP
+    refNode: *VELOCITY_PLASMA
+ #  ┌─┐┌┬┐┬ ┬┌─┐┬─┐
+ #  │ │ │ ├─┤├┤ ├┬┘
+ #  └─┘ ┴ ┴ ┴└─┘┴└─
+  - type: STR_STUN_ROD
+    refNode: *VELOCITY_MELEE

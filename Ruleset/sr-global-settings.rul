@@ -1,8 +1,6 @@
 #OPTIONS
 fixedUserOptions:
-   strafe: true
    battleUFOExtenderAccuracy: true
-   alienBleeding: true
 
 recommendedUserOptions:
    allowBuildingQueue: true
@@ -11,6 +9,8 @@ recommendedUserOptions:
    battleExplosionHeight: 3
    allowPsionicCapture: true
    canSellLiveAliens: true
+   strafe: true
+   alienBleeding: true
 
 # GEOSCAPE
 chanceToStopRetaliation: 40
@@ -22,8 +22,9 @@ allowCountriesToCancelAlienPact: true
 kneelBonusGlobal: 120
 difficultyDemigod: true
 
-lighting:
-   enhanced: 4
+# lighting:
+#    enhanced: 6
+#    maxDynamic: 16
 
 constants:
    # BATTLESCAPE

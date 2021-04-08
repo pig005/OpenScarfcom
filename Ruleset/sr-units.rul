@@ -4,8 +4,11 @@ units:
     stats:
       tu: 70
       reactions: 20
-      firing: 60
+      firing: 80
     armor: TANK_ARMOR
+    builtInWeaponSets:
+      - - STR_HWP_HEAVY_MACHINEGUN
+        - STR_HWP_GRENADE_MACHINEGUN
   - type: STR_TANK_ROCKET_LAUNCHER
     stats:
       tu: 70
@@ -50,67 +53,67 @@ units:
   - type: STR_SECTOID_SOLDIER
     stats:
       tu: 65
-      reactions: 63
+      reactions: 40
       firing: 52
       bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 3
-    aggression: 4
+    aggression: 20
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_ENGINEER
     stats:
       tu: 65
-      reactions: 63
+      reactions: 40
       firing: 52
       bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 6
-    aggression: 3
+    aggression: 10
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_MEDIC
     stats:
       tu: 65
-      reactions: 63
+      reactions: 40
       firing: 52
       bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 5
-    aggression: 2
+    aggression: 10
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_NAVIGATOR
     stats:
       tu: 65
-      reactions: 63
+      reactions: 40
       firing: 52
       bravery: 50
     armor: SECTOID_ARMOR0
     intelligence: 4
-    aggression: 2
+    aggression: 10
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_LEADER
     stats:
       tu: 65
-      reactions: 63
+      reactions: 40
       firing: 52
       bravery: 60
     armor: SECTOID_ARMOR0
     intelligence: 7
-    aggression: 1
+    aggression: 4
     autoSurrender: false
     canSurrender: true
   - type: STR_SECTOID_COMMANDER
     stats:
       tu: 65
-      reactions: 63
+      reactions: 40
       firing: 52
       bravery: 70
     armor: SECTOID_ARMOR0
     intelligence: 8
-    aggression: 0
+    aggression: 2
     autoSurrender: false
     canSurrender: true
 #CYBERDISK
@@ -121,6 +124,7 @@ units:
       firing: 60
     armor: CYBERDISC_ARMOR
     intelligence: 5
+    aggression: 30
 #FLOATER
   - type: STR_FLOATER_SOLDIER
     stats:
@@ -194,42 +198,42 @@ units:
 #SNAKEMAN
   - type: STR_SNAKEMAN_SOLDIER
     stats:
-      tu: 40
-      reactions: 45
+      tu: 80
+      reactions: 20
       firing: 58
     armor: SNAKEMAN_ARMOR0
     intelligence: 5
-    aggression: 2
+    aggression: 200
     autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_NAVIGATOR
     stats:
-      tu: 40
-      reactions: 45
+      tu: 80
+      reactions: 20
       firing: 58
     armor: SNAKEMAN_ARMOR0
     intelligence: 6
-    aggression: 2
+    aggression: 200
     autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_ENGINEER
     stats:
-      tu: 40
-      reactions: 45
+      tu: 80
+      reactions: 20
       firing: 58
     armor: SNAKEMAN_ARMOR0
     intelligence: 7
-    aggression: 2
+    aggression: 200
     autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_LEADER
     stats:
-      tu: 40
-      reactions: 55
+      tu: 80
+      reactions: 20
       firing: 65
     armor: SNAKEMAN_ARMOR1
     intelligence: 7
-    aggression: 2
+    aggression: 200
     autoSurrender: false
     canSurrender: true
   - type: STR_SNAKEMAN_COMMANDER
@@ -239,7 +243,7 @@ units:
       firing: 58
     armor: SNAKEMAN_ARMOR2
     intelligence: 8
-    aggression: 2
+    aggression: 200
     autoSurrender: false
     canSurrender: true
 #CHRYSSALID
@@ -251,6 +255,7 @@ units:
     armor: CHRYSSALID_ARMOR
     intelligence: 4
     aggression: 1
+    isLeeroyJenkins: true
 #MUTON
   - type: STR_MUTON_SOLDIER
     stats:
@@ -292,7 +297,7 @@ units:
     intelligence: 3
     aggression: 2
     autoSurrender: false
-    canSurrender: true
+    canSurrender: false
 #CELATID
   - type: STR_CELATID_TERRORIST
     stats:
@@ -303,7 +308,7 @@ units:
     intelligence: 3
     aggression: 2
     autoSurrender: false
-    canSurrender: true
+    canSurrender: false
 #ETHEREAL
   - type: STR_ETHEREAL_SOLDIER
     stats:
@@ -338,14 +343,19 @@ units:
 #SECTOPOD
   - type: STR_SECTOPOD_TERRORIST
     stats:
-      tu: 62
+      tu: 100
       reactions: 64
       firing: 60
     armor: SECTOPOD_ARMOR
-    intelligence: 4
-    aggression: 1
+    intelligence: 10
+    aggression: 10
     autoSurrender: false
-    canSurrender: true
+    canSurrender: false
+    builtInWeaponSets:
+      - 
+        - SECTOPOD_HEAVY_PLASMA
+        #- STR_SECTOPOD_BLASTER_LAUNCHER
+        - STR_SECTOPOD_MULTI_LAUNCHER
 #ZOMBIE
   - type: STR_ZOMBIE
     stats:
