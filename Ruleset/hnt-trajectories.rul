@@ -302,9 +302,9 @@ items:
  #  └─┘└─┘ └┘   └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
   # Tank Chasis
   - type: STR_UGV_HEAVY_MACHINEGUN
-    refNode: *VAPOR_BALLISTIC_L
+    refNode: *VAPOR_BALLISTIC_M
   - type: STR_UGV_AUTO_CANNON
-    refNode: *VAPOR_BALLISTIC_XL
+    refNode: *VAPOR_BALLISTIC_L
   - type: STR_UGV_GRENADE_MACHINEGUN
     refNode: *VAPOR_EXPLOSIVE_M
   - type: STR_HWP_CANNON_SHELLS

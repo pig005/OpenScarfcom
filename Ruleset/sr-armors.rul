@@ -1,16 +1,64 @@
 armors:
-  - type: TANK_ARMOR
-    frontArmor: 50
-    sideArmor: 30
-    rearArmor: 25
-    underArmor: 10
+  - &UGV_ARMOR
+    type: UGV_ARMOR
     allowInv: true
-  - type: HOVERTANK_ARMOR
-    frontArmor: 160
-    sideArmor: 110
-    rearArmor: 90
-    underArmor: 100
-    allowInv: true
+    spriteSheet: TANKS.PCK
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    frontArmor: 80
+    sideArmor: 60
+    rearArmor: 40
+    underArmor: 40
+    drawingRoutine: 2
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.25
+      - 0.75
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.9
+      - 0.4
+      - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_EXOSKELETON
+    spriteSheet: XCOM_0.PCK
+    spriteInv: MAN_0
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_EXOSKELETON
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
+  # - type: UGV_ALLOY_ARMOR
+  #   refNode:
+  #     type: UGV_ARMOR
+  #   frontArmor: 130
+  #   sideArmor: 80
+  #   rearArmor: 60
+  #   underArmor: 60
 
   - type: CYBERDISC_ARMOR
     frontArmor: 85
