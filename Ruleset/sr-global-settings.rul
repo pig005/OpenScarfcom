@@ -48,5 +48,5 @@ constants:
 
    damageRange: 100
    explosiveDamageRange: 50
-   fireDamageRange: [90, 200]
+   fireDamageRange: [10, 50]
 #extendedItemReloadCost: true

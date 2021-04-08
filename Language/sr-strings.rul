@@ -12,6 +12,11 @@ extraStrings:
       STR_RIFLE_DMR: "Marksman's Rifle"
       STR_PROTOTYPE_LASER_CAPACITOR: "Prototype Laser Capacitor"
 
+      STR_TACTICAL_ARMOR: "Tactical Armor"
+      STR_TACTICAL_ARMOR_UC: "TACTICAL ARMOR"
+      STR_EXOSKELETON_ARMOR: "Exoskeleton Armor"
+      STR_EXOSKELETON_ARMOR_UC: "EXOSKELETON ARMOR"
+
     ### INTERFACE ###
       STR_SHOT_TYPE_SNAP_BURST: "Burst Fire"
       STR_SHOT_TYPE_SPECTRUM_LASER: "Spectrum Fire"
@@ -29,8 +34,12 @@ extraStrings:
       STR_RIFLE_DMR: "지정사수소총"
       STR_PROTOTYPE_LASER_CAPACITOR: "시범용 레이저 축전지"
 
+      STR_TACTICAL_ARMOR: "전술 전투복"
+      STR_TACTICAL_ARMOR_UC: "전술 전투복"
+      STR_EXOSKELETON_ARMOR: "강화외골격 전투복"
+      STR_EXOSKELETON_ARMOR_UC: "강화외골격 전투복"
+
     ### 인터페이스 ###
       STR_SHOT_TYPE_SNAP_BURST: "점사"
       STR_SHOT_TYPE_SPECTRUM_LASER: "분광 사격"
-      STR_OPERATION_UC: "작전명> {0}"
       STR_SOUTH_KOREA: "대한민국"
