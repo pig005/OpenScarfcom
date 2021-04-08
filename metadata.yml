@@ -1,7 +1,7 @@
 name: "SCARFCOM"
-version: 0.0.2
+version: 0.0.3
 author: greenscarf
-description: "Security Council extrAteRastrial Force Command"
+description: "Security Council extrAteRastrial Forces combat Command"
 id: xcom1-scarfcom
 master: xcom1
 resourceConfig: transparency.rul

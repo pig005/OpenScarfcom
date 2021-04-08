@@ -1,88 +1,43 @@
 items:
-  # Deleted Deleted
-    # - delete: STR_AUTO_CANNON
-    # - delete: STR_AC_AP_AMMO
-    # - delete: STR_AC_I_AMMO
-    # - delete: STR_AC_HE_AMMO
-    # - delete: STR_PSI_AMP
-    # - delete: STR_HEAVY_PLASMA
-    # - delete: STR_LASER_RIFLE
-    # - delete: STR_LASER_PISTOL
-    # - delete: STR_HEAVY_LASER
-    # - delete: STR_PLASMA_BEAM
-    # - delete: STR_HWP_FUSION_BOMB
-    # - delete: STR_HOVERTANK_LAUNCHER
-    # - delete: STR_HEAVY_CANNON
-    # - delete: STR_HC_AP_AMMO
-    # - delete: STR_HC_HE_AMMO
-    # - delete: STR_HC_I_AMMO
-    # - delete: STR_LASER_PISTOL
-    # - delete: STR_LASER_RIFLE
-    # - delete: STR_PERSONAL_ARMOR
-    # - delete: STR_ALIEN_REPRODUCTION
-    # - delete: STR_UFO_CONSTRUCTION
-    # - delete: HOVERTANK_CORPSE_1
-    # - delete: HOVERTANK_CORPSE_2
-    # - delete: HOVERTANK_CORPSE_3
-    # - delete: HOVERTANK_CORPSE_4
-    # - delete: STR_TANK_ROCKET_LAUNCHER
-    # - delete: STR_HWP_ROCKETS
-  # - type: STR_A_GRENADE_LAUNCHER
-    # weight: 3
-    # costBuy: 400
-    # costSell: 300
-    # bigSprite: 113
-    # listOrder: 2220
-  # - type: STR_A_SHOTGUN
-    # weight: 3
-    # costBuy: 400
-    # costSell: 300
-    # bigSprite: 112
-    # listOrder: 2250
-  # - type: STR_CORPSE_SPACE_SUIT
-    # name: STR_CORPSE
-    # weight: 100
-    # bigSprite: 301
-    # floorSprite: 301
-    # invWidth: 2
-    # invHeight: 3
-    # armor: 90
-    # recover: false
-
-# BALLISTIC FIREARMS
-  # I think pistols are okay as-is? they should be magnum anyway and it's around 2000J
-  - type: STR_PISTOL # Glock 18
-    clipSize: 17
-  #   weight: 3 # glock is surprisingly light
-  #   accuracyAuto: 15
-  #   tuAuto: 40
-  #   confAuto:
-  #     followProjectiles: false
-  #     shots: 6 # CQB
-
-  # - type: STR_PISTOL_CLIP
-  #   clipSize: 17
-  #   power: 20 # 9x19mm parabellum; 750J
-
+# ═══════════════════════════════════════════════════════════════════
+#  ██████╗ ███████╗███╗   ███╗ ██████╗ ██╗   ██╗███████╗██████╗
+#  ██╔══██╗██╔════╝████╗ ████║██╔═══██╗██║   ██║██╔════╝██╔══██╗
+#  ██████╔╝█████╗  ██╔████╔██║██║   ██║██║   ██║█████╗  ██║  ██║
+#  ██╔══██╗██╔══╝  ██║╚██╔╝██║██║   ██║╚██╗ ██╔╝██╔══╝  ██║  ██║
+#  ██║  ██║███████╗██║ ╚═╝ ██║╚██████╔╝ ╚████╔╝ ███████╗██████╔╝
+#  ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝   ╚═══╝  ╚══════╝╚═════╝
+# ═══════════════════════════════════════════════════════════════════
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_AC_I_AMMO
+  - delete: STR_HWP_CANNON_SHELLS
+# ════════════════════════════════════════════════════════════════════════
+#  ██████╗  █████╗ ██╗     ██╗     ██╗███████╗████████╗██╗ ██████╗███████╗
+#  ██╔══██╗██╔══██╗██║     ██║     ██║██╔════╝╚══██╔══╝██║██╔════╝██╔════╝
+#  ██████╔╝███████║██║     ██║     ██║███████╗   ██║   ██║██║     ███████╗
+#  ██╔══██╗██╔══██║██║     ██║     ██║╚════██║   ██║   ██║██║     ╚════██║
+#  ██████╔╝██║  ██║███████╗███████╗██║███████║   ██║   ██║╚██████╗███████║
+#  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝   ╚═╝   ╚═╝ ╚═════╝╚══════╝
+# ════════════════════════════════════════════════════════════════════════
   - &STR_RIFLE
     type: STR_RIFLE # AR-10
-    size: 0.2
-    costBuy: 3000
-    costSell: 2250
-    weight: 12
     bigSprite: 301
     floorSprite: 300
     handSprite: 300
     bulletSprite: 2
+    invWidth: 1
+    invHeight: 3
     fireSound: 4
+    listOrder: 2100
+    size: 0.2
+    weight: 12
+    costBuy: 3000
+    costSell: 2250
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 30
-    kneelBonus: 120
     sprayWaypoints: 2
-    invWidth: 1
-    invHeight: 3
-    listOrder: 2100
     ammo:
       0:
         compatibleAmmo: [ STR_RIFLE_CLIP ]
@@ -90,7 +45,7 @@ items:
       #   compatibleAmmo: [ STR_PISTOL ]
     accuracyAuto: 15
     accuracySnap: 40
-    accuracyAimed: 70
+    accuracyAimed: 80
     tuAuto: 80
     tuSnap: 33
     tuAimed: 75
@@ -113,23 +68,30 @@ items:
     #   ammoSlot: 1
     #   shots: 3
 
-  - type: STR_RIFLE_DMR # LM308, it's... 2009 variant but let's move on
+  - type: STR_RIFLE_DMR # SR-25
     refNode: *STR_RIFLE
+    bigSprite: 311
+    floorSprite: 310
+    handSprite: 310
+    listOrder: 2110
     costBuy: 5000
     costSell: 3750
     weight: 15
-    accuracyAuto: 0
-    accuracySnap: 60
-    accuracyAimed: 110
-    tuAuto: 0
-    tuSnap: 30
-    tuAimed: 80
-    #bigSprite: 211
-    #floorSprite: 301
-    #handSprite: 300
-    listOrder: 2110
-    confSnap:
+    kneelBonus: 125
+    accuracyAuto: 50
+    accuracySnap: 110
+    accuracyAimed: 70
+    tuAuto: 40
+    tuSnap: 80
+    tuAimed: 25
+    snapRange: 200
+    aimRange: 20
+    confAuto:
+      shots: 3
+    confAimed:
       name: STR_SHOT_TYPE_SNAP
+    confSnap:
+      name: STR_SHOT_TYPE_AIMED
       followProjectiles: true
       shots: 1
 
@@ -140,8 +102,15 @@ items:
       OFFSET_BIGOB_WEAPON: 1
       CURRENT_MOD_OFFSET: current
     # Increased damage using 7.62mm ammunition; 3500J v 1700J
-    # weighs 800g and matches with 3 in-game weight unit
-
+    # weighs 800g and matches with 4 in-game weight unit
+# ═════════════════════════════════════════════════════
+#  ██╗      █████╗ ███████╗███████╗██████╗ ███████╗
+#  ██║     ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝
+#  ██║     ███████║███████╗█████╗  ██████╔╝███████╗
+#  ██║     ██╔══██║╚════██║██╔══╝  ██╔══██╗╚════██║
+#  ███████╗██║  ██║███████║███████╗██║  ██║███████║
+#  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝
+# ═════════════════════════════════════════════════════
   - &STR_LASER_CLASS
     type: STR_LASER_CLASS
     shotgunBehavior: 1
@@ -162,14 +131,14 @@ items:
       ammoSlot: 1
     confAuto:
       ammoSlot: 1
-
-  - type: STR_LASER_PISTOL
-
     ammo:
       2:
         compatibleAmmo: [ STR_LASER_ELERIUM_BATTERY ]
         tuLoad: 200
         tuUnload: 200
+
+  - type: STR_LASER_PISTOL
+    ammo:
       1:
         compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
       # powerRangeThreshold: 8
@@ -218,14 +187,22 @@ items:
   - type: STR_LASER_ELERIUM_BATTERY
     refNode: *STR_LASER_ATTACHMENT
     weight: -14
-
-# PLASMA FIREARMS
+# ════════════════════════════════════════════════════════════════
+#  ██████╗ ██╗      █████╗ ███████╗███╗   ███╗ █████╗ ███████╗
+#  ██╔══██╗██║     ██╔══██╗██╔════╝████╗ ████║██╔══██╗██╔════╝
+#  ██████╔╝██║     ███████║███████╗██╔████╔██║███████║███████╗
+#  ██╔═══╝ ██║     ██╔══██║╚════██║██║╚██╔╝██║██╔══██║╚════██║
+#  ██║     ███████╗██║  ██║███████║██║ ╚═╝ ██║██║  ██║███████║
+#  ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
+# ════════════════════════════════════════════════════════════════
   - &STR_PLASMA_ACCURACY_MODULE
     type: STR_PLASMA_ACCURACY_MODULE
     accuracyMultiplier:
       firing: 1
       psiSkill: 0.3
       psiStrength: 0.2
+    damageAlter:
+      FireThreshold: 25
 
   - type: STR_PLASMA_PISTOL # plasma weapons get huge bonus from psi
     refNode: *STR_PLASMA_ACCURACY_MODULE
@@ -246,9 +223,14 @@ items:
     arcingShot: true
     tuSnap: 24
     tuLoad: 20
-
-# THROWN WEAPONS
-
+# ════════════════════════════════════════════════════════════════════
+#  ████████╗██╗  ██╗██████╗  ██████╗ ██╗    ██╗██╗███╗   ██╗ ██████╗
+#  ╚══██╔══╝██║  ██║██╔══██╗██╔═══██╗██║    ██║██║████╗  ██║██╔════╝
+#     ██║   ███████║██████╔╝██║   ██║██║ █╗ ██║██║██╔██╗ ██║██║  ███╗
+#     ██║   ██╔══██║██╔══██╗██║   ██║██║███╗██║██║██║╚██╗██║██║   ██║
+#     ██║   ██║  ██║██║  ██║╚██████╔╝╚███╔███╔╝██║██║ ╚████║╚██████╔╝
+#     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝
+# ════════════════════════════════════════════════════════════════════
   - type: STR_GRENADE
     power: 70
     fuseType: 0
@@ -279,8 +261,14 @@ items:
     tuThrow: 25
     tags:
       START_PRIMED: 1
-
-# TERROR UNIT WEAPONS
+# ═════════════════════════════════════════════════════════════════════════
+#  ████████╗███████╗██████╗ ██████╗     ██╗    ██╗██████╗ ███╗   ██╗███████╗
+#  ╚══██╔══╝██╔════╝██╔══██╗██╔══██╗    ██║    ██║██╔══██╗████╗  ██║██╔════╝
+#     ██║   █████╗  ██████╔╝██████╔╝    ██║ █╗ ██║██████╔╝██╔██╗ ██║███████╗
+#     ██║   ██╔══╝  ██╔══██╗██╔══██╗    ██║███╗██║██╔═══╝ ██║╚██╗██║╚════██║
+#     ██║   ███████╗██║  ██║██║  ██║    ╚███╔███╔╝██║     ██║ ╚████║███████║
+#     ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝     ╚══╝╚══╝ ╚═╝     ╚═╝  ╚═══╝╚══════╝
+# ═════════════════════════════════════════════════════════════════════════
   - type: SECTOPOD_HEAVY_PLASMA
     weight: 3
     bigSprite: 1
@@ -372,18 +360,22 @@ items:
     bulletSpeed: 0
     vaporColorSurface: 2
     vaporDensitySurface: 100
-
-### HWP WEAPONS ###
-  - &STR_HWP_HEAVY_MACHINEGUN
-    type: STR_HWP_HEAVY_MACHINEGUN #100, 32 for grenade machinegun
+# ══════════════════════════════════════════════════════════════════════
+#  ██╗   ██╗ ██████╗ ██╗   ██╗    ██╗    ██╗██████╗ ███╗   ██╗███████╗
+#  ██║   ██║██╔════╝ ██║   ██║    ██║    ██║██╔══██╗████╗  ██║██╔════╝
+#  ██║   ██║██║  ███╗██║   ██║    ██║ █╗ ██║██████╔╝██╔██╗ ██║███████╗
+#  ██║   ██║██║   ██║╚██╗ ██╔╝    ██║███╗██║██╔═══╝ ██║╚██╗██║╚════██║
+#  ╚██████╔╝╚██████╔╝ ╚████╔╝     ╚███╔███╔╝██║     ██║ ╚████║███████║
+#   ╚═════╝  ╚═════╝   ╚═══╝       ╚══╝╚══╝ ╚═╝     ╚═╝  ╚═══╝╚══════╝
+# ══════════════════════════════════════════════════════════════════════
+  - &STR_UGV_HEAVY_MACHINEGUN
+    type: STR_UGV_HEAVY_MACHINEGUN #12.7mm
     hitSound: 13
     hitAnimation: 36
     bigSprite: 43
+    invWidth: 2
+    invHeight: 3
     bulletSprite: 4
-    bulletSpeed: 2000
-    explosionSpeed: 4
-    vaporDensitySurface: 7
-    vaporColorSurface: 0
     battleType: 1
     fixedWeapon: true
     turretType: 0
@@ -405,14 +397,19 @@ items:
       RandomType: 7
       ToTile: 0.6
 
-  - type: STR_HWP_GRENADE_MACHINEGUN
-    refNode: *STR_HWP_HEAVY_MACHINEGUN
+  - type: STR_UGV_AUTO_CANNON
+    refNode: *STR_UGV_HEAVY_MACHINEGUN
+    confSnap:
+      shots: 3
+    confAuto:
+      shots: 5
+    clipSize: 50
+
+  - type: STR_UGV_GRENADE_MACHINEGUN #40mm grenade launcher
+    refNode: *STR_UGV_HEAVY_MACHINEGUN
     turretType: -1
     bigSprite: 11
     hitAnimation: 0
-    bulletSpeed: 40
-    explosionSpeed: 3
-    vaporDensitySurface: 10
     tuSnap: 20
     tuAuto: 33
     accuracySnap: 60
@@ -427,195 +424,17 @@ items:
     damageAlter:
       FixRadius: -1
       ToTile: 0.6
-
-  # HIDE
-    # - type: STR_RIFLE_G
-      # size: 0.2
-      # costSell: 1250
-      # weight: 11
-      # bigSprite: 108
-      # floorSprite: 1
-      # handSprite: 120
-      # bulletSprite: 2
-      # fireSound: 4
-      # ammo:
-        # 0:
-          # compatibleAmmo: [STR_RIFLE_CLIP,STR_AA_RIFLE_CLIP]
-        # 1:
-          # compatibleAmmo: [STR_40MM_GRENADE,STR_40MM_GRENADE_I]
-          # tuLoad: 16
-      # confSnap:
-        # shots: 3
-        # ammoSlot: 0
-      # confAimed:
-        # shots: 1
-        # ammoSlot: 0
-      # confAuto:
-        # shots: 1
-        # name: STR_LAUNCH_GRENADE
-        # ammoSlot: 1
-        # arcing: true
-      # accuracyMultiplier:
-        # psiStrength: 0.1
-        # firing: 1
-        # morale: 0.1
-        # bravery: 0.1
-      # accuracySnap: 40
-      # accuracyAuto: 80
-      # accuracyAimed: 90
-      # tuSnap: 35
-      # tuAuto: 40
-      # tuAimed: 40
-      # snapRange: 15
-      # battleType: 1
-      # twoHanded: true
-      # invWidth: 1
-      # invHeight: 3
-      # dropoff: 1
-      # autoRange: 15
-      # meleeType: 6
-      # meleePower: 50
-      # meleeAlter:
-        # ToHealth: 0
-        # ToArmor: 0
-        # ToWound: 0
-        # ToStun: 1
-      # meleeBonus:
-        # strength: 0.2
-      # tuMelee: 30
-      # accuracyMelee: 100
-      # listOrder: 2110
-    # - type: STR_RIFLE_S
-      # size: 0.2
-      # costSell: 1250
-      # weight: 11
-      # bigSprite: 109
-      # floorSprite: 1
-      # handSprite: 120
-      # bulletSprite: 2
-      # fireSound: 4
-      # ammo:
-        # 0:
-          # compatibleAmmo: [STR_RIFLE_CLIP,STR_AA_RIFLE_CLIP]
-        # 1:
-          # compatibleAmmo: [STR_SHOTGUN_AMMO,STR_SHOTGUN_AA_AMMO]
-          # tuLoad: 20
-      # confSnap:
-        # shots: 3
-        # ammoSlot: 0
-      # confAimed:
-        # shots: 1
-        # ammoSlot: 0
-      # confAuto:
-        # shots: 1
-        # name: STR_SHOTGUN_SHOT
-        # ammoSlot: 1
-      # accuracyMultiplier:
-        # psiStrength: 0.1
-        # firing: 1
-        # morale: 0.1
-        # bravery: 0.1
-      # accuracySnap: 40
-      # accuracyAuto: 88
-      # accuracyAimed: 90
-      # tuSnap: 35
-      # tuAuto: 25
-      # tuAimed: 40
-      # shotgunChoke: 200
-      # snapRange: 15
-      # accuracyMultiplier:
-        # psiStrength: 0.1
-        # firing: 1
-        # morale: 0.1
-        # bravery: 0.1
-      # battleType: 1
-      # twoHanded: true
-      # invWidth: 1
-      # invHeight: 3
-      # dropoff: 1
-      # autoRange: 8
-      # meleeType: 6
-      # meleePower: 50
-      # meleeAlter:
-        # ToHealth: 0
-        # ToArmor: 0
-        # ToWound: 0
-        # ToStun: 1
-      # meleeBonus:
-        # strength: 0.2
-      # tuMelee: 30
-      # accuracyMelee: 100
-      # listOrder: 2120
-    # - type: STR_40MM_GRENADE
-      # size: 0.1
-      # costBuy: 300
-      # costSell: 240
-      # weight: 3
-      # bigSprite: 12
-      # floorSprite: 12
-      # handSprite: 144
-      # power: 46
-      # damageType: 3
-      # damageAlter:
-        # RandomType: 3
-      # battleType: 2
-      # clipSize: 1
-      # invWidth: 1
-      # invHeight: 1
-      # listOrder: 2230
-    # - type: STR_40MM_GRENADE_I
-      # size: 0.1
-      # costBuy: 300
-      # costSell: 240
-      # weight: 3
-      # bigSprite: 13
-      # floorSprite: 13
-      # handSprite: 152
-      # power: 42
-      # damageType: 2
-      # damageAlter:
-        # RandomType: 3
-      # battleType: 2
-      # clipSize: 1
-      # invWidth: 1
-      # invHeight: 1
-      # listOrder: 2240
-    # - type: STR_SHOTGUN_AMMO
-      # size: 0.1
-      # costBuy: 100
-      # costSell: 75
-      # weight: 1
-      # bigSprite: 14
-      # floorSprite: 14
-      # handSprite: 160
-      # hitSound: 22
-      # hitAnimation: 26
-      # power: 14
-      # damageType: 1
-      # damageAlter:
-        # RandomType: 3
-      # clipSize: 5
-      # battleType: 2
-      # shotgunBehavior: 1
-      # shotgunSpread: 30
-      # shotgunPellets: 5
-      # powerRangeThreshold: 8
-      # powerRangeReduction: 5
-      # invWidth: 1
-      # invHeight: 1
-      # listOrder: 2260
-
-    # - type: STR_SMALL_LAUNCHER
-      # requires:
-        # - STR_SMALL_LAUNCHER
-      # compatibleAmmo:
-        # - STR_STUN_BOMB
-        # - STR_ALIEN_GRENADE
-
-
+extended:
+# ══════════════════════════════════════════════════════════
+#  ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
+#  ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
+#  ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗
+#  ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║
+#  ███████║╚██████╗██║  ██║██║██║        ██║   ███████║
+#  ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝
+# ══════════════════════════════════════════════════════════
 # For some strange reason the scripts gets broke
 # when tags and scripts and items are not together
-extended:
   tags: # Remember to add these tags to the same file as items ruleset
     RuleItem:
       ACCURACY_BONUS: int

@@ -297,12 +297,17 @@ items:
 # ╚███╔███╔╝██║     ██║ ╚████║     ╚████╔╝ ██║  ██║██║     ╚██████╔╝██║  ██║
 #  ╚══╝╚══╝ ╚═╝     ╚═╝  ╚═══╝      ╚═══╝  ╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝
 # ════════════════════════════════════════════════════════════════════════════
- #  ┬ ┬┬ ┬┌─┐  ┬ ┬┌─┐┌─┐┌─┐┌─┐┌┐┌┌─┐
- #  ├─┤│││├─┘  │││├┤ ├─┤├─┘│ ││││└─┐
- #  ┴ ┴└┴┘┴    └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
+ #  ┬ ┬┌─┐┬  ┬  ┬ ┬┌─┐┌─┐┌─┐┌─┐┌┐┌┌─┐
+ #  │ ││ ┬└┐┌┘  │││├┤ ├─┤├─┘│ ││││└─┐
+ #  └─┘└─┘ └┘   └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
   # Tank Chasis
-  - type: STR_HWP_CANNON_SHELLS
+  - type: STR_UGV_HEAVY_MACHINEGUN
+    refNode: *VAPOR_BALLISTIC_L
+  - type: STR_UGV_AUTO_CANNON
     refNode: *VAPOR_BALLISTIC_XL
+  - type: STR_UGV_GRENADE_MACHINEGUN
+    refNode: *VAPOR_EXPLOSIVE_M
+  - type: STR_HWP_CANNON_SHELLS
   - type: STR_HWP_ROCKETS
     refNode: *VAPOR_ROCKET_CLASS_E
   - type: STR_TANK_LASER_CANNON
@@ -329,13 +334,6 @@ items:
     refNode: *VAPOR_BALLISTIC_S
   - type: STR_RIFLE_CLIP
     refNode: *VAPOR_BALLISTIC_S
-  # Auto Cannon
-  - type: STR_AC_AP_AMMO
-    refNode: *VAPOR_BALLISTIC_M
-  - type: STR_AC_HE_AMMO
-    refNode: *VAPOR_EXPLOSIVE_M
-  - type: STR_AC_I_AMMO
-    refNode: *VAPOR_INCENDIARY_M
   # Heavy Cannon
   - type: STR_HC_AP_AMMO
     refNode: *VAPOR_BALLISTIC_L

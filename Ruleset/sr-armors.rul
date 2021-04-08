@@ -1,14 +1,16 @@
 armors:
   - type: TANK_ARMOR
-    frontArmor: 130
-    sideArmor: 80
-    rearArmor: 40
-    underArmor: 40
+    frontArmor: 50
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 10
+    allowInv: true
   - type: HOVERTANK_ARMOR
     frontArmor: 160
     sideArmor: 110
     rearArmor: 90
     underArmor: 100
+    allowInv: true
 
   - type: CYBERDISC_ARMOR
     frontArmor: 85
@@ -20,7 +22,7 @@ armors:
     sideArmor: 130
     rearArmor: 100
     underArmor: 100
-    
+
   - type: ETHEREAL_ARMOR0
     psiVision: 5
     heatVision: 5

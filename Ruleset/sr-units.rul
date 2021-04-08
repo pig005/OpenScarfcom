@@ -7,8 +7,8 @@ units:
       firing: 80
     armor: TANK_ARMOR
     builtInWeaponSets:
-      - - STR_HWP_HEAVY_MACHINEGUN
-        - STR_HWP_GRENADE_MACHINEGUN
+      - - STR_UGV_HEAVY_MACHINEGUN
+        - STR_UGV_GRENADE_MACHINEGUN
   - type: STR_TANK_ROCKET_LAUNCHER
     stats:
       tu: 70
@@ -352,7 +352,7 @@ units:
     autoSurrender: false
     canSurrender: false
     builtInWeaponSets:
-      - 
+      -
         - SECTOPOD_HEAVY_PLASMA
         #- STR_SECTOPOD_BLASTER_LAUNCHER
         - STR_SECTOPOD_MULTI_LAUNCHER

@@ -90,8 +90,13 @@ items:
  #  ├─┤│││├─┘  │││├┤ ├─┤├─┘│ ││││└─┐
  #  ┴ ┴└┴┘┴    └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
   # Tank Chasis
-  - type: STR_HWP_CANNON_SHELLS
+  - type: STR_UGV_HEAVY_MACHINEGUN
+    refNode: *VELOCITY_BALLISTIC_HYPER
+  - type: STR_UGV_AUTO_CANNON
     refNode: *VELOCITY_BALLISTIC_HI
+  - type: STR_UGV_GRENADE_MACHINEGUN
+    refNode: *VELOCITY_BALLISTIC_LO
+    bulletSpeed: 40
   - type: STR_HWP_ROCKETS
     refNode: *VELOCITY_ROCKET
   - type: STR_TANK_LASER_CANNON
