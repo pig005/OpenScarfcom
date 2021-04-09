@@ -1,12 +1,9 @@
 units:
 #HWP
-  - type: STR_TANK_CANNON
-    stats:
-      tu: 80
-      reactions: 20
-      firing: 80
-      strength: 100
-    armor: TANK_ARMOR
+  #- delete: STR_TANK_CANNON
+
+
+
   # - type: STR_HOVERTANK_PLASMA
   #   stats:
   #     tu: 100

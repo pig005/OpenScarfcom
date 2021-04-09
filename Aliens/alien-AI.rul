@@ -20,140 +20,74 @@ units:
   - type: STR_SECTOID_SOLDIER
     sniper: 75
     spotter: -1
-    
-    
-    
   - type: STR_SECTOID_ENGINEER
     sniper: 40
     spotter: -1
-    
-    
-    
   - type: STR_SECTOID_MEDIC
     sniper: 80
     spotter: -1
-    
-    
-    
   - type: STR_SECTOID_NAVIGATOR
     sniper: 20
     spotter: -1
-    
-    
-    
   - type: STR_SECTOID_LEADER
     sniper: 90
     spotter: -1
-    
-    
-    
   - type: STR_SECTOID_COMMANDER
     sniper: 95
     spotter: -1
-    
-    
-    
 #CYBERDISK
   - type: STR_CYBERDISC_TERRORIST
     sniper: 85
     spotter: 100
-    
-    
 #FLOATER
   - type: STR_FLOATER_SOLDIER
     sniper: 80
     spotter: -1
-    
-    
-        
   - type: STR_FLOATER_ENGINEER
     sniper: 70
     spotter: -1
-    
-    
-        
   - type: STR_FLOATER_NAVIGATOR
     sniper: 50
     spotter: -1
-    
-    
-        
   - type: STR_FLOATER_MEDIC
     sniper: 90
     spotter: -1
-    
-    
-        
   - type: STR_FLOATER_LEADER
     sniper: 95
     spotter: -1
-    
-    
-        
   - type: STR_FLOATER_COMMANDER
     sniper: 100
     spotter: -1
-    
-    
-        
 #REAPER
   - type: STR_REAPER_TERRORIST
 #SNAKEMAN
   - type: STR_SNAKEMAN_SOLDIER
     sniper: 75
     spotter: -1
-    
-    
-        
   - type: STR_SNAKEMAN_NAVIGATOR
     sniper: 30
     spotter: -1
-    
-    
-        
   - type: STR_SNAKEMAN_ENGINEER
     sniper: 40
     spotter: -1
-    
-    
-        
   - type: STR_SNAKEMAN_LEADER
     sniper: 90
     spotter: -1
-    
-    
-        
   - type: STR_SNAKEMAN_COMMANDER
     sniper: 95
     spotter: -1
-    
-    
-        
-    
 #CHRYSSALID
   - type: STR_CHRYSSALID_TERRORIST
 #MUTON
   - type: STR_MUTON_SOLDIER
     sniper: 40
     spotter: -1
-    
-    
-        
-    
   - type: STR_MUTON_NAVIGATOR
     sniper: 20
     spotter: -1
-    
-    
-        
-    
   - type: STR_MUTON_ENGINEER
     sniper: 20
     spotter: -1
-    
-    
-        
-    
 #SILACOID
   - type: STR_SILACOID_TERRORIST
 #CELATID
@@ -162,30 +96,15 @@ units:
   - type: STR_ETHEREAL_SOLDIER
     sniper: 90
     spotter: -1
-    
-    
-        
-    
   - type: STR_ETHEREAL_LEADER
     sniper: 95
     spotter: -1
-    
-    
-        
-    
   - type: STR_ETHEREAL_COMMANDER
     sniper: 100
     spotter: -1
-    
-    
-        
-    
 #SECTOPOD
   - type: STR_SECTOPOD_TERRORIST
     sniper: 80
     spotter: 100
-    
-    
 #ZOMBIE
   - type: STR_ZOMBIE
-    

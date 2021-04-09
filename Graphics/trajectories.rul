@@ -375,3 +375,9 @@ items:
   # Stun Weapon
   - type: STR_STUN_BOMB
     refNode: *VAPOR_STUN_S
+  # Grenades
+  # Grenades
+  - type: STR_GRENADE
+    refNode: *VAPOR_EXPLOSIVE_M
+  - type: STR_ALIEN_GRENADE
+    refNode: *VAPOR_EXPLOSIVE_M

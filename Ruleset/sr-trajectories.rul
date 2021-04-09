@@ -1,5 +1,0 @@
-items:
-  # Launched Grenadeds
-  - type: STR_ALIEN_GRENADE
-    vaporColorSurface: 0
-    vaporDensitySurface: 7

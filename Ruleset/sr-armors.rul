@@ -1,119 +1,96 @@
 armors:
-  #- delete: STR_NONE_UC
-
-  # - &UGV_ARMOR
-  #   type: UGV_ARMOR
-  #   allowInv: true
-  #   spriteSheet: TANKS.PCK
-  #   corpseBattle:
-  #     - TANK_CORPSE_1
-  #     - TANK_CORPSE_2
-  #     - TANK_CORPSE_3
-  #     - TANK_CORPSE_4
-  #   frontArmor: 80
-  #   sideArmor: 60
-  #   rearArmor: 40
-  #   underArmor: 40
-  #   drawingRoutine: 2
-  #   size: 2
-  #   damageModifier:
-  #     - 1.0
-  #     - 1.0
-  #     - 0.25
-  #     - 0.75
-  #     - 1.0
-  #     - 1.0
-  #     - 0.0
-  #     - 0.9
-  #     - 0.4
-  #     - 0.0
-  #   loftempsSet: [ 92, 89, 90, 91 ]
+  - delete: STR_NONE_UC
 
   # - type: UGV_ALLOY_ARMOR
-  #   refNode: *UGV_ARMOR
+  #   refNode:
+  #     *UGV_ARMOR
   #   frontArmor: 130
   #   sideArmor: 80
   #   rearArmor: 60
   #   underArmor: 60
 
-  # - &STR_NONE_UC
-  #   type: STR_NONE_UC
-  #   spriteSheet: XCOM_0.PCK
-  #   spriteInv: MAN_0
-  #   spriteFaceGroup: 6
-  #   spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
-  #   spriteHairGroup: 9
-  #   spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
-  #   storeItem: STR_NONE
-  #   corpseBattle:
-  #     - STR_CORPSE
-  #   frontArmor: 12
-  #   sideArmor: 8
-  #   rearArmor: 5
-  #   underArmor: 2
-  #   damageModifier:
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.2
-  #     - 1.6
-  #     - 1.0
-  #   loftempsSet: [ 3 ]
+  - &STR_NONE_UC
+    type: STR_NONE_UC
+    spriteSheet: XCOM_0.PCK
+    spriteInv: MAN_0
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+    loftempsSet: [ 3 ]
 
-  # - &STR_TACTICAL_ARMOR_UC
-  #   type: STR_TACTICAL_ARMOR_UC
-  #   refNode: *STR_NONE_UC
-  #   storeItem: STR_TACTICAL_ARMOR
-  #   frontArmor: 30
-  #   sideArmor: 10
-  #   rearArmor: 20
-  #   underArmor: 8
-  #   damageModifier:
-  #     - 0.9
-  #     - 0.9
-  #     - 0.8
-  #     - 0.9
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.0
-  #     - 1.3
-  #     - 1.0
-
-  # - type: STR_EXOSKELETON_ARMOR_UC
-  #   refNode: *STR_TACTICAL_ARMOR_UC
-  #   storeItem: STR_EXOSKELETON_ARMOR
-  #   stats:
-  #     tu: 20
-  #     strength: 30
-  #     stamina: 30
-
-  # - type: STR_POWER_SUIT_UC
-  #   stats:
-  #     tu: 25
-  #     strength: 30
-
-  - type: CYBERDISC_ARMOR
-    frontArmor: 85
-    sideArmor: 55
-    rearArmor: 40
-    underArmor: 40
-  - type: SECTOPOD_ARMOR
-    frontArmor: 200
-    sideArmor: 130
-    rearArmor: 100
-    underArmor: 100
-
-  - type: ETHEREAL_ARMOR0
-    psiVision: 5
-    heatVision: 5
-  - type: ETHEREAL_ARMOR1
-    psiVision: 10
-    heatVision: 10
-  - type: ETHEREAL_ARMOR2
-    psiVision: 20
+  - &STR_TACTICAL_ARMOR_UC
+    type: STR_TACTICAL_ARMOR_UC
+    refNode: *STR_NONE_UC
+    storeItem: STR_TACTICAL_ARMOR
+    frontArmor: 30
+    sideArmor: 10
+    rearArmor: 20
+    underArmor: 8
+    damageModifier:
+      - 0.9
+      - 0.9
+      - 0.8
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.3
+      - 1.0
     heatVision: 20
+    camouflageAtDay: -4
+    camouflageAtDark: -4
+
+  - type: STR_EXOSKELETON_ARMOR_UC
+    refNode: *STR_TACTICAL_ARMOR_UC
+    storeItem: STR_EXOSKELETON_ARMOR
+    stats:
+      tu: 20
+      strength: 50
+      stamina: 30
+    weight: 70
+    turnCost: 2
+    allowsStrafing: false
+    camouflageAtDay: 0
+    camouflageAtDark: 0
+    recovery:
+      energy:
+        flatHundred: 30
+
+  - type: STR_POWER_SUIT_UC
+    stats:
+      tu: 25
+      strength: 30
+
+  - type: STR_NONE_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_PERSONAL_ARMOR_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_POWER_SUIT_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_FLYING_SUIT_UC
+    units:
+      - STR_SOLDIER
+

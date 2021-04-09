@@ -1,0 +1,25 @@
+ufopaedia:
+  - delete: STR_AUTO_CANNON
+  - delete: STR_AC_AP_AMMO
+  - delete: STR_AC_HE_AMMO
+  - delete: STR_AC_I_AMMO
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
+  - delete: STR_TANK_LASER_CANNON
+  - delete: STR_HWP_CANNON_SHELLS
+  - delete: STR_HWP_ROCKETS
+# ════════════════════════════════════
+# Rifle listorder is: 2100(item),2200(ufopedia)
+  - id: STR_RIFLE_DMR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_RIFLE_DMR_UFOPEDIA
+    listOrder: 2210
+
+
+  - id: STR_PROTOTYPE_LASER_CAPACITOR
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_LASER_ADVANCED_LENS
+    type_id: 4
+    section: STR_NOT_AVAILABLE

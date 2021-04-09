@@ -1,4 +1,7 @@
 alienDeployments:
+# ╔═╗╔╦╗╔═╗╦  ╦      ╔═╗╔═╗╔═╗╦ ╦╔╦╗
+# ╚═╗║║║╠═╣║  ║      ╚═╗║  ║ ║║ ║ ║
+# ╚═╝╩ ╩╩ ╩╩═╝╩═╝────╚═╝╚═╝╚═╝╚═╝ ╩
   - type: STR_SMALL_SCOUT
     data:
       - alienRank: 5
@@ -29,6 +32,9 @@ alienDeployments:
     width: 40
     length: 40
     height: 4
+# ╔╦╗╔═╗╔╦╗╦╦ ╦╔╦╗    ╔═╗╔═╗╔═╗╦ ╦╔╦╗
+# ║║║║╣  ║║║║ ║║║║    ╚═╗║  ║ ║║ ║ ║
+# ╩ ╩╚═╝═╩╝╩╚═╝╩ ╩────╚═╝╚═╝╚═╝╚═╝ ╩
   - type: STR_MEDIUM_SCOUT
     data:
       - alienRank: 5
@@ -76,6 +82,9 @@ alienDeployments:
     width: 40
     length: 40
     height: 4
+# ╦  ╔═╗╦═╗╔═╗╔═╗    ╔═╗╔═╗╔═╗╦ ╦╔╦╗
+# ║  ╠═╣╠╦╝║ ╦║╣     ╚═╗║  ║ ║║ ║ ║
+# ╩═╝╩ ╩╩╚═╚═╝╚═╝────╚═╝╚═╝╚═╝╚═╝ ╩
   - type: STR_LARGE_SCOUT
     data:
       - alienRank: 5
