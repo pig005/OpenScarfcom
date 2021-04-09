@@ -11,11 +11,6 @@ items:
   - delete: STR_AC_AP_AMMO
   - delete: STR_AC_HE_AMMO
   - delete: STR_AC_I_AMMO
-  #- delete: STR_TANK_CANNON
-  - delete: STR_TANK_ROCKET_LAUNCHER
-  - delete: STR_TANK_LASER_CANNON
-  - delete: STR_HWP_CANNON_SHELLS
-  - delete: STR_HWP_ROCKETS
 # ════════════════════════════════════════════════════════════════════════
 #  ██████╗  █████╗ ██╗     ██╗     ██╗███████╗████████╗██╗ ██████╗███████╗
 #  ██╔══██╗██╔══██╗██║     ██║     ██║██╔════╝╚══██╔══╝██║██╔════╝██╔════╝
@@ -128,6 +123,7 @@ items:
     powerRangeReduction: 3
     power: 14
     explosionSpeed:  2
+    clipSize: -1
     confSnap:
       ammoSlot: 0
       name: STR_SHOT_TYPE_SPECTRUM_LASER
@@ -142,6 +138,7 @@ items:
         tuUnload: 200
 
   - type: STR_LASER_PISTOL
+    refNode: *STR_LASER_CLASS
     ammo:
       1:
         compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
@@ -273,15 +270,14 @@ items:
 #  ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 #  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
 # ══════════════════════════════════════════════════════
-  # - type: STR_TACTICAL_ARMOR
-  #   size: 0.8
-  #   costBuy: 20000
-  #   costSell: 15000
-  # - type: STR_EXOSKELETON_ARMOR
-  #   size: 0.8
-  #   costBuy: 25000
-  #   costSell: 20000
-
+  - type: STR_TACTICAL_ARMOR
+    size: 0.8
+    costBuy: 20000
+    costSell: 15000
+  - type: STR_EXOSKELETON_ARMOR
+    size: 0.8
+    costBuy: 25000
+    costSell: 20000
 
 # ══════════════════════════════════════════════════════
 #   ██████╗ ████████╗██╗  ██╗███████╗██████╗ ███████╗
@@ -393,16 +389,29 @@ items:
     bulletSpeed: 0
     vaporColorSurface: 2
     vaporDensitySurface: 100
-# ══════════════════════════════════════════════════════════════════════
-#  ██╗   ██╗ ██████╗ ██╗   ██╗    ██╗    ██╗██████╗ ███╗   ██╗███████╗
-#  ██║   ██║██╔════╝ ██║   ██║    ██║    ██║██╔══██╗████╗  ██║██╔════╝
-#  ██║   ██║██║  ███╗██║   ██║    ██║ █╗ ██║██████╔╝██╔██╗ ██║███████╗
-#  ██║   ██║██║   ██║╚██╗ ██╔╝    ██║███╗██║██╔═══╝ ██║╚██╗██║╚════██║
-#  ╚██████╔╝╚██████╔╝ ╚████╔╝     ╚███╔███╔╝██║     ██║ ╚████║███████║
-#   ╚═════╝  ╚═════╝   ╚═══╝       ╚══╝╚══╝ ╚═╝     ╚═╝  ╚═══╝╚══════╝
-# ══════════════════════════════════════════════════════════════════════
+# ════════════════════════════════════════
+#  ██╗   ██╗ ██████╗ ██╗   ██╗███████╗
+#  ██║   ██║██╔════╝ ██║   ██║██╔════╝
+#  ██║   ██║██║  ███╗██║   ██║███████╗
+#  ██║   ██║██║   ██║╚██╗ ██╔╝╚════██║
+#  ╚██████╔╝╚██████╔╝ ╚████╔╝ ███████║
+#   ╚═════╝  ╚═════╝   ╚═══╝  ╚══════╝
+# ════════════════════════════════════════
+  # - &STR_UGV
+  #   type: STR_UGV
+  #   size: 6
+  #   costBuy: 420000
+  #   costSell: 340000
+  #   transferTime: 96
+  #   turretType: 0
+  #   listOrder: 1101
+
   - &STR_UGV_HEAVY_MACHINEGUN
     type: STR_UGV_HEAVY_MACHINEGUN #12.7mm
+    costBuy: 80000
+    costSell: 50000
+    transferTime: 96
+    size: 2
     hitSound: 13
     hitAnimation: 36
     bigSprite: 43
@@ -412,6 +421,7 @@ items:
     battleType: 1
     weight: 160
     turretType: 0
+    listOrder: 1110
     accuracySnap: 65
     accuracyAuto: 40
     tuSnap: 18
@@ -432,14 +442,23 @@ items:
 
   - type: STR_UGV_AUTO_CANNON
     refNode: *STR_UGV_HEAVY_MACHINEGUN
+    weight: 230
+    listOrder: 1120
     confSnap:
       shots: 3
     confAuto:
       shots: 5
     clipSize: 50
+    power: 80
+    damageType: 3
+    damageAlter:
+      RandomType: 7
+      ToTile: 0.6
+      FixRadius: 2
 
   - type: STR_UGV_GRENADE_LAUNCHER #40mm automatic grenade launcher
     refNode: *STR_UGV_HEAVY_MACHINEGUN
+    listOrder: 1130
     turretType: -1
     bigSprite: 11
     hitAnimation: 0
@@ -456,9 +475,9 @@ items:
     power: 50
     damageType: 3
     damageAlter:
-      FixRadius: -1
+      FixRadius: 2
       ToTile: 0.6
-extended:
+
 # ══════════════════════════════════════════════════════════
 #  ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
 #  ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
@@ -469,6 +488,7 @@ extended:
 # ══════════════════════════════════════════════════════════
 # For some strange reason the scripts gets broke
 # when tags and scripts and items are not together
+extended:
   tags: # Remember to add these tags to the same file as items ruleset
     RuleItem:
       ACCURACY_BONUS: int
@@ -478,44 +498,3 @@ extended:
       #NEW_FLOOROB_FOR_WEAPON: int
       #NEW_HANDOB_FOR_WEAPON: int
       CURRENT_MOD_OFFSET: RuleList
-
-  scripts:
-    createItem:
-      - offset: 51
-        code: |
-          var int start_primed;
-          item.getTag start_primed Tag.START_PRIMED;
-
-          if eq start_primed 1;
-            item.setFuseTimer 0;
-            end;
-          return;
-
-    selectItemSprite:
-    # Select weapon bigSprite based on ammo item
-      - offset: 1
-        code: |
-          var ptr BattleItem ammoItem;
-          var ptr RuleItem weaponRuleset;
-          var ptr RuleItem ammoRuleset;
-          var int changeSprite;
-
-          var int base_index;
-          var int ammo_offset;
-          var int temp;
-
-          if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
-            item.getRuleItem weaponRuleset; # get ruleset of item as weaponRuleset
-            weaponRuleset.getTag changeSprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
-
-            if eq changeSprite 1; # if changeSprite == 1; -> tagged as resprite
-              item.getAmmoItem ammoItem; # get ammo item as ammoItem
-              ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset
-              ammoRuleset.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset valuse as ammo_offset
-              add sprite_index -1; # Simulates ammo done
-              add sprite_index ammo_offset; # ammo offset applied to sprite_index
-              rules.getSpriteOffsetBigobs sprite_index temp;
-              return sprite_index;
-            end;
-          end;
-          return sprite_index;
