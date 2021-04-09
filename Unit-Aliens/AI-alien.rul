@@ -1,0 +1,146 @@
+units:
+#  █████╗ ██╗    ██╗   ██╗███╗   ██╗██╗████████╗███████╗
+# ██╔══██╗██║    ██║   ██║████╗  ██║██║╚══██╔══╝██╔════╝
+# ███████║██║    ██║   ██║██╔██╗ ██║██║   ██║   ███████╗
+# ██╔══██║██║    ██║   ██║██║╚██╗██║██║   ██║   ╚════██║
+# ██║  ██║██║    ╚██████╔╝██║ ╚████║██║   ██║   ███████║
+# ╚═╝  ╚═╝╚═╝     ╚═════╝ ╚═╝  ╚═══╝╚═╝   ╚═╝   ╚══════╝
+ # ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+ # ║ ╦║  ║ ║╠╩╗╠═╣║
+ # ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+  - &AI_UNIT_GLOBAL
+    type: AI_UNIT_GLOBAL
+    spotter: -1
+    sniper: 0
+ # ┌─┐┌─┐┌─┐┬ ┬┌┬┐┌─┐
+ # └─┐│  │ ││ │ │ └─┐
+ # └─┘└─┘└─┘└─┘ ┴ └─┘
+  - &AI_UNIT_SCOUT
+    type: AI_UNIT_SCOUT
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 20
+  - &AI_UNIT_MELEE
+    type: AI_UNIT_SCOUT
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 0
+ # ┌─┐┌┐┌┬┌─┐┌─┐┬─┐┌─┐
+ # └─┐││││├─┘├┤ ├┬┘└─┐
+ # └─┘┘└┘┴┴  └─┘┴└─└─┘
+  - &AI_UNIT_SNIPER_TIER_0
+    type: AI_UNIT_SNIPER_TIER_0
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 50
+  - &AI_UNIT_SNIPER_TIER_1
+    type: AI_UNIT_SNIPER_TIER_1
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 60
+  - &AI_UNIT_SNIPER_TIER_2
+    type: AI_UNIT_SNIPER_TIER_2
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 75
+  - &AI_UNIT_SNIPER_TIER_3
+    type: AI_UNIT_SNIPER_TIER_3
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 80
+  - &AI_UNIT_SNIPER_TIER_4
+    type: AI_UNIT_SNIPER_TIER_4
+    refNode: *AI_UNIT_GLOBAL
+    sniper: 90
+#  █████╗ ██╗     ██╗███████╗███╗   ██╗███████╗
+# ██╔══██╗██║     ██║██╔════╝████╗  ██║██╔════╝
+# ███████║██║     ██║█████╗  ██╔██╗ ██║███████╗
+# ██╔══██║██║     ██║██╔══╝  ██║╚██╗██║╚════██║
+# ██║  ██║███████╗██║███████╗██║ ╚████║███████║
+# ╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝
+
+  - type: STR_SECTOID_SOLDIER
+    sniper: 75
+
+  - type: STR_SECTOID_ENGINEER
+    sniper: 40
+    spotter: -1
+  - type: STR_SECTOID_MEDIC
+    sniper: 80
+    spotter: -1
+  - type: STR_SECTOID_NAVIGATOR
+    sniper: 20
+    spotter: -1
+  - type: STR_SECTOID_LEADER
+    sniper: 90
+    spotter: -1
+  - type: STR_SECTOID_COMMANDER
+    sniper: 95
+    spotter: -1
+#CYBERDISK
+  - type: STR_CYBERDISC_TERRORIST
+    sniper: 85
+    spotter: 100
+#FLOATER
+  - type: STR_FLOATER_SOLDIER
+    sniper: 80
+    spotter: -1
+  - type: STR_FLOATER_ENGINEER
+    sniper: 70
+    spotter: -1
+  - type: STR_FLOATER_NAVIGATOR
+    sniper: 50
+    spotter: -1
+  - type: STR_FLOATER_MEDIC
+    sniper: 90
+    spotter: -1
+  - type: STR_FLOATER_LEADER
+    sniper: 95
+    spotter: -1
+  - type: STR_FLOATER_COMMANDER
+    sniper: 100
+    spotter: -1
+#REAPER
+  - type: STR_REAPER_TERRORIST
+#SNAKEMAN
+  - type: STR_SNAKEMAN_SOLDIER
+    sniper: 75
+    spotter: -1
+  - type: STR_SNAKEMAN_NAVIGATOR
+    sniper: 30
+    spotter: -1
+  - type: STR_SNAKEMAN_ENGINEER
+    sniper: 40
+    spotter: -1
+  - type: STR_SNAKEMAN_LEADER
+    sniper: 90
+    spotter: -1
+  - type: STR_SNAKEMAN_COMMANDER
+    sniper: 95
+    spotter: -1
+#CHRYSSALID
+  - type: STR_CHRYSSALID_TERRORIST
+#MUTON
+  - type: STR_MUTON_SOLDIER
+    sniper: 40
+    spotter: -1
+  - type: STR_MUTON_NAVIGATOR
+    sniper: 20
+    spotter: -1
+  - type: STR_MUTON_ENGINEER
+    sniper: 20
+    spotter: -1
+#SILACOID
+  - type: STR_SILACOID_TERRORIST
+#CELATID
+  - type: STR_CELATID_TERRORIST
+#ETHEREAL
+  - type: STR_ETHEREAL_SOLDIER
+    sniper: 90
+    spotter: -1
+  - type: STR_ETHEREAL_LEADER
+    sniper: 95
+    spotter: -1
+  - type: STR_ETHEREAL_COMMANDER
+    sniper: 100
+    spotter: -1
+#SECTOPOD
+  - type: STR_SECTOPOD_TERRORIST
+    sniper: 80
+    spotter: 100
+#ZOMBIE
+  - type: STR_ZOMBIE

@@ -3,6 +3,8 @@ extraStrings:
     strings:
       STR_OPERATION_UC: "작전명> {0}"
 
+#also eng name list by https://github.com/kmkingsbury/xcom-mission-name-generator
+
 operationNamesFirst :
   # 색
   - 붉은
