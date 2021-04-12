@@ -3,7 +3,7 @@ extraSprites:
     files:
       02: Resources/ballistic_weapons/rifle-clip/Big.png # overrides default rifle clip
 
-      301: Resources/ballistic_weapons/rifle/Big.png
+      301: Resources/ballistic_weapons/rifle/Big-1.png
       300: Resources/ballistic_weapons/rifle/Big-Empty.png
       311: Resources/ballistic_weapons/rifle-marksman/Big.png
       310: Resources/ballistic_weapons/rifle-marksman/Big-Empty.png
