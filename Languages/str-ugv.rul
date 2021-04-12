@@ -22,7 +22,9 @@ extraStrings:
     # ║ ║║ ╦╚╗╔╝  ║║║╠═╣║║║║╣ ╚═╗
     # ╚═╝╚═╝ ╚╝   ╝╚╝╩ ╩╩ ╩╚═╝╚═╝
       STR_UGV: "UGV"
-      UGV_ARMOR_UC: "UGV CHASIS"
+      UGV_ARMOR_UC: "UGV BASIC CHASIS"
+      # UGV_ARMOR_0_UC: "UGV BASIC CHASIS/LIGHT"
+      # UGV_ARMOR_1_UC: "UGV BASIC CHASIS/HEAVY"
       STR_UGV_HEAVY_MACHINEGUN: "Heavy Machinegun"
       STR_UGV_GRENADE_LAUNCHER: "Grenade Launcher"
       STR_UGV_AUTO_CANNON: "Autocannon"
@@ -38,7 +40,9 @@ extraStrings:
     # ║ ║║ ╦╚╗╔╝  ║║║╠═╣║║║║╣ ╚═╗
     # ╚═╝╚═╝ ╚╝   ╝╚╝╩ ╩╩ ╩╚═╝╚═╝
       STR_UGV: "무인기"
-      UGV_ARMOR_UC: "무인기 차체"
+      UGV_ARMOR_UC: "무인기 기본 차체"
+      # UGV_ARMOR_0_UC: "무인기 기본 차체/경량"
+      # UGV_ARMOR_1_UC: "무인기 기본 차체/중형"
       STR_UGV_HEAVY_MACHINEGUN: "중기관총"
       STR_UGV_GRENADE_LAUNCHER: "유탄 기관총"
       STR_UGV_AUTO_CANNON: "기관포"

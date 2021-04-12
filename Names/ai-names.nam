@@ -1,0 +1,13 @@
+lookWeights:
+  - 100
+  - 0
+  - 0
+  - 0
+maleFirst:
+  - AI
+maleLast:
+  - Unit
+femaleFirst:
+  - AI
+femaleLast:
+  - Unit

@@ -72,7 +72,7 @@ armors:
     camouflageAtDark: -4
 
   - type: STR_EXOSKELETON_ARMOR_UC
-    refNode: *STR_TACTICAL_ARMOR_UC
+    refNode: *STR_BASIC_ARMOR_0_UC
     storeItem: STR_EXOSKELETON_ARMOR
     stats:
       tu: 20
