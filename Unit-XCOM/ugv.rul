@@ -7,7 +7,7 @@
 #
 soldiers:
   - type: STR_UGV_OPERATOR_UNIT
-    costBuy: 420000
+    costBuy: 40000
     costSalary: 10000
     minStats:
       tu: 70
@@ -59,12 +59,11 @@ soldiers:
       melee: 0
     armor: UGV_ARMOR_UC
     armorForAvatar: STR_TREADED_ARMOR_CANNON_UC
-    standHeight: 21
-    kneelHeight: 21
-    femaleFrequency: 50
-    #soldierNames:
-    #  - AIName/
-    deathMale: 23
+    standHeight: 16
+    kneelHeight: 16
+    femaleFrequency: 100
+    soldierNames:
+      - Names/ai-names.nam
     deathFemale: 23
     allowPromotion: false
 #   █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗
@@ -78,12 +77,13 @@ armors:
   - &UGV_ARMOR_UC
     type: UGV_ARMOR_UC
     spriteSheet: TANKS.PCK
-    #customArmorPreviewIndex: 1
+    spriteInv: TANK
+    customArmorPreviewIndex: 1
     allowInv: true
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
-    storeItem: STR_NONE
+    storeItem: STR_UGV
     weight: 1
     size: 2
     corpseBattle:
@@ -95,6 +95,8 @@ armors:
     sideArmor: 60
     rearArmor: 40
     underArmor: 40
+    stats:
+      strength: 120
     drawingRoutine: 2
     damageModifier:
       - 1.0
@@ -108,14 +110,14 @@ armors:
       - 0.4
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
-    #allowTwoMainWeapons: true
+    allowTwoMainWeapons: true
     units:
       - STR_UGV_OPERATOR_UNIT
     moveSound: 14
     recovery:
       energy:
         energyRegen: 0.0
-        flatHundred: 4.0
+        flatHundred: 2.0
     allowsKneeling: false
     allowsRunning: false
     allowsStrafing: false
@@ -164,11 +166,11 @@ items:
   - delete: STR_HWP_CANNON_SHELLS
   - delete: STR_HWP_ROCKETS
 
-  # - &STR_UGV
-  #   type: STR_UGV
-  #   size: 6
-  #   costBuy: 420000
-  #   costSell: 340000
-  #   transferTime: 96
-  #   turretType: 0
-  #   listOrder: 1101
+  - &STR_UGV
+    type: STR_UGV
+    size: 6
+    costBuy: 420000
+    costSell: 340000
+    transferTime: 96
+    turretType: 0
+    listOrder: 1101

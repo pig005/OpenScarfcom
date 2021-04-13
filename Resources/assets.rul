@@ -3,7 +3,7 @@ extraSprites:
     files:
       02: Resources/Weapons/ballistics/rifle-clip/Big.png # overrides default rifle clip
 
-      301: Resources/Weapons/ballistics/rifle/Big-1.png
+      301: Resources/Weapons/ballistics/rifle/Big.png
       300: Resources/Weapons/ballistics/rifle/Big-Empty.png
       311: Resources/Weapons/ballistics/rifle-marksman/Big.png
       310: Resources/Weapons/ballistics/rifle-marksman/Big-Empty.png
@@ -29,7 +29,7 @@ extraSprites:
     subY: 20
     files:
       0: Resources/UI/tank_armorpreviews.png
-  - type: TANKM0.SPK
+  - type: TANKF0.SPK
     singleImage: true
     files:
       0: Resources/Units/UGV/Tank_Armor.gif
