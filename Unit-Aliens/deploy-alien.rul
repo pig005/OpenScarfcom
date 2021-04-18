@@ -155,8 +155,8 @@ alienDeployments:
             - STR_MIND_PROBE
           -
             - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
             - STR_ALIEN_GRENADE
+            - STR_STUN_BOMB
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
     width: 50

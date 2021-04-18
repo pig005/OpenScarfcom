@@ -169,8 +169,10 @@ items:
     refNode: *VELOCITY_EXPLOSIVE_HI
   - type: STR_STUN_BOMB
     refNode: *VELOCITY_EXPLOSIVE_HI
+    bulletSpeed: 0
   - type: STR_ALIEN_GRENADE
     refNode: *VELOCITY_EXPLOSIVE_HI
+    bulletSpeed: 0
  #  ┬  ┌─┐┌─┐┌─┐┬─┐
  #  │  ├─┤└─┐├┤ ├┬┘
  #  ┴─┘┴ ┴└─┘└─┘┴└─

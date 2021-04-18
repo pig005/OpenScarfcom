@@ -17,7 +17,7 @@ soldiers:
       reactions: 20
       firing: 60
       throwing: 0
-      strength: 0
+      strength: 90
       psiStrength: 0
       psiSkill: 0
       melee: 0
@@ -29,7 +29,7 @@ soldiers:
       reactions: 20
       firing: 60
       throwing: 0
-      strength: 0
+      strength: 90
       psiStrength: 0
       psiSkill: 0
       melee: 0
@@ -41,7 +41,7 @@ soldiers:
       reactions: 60
       firing: 100
       throwing: 0
-      strength: 0
+      strength: 90
       psiStrength: 0
       psiSkill: 0
       melee: 0
@@ -58,7 +58,7 @@ soldiers:
       psiSkill: 0
       melee: 0
     armor: UGV_ARMOR_UC
-    armorForAvatar: STR_TREADED_ARMOR_CANNON_UC
+    armorForAvatar: UGV_ARMOR_UC
     standHeight: 16
     kneelHeight: 16
     femaleFrequency: 100
@@ -84,19 +84,17 @@ armors:
     bleedImmune: true
     zombiImmune: true
     storeItem: STR_UGV
-    weight: 1
+    weight: 0
     size: 2
     corpseBattle:
       - TANK_CORPSE_1
       - TANK_CORPSE_2
       - TANK_CORPSE_3
       - TANK_CORPSE_4
-    frontArmor: 80
+    frontArmor: 90
     sideArmor: 60
-    rearArmor: 40
+    rearArmor: 60
     underArmor: 40
-    stats:
-      strength: 120
     drawingRoutine: 2
     damageModifier:
       - 1.0
@@ -111,6 +109,9 @@ armors:
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
     allowTwoMainWeapons: true
+    builtInWeapons:
+      - STR_UGV_HEAVY_MACHINEGUN
+      - STR_UGV_GRENADE_MACHINEGUN
     units:
       - STR_UGV_OPERATOR_UNIT
     moveSound: 14
@@ -119,7 +120,7 @@ armors:
         energyRegen: 0.0
         flatHundred: 2.0
     allowsKneeling: false
-    allowsRunning: false
+    allowsRunning: true
     allowsStrafing: false
     instantWoundRecovery: true
     heatVision: 25

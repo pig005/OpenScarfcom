@@ -7,20 +7,20 @@
  # ┌─┐┬─┐ ┬┌─┐┌┬┐
  # ├┤ │┌┴┬┘├┤  ││
  # └  ┴┴ └─└─┘─┴┘
-   fixedUserOptions:
-      battleUFOExtenderAccuracy: true
+  fixedUserOptions:
+    battleUFOExtenderAccuracy: true
  # ┬─┐┌─┐┌─┐┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐┌┬┐
  # ├┬┘├┤ │  │ │││││││├┤ │││ ││├┤  ││
  # ┴└─└─┘└─┘└─┘┴ ┴┴ ┴└─┘┘└┘─┴┘└─┘─┴┘
-   recommendedUserOptions:
-      allowBuildingQueue: true
-      craftLaunchAlways: true
-      customInitialBase: true
-      battleExplosionHeight: 3
-      allowPsionicCapture: true
-      canSellLiveAliens: true
-      strafe: true
-      alienBleeding: true
+  recommendedUserOptions:
+    allowBuildingQueue: true
+    craftLaunchAlways: true
+    customInitialBase: true
+    battleExplosionHeight: 3
+    allowPsionicCapture: true
+    canSellLiveAliens: true
+    strafe: true
+    alienBleeding: true
 #  ██████╗ ███████╗ ██████╗ ███████╗ ██████╗ █████╗ ██████╗ ███████╗
 # ██╔════╝ ██╔════╝██╔═══██╗██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝
 # ██║  ███╗█████╗  ██║   ██║███████╗██║     ███████║██████╔╝█████╗
@@ -30,17 +30,17 @@
  # ┌─┐┬ ┬┌┐┌┌┬┐┬┌┐┌┌─┐┌─┐
  # ├┤ │ ││││ │││││││ ┬└─┐
  # └  └─┘┘└┘─┴┘┴┘└┘└─┘└─┘
-   performanceBonusFactor: 1000
+  performanceBonusFactor: 1000
  # ┬─┐┌─┐┌┬┐┌─┐┬  ┬┌─┐┌┬┐┬┌─┐┌┐┌
  # ├┬┘├┤  │ ├─┤│  │├─┤ │ ││ ││││
  # ┴└─└─┘ ┴ ┴ ┴┴─┘┴┴ ┴ ┴ ┴└─┘┘└┘
-   chanceToStopRetaliation: 50
-   lessAliensDuringBaseDefense: true
+  chanceToStopRetaliation: 50
+  lessAliensDuringBaseDefense: true
  # ┌─┐┬  ┬┌─┐┌┐┌  ┌┐ ┌─┐┌─┐┌─┐┌─┐
  # ├─┤│  │├┤ │││  ├┴┐├─┤└─┐├┤ └─┐
  # ┴ ┴┴─┘┴└─┘┘└┘  └─┘┴ ┴└─┘└─┘└─┘
-   buildInfiltrationBaseCloseToTheCountry: true
-   allowCountriesToCancelAlienPact: true
+  buildInfiltrationBaseCloseToTheCountry: true
+  allowCountriesToCancelAlienPact: true
 # ██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗ ██████╗ █████╗ ██████╗ ███████╗
 # ██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝
 # ██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗██║     ███████║██████╔╝█████╗
@@ -50,39 +50,41 @@
  # ╔═╗╦  ╦╔═╗╔╗╔  ╔═╗╦
  # ╠═╣║  ║║╣ ║║║  ╠═╣║
  # ╩ ╩╩═╝╩╚═╝╝╚╝  ╩ ╩╩
-   minReactionAccuracy: 40
-   surrenderMode: 1
+  minReactionAccuracy: 40
+  surrenderMode: 1
    # aliens will surrender
    # when every single one of them all panicking or berserking
    # which means they want to stop
-   ai:
-      extendedFireModeChoice: true
-      pickUpWeaponsMoreActively: true
-      fireChoiceIntelCoeff: 5
-      fireChoiceAggroCoeff: 5
-      useDelayBlaster: 0
-      useDelayFirearm: 0
-      useDelayGrenade: 0
-      useDelayMelee: 0
-      useDelayPsionic: 0
+  ai:
+    extendedFireModeChoice: true
+    pickUpWeaponsMoreActively: true
+    fireChoiceIntelCoeff: 5
+    fireChoiceAggroCoeff: 5
+    useDelayBlaster: 0
+    useDelayFirearm: 0
+    useDelayGrenade: 0
+    useDelayMelee: 0
+    useDelayPsionic: 0
  # ┌─┐┌─┐┌┬┐┌┐ ┌─┐┌┬┐
  # │  │ ││││├┴┐├─┤ │
  # └─┘└─┘┴ ┴└─┘┴ ┴ ┴
-   kneelBonusGlobal: 120
-   oneHandedPenaltyGlobal: 60
-   statisticalBulletConservation: true
+  kneelBonusGlobal: 120
+  oneHandedPenaltyGlobal: 60
+  statisticalBulletConservation: true
  # ┌─┐┌┬┐┬ ┬┌┐┌
  # └─┐ │ │ ││││
  # └─┘ ┴ └─┘┘└┘
-   stunningImprovesMorale: true
-   tuRecoveryWakeUpNewTurn: 50
+  stunningImprovesMorale: true
+  tuRecoveryWakeUpNewTurn: 50
  # ┌─┐┬  ┌─┐┌─┐┌─┐  ┌─┐ ┬ ┬┌─┐┬─┐┌┬┐┌─┐┬─┐  ┌─┐┌─┐┌┬┐┌┐ ┌─┐┌┬┐
  # │  │  │ │└─┐├┤───│─┼┐│ │├─┤├┬┘ │ ├┤ ├┬┘  │  │ ││││├┴┐├─┤ │
  # └─┘┴─┘└─┘└─┘└─┘  └─┘└└─┘┴ ┴┴└─ ┴ └─┘┴└─  └─┘└─┘┴ ┴└─┘┴ ┴ ┴
-   enableCloseQuartersCombat: 1
-   closeQuartersAccuracyGlobal: 100
-   closeQuartersTuCostGlobal: 12
-   closeQuartersEnergyCostGlobal: 15
+  enableCloseQuartersCombat: 1
+  closeQuartersSneakUpGlobal: 100
+  closeQuartersAccuracyGlobal: 60
+  closeQuartersTuCostGlobal: 12
+  closeQuartersEnergyCostGlobal: 15
+
 
    #difficultyDemigod: true
 
@@ -95,18 +97,18 @@
 # ██║     ██║   ██║╚════██║██║╚██╗██║   ██║   ██╔══██║██║╚██╗██║   ██║   ╚════██║
 # ╚██████╗╚██████╔╝███████║██║ ╚████║   ██║   ██║  ██║██║ ╚████║   ██║   ███████║
 #  ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
-   constants:
+  constants:
  # ╔╗ ╔═╗╔╦╗╔╦╗╦  ╔═╗╔═╗╔═╗╔═╗╔═╗╔═╗
  # ╠╩╗╠═╣ ║  ║ ║  ║╣ ╚═╗║  ╠═╣╠═╝║╣
  # ╚═╝╩ ╩ ╩  ╩ ╩═╝╚═╝╚═╝╚═╝╩ ╩╩  ╚═╝
    # ┌┬┐┌─┐┬  ┌─┐┌─┐
    # │││├┤ │  ├┤ ├┤
    # ┴ ┴└─┘┴─┘└─┘└─┘
-      extendedItemReloadCost: true
-      extendedTerrainMelee: 1
-      extendedMeleeReactions: 1
-      extendedUnderwaterThrowFactor: 10
+    extendedItemReloadCost: true
+    extendedTerrainMelee: 1
+    extendedMeleeReactions: 1
+    extendedUnderwaterThrowFactor: 10
 
-      damageRange: 100
-      explosiveDamageRange: 50
-      fireDamageRange: [10, 50]
+    damageRange: 100
+    explosiveDamageRange: 50
+    fireDamageRange: [10, 50]

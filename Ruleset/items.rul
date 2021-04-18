@@ -131,22 +131,15 @@ items:
       ammoSlot: 1
     confAuto:
       ammoSlot: 1
-    ammo:
-      2:
-        compatibleAmmo: [ STR_LASER_ELERIUM_BATTERY ]
-        tuLoad: 200
-        tuUnload: 200
 
   - type: STR_LASER_PISTOL
     refNode: *STR_LASER_CLASS
-    ammo:
-      1:
-        compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
+    # ammo:
+    #   1:
+    #     compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
       # powerRangeThreshold: 8
       # powerRangeReduction: 5
-    weight: 20
 
-# LASER FIREARMS
   - type: STR_LASER_RIFLE
     shotgunBehavior: 1
     shotgunSpread: 30
@@ -159,35 +152,8 @@ items:
     vaporDensitySurface: 1
     vaporProbabilitySurface: 2
     explosionSpeed:  2
-    weight: 28
 
-  - &STR_LASER_ATTACHMENT
-    type: STR_LASER_ATTACHMENT
-    size: 0.1
-    weight: 3
-    clipSize: -1
-    power: 42
-    bigSprite: 2
-    floorSprite: 2
-    hitSound: 19
-    hitAnimation: 36
-    damageType: 4
-    battleType: 2
-    invWidth: 1
-    invHeight: 1
-    listOrder: 1
-    vaporColorSurface: 1
 
-  - type: STR_LASER_ADVANCED_LENS
-    refNode: *STR_LASER_ATTACHMENT
-    shotgunBehavior: 0
-    vaporDensitySurface: 3
-    vaporProbabilitySurface: 16
-    listOrder: 3
-
-  - type: STR_LASER_ELERIUM_BATTERY
-    refNode: *STR_LASER_ATTACHMENT
-    weight: -14
 # ════════════════════════════════════════════════════════════════
 #  ██████╗ ██╗      █████╗ ███████╗███╗   ███╗ █████╗ ███████╗
 #  ██╔══██╗██║     ██╔══██╗██╔════╝████╗ ████║██╔══██╗██╔════╝
@@ -196,16 +162,15 @@ items:
 #  ██║     ███████╗██║  ██║███████║██║ ╚═╝ ██║██║  ██║███████║
 #  ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
 # ════════════════════════════════════════════════════════════════
+  # plasma weapons get huge bonus from psi
   - &STR_PLASMA_ACCURACY_MODULE
     type: STR_PLASMA_ACCURACY_MODULE
     accuracyMultiplier:
       firing: 1
       psiSkill: 0.3
       psiStrength: 0.2
-    damageAlter:
-      FireThreshold: 25
 
-  - type: STR_PLASMA_PISTOL # plasma weapons get huge bonus from psi
+  - type: STR_PLASMA_PISTOL
     refNode: *STR_PLASMA_ACCURACY_MODULE
 
   - type: STR_PLASMA_RIFLE
@@ -214,8 +179,30 @@ items:
   - type: STR_HEAVY_PLASMA
     refNode: *STR_PLASMA_ACCURACY_MODULE
 
+  - &STR_PLASMA_CLIP_GLOBAL
+    type: STR_PLASMA_CLIP_GLOBAL
+    # blastRadius: 1
+    # damageType: 3
+    damageAlter:
+      # FixRadius: 1
+      # ResistType: 5
+      # RandomType: 1
+      ToArmorPre: 0.2
+      ToArmor: 0.2
+      FireThreshold: 60
+
+  - type: STR_PLASMA_PISTOL_CLIP
+    refNode: *STR_PLASMA_CLIP_GLOBAL
+    power: 80
+  - type: STR_PLASMA_RIFLE_CLIP
+    refNode: *STR_PLASMA_CLIP_GLOBAL
+    power: 100
+  - type: STR_HEAVY_PLASMA_CLIP
+    refNode: *STR_PLASMA_CLIP_GLOBAL
+    power: 140
+
   - type: STR_SMALL_LAUNCHER
-    compatibleAmmo: [ STR_STUN_BOMB, STR_ALIEN_GRENADE ]
+    compatibleAmmo: [ STR_ALIEN_GRENADE, STR_STUN_BOMB ]
 
     aimRange: 12
     dropoff: 4
@@ -233,16 +220,17 @@ items:
 #     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝
 # ════════════════════════════════════════════════════════════════════
   - type: STR_GRENADE
-    power: 70
+    power: 60
     fuseType: 0
     explosionSpeed: 3
     damageType: 3
     damageAlter:
-      FixRadius: 6
-      RandomType: 7
+      FixRadius: 3
+      RandomType: 1
       ResistType: 1
       RadiusReduction: 10
       ToTile: 0.2
+      ToItem: 0.5
       ToHealth: 1.5
       ToArmor: 0.05
       ArmorEffectiveness: 2.0
@@ -257,6 +245,9 @@ items:
   - type: STR_ALIEN_GRENADE
     clipSize: 1
     explosionSpeed: 3
+    damageAlter:
+      #RandomType: 5
+      ToItem: 1
     fuseType: 0
     #tuPrime: 20
     tuThrow: 25
@@ -419,8 +410,9 @@ items:
     invHeight: 3
     bulletSprite: 4
     battleType: 1
-    weight: 160
+    weight: 40
     turretType: 0
+    fixedWeapon: true
     listOrder: 1110
     accuracySnap: 65
     accuracyAuto: 40
@@ -442,7 +434,7 @@ items:
 
   - type: STR_UGV_AUTO_CANNON
     refNode: *STR_UGV_HEAVY_MACHINEGUN
-    weight: 230
+    weight: 50
     listOrder: 1120
     confSnap:
       shots: 3
@@ -456,13 +448,13 @@ items:
       ToTile: 0.6
       FixRadius: 2
 
-  - type: STR_UGV_GRENADE_LAUNCHER #40mm automatic grenade launcher
+  - type: STR_UGV_GRENADE_MACHINEGUN #40mm automatic grenade launcher
     refNode: *STR_UGV_HEAVY_MACHINEGUN
     listOrder: 1130
     turretType: -1
     bigSprite: 11
     hitAnimation: 0
-    weight: 180
+    weight: 50
     tuSnap: 20
     tuAuto: 33
     accuracySnap: 60
@@ -478,23 +470,81 @@ items:
       FixRadius: 2
       ToTile: 0.6
 
-# ══════════════════════════════════════════════════════════
-#  ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
-#  ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
-#  ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗
-#  ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║
-#  ███████║╚██████╗██║  ██║██║██║        ██║   ███████║
-#  ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝
-# ══════════════════════════════════════════════════════════
-# For some strange reason the scripts gets broke
-# when tags and scripts and items are not together
-extended:
-  tags: # Remember to add these tags to the same file as items ruleset
-    RuleItem:
-      ACCURACY_BONUS: int
-      START_PRIMED: int
-      ALLOW_AMMO_TO_RESPRITE: int
-      OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
-      #NEW_FLOOROB_FOR_WEAPON: int
-      #NEW_HANDOB_FOR_WEAPON: int
-      CURRENT_MOD_OFFSET: RuleList
+# # ══════════════════════════════════════════════════════════
+# #  ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
+# #  ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
+# #  ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗
+# #  ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║
+# #  ███████║╚██████╗██║  ██║██║██║        ██║   ███████║
+# #  ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝
+# # ══════════════════════════════════════════════════════════
+# # For some strange reason the scripts gets broke
+# # when tags and scripts and items are not together
+# extended:
+#   tags: # Remember to add these tags to the same file as items ruleset
+#     RuleItem:
+#       ACCURACY_BONUS: int
+#       START_PRIMED: int
+#       ALLOW_AMMO_TO_RESPRITE: int
+#       OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
+#       #NEW_FLOOROB_FOR_WEAPON: int
+#       #NEW_HANDOB_FOR_WEAPON: int
+#       CURRENT_MOD_OFFSET: RuleList
+
+# # ███████╗██╗  ██╗████████╗███████╗███╗   ██╗██████╗ ███████╗██████╗
+# # ██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝████╗  ██║██╔══██╗██╔════╝██╔══██╗
+# # █████╗   ╚███╔╝    ██║   █████╗  ██╔██╗ ██║██║  ██║█████╗  ██║  ██║
+# # ██╔══╝   ██╔██╗    ██║   ██╔══╝  ██║╚██╗██║██║  ██║██╔══╝  ██║  ██║
+# # ███████╗██╔╝ ██╗   ██║   ███████╗██║ ╚████║██████╔╝███████╗██████╔╝
+# # ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═════╝
+#   scripts:
+# # ╦╔╦╗╔═╗╔╦╗  ╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔
+# # ║ ║ ║╣ ║║║  ║  ╠╦╝║╣ ╠═╣ ║ ║║ ║║║║
+# # ╩ ╩ ╚═╝╩ ╩  ╚═╝╩╚═╚═╝╩ ╩ ╩ ╩╚═╝╝╚╝
+#   # ┌─┐┬ ┬┌┬┐┌─┐   ┌─┐┬─┐┬┌┬┐┌─┐
+#   # ├─┤│ │ │ │ │───├─┘├┬┘││││├┤
+#   # ┴ ┴└─┘ ┴ └─┘   ┴  ┴└─┴┴ ┴└─┘
+#     createItem:
+#       - offset: 51
+#         code: |
+#           var int start_primed;
+#           item.getTag start_primed Tag.START_PRIMED;
+
+#           if eq start_primed 1;
+#             item.setFuseTimer 0;
+#             end;
+#           return;
+# # ╦╔╦╗╔═╗╔╦╗  ╔═╗╔═╗╦  ╔═╗╔═╗╔╦╗╦╔═╗╔╗╔
+# # ║ ║ ║╣ ║║║  ╚═╗║╣ ║  ║╣ ║   ║ ║║ ║║║║
+# # ╩ ╩ ╚═╝╩ ╩  ╚═╝╚═╝╩═╝╚═╝╚═╝ ╩ ╩╚═╝╝╚╝
+#   # ┌┬┐┌─┐┌─┐┌─┐┌─┐┬┌┐┌┌─┐  ┌┐ ┌─┐┌─┐┌─┐┌┬┐  ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐
+#   # │││├─┤│ ┬├─┤┌─┘││││├┤───├┴┐├─┤└─┐├┤  ││  └─┐├─┘├┬┘│ │ ├┤ └─┐
+#   # ┴ ┴┴ ┴└─┘┴ ┴└─┘┴┘└┘└─┘  └─┘┴ ┴└─┘└─┘─┴┘  └─┘┴  ┴└─┴ ┴ └─┘└─┘
+#     selectItemSprite:
+#     # Select weapon bigSprite based on ammo item
+#       - offset: 1
+#         code: |
+#           var ptr BattleItem ammoItem;
+#           var ptr RuleItem weaponRuleset;
+#           var ptr RuleItem ammoRuleset;
+#           var int changeSprite;
+
+#           var int base_index;
+#           var int ammo_offset;
+#           var int temp;
+
+#           if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
+#             item.getRuleItem weaponRuleset; # get ruleset of item as weaponRuleset
+#             weaponRuleset.getTag changeSprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
+
+#             if eq changeSprite 1; # if changeSprite == 1; -> tagged as resprite
+#               item.getAmmoItem ammoItem; # get ammo item as ammoItem
+#               ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset
+#               ammoRuleset.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset valuse as ammo_offset
+#               add sprite_index -1; # Simulates ammo done
+#               add sprite_index ammo_offset; # ammo offset applied to sprite_index
+#               rules.getSpriteOffsetBigobs sprite_index temp;
+#               return sprite_index;
+#             end;
+#           end;
+#           return sprite_index;

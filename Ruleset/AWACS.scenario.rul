@@ -1,0 +1,308 @@
+# ╔═╗╦═╗╦╔═╗╦╔╗╔╔═╗╦    ╔╦╗╔═╗╔╦╗  ╔╗ ╦ ╦  ╦═╗╔═╗╔╦╗╦  ╦
+# ║ ║╠╦╝║║ ╦║║║║╠═╣║    ║║║║ ║ ║║  ╠╩╗╚╦╝  ╠╦╝║╣  ║║╚╗╔╝
+# ╚═╝╩╚═╩╚═╝╩╝╚╝╩ ╩╩═╝  ╩ ╩╚═╝═╩╝  ╚═╝ ╩   ╩╚═╚═╝═╩╝ ╚╝
+# https://openxcom.org/forum/index.php?topic=2952
+#
+#  ██████╗██████╗  █████╗ ███████╗████████╗███████╗
+# ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝
+# ██║     ██████╔╝███████║█████╗     ██║   ███████╗
+# ██║     ██╔══██╗██╔══██║██╔══╝     ██║   ╚════██║
+# ╚██████╗██║  ██║██║  ██║██║        ██║   ███████║
+#  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝        ╚═╝   ╚══════╝
+crafts:
+ # ┌─┐┬┌─┐┬ ┬┌┬┐┌─┐┬─┐
+ # ├┤ ││ ┬├─┤ │ ├┤ ├┬┘
+ # └  ┴└─┘┴ ┴ ┴ └─┘┴└─
+  - type: STR_SKYRANGER
+    radarChance: 30
+  - type: STR_INTERCEPTOR
+    radarChance: 30
+  - type: STR_FIRESTORM
+    radarChance: 30
+  - type: STR_LIGHTNING
+    radarChance: 30
+  - type: STR_AVENGER
+    radarChance: 50
+ # ┬─┐┌─┐┌┬┐┌─┐┬─┐  ┌─┐┬┬─┐┌─┐┬─┐┌─┐┌─┐┌┬┐
+ # ├┬┘├─┤ ││├┤ ├┬┘  ├─┤│├┬┘│  ├┬┘├─┤├┤  │
+ # ┴└─┴ ┴─┴┘└─┘┴└─  ┴ ┴┴┴└─└─┘┴└─┴ ┴└   ┴
+  - type: STR_HAWKEYE
+    sprite: 26
+    fuelMax: 1500
+    damageMax: 100
+    speedMax: 410
+    accel: 1
+    costBuy: 500000
+    costRent: 500000
+    refuelRate: 75
+    radarRange: 1550
+    radarChance: 25
+    transferTime: 96
+    score: 250
+    listOrder: 207
+    autoPatrol: true
+  - type: STR_AWACS
+    sprite: 27
+    fuelMax: 2000
+    damageMax: 100
+    speedMax: 780
+    accel: 1
+    costBuy: 700000
+    costRent: 700000
+    refuelRate: 75
+    radarRange: 1700
+    radarChance: 40
+    transferTime: 96
+    score: 250
+    listOrder: 208
+    autoPatrol: true
+  - type: STR_DARKSTAR
+    sprite: 28
+    fuelMax: 2500
+    damageMax: 100
+    speedMax: 360
+    accel: 1
+    costSell: 1090000
+    refuelRate: 500
+    radarRange: 1900
+    radarChance: 60
+    transferTime: 96
+    score: 250
+    listOrder: 209
+    autoPatrol: true
+# ███████╗ █████╗  ██████╗██╗██╗     ██╗████████╗██╗███████╗███████╗
+# ██╔════╝██╔══██╗██╔════╝██║██║     ██║╚══██╔══╝██║██╔════╝██╔════╝
+# █████╗  ███████║██║     ██║██║     ██║   ██║   ██║█████╗  ███████╗
+# ██╔══╝  ██╔══██║██║     ██║██║     ██║   ██║   ██║██╔══╝  ╚════██║
+# ██║     ██║  ██║╚██████╗██║███████╗██║   ██║   ██║███████╗███████║
+# ╚═╝     ╚═╝  ╚═╝ ╚═════╝╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝╚══════╝╚══════╝
+facilities:
+  - delete: STR_SMALL_RADAR_SYSTEM
+  - delete: STR_LARGE_RADAR_SYSTEM
+  - type: STR_HYPER_WAVE_DECODER
+    radarChance: 0
+# ██████╗ ███████╗███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗
+# ██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║
+# ██████╔╝█████╗  ███████╗█████╗  ███████║██████╔╝██║     ███████║
+# ██╔══██╗██╔══╝  ╚════██║██╔══╝  ██╔══██║██╔══██╗██║     ██╔══██║
+# ██║  ██║███████╗███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║
+# ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+research:
+  - name: STR_UNMANNED_AIRCRAFT
+    listOrder: 3107
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+# ███╗   ███╗ █████╗ ███╗   ██╗██╗   ██╗███████╗ █████╗  ██████╗████████╗██╗   ██╗██████╗ ███████╗
+# ████╗ ████║██╔══██╗████╗  ██║██║   ██║██╔════╝██╔══██╗██╔════╝╚══██╔══╝██║   ██║██╔══██╗██╔════╝
+# ██╔████╔██║███████║██╔██╗ ██║██║   ██║█████╗  ███████║██║        ██║   ██║   ██║██████╔╝█████╗
+# ██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ██╔══██║██║        ██║   ██║   ██║██╔══██╗██╔══╝
+# ██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝██║     ██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║███████╗
+# ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
+manufacture:
+  - name: STR_DARKSTAR
+    category: STR_CRAFT
+    listOrder: 3507
+    requires:
+      - STR_UNMANNED_AIRCRAFT
+    space: 20
+    time: 8000
+    cost: 300000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 45
+      STR_UFO_NAVIGATION: 1
+#-----------------------------------
+ufopaedia:
+  - delete: STR_SMALL_RADAR_SYSTEM
+  - delete: STR_LARGE_RADAR_SYSTEM
+  - id: STR_HAWKEYE
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: HAWKEYE_BIG
+    text: STR_HAWKEYE_UFOPEDIA
+    listOrder: 407
+    rect_stats:
+      x: 180
+      y: 134
+      width: 140
+      height: 60
+    rect_text:
+      x: 5
+      y: 40
+      width: 170
+      height: 60
+  - id: STR_AWACS
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: AWACS_BIG
+    text: STR_AWACS_UFOPEDIA
+    listOrder: 408
+    rect_stats:
+      x: 190
+      y: 10
+      width: 140
+      height: 60
+    rect_text:
+      x: 5
+      y: 40
+      width: 140
+      height: 60
+  - id: STR_DARKSTAR
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: DARKSTAR_BIG
+    text: STR_DARKSTAR_UFOPEDIA
+    listOrder: 409
+    requires:
+      - STR_UNMANNED_AIRCRAFT
+    rect_stats:
+      x: 5
+      y: 134
+      width: 140
+      height: 60
+    rect_text:
+      x: 5
+      y: 40
+      width: 260
+      height: 60
+#-----------------------------------
+startingBase:
+  facilities:
+    - type: STR_ACCESS_LIFT
+      x: 2
+      y: 2
+    - type: STR_HANGAR
+      x: 2
+      y: 0
+    - type: STR_HANGAR
+      x: 0
+      y: 4
+    - type: STR_HANGAR
+      x: 4
+      y: 4
+    - type: STR_LIVING_QUARTERS
+      x: 3
+      y: 2
+    - type: STR_GENERAL_STORES
+      x: 1
+      y: 3
+    - type: STR_GENERAL_STORES
+      x: 2
+      y: 3
+    - type: STR_LABORATORY
+      x: 3
+      y: 3
+    - type: STR_WORKSHOP
+      x: 4
+      y: 3
+  crafts:
+    - type: STR_SKYRANGER
+      id: 1
+      fuel: 1500
+      items:
+        STR_GRENADE: 8
+        STR_HC_AP_AMMO: 2
+        STR_HC_HE_AMMO: 2
+        STR_HEAVY_CANNON: 1
+        STR_PISTOL: 3
+        STR_PISTOL_CLIP: 5
+        STR_RIFLE: 6
+        STR_RIFLE_CLIP: 12
+    - type: STR_INTERCEPTOR
+      id: 1
+      fuel: 1000
+      weapons:
+        - type: STR_STINGRAY
+          ammo: 6
+        - type: STR_CANNON_UC
+          ammo: 200
+    - type: STR_HAWKEYE
+      id: 1
+      fuel: 1500
+# ███████╗██╗  ██╗████████╗██████╗  █████╗ ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
+# ██╔════╝╚██╗██╔╝╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
+# █████╗   ╚███╔╝    ██║   ██████╔╝███████║███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗
+# ██╔══╝   ██╔██╗    ██║   ██╔══██╗██╔══██║╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
+# ███████╗██╔╝ ██╗   ██║   ██║  ██║██║  ██║███████║██║     ██║  ██║██║   ██║   ███████╗███████║
+# ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
+extraSprites:
+  - type: BASEBITS.PCK
+    files:
+      59: Resources/CRAFTS/AWACS/HAWKEYE_base_view.gif
+      60: Resources/CRAFTS/AWACS/AWACS_base_view.gif
+      61: Resources/CRAFTS/AWACS/DARKSTAR_base_view.gif
+  - type: INTICON.PCK
+    width: 352
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      26: Resources/CRAFTS/AWACS/AWACS_geoscape.png
+#      26: Resources/CRAFTS/AWACS/HAWKEYE_minimized.png
+#      27: Resources/CRAFTS/AWACS/AWACS_minimized.png
+#      28: Resources/CRAFTS/AWACS/DARKSTAR_minimized.png
+#      37: Resources/CRAFTS/AWACS/HAWKEYE_dogfight.png
+#      38: Resources/CRAFTS/AWACS/AWACS_dogfight.png
+#      39: Resources/CRAFTS/AWACS/DARKSTAR_dogfight.png
+  - type: HAWKEYE_BIG
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CRAFTS/AWACS/HAWKEYE_ufopaedia.png
+  - type: AWACS_BIG
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CRAFTS/AWACS/AWACS_ufopaedia.png
+  - type: DARKSTAR_BIG
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CRAFTS/AWACS/DARKSTAR_ufopaedia.png
+# ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+# ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+# ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
+# ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
+# ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
+# ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+extraStrings:
+  - type: en-US
+    strings:
+      STR_UNMANNED_AIRCRAFT: Unmanned Aircraft
+      STR_HAWKEYE: HAWKEYE
+      STR_HAWKEYE_UFOPEDIA: A SPECIAL MODIFICATION FOR XCOM WITH ADDITIONAL FUEL TANK AND INCREASED RADAR RANGE.
+      STR_AWACS: AWACS
+      STR_AWACS_UFOPEDIA: THE NEW GENERATION OF AWACS. LATEST TECHNOLOGY ALLOWS DETECT ALL KIND OF TARGETS ON SIGNIFICANT DISTANCE.
+      STR_DARKSTAR: DARKSTAR
+      STR_DARKSTAR_UFOPEDIA: USE OF ALIEN TECHNOLOGY AND ULTRALIGHT ALIEN ALLOYS ALLOWED DEVELOP AN UNMANNED AIRCRAFT WITH PREVIOUSLY UNREACHABLE UPTIME.  THE RADAR HAS BEEN CONFIGURED FOR BETTER DETECTION OF UFO.
+  - type: en-GB
+    strings:
+      STR_UNMANNED_AIRCRAFT: Unmanned Aircraft
+      STR_HAWKEYE: HAWKEYE
+      STR_HAWKEYE_UFOPEDIA: A SPECIAL MODIFICATION FOR XCOM WITH ADDITIONAL FUEL TANK AND INCREASED RADAR RANGE.
+      STR_AWACS: AWACS
+      STR_AWACS_UFOPEDIA: THE NEW GENERATION OF AWACS. LATEST TECHNOLOGY ALLOWS DETECT ALL KIND OF TARGETS ON SIGNIFICANT DISTANCE.
+      STR_DARKSTAR: DARKSTAR
+      STR_DARKSTAR_UFOPEDIA: USE OF ALIEN TECHNOLOGY AND ULTRALIGHT ALIEN ALLOYS ALLOWED DEVELOP AN UNMANNED AIRCRAFT WITH PREVIOUSLY UNREACHABLE UPTIME.  THE RADAR HAS BEEN CONFIGURED FOR BETTER DETECTION OF UFO.
+  - type: ko
+    strings:
+      STR_HAWKEYE: "호크아이"
+      STR_HAWKEYE_UFOPEDIA: "XCOM에서의 사용을 위해 추가 연료 탱크와 신형 레이더를 장착하였다."
+      STR_AWACS: AWACS "조기경보기"
+      STR_AWACS_UFOPEDIA: "신세대 AWACS 조기경보통제기. 내장된 신형 레이더 기술으로 광범위한 목표 추적이 가능하다."
+      STR_UNMANNED_AIRCRAFT: "무인 조기경보기"
+      STR_DARKSTAR: "다크스타"
+      STR_DARKSTAR_UFOPEDIA: "초경량 외계 합금과 외계인 기술을 이용하여 기존에는 절대 달성할 수 없었을 기간에 무인 조기경보기를 개발할 수 있게 되었다.  THE RADAR HAS BEEN CONFIGURED FOR BETTER DETECTION OF UFO."
+  - type: ru
+    strings:
+      STR_UNMANNED_AIRCRAFT: Беспилотный самолет
+      STR_HAWKEYE: ХОКАЙ
+      STR_HAWKEYE_UFOPEDIA: СПЕЦИАЛЬНАЯ МОДИФИКАЦИЯ ДЛЯ ХСОМ, С ДОПОЛНИТЕЛЬНЫМ ТОПЛИВНЫМ БАКОМ И УВЕЛИЧЕННОЙ ДАЛЬНОСТЬЮ РАДАРА.
+      STR_AWACS: АВАКС
+      STR_AWACS_UFOPEDIA: НОВЕЙШЕЕ ПОКОЛЕНИЕ АВАКС. СОВРЕМЕННЫЕ ТЕХНОЛОГИИ ПОЗВОЛЯЮТ ОБНАРУЖИВАТЬ ВСЕ ВИДЫ ЦЕЛЕЙ НА ЗНАЧИТЕЛЬНОМ РАССТОЯНИИ.
+      STR_DARKSTAR: ДАРКСТАР
+      STR_DARKSTAR_UFOPEDIA: ИСПОЛЬЗОВАНИЕ СВЕРХЛЕГКИХ ВНЕЗЕМНЫХ СПЛАВОВ И ТЕХНОЛОГИЙ ПРИШЕЛЬЦЕВ ПОЗВОЛИЛО РАЗРАБОТАТЬ БЕСПИЛОТНЫЙ ЛЕТАТЕЛЬНЫЙ АППАРАТ С РАНЕЕ НЕДОСТИЖИМЫМ ВРЕМЕНЕМ АВТОНОМНОЙ РАБОТЫ.{NEWLINE}РАДАР БЫЛ ПЕРЕНАСТРОЕН ДЛЯ ЛУЧШЕГО ОБНАРУЖЕНИЯ НЛО.
