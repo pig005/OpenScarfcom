@@ -9,8 +9,17 @@
 # ╚═╝ ╩ ╩╚═╩ ╩╩╚═ ╚╝ ╩╝╚╝╚═╝╩  ╚═╝╚═╝ ╩
 #https://openxcom.mod.io/extra-explosions
 items:
-## XCOM 1 ##
-#STUN
+# ══════════════════════════
+# ██╗   ██╗███████╗ ██████╗
+# ██║   ██║██╔════╝██╔═══██╗
+# ██║   ██║█████╗  ██║   ██║
+# ██║   ██║██╔══╝  ██║   ██║
+# ╚██████╔╝██║     ╚██████╔╝
+#  ╚═════╝ ╚═╝      ╚═════╝
+# ══════════════════════════
+ # ╔═╗╔╦╗╦ ╦╔╗╔
+ # ╚═╗ ║ ║ ║║║║
+ # ╚═╝ ╩ ╚═╝╝╚╝
   - type: STR_STUN_BOMB
     hitAnimation: 80
   - type: STR_STUN_GRENADE
@@ -25,16 +34,18 @@ items:
     hitAnimation: 80
   - type: STR_MEDGAS_GRENADE
     hitAnimation: 80
-
-#SMOKE
+ # ╔═╗╔╦╗╔═╗╦╔═╔═╗
+ # ╚═╗║║║║ ║╠╩╗║╣
+ # ╚═╝╩ ╩╚═╝╩ ╩╚═╝
   - type: STR_SMOKE_GRENADE
     hitAnimation: 100
   - type: STR_SMOKE_BOMB
     hitAnimation: 100
   - type: STR_LAUNCHER_SMOKE
     hitAnimation: 100
-
-#Plasma
+ # ╔═╗╦  ╔═╗╔═╗╔╦╗╔═╗
+ # ╠═╝║  ╠═╣╚═╗║║║╠═╣
+ # ╩  ╩═╝╩ ╩╚═╝╩ ╩╩ ╩
   - type: STR_ALIEN_GRENADE
     hitAnimation: 180
   # - type: STR_PLASMA_PISTOL_CLIP
@@ -49,17 +60,29 @@ items:
   #   hitAnimation: 180
   # - type: SECTOPOD_HEAVY_PLASMA
   #   hitAnimation: 180
-
-##XCOM 2##
-#Freeze
+# ═════════════════════════════════
+# ████████╗███████╗███████╗██████╗
+# ╚══██╔══╝██╔════╝██╔════╝██╔══██╗
+#    ██║   █████╗  █████╗  ██║  ██║
+#    ██║   ██╔══╝  ██╔══╝  ██║  ██║
+#    ██║   ██║     ██║     ██████╔╝
+#    ╚═╝   ╚═╝     ╚═╝     ╚═════╝
+# ═════════════════════════════════
+ # ╔═╗╦═╗╔═╗╔═╗╔═╗╔═╗
+ # ╠╣ ╠╦╝║╣ ║╣ ╔═╝║╣
+ # ╚  ╩╚═╚═╝╚═╝╚═╝╚═╝
   - type: STR_THERMAL_SHOK_BOMB
     hitAnimation: 128
   - type: STR_HALLUCINOID_STUN_WEAPON
     hitAnimation: 128
-#SMOKE
+ # ╔═╗╔╦╗╔═╗╦╔═╔═╗
+ # ╚═╗║║║║ ║╠╩╗║╣
+ # ╚═╝╩ ╩╚═╝╩ ╩╚═╝
   - type: STR_DYE_GRENADE
     hitAnimation: 148
-#HE
+ # ╦ ╦╔═╗
+ # ╠═╣║╣
+ # ╩ ╩╚═╝
   - type: STR_HWP_DISPLACER_PWT
     hitAnimation: 168
   - type: STR_GC_HE_AMMO
