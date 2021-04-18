@@ -1,0 +1,93 @@
+items:
+## XCOM 1 ##
+#STUN
+  - type: STR_STUN_BOMB
+    hitAnimation: 80
+  - type: STR_STUN_GRENADE
+    hitAnimation: 80
+  - type: STR_FLASHBANG_GRENADE
+    hitAnimation: 80
+  - type: STR_IMP_FLASHBANG_GRENADE
+    hitAnimation: 80
+  - type: STR_BATBOMB2
+    hitAnimation: 80
+  - type: STR_MECHTOID_STUN_ROCKET
+    hitAnimation: 80
+  - type: STR_MEDGAS_GRENADE
+    hitAnimation: 80
+
+#SMOKE
+  - type: STR_SMOKE_GRENADE
+    hitAnimation: 100
+  - type: STR_SMOKE_BOMB
+    hitAnimation: 100
+  - type: STR_LAUNCHER_SMOKE
+    hitAnimation: 100
+
+#Plasma
+  - type: STR_ALIEN_GRENADE
+    hitAnimation: 180
+  # - type: STR_PLASMA_PISTOL_CLIP
+  #   hitAnimation: 180
+  # - type: STR_PLASMA_RIFLE_CLIP
+  #   hitAnimation: 180
+  # - type: STR_HEAVY_PLASMA_CLIP
+  #   hitAnimation: 180
+  # - type: CYBERDISC_WEAPON
+  #   hitAnimation: 180
+  # - type: SECTOPOD_WEAPON
+  #   hitAnimation: 180
+  # - type: SECTOPOD_HEAVY_PLASMA
+  #   hitAnimation: 180
+
+
+##XCOM 2##
+#Freeze
+  - type: STR_THERMAL_SHOK_BOMB
+    hitAnimation: 128
+  - type: STR_HALLUCINOID_STUN_WEAPON
+    hitAnimation: 128
+#SMOKE
+  - type: STR_DYE_GRENADE
+    hitAnimation: 148
+#HE
+  - type: STR_HWP_DISPLACER_PWT
+    hitAnimation: 168
+  - type: STR_GC_HE_AMMO
+    hitAnimation: 168
+  - type: STR_GC_P_AMMO
+    hitAnimation: 168
+  - type: STR_HJC_HE_AMMO
+    hitAnimation: 168
+  - type: STR_HJC_P_AMMO
+    hitAnimation: 168
+  - type: STR_SMALL_TORPEDO
+    hitAnimation: 168
+  - type: STR_LARGE_TORPEDO
+    hitAnimation: 168
+  - type: STR_PHOSPHOROUS_TORPEDO
+    hitAnimation: 168
+  - type: STR_MAGNA_BLAST_GRENADE
+    hitAnimation: 168
+  - type: STR_PARTICLE_DISTURBANCE_GRENADE
+    hitAnimation: 168
+  - type: STR_MAGNA_PACK_EXPLOSIVE
+    hitAnimation: 168
+  - type: STR_DISRUPTOR_AMMO
+    hitAnimation: 168
+
+
+
+extraSprites:
+  - type: X1.PCK
+    width: 1024
+    height: 128
+    subX: 128
+    subY: 64
+    files:
+      80:  Resources/SUBMOD-EXTRA-EXPLOSIONS/XStun2.png
+      100: Resources/SUBMOD-EXTRA-EXPLOSIONS/XSmoke2.png
+      120: Resources/SUBMOD-EXTRA-EXPLOSIONS/X2_Freeze.png
+      140: Resources/SUBMOD-EXTRA-EXPLOSIONS/X2_Dye.png
+      160: Resources/SUBMOD-EXTRA-EXPLOSIONS/X2_HE.png
+      180: Resources/SUBMOD-EXTRA-EXPLOSIONS/XPlasma.png

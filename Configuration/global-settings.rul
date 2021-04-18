@@ -9,18 +9,19 @@
  # └  ┴┴ └─└─┘─┴┘
   fixedUserOptions:
     battleUFOExtenderAccuracy: true
+    craftLaunchAlways: true
+    canSellLiveAliens: true
+    allowPsionicCapture: true
+    alienBleeding: true
+    strafe: true
  # ┬─┐┌─┐┌─┐┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐┌┬┐
  # ├┬┘├┤ │  │ │││││││├┤ │││ ││├┤  ││
  # ┴└─└─┘└─┘└─┘┴ ┴┴ ┴└─┘┘└┘─┴┘└─┘─┴┘
   recommendedUserOptions:
     allowBuildingQueue: true
-    craftLaunchAlways: true
     customInitialBase: true
     battleExplosionHeight: 3
-    allowPsionicCapture: true
-    canSellLiveAliens: true
-    strafe: true
-    alienBleeding: true
+
 #  ██████╗ ███████╗ ██████╗ ███████╗ ██████╗ █████╗ ██████╗ ███████╗
 # ██╔════╝ ██╔════╝██╔═══██╗██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝
 # ██║  ███╗█████╗  ██║   ██║███████╗██║     ███████║██████╔╝█████╗
@@ -84,7 +85,14 @@
   closeQuartersAccuracyGlobal: 60
   closeQuartersTuCostGlobal: 12
   closeQuartersEnergyCostGlobal: 15
-
+ # ┌┐ ┬ ┬┌─┐┬ ┬┬ ┬┌┐┌┌┬┐
+ # ├┴┐│ ││ ┬├─┤│ ││││ │
+ # └─┘└─┘└─┘┴ ┴└─┘┘└┘ ┴
+  bughuntMinTurn: 30
+  bughuntRank: -1
+  bughuntMaxEnemies: 999
+  bughuntLowMorale: 999
+  bughuntTimeUnitsLeft: 999
 
    #difficultyDemigod: true
 
