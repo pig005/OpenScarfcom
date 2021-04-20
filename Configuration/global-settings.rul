@@ -114,9 +114,9 @@
    # ┴ ┴└─┘┴─┘└─┘└─┘
     extendedItemReloadCost: true
     extendedTerrainMelee: 1
-    extendedMeleeReactions: 1
+    extendedMeleeReactions: 2
     extendedUnderwaterThrowFactor: 10
 
     damageRange: 100
     explosiveDamageRange: 50
-    fireDamageRange: [10, 50]
+    fireDamageRange: [10, 30]

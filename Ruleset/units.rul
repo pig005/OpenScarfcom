@@ -2,8 +2,6 @@ units:
 #HWP
   #- delete: STR_TANK_CANNON
 
-
-
   # - type: STR_HOVERTANK_PLASMA
   #   stats:
   #     tu: 100

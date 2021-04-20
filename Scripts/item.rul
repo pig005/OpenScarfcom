@@ -19,18 +19,23 @@ extended:
       START_PRIMED: int
       ALLOW_AMMO_TO_RESPRITE: int
       OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
-      #NEW_FLOOROB_FOR_WEAPON: int
-      #NEW_HANDOB_FOR_WEAPON: int
-      CURRENT_MOD_OFFSET: RuleList
   scripts:
-# ╦╔╦╗╔═╗╔╦╗  ╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔
-# ║ ║ ║╣ ║║║  ║  ╠╦╝║╣ ╠═╣ ║ ║║ ║║║║
-# ╩ ╩ ╚═╝╩ ╩  ╚═╝╩╚═╚═╝╩ ╩ ╩ ╩╚═╝╝╚╝
 
+# ██╗████████╗███████╗███╗   ███╗███████╗
+# ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
+# ██║   ██║   █████╗  ██╔████╔██║███████╗
+# ██║   ██║   ██╔══╝  ██║╚██╔╝██║╚════██║
+# ██║   ██║   ███████╗██║ ╚═╝ ██║███████║
+# ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝
+  # ╦╔╦╗╔═╗╔╦╗  ╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔
+  # ║ ║ ║╣ ║║║  ║  ╠╦╝║╣ ╠═╣ ║ ║║ ║║║║
+  # ╩ ╩ ╚═╝╩ ╩  ╚═╝╩╚═╚═╝╩ ╩ ╩ ╩╚═╝╝╚╝
     createItem:
       - offset: 51
 
-    # No explosion on first turn
+  # ╦╔╦╗╔═╗╔╦╗  ╔═╗╦  ╦╔═╗╦═╗╦ ╦  ╔╦╗╦ ╦╦═╗╔╗╔
+  # ║ ║ ║╣ ║║║  ║╣ ╚╗╔╝║╣ ╠╦╝╚╦╝   ║ ║ ║╠╦╝║║║
+  # ╩ ╩ ╚═╝╩ ╩  ╚═╝ ╚╝ ╚═╝╩╚═ ╩    ╩ ╚═╝╩╚═╝╚╝
     newTurnItem:
     # ┌─┐┬ ┬┌┬┐┌─┐   ┌─┐┬─┐┬┌┬┐┌─┐
     # ├─┤│ │ │ │ │───├─┘├┬┘││││├┤
@@ -42,11 +47,11 @@ extended:
 
           if eq current_turn 1;
             var ptr RuleInventory items_inventory;
-            var text inventory_slot;
+            var int inventory_slot;
             item.getSlot items_inventory;
-            items_inventory.getId inventory_slot;
+            items_inventory.getType inventory_slot;
 
-            if neq inventory_slot "STR_GROUND";
+            if neq inventory_slot INV_GROUND;
               var int start_primed;
               item.getTag start_primed Tag.START_PRIMED;
 
@@ -58,15 +63,13 @@ extended:
           end;
           return;
 
-
-# ╦╔╦╗╔═╗╔╦╗  ╔═╗╔═╗╦  ╔═╗╔═╗╔╦╗╦╔═╗╔╗╔
-# ║ ║ ║╣ ║║║  ╚═╗║╣ ║  ║╣ ║   ║ ║║ ║║║║
-# ╩ ╩ ╚═╝╩ ╩  ╚═╝╚═╝╩═╝╚═╝╚═╝ ╩ ╩╚═╝╝╚╝
-  # ┌┬┐┌─┐┌─┐┌─┐┌─┐┬┌┐┌┌─┐  ┌┐ ┌─┐┌─┐┌─┐┌┬┐  ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐
-  # │││├─┤│ ┬├─┤┌─┘││││├┤───├┴┐├─┤└─┐├┤  ││  └─┐├─┘├┬┘│ │ ├┤ └─┐
-  # ┴ ┴┴ ┴└─┘┴ ┴└─┘┴┘└┘└─┘  └─┘┴ ┴└─┘└─┘─┴┘  └─┘┴  ┴└─┴ ┴ └─┘└─┘
+  # ╦╔╦╗╔═╗╔╦╗  ╔═╗╔═╗╦  ╔═╗╔═╗╔╦╗╦╔═╗╔╗╔
+  # ║ ║ ║╣ ║║║  ╚═╗║╣ ║  ║╣ ║   ║ ║║ ║║║║
+  # ╩ ╩ ╚═╝╩ ╩  ╚═╝╚═╝╩═╝╚═╝╚═╝ ╩ ╩╚═╝╝╚╝
     selectItemSprite:
-    # Select weapon bigSprite based on ammo item
+    # ┌┬┐┌─┐┌─┐┌─┐┌─┐┬┌┐┌┌─┐  ┌┐ ┌─┐┌─┐┌─┐┌┬┐  ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐
+    # │││├─┤│ ┬├─┤┌─┘││││├┤───├┴┐├─┤└─┐├┤  ││  └─┐├─┘├┬┘│ │ ├┤ └─┐
+    # ┴ ┴┴ ┴└─┘┴ ┴└─┘┴┘└┘└─┘  └─┘┴ ┴└─┘└─┘─┴┘  └─┘┴  ┴└─┴ ┴ └─┘└─┘
       - offset: 1
         code: |
           var ptr BattleItem ammoItem;
@@ -93,3 +96,10 @@ extended:
             end;
           end;
           return sprite_index;
+
+# ██╗   ██╗███╗   ██╗██╗████████╗███████╗
+# ██║   ██║████╗  ██║██║╚══██╔══╝██╔════╝
+# ██║   ██║██╔██╗ ██║██║   ██║   ███████╗
+# ██║   ██║██║╚██╗██║██║   ██║   ╚════██║
+# ╚██████╔╝██║ ╚████║██║   ██║   ███████║
+#  ╚═════╝ ╚═╝  ╚═══╝╚═╝   ╚═╝   ╚══════╝

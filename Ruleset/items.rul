@@ -99,7 +99,6 @@ items:
     power: 42
     tags:
       OFFSET_BIGOB_WEAPON: 1
-      CURRENT_MOD_OFFSET: current
     # Increased damage using 7.62mm ammunition; 3500J v 1700J
     # weighs 800g and matches with 4 in-game weight unit
 # ═════════════════════════════════════════════════════
@@ -202,13 +201,13 @@ items:
 
   - type: STR_SMALL_LAUNCHER
     compatibleAmmo: [ STR_ALIEN_GRENADE, STR_STUN_BOMB ]
-
     aimRange: 12
     dropoff: 4
     accuracySnap: 40
     accuracyAimed: 75
     arcingShot: true
     tuSnap: 24
+    tuAimed: 70
     tuLoad: 20
 # ════════════════════════════════════════════════════════════════════
 #  ████████╗██╗  ██╗██████╗  ██████╗ ██╗    ██╗██╗███╗   ██╗ ██████╗
@@ -241,8 +240,8 @@ items:
     damageAlter:
       FixRadius: 5
     fuseType: 0
-    #tags:
-      #START_PRIMED: 1
+    tags:
+      START_PRIMED: 1
 
   - type: STR_ALIEN_GRENADE
     clipSize: 1
@@ -300,7 +299,7 @@ items:
     hitSound: 19
     hitAnimation: 46
     damageType: 4
-    accuracyAuto: 50
+    #accuracyAuto: 50
     accuracySnap: 75
     #accuracyAimed: 110
     battleType: 1

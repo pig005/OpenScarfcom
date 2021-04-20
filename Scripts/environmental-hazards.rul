@@ -1,0 +1,49 @@
+extended:
+  scripts:
+    newTurnUnit:
+    # ┌─┐┌┐┌┬  ┬┬┬─┐┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐┬    ┌┬┐┌─┐┌┬┐┌─┐┌─┐┌─┐
+    # ├┤ │││└┐┌┘│├┬┘│ │││││││├┤ │││ │ ├─┤│     ││├─┤│││├─┤│ ┬├┤
+    # └─┘┘└┘ └┘ ┴┴└─└─┘┘└┘┴ ┴└─┘┘└┘ ┴ ┴ ┴┴─┘  ─┴┘┴ ┴┴ ┴┴ ┴└─┘└─┘
+      - offset: 2
+        code: |
+          var ptr Tile tile_info;
+
+          var int x;
+          var int y;
+          var int z;
+
+          var int hazard_intensity;
+          var int fire_duration;
+          var int fire_damage 0;
+
+          unit.getPosition.getX x;
+          unit.getPosition.getY y;
+          unit.getPosition.getZ z;
+
+          battle_game.getTile tile_info x y z;
+
+          tile_info.getSmoke hazard_intensity;
+          tile_info.getFire fire_duration;
+          #debug_log "hazard intensity:" hazard_intensity "fire duration:" fire_duration;
+
+          if and gt fire_duration 0 gt hazard_intensity 0;
+            set fire_damage hazard_intensity;
+            mul fire_damage 2;
+            unit.reduceByResistance fire_damage 2;
+            mul fire_damage -1;
+            if lt fire_damage 0;
+              #debug_log "total fire damage:" fire_damage;
+              unit.addHealth fire_damage;
+              if le fire_damage -20;
+                unit.addFatalwounds 0 fire_duration;
+              end;
+            end;
+          else gt hazard_intensity 0;
+            div hazard_intensity 6;
+            unit.reduceByResistance hazard_intensity 9;
+            if gt hazard_intensity 0;
+              #debug_log "total smoke damage:" hazard_intensity;
+              unit.addStun hazard_intensity;
+            end;
+          end;
+          return;
