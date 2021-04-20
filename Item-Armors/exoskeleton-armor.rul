@@ -33,8 +33,8 @@ armors:
 # ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
   - type: STR_EXOSKELETON_ARMOR_UC
-    spriteSheet: XCOM_4.PCK
-    spriteInv: MAN_4
+    spriteSheet: XCOM_EXO.PCK
+    spriteInv: XCOM_EXO
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
@@ -91,7 +91,7 @@ extraSprites:
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - type: XCOM_4.PCK
+  - type: XCOM_EXO.PCK
     width: 512
     height: 720
     subX: 32
@@ -101,38 +101,38 @@ extraSprites:
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
-  - type: MAN_4F0.SPK
+  - type: XCOM_EXOF0.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4f0.png
-  - type: MAN_4F1.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/f0.png
+  - type: XCOM_EXOF1.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4f1.png
-  - type: MAN_4F2.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/f1.png
+  - type: XCOM_EXOF2.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4f2.png
-  - type: MAN_4F3.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/f2.png
+  - type: XCOM_EXOF3.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4f3.png
-  - type: MAN_4M0.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/f3.png
+  - type: XCOM_EXOM0.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4m0.png
-  - type: MAN_4M1.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/m0.png
+  - type: XCOM_EXOM1.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4m1.png
-  - type: MAN_4M2.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/m1.png
+  - type: XCOM_EXOM2.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4m2.png
-  - type: MAN_4M3.SPK
+      0: Resources/Armors/PoweredLeg/Inventory/m2.png
+  - type: XCOM_EXOM3.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/man_4m3.png
+      0: Resources/Armors/PoweredLeg/Inventory/m3.png
 
  # ┌┐ ┬┌─┐┌─┐┌┐ ┌─┐
  # ├┴┐││ ┬│ │├┴┐└─┐
