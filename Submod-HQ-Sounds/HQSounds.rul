@@ -8,6 +8,7 @@ units:
   # - type: STR_HOVERTANK_LAUNCHER
     # deathSound: 23
     # moveSound: 40
+
   - type: STR_SECTOID_SOLDIER
     deathSound: 57
   - type: STR_SECTOID_ENGINEER

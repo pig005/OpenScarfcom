@@ -131,7 +131,6 @@ items:
       ammoSlot: 1
     confAuto:
       ammoSlot: 1
-
   - type: STR_LASER_PISTOL
     refNode: *STR_LASER_CLASS
     # ammo:
@@ -238,6 +237,9 @@ items:
       RandomWound: false
 
   - type: STR_SMOKE_GRENADE
+    power: 30
+    damageAlter:
+      FixRadius: 5
     fuseType: 0
     #tags:
       #START_PRIMED: 1
@@ -403,7 +405,8 @@ items:
     costSell: 50000
     transferTime: 96
     size: 2
-    hitSound: 13
+    fireSound: 73
+    hitSound: 79
     hitAnimation: 36
     bigSprite: 43
     invWidth: 2
@@ -411,7 +414,7 @@ items:
     bulletSprite: 4
     battleType: 1
     weight: 40
-    turretType: 0
+    turretType: 1
     fixedWeapon: true
     listOrder: 1110
     accuracySnap: 65
@@ -435,6 +438,8 @@ items:
   - type: STR_UGV_AUTO_CANNON
     refNode: *STR_UGV_HEAVY_MACHINEGUN
     weight: 50
+    fireSound: 72
+    hitSound: 13
     listOrder: 1120
     confSnap:
       shots: 3
@@ -453,6 +458,8 @@ items:
     listOrder: 1130
     turretType: -1
     bigSprite: 11
+    fireSound: 72
+    hitSound: 13
     hitAnimation: 0
     weight: 50
     tuSnap: 20
