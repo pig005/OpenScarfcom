@@ -180,40 +180,40 @@ ufopaedia:
 extraSprites:
   - type: BASEBITS.PCK
     files:
-      59: Resources/SUBMOD-AWACS/AWACS/HAWKEYE_base_view.gif
-      60: Resources/SUBMOD-AWACS/AWACS/AWACS_base_view.gif
-      61: Resources/SUBMOD-AWACS/AWACS/DARKSTAR_base_view.gif
+      59: Resources/CRAFTS/AWACS/HAWKEYE_base_view.gif
+      60: Resources/CRAFTS/AWACS/AWACS_base_view.gif
+      61: Resources/CRAFTS/AWACS/DARKSTAR_base_view.gif
   - type: INTICON.PCK
     width: 352
     height: 80
     subX: 32
     subY: 40
     files:
-      26: Resources/SUBMOD-AWACS/AWACS/AWACS_geoscape.png
-#      26: Resources/SUBMOD-AWACS/AWACS/HAWKEYE_minimized.png
-#      27: Resources/SUBMOD-AWACS/AWACS/AWACS_minimized.png
-#      28: Resources/SUBMOD-AWACS/AWACS/DARKSTAR_minimized.png
-#      37: Resources/SUBMOD-AWACS/AWACS/HAWKEYE_dogfight.png
-#      38: Resources/SUBMOD-AWACS/AWACS/AWACS_dogfight.png
-#      39: Resources/SUBMOD-AWACS/AWACS/DARKSTAR_dogfight.png
+      26: Resources/CRAFTS/AWACS/AWACS_geoscape.png
+#      26: Resources/CRAFTS/AWACS/HAWKEYE_minimized.png
+#      27: Resources/CRAFTS/AWACS/AWACS_minimized.png
+#      28: Resources/CRAFTS/AWACS/DARKSTAR_minimized.png
+#      37: Resources/CRAFTS/AWACS/HAWKEYE_dogfight.png
+#      38: Resources/CRAFTS/AWACS/AWACS_dogfight.png
+#      39: Resources/CRAFTS/AWACS/DARKSTAR_dogfight.png
   - type: HAWKEYE_BIG
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/SUBMOD-AWACS/AWACS/HAWKEYE_ufopaedia.png
+      0: Resources/CRAFTS/AWACS/HAWKEYE_ufopaedia.png
   - type: AWACS_BIG
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/SUBMOD-AWACS/AWACS/AWACS_ufopaedia.png
+      0: Resources/CRAFTS/AWACS/AWACS_ufopaedia.png
   - type: DARKSTAR_BIG
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/SUBMOD-AWACS/AWACS/DARKSTAR_ufopaedia.png
+      0: Resources/CRAFTS/AWACS/DARKSTAR_ufopaedia.png
 # ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
 # ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
 # ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗

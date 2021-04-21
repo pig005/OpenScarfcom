@@ -340,9 +340,10 @@ items:
     blastRadius: -1
     clipSize: 6
     power: 120
+    tuAuto: 70
+    tuSnap: 50
     accuracySnap: 40
     accuracyAuto: 30
-    tuSnap: 50
 
   - &STR_SECTOPOD_AUX_EXPLOSIVE
     refNode: *STR_SECTOPOD_AUX_WEAPON

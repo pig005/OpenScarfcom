@@ -20,4 +20,8 @@ by redv
 https://openxcom.mod.io/hqsounds-by-daedalus
 by hellrazor
 
-SUBMOD-HQ-SOUNDS
+## Combat Armor
+
+https://openxcom.org/forum/index.php?topic=1281
+by Warboy1982, Ryskeliini
+recolor by Solarius Scorch

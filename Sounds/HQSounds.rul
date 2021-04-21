@@ -171,23 +171,23 @@ craftWeapons:
 extraSounds:
   - type: GEO.CAT
     files:
-      0: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_button_1.ogg	#button1
-      1: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_window.ogg	#window close
-      2: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_whoosh_1.ogg	#window open1
-      3: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_whoosh_2.ogg	#window open2
-      4: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_cannon.ogg	#cannon
-      5: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_missile.ogg	#missile (AVALANCHE)
-      6: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_button_2.ogg #button2 #geo_button_1.ogg
-      7: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_fusionball.ogg	#Fusion Ball
-      8: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_ufoattack.ogg	#laser -> ufo attack (actual laser changed to 14)
-      9: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_plasma.ogg	#plasma
-      10: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_planehit.ogg	#xcom craft hit
-      11: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_ufodestroyed.ogg	#ufo destroyed
-      12: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_ufohit.ogg	#ufo hit
-      13: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_planedestroyed.ogg  #xcom craft destroy
+      0: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_button_1.ogg	#button1
+      1: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_window.ogg	#window close
+      2: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_whoosh_1.ogg	#window open1
+      3: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_whoosh_2.ogg	#window open2
+      4: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_cannon.ogg	#cannon
+      5: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_missile.ogg	#missile (AVALANCHE)
+      6: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_button_2.ogg #button2 #geo_button_1.ogg
+      7: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_fusionball.ogg	#Fusion Ball
+      8: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_ufoattack.ogg	#laser -> ufo attack (actual laser changed to 14)
+      9: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_plasma.ogg	#plasma
+      10: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_planehit.ogg	#xcom craft hit
+      11: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_ufodestroyed.ogg	#ufo destroyed
+      12: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_ufohit.ogg	#ufo hit
+      13: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_planedestroyed.ogg  #xcom craft destroy
 #--------------NEW, ADDITIONAL
-      14: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_laser.ogg	#LASER
-      15: Resources/SUBMOD-HQ-SOUNDS/Geo/geo_missile_smaller.ogg	#STINGRAY
+      14: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_laser.ogg	#LASER
+      15: Resources/SOUNDS/HQ-SOUNDS/Geo/geo_missile_smaller.ogg	#STINGRAY
 # ██████╗  █████╗ ████████╗████████╗██╗     ███████╗
 # ██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝
 # ██████╔╝███████║   ██║      ██║   ██║     █████╗
@@ -196,69 +196,69 @@ extraSounds:
 # ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝
   - type: BATTLE.CAT
     files:
-      0: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_snakeman.ogg	#snakeman move
-      1: Resources/SUBMOD-HQ-SOUNDS/Battle/death_snakeman.ogg	#snakeman scream
-      2: Resources/SUBMOD-HQ-SOUNDS/Battle/small_explosion.ogg	#small explosion
-      3: Resources/SUBMOD-HQ-SOUNDS/Battle/door_barn.ogg	#door open
-      4: Resources/SUBMOD-HQ-SOUNDS/Battle/b_normal_fire.ogg	#standard pistol/rifle shot
-      5: Resources/SUBMOD-HQ-SOUNDS/Battle/large_explosion.ogg	#large explosion
+      0: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_snakeman.ogg	#snakeman move
+      1: Resources/SOUNDS/HQ-SOUNDS/Battle/death_snakeman.ogg	#snakeman scream
+      2: Resources/SOUNDS/HQ-SOUNDS/Battle/small_explosion.ogg	#small explosion
+      3: Resources/SOUNDS/HQ-SOUNDS/Battle/door_barn.ogg	#door open
+      4: Resources/SOUNDS/HQ-SOUNDS/Battle/b_normal_fire.ogg	#standard pistol/rifle shot
+      5: Resources/SOUNDS/HQ-SOUNDS/Battle/large_explosion.ogg	#large explosion
 #------------------
-      6: Resources/SUBMOD-HQ-SOUNDS/Battle/death_muton.ogg	#muton death
-      7: Resources/SUBMOD-HQ-SOUNDS/Battle/death_silacoid.ogg	#celatid death
-      8: Resources/SUBMOD-HQ-SOUNDS/Battle/death_snakeman_old.ogg	#snakeman death old
-      9: Resources/SUBMOD-HQ-SOUNDS/Battle/death_ethereal.ogg	#ethereal death
-      10: Resources/SUBMOD-HQ-SOUNDS/Battle/death_sectoid.ogg	#sectoid/floater death
+      6: Resources/SOUNDS/HQ-SOUNDS/Battle/death_muton.ogg	#muton death
+      7: Resources/SOUNDS/HQ-SOUNDS/Battle/death_silacoid.ogg	#celatid death
+      8: Resources/SOUNDS/HQ-SOUNDS/Battle/death_snakeman_old.ogg	#snakeman death old
+      9: Resources/SOUNDS/HQ-SOUNDS/Battle/death_ethereal.ogg	#ethereal death
+      10: Resources/SOUNDS/HQ-SOUNDS/Battle/death_sectoid.ogg	#sectoid/floater death
 #------------------
-      11: Resources/SUBMOD-HQ-SOUNDS/Weapons/LaserRifle_fire.ogg	#laser rifle shot
-      12: Resources/SUBMOD-HQ-SOUNDS/Battle/b_cannon_fire.ogg	#standard cannon shoot
-      13: Resources/SUBMOD-HQ-SOUNDS/Battle/b_cannon_hit.ogg	#ammo metal hit
-      14: Resources/SUBMOD-HQ-SOUNDS/Battle/move_tank.ogg	#tank move
-      15: Resources/SUBMOD-HQ-SOUNDS/Battle/move_hover_small_1.ogg	#floater move
-      16: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_snakeman.ogg	#celatid/snakeman move#############duplicate 0
-      17: Resources/SUBMOD-HQ-SOUNDS/Battle/b_reload.ogg	#reload
-      18: Resources/SUBMOD-HQ-SOUNDS/Weapons/PlasmaRifle_fire.ogg	#plasma rifle shot
-      19: Resources/SUBMOD-HQ-SOUNDS/Battle/b_laser_hit.ogg	#laser/plasma hit
-      20: Resources/SUBMOD-HQ-SOUNDS/Battle/door_ufomain.ogg	#ufo door main
-      21: Resources/SUBMOD-HQ-SOUNDS/Battle/door_inner.ogg	#ufo door inner
-      22: Resources/SUBMOD-HQ-SOUNDS/Battle/b_normal_hit.ogg	#pistol/rifle hit
-      23: Resources/SUBMOD-HQ-SOUNDS/Battle/tank_destroyed.ogg	#metal crunch (machine death)
+      11: Resources/SOUNDS/HQ-SOUNDS/Weapons/LaserRifle_fire.ogg	#laser rifle shot
+      12: Resources/SOUNDS/HQ-SOUNDS/Battle/b_cannon_fire.ogg	#standard cannon shoot
+      13: Resources/SOUNDS/HQ-SOUNDS/Battle/b_cannon_hit.ogg	#ammo metal hit
+      14: Resources/SOUNDS/HQ-SOUNDS/Battle/move_tank.ogg	#tank move
+      15: Resources/SOUNDS/HQ-SOUNDS/Battle/move_hover_small_1.ogg	#floater move
+      16: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_snakeman.ogg	#celatid/snakeman move#############duplicate 0
+      17: Resources/SOUNDS/HQ-SOUNDS/Battle/b_reload.ogg	#reload
+      18: Resources/SOUNDS/HQ-SOUNDS/Weapons/PlasmaRifle_fire.ogg	#plasma rifle shot
+      19: Resources/SOUNDS/HQ-SOUNDS/Battle/b_laser_hit.ogg	#laser/plasma hit
+      20: Resources/SOUNDS/HQ-SOUNDS/Battle/door_ufomain.ogg	#ufo door main
+      21: Resources/SOUNDS/HQ-SOUNDS/Battle/door_inner.ogg	#ufo door inner
+      22: Resources/SOUNDS/HQ-SOUNDS/Battle/b_normal_hit.ogg	#pistol/rifle hit
+      23: Resources/SOUNDS/HQ-SOUNDS/Battle/tank_destroyed.ogg	#metal crunch (machine death)
 #-------------------
-      24: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_metal1.ogg	#footsteps metal 1
-      25: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_metal2.ogg	#footsteps metal 2
-      26: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_ground1.ogg	#footsteps ground 1
-      27: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_ground2.ogg	#footsteps ground 2
-      28: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_martian1.ogg	#footsteps mars 1
-      29: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_martian2.ogg	#footsteps mars 2
-      30: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_water1.ogg	#footsteps mud 1
-      31: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_water2.ogg	#footsteps mud 2
-      32: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_sand1.ogg	#footsteps sand 1
-      33: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_sand2.ogg	#footsteps sand 2
-      34: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_snow1.ogg	#footsteps snow 1
-      35: Resources/SUBMOD-HQ-SOUNDS/Battle/walk_snow2.ogg	#footsteps snow 2
+      24: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_metal1.ogg	#footsteps metal 1
+      25: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_metal2.ogg	#footsteps metal 2
+      26: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_ground1.ogg	#footsteps ground 1
+      27: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_ground2.ogg	#footsteps ground 2
+      28: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_martian1.ogg	#footsteps mars 1
+      29: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_martian2.ogg	#footsteps mars 2
+      30: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_water1.ogg	#footsteps mud 1
+      31: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_water2.ogg	#footsteps mud 2
+      32: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_sand1.ogg	#footsteps sand 1
+      33: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_sand2.ogg	#footsteps sand 2
+      34: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_snow1.ogg	#footsteps snow 1
+      35: Resources/SOUNDS/HQ-SOUNDS/Battle/walk_snow2.ogg	#footsteps snow 2
 #---------------------
-      36: Resources/SUBMOD-HQ-SOUNDS/Battle/psy_attack.ogg	#mind control
-      37: Resources/SUBMOD-HQ-SOUNDS/Battle/psy_check.ogg	#mindprobe
-      38: Resources/SUBMOD-HQ-SOUNDS/Battle/place.ogg	#item drop
-      39: Resources/SUBMOD-HQ-SOUNDS/Battle/throw.ogg	#item throw
-      40: Resources/SUBMOD-HQ-SOUNDS/Battle/move_hover.ogg	#hovertank/cyberdisc move
+      36: Resources/SOUNDS/HQ-SOUNDS/Battle/psy_attack.ogg	#mind control
+      37: Resources/SOUNDS/HQ-SOUNDS/Battle/psy_check.ogg	#mindprobe
+      38: Resources/SOUNDS/HQ-SOUNDS/Battle/place.ogg	#item drop
+      39: Resources/SOUNDS/HQ-SOUNDS/Battle/throw.ogg	#item throw
+      40: Resources/SOUNDS/HQ-SOUNDS/Battle/move_hover.ogg	#hovertank/cyberdisc move
 #---------------------
-      41: Resources/SUBMOD-HQ-SOUNDS/Battle/death_x_m1.ogg	#male scream 1
-      42: Resources/SUBMOD-HQ-SOUNDS/Battle/death_x_m2.ogg	#male scream 2
-      43: Resources/SUBMOD-HQ-SOUNDS/Battle/death_x_m3.ogg	#male scream 3
-      44: Resources/SUBMOD-HQ-SOUNDS/Battle/death_x_f1.ogg	#female scream 1
-      45: Resources/SUBMOD-HQ-SOUNDS/Battle/death_x_f2.ogg	#female scream 2
-      46: Resources/SUBMOD-HQ-SOUNDS/Battle/death_x_f3.ogg	#female scream 3
+      41: Resources/SOUNDS/HQ-SOUNDS/Battle/death_x_m1.ogg	#male scream 1
+      42: Resources/SOUNDS/HQ-SOUNDS/Battle/death_x_m2.ogg	#male scream 2
+      43: Resources/SOUNDS/HQ-SOUNDS/Battle/death_x_m3.ogg	#male scream 3
+      44: Resources/SOUNDS/HQ-SOUNDS/Battle/death_x_f1.ogg	#female scream 1
+      45: Resources/SOUNDS/HQ-SOUNDS/Battle/death_x_f2.ogg	#female scream 2
+      46: Resources/SOUNDS/HQ-SOUNDS/Battle/death_x_f3.ogg	#female scream 3
 #---------------------
-      47: Resources/SUBMOD-HQ-SOUNDS/Battle/move_silacoid.ogg	#rock drag (silacoid move)
-      48: Resources/SUBMOD-HQ-SOUNDS/Battle/attack_reaper.ogg	#reaper/zombie growl ---melee attack reaper/zombie/chryssalid/silacoid
-      49: Resources/SUBMOD-HQ-SOUNDS/Battle/scream_chryssalid.ogg	#chryssalid growl
-      50: Resources/SUBMOD-HQ-SOUNDS/Battle/attack_celatid.ogg	#celatid attack
-      51: Resources/SUBMOD-HQ-SOUNDS/Battle/death_celatid.ogg	#celatid death
+      47: Resources/SOUNDS/HQ-SOUNDS/Battle/move_silacoid.ogg	#rock drag (silacoid move)
+      48: Resources/SOUNDS/HQ-SOUNDS/Battle/attack_reaper.ogg	#reaper/zombie growl ---melee attack reaper/zombie/chryssalid/silacoid
+      49: Resources/SOUNDS/HQ-SOUNDS/Battle/scream_chryssalid.ogg	#chryssalid growl
+      50: Resources/SOUNDS/HQ-SOUNDS/Battle/attack_celatid.ogg	#celatid attack
+      51: Resources/SOUNDS/HQ-SOUNDS/Battle/death_celatid.ogg	#celatid death
 #---------------------
-      52: Resources/SUBMOD-HQ-SOUNDS/Battle/b_rocket_launcher.ogg	#rocket launch
-      53: Resources/SUBMOD-HQ-SOUNDS/Battle/b_blaster_launcher.ogg	#blaster bomb launcher
+      52: Resources/SOUNDS/HQ-SOUNDS/Battle/b_rocket_launcher.ogg	#rocket launch
+      53: Resources/SOUNDS/HQ-SOUNDS/Battle/b_blaster_launcher.ogg	#blaster bomb launcher
 #---------------------
-      54: Resources/SUBMOD-HQ-SOUNDS/Battle/stun_rod.ogg	#stun rod (electric zap)
+      54: Resources/SOUNDS/HQ-SOUNDS/Battle/stun_rod.ogg	#stun rod (electric zap)
 # ┌─┐┌┬┐┌┬┐┬┌┬┐┬┌─┐┌┐┌┌─┐┬    ┌─┐┌─┐┬ ┬┌┐┌┌┬┐┌─┐
 # ├─┤ ││ │││ │ ││ ││││├─┤│    └─┐│ ││ ││││ ││└─┐
 # ┴ ┴─┴┘─┴┘┴ ┴ ┴└─┘┘└┘┴ ┴┴─┘  └─┘└─┘└─┘┘└┘─┴┘└─┘
@@ -268,30 +268,30 @@ extraSounds:
 # ██║  ██║██╔══╝  ██╔══██║   ██║   ██╔══██║ ██╔╝  ██║███╗██║██╔══██║██║     ██╔═██╗
 # ██████╔╝███████╗██║  ██║   ██║   ██║  ██║██╔╝   ╚███╔███╔╝██║  ██║███████╗██║  ██╗
 # ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝     ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-      55: Resources/SUBMOD-HQ-SOUNDS/Battle/death_zombie.ogg	#zombie scream
-      56: Resources/SUBMOD-HQ-SOUNDS/Battle/death_reaper.ogg	#reaper scream
-      57: Resources/SUBMOD-HQ-SOUNDS/Battle/death_sectoid_new.ogg	#sectoid scream
-      58: Resources/SUBMOD-HQ-SOUNDS/Battle/death_floater.ogg	#floater scream
-      59: Resources/SUBMOD-HQ-SOUNDS/Battle/death_chryssalid.ogg	#chryssalid scream
-      61: Resources/SUBMOD-HQ-SOUNDS/Battle/attack_chryssalid.ogg	#chryssalid attack
-      62: Resources/SUBMOD-HQ-SOUNDS/Battle/attack_zombie.ogg	#zombie attack
-      63: Resources/SUBMOD-HQ-SOUNDS/Battle/attack_silacoid.ogg	#silacoid attack
+      55: Resources/SOUNDS/HQ-SOUNDS/Battle/death_zombie.ogg	#zombie scream
+      56: Resources/SOUNDS/HQ-SOUNDS/Battle/death_reaper.ogg	#reaper scream
+      57: Resources/SOUNDS/HQ-SOUNDS/Battle/death_sectoid_new.ogg	#sectoid scream
+      58: Resources/SOUNDS/HQ-SOUNDS/Battle/death_floater.ogg	#floater scream
+      59: Resources/SOUNDS/HQ-SOUNDS/Battle/death_chryssalid.ogg	#chryssalid scream
+      61: Resources/SOUNDS/HQ-SOUNDS/Battle/attack_chryssalid.ogg	#chryssalid attack
+      62: Resources/SOUNDS/HQ-SOUNDS/Battle/attack_zombie.ogg	#zombie attack
+      63: Resources/SOUNDS/HQ-SOUNDS/Battle/attack_silacoid.ogg	#silacoid attack
 # ██╗    ██╗███████╗ █████╗ ██████╗  ██████╗ ███╗   ██╗███████╗
 # ██║    ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗████╗  ██║██╔════╝
 # ██║ █╗ ██║█████╗  ███████║██████╔╝██║   ██║██╔██╗ ██║███████╗
 # ██║███╗██║██╔══╝  ██╔══██║██╔═══╝ ██║   ██║██║╚██╗██║╚════██║
 # ╚███╔███╔╝███████╗██║  ██║██║     ╚██████╔╝██║ ╚████║███████║
 #  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚══════╝
-      70: Resources/SUBMOD-HQ-SOUNDS/Weapons/Pistol_fire.ogg
-      71: Resources/SUBMOD-HQ-SOUNDS/Weapons/Rifle_fire.ogg
-      72: Resources/SUBMOD-HQ-SOUNDS/Weapons/HeavyCannon_fire.ogg
-      73: Resources/SUBMOD-HQ-SOUNDS/Weapons/AutoCannon_fire.ogg
-      74: Resources/SUBMOD-HQ-SOUNDS/Weapons/LaserPistol_fire.ogg
-      75: Resources/SUBMOD-HQ-SOUNDS/Weapons/LaserHeavy_fire.ogg
-      76: Resources/SUBMOD-HQ-SOUNDS/Weapons/PlasmaPistol_fire.ogg
-      77: Resources/SUBMOD-HQ-SOUNDS/Weapons/PlasmaHeavy_fire.ogg
-      78: Resources/SUBMOD-HQ-SOUNDS/Battle/b_plasma_hit.ogg
-      79: Resources/SUBMOD-HQ-SOUNDS/Battle/b_auto_hit.ogg
+      70: Resources/SOUNDS/HQ-SOUNDS/Weapons/Pistol_fire.ogg
+      71: Resources/SOUNDS/HQ-SOUNDS/Weapons/Rifle_fire.ogg
+      72: Resources/SOUNDS/HQ-SOUNDS/Weapons/HeavyCannon_fire.ogg
+      73: Resources/SOUNDS/HQ-SOUNDS/Weapons/AutoCannon_fire.ogg
+      74: Resources/SOUNDS/HQ-SOUNDS/Weapons/LaserPistol_fire.ogg
+      75: Resources/SOUNDS/HQ-SOUNDS/Weapons/LaserHeavy_fire.ogg
+      76: Resources/SOUNDS/HQ-SOUNDS/Weapons/PlasmaPistol_fire.ogg
+      77: Resources/SOUNDS/HQ-SOUNDS/Weapons/PlasmaHeavy_fire.ogg
+      78: Resources/SOUNDS/HQ-SOUNDS/Battle/b_plasma_hit.ogg
+      79: Resources/SOUNDS/HQ-SOUNDS/Battle/b_auto_hit.ogg
 # ┌─┐┬ ┬┌─┐┌┐┌┌─┐┌─┐┬  ┌─┐┌─┐┌─┐
 # │  ├─┤├─┤││││ ┬├┤ │  │ ││ ┬└─┐
 # └─┘┴ ┴┴ ┴┘└┘└─┘└─┘┴─┘└─┘└─┘└─┘
