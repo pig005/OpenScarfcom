@@ -1,3 +1,24 @@
+extraStrings:
+# ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+# ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+# ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
+# ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
+# ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
+# ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+  - type: en-US
+    strings:
+      STR_EXOSKELETON_ARMOR: "Exoskeleton Armor"
+      STR_EXOSKELETON_ARMOR_UC: "EXOSKELETON ARMOR"
+      STR_EXOSKELETON_ARMOR_UC_UFOPEDIA: "New hydraulic and battery technologies have made powered exoskeleton possible, which greatly increases soldier's mobility and helps with heavy loads."
+  - type: en-GB
+    strings:
+      STR_EXOSKELETON_ARMOR: "Exoskeleton Armor"
+      STR_EXOSKELETON_ARMOR_UC: "EXOSKELETON ARMOUR"
+  - type: ko
+    strings:
+      STR_EXOSKELETON_ARMOR: "강화외골격 전투복"
+      STR_EXOSKELETON_ARMOR_UC: "강화외골격 전투복"
+      STR_EXOSKELETON_ARMOR_UC_UFOPEDIA: "유압 구동과 배터리 신기술의 발달로 동력 강화외골격의 개발이 가능해졌다. 병사의 이동력을 크게 향상시켜주고 고중량 하중을 짊어지는데 도움을 준다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -10,17 +31,16 @@ items:
  # ┴ ┴┴└─┴ ┴└─┘┴└─┴ ┴ └─┘┴ ┴
   - type: STR_EXOSKELETON_ARMOR
     size: 1.2
-    costBuy: 50000
-    costSell: 35000
-    listOrder: 10499
+    costBuy: 30000
+    costSell: 24000
  # ┌─┐┌─┐┬─┐┌─┐┌─┐┌─┐┬┌┬┐┌─┐┌┬┐
  # │  │ │├┬┘├─┘└─┐├┤ │ │ ├┤ │││
  # └─┘└─┘┴└─┴  └─┘└─┘┴ ┴ └─┘┴ ┴
   - type: STR_CORPSE_EXOSKELETON_ARMOR
     name: STR_CORPSE
     weight: 42
-    bigSprite: 1010
-    floorSprite: 1010
+    bigSprite: 1020
+    floorSprite: 1020
     invWidth: 2
     invHeight: 3
     armor: 30
@@ -54,40 +74,22 @@ armors:
       - 1.0
       - 1.1
       - 1.0
+    frontArmor: 35
+    sideArmor: 20
+    rearArmor: 30
+    underArmor: 12
     stats:
-      tu: 15
+      tu: 10
       stamina: 30
     recovery:
       energy:
-        flatHundred: 30
-    weight: -20
-    frontArmor: 35
-    sideArmor: 35
-    rearArmor: 25
-    underArmor: 20
-    turnCost: 2
+        flatHundred: 20
+    personalLight: 20
+    weight: -10
+    turnCost: 3
     allowsStrafing: false
     camouflageAtDay: 0
     camouflageAtDark: 0
-extraStrings:
-# ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
-# ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
-# ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
-# ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
-# ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
-# ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
-  - type: en-US
-    strings:
-      STR_EXOSKELETON_ARMOR: Exoskeleton Armor
-      STR_EXOSKELETON_ARMOR_UC: EXOSKELETON ARMOR
-  - type: en-GB
-    strings:
-      STR_EXOSKELETON_ARMOR: Exoskeleton Armor
-      STR_EXOSKELETON_ARMOR_UC: EXOSKELETON ARMOUR
-  - type: ko
-    strings:
-      STR_EXOSKELETON_ARMOR: 강화외골격 전투복
-      STR_EXOSKELETON_ARMOR_UC: 강화외골격 전투복
 extraSprites:
 # ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
 # ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
@@ -104,40 +106,40 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/Armors/PoweredLeg/spritesheet.png
+      0: Resources/Armors/Exoskeleton/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
   - type: XCOM_EXOF0.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/f0.png
+      0: Resources/Armors/Exoskeleton/Inventory/f0.png
   - type: XCOM_EXOF1.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/f1.png
+      0: Resources/Armors/Exoskeleton/Inventory/f1.png
   - type: XCOM_EXOF2.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/f2.png
+      0: Resources/Armors/Exoskeleton/Inventory/f2.png
   - type: XCOM_EXOF3.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/f3.png
+      0: Resources/Armors/Exoskeleton/Inventory/f3.png
   - type: XCOM_EXOM0.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/m0.png
+      0: Resources/Armors/Exoskeleton/Inventory/m0.png
   - type: XCOM_EXOM1.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/m1.png
+      0: Resources/Armors/Exoskeleton/Inventory/m1.png
   - type: XCOM_EXOM2.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/m2.png
+      0: Resources/Armors/Exoskeleton/Inventory/m2.png
   - type: XCOM_EXOM3.SPK
     singleImage: true
     files:
-      0: Resources/Armors/PoweredLeg/Inventory/m3.png
+      0: Resources/Armors/Exoskeleton/Inventory/m3.png
 

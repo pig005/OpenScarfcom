@@ -1,3 +1,24 @@
+extraStrings:
+# ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+# ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+# ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
+# ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
+# ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
+# ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+  - type: en-US
+    strings:
+      STR_COMBAT_ARMOR: "Combat Armor"
+      STR_COMBAT_ARMOR_UC: "COMBAT ARMOR"
+      STR_COMBAT_ARMOR_UC_UFOPEDIA: "Military grade bulletproof kevlar vest with integraded loadouts. It's heavy but still better than wearing nothing."
+  - type: en-GB
+    strings:
+      STR_COMBAT_ARMOR: "Combat Armour"
+      STR_COMBAT_ARMOR_UC: "COMBAT ARMOUR"
+  - type: ko
+    strings:
+      STR_COMBAT_ARMOR: "전투복"
+      STR_COMBAT_ARMOR_UC: "전투복"
+      STR_COMBAT_ARMOR_UC_UFOPEDIA: "군용 방탄 케블라 조끼와 군장. 무겁긴 하지만 없는 것보단 낫다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -10,17 +31,16 @@ items:
  # ┴ ┴┴└─┴ ┴└─┘┴└─┴ ┴ └─┘┴ ┴
   - type: STR_COMBAT_ARMOR
     size: 0.8
-    costBuy: 16000
-    costSell: 12000
-    listOrder: 10498
+    costBuy: 12000
+    costSell: 8000
  # ┌─┐┌─┐┬─┐┌─┐┌─┐┌─┐┬┌┬┐┌─┐┌┬┐
  # │  │ │├┬┘├─┘└─┐├┤ │ │ ├┤ │││
  # └─┘└─┘┴└─┴  └─┘└─┘┴ ┴ └─┘┴ ┴
   - type: STR_CORPSE_COMBAT_ARMOR
     name: STR_CORPSE
     weight: 24
-    bigSprite: 1000
-    floorSprite: 1000
+    bigSprite: 1010
+    floorSprite: 1010
     invWidth: 2
     invHeight: 3
     armor: 30
@@ -44,9 +64,9 @@ armors:
       - STR_CORPSE_COMBAT_ARMOR
     storeItem: STR_COMBAT_ARMOR
     frontArmor: 30
-    sideArmor: 30
-    rearArmor: 20
-    underArmor: 20
+    sideArmor: 16
+    rearArmor: 25
+    underArmor: 12
     damageModifier:
       - 1.0
       - 1.0
@@ -58,26 +78,11 @@ armors:
       - 1.0
       - 1.1
       - 1.0
-    weight: 20
-extraStrings:
-# ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
-# ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
-# ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
-# ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
-# ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
-# ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
-  - type: en-US
-    strings:
-      STR_COMBAT_ARMOR: Combat Armor
-      STR_COMBAT_ARMOR_UC: COMBAT ARMOR
-  - type: en-GB
-    strings:
-      STR_COMBAT_ARMOR: Combat Armour
-      STR_COMBAT_ARMOR_UC: COMBAT ARMOUR
-  - type: ko
-    strings:
-      STR_COMBAT_ARMOR: 전투복
-      STR_COMBAT_ARMOR_UC: 전투복
+    weight: 18
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
 extraSprites:
 # ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
 # ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝

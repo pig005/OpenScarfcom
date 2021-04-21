@@ -12,14 +12,16 @@ extraSprites:
     # ┬┌┬┐┌─┐┌┬┐┌─┐
     # │ │ ├┤ │││└─┐
     # ┴ ┴ └─┘┴ ┴└─┘
-      02: Resources/Weapons/ballistics/rifle-clip/Big.png # overrides default rifle clip
+      02: Resources/WEAPONS/ballistics/rifle-clip/Big.png # overrides default rifle clip
 
-      301: Resources/Weapons/ballistics/rifle/Big.png
-      300: Resources/Weapons/ballistics/rifle/Big-Empty.png
-      311: Resources/Weapons/ballistics/rifle-marksman/Big.png
-      310: Resources/Weapons/ballistics/rifle-marksman/Big-Empty.png
+      301: Resources/WEAPONS/ballistics/rifle/Big.png
+      300: Resources/WEAPONS/ballistics/rifle/Big-Empty.png
+      311: Resources/WEAPONS/ballistics/rifle-marksman/Big.png
+      310: Resources/WEAPONS/ballistics/rifle-marksman/Big-Empty.png
     # ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
     # ├─┤├┬┘││││ │├┬┘└─┐
     # ┴ ┴┴└─┴ ┴└─┘┴└─└─┘
-      1000: Resources/Armors/CombatArmor/Big.gif
-      1010: Resources/Armors/PoweredLeg/Big.png
+      1010: Resources/ARMORS/CombatArmor/Big.gif
+      1020: Resources/ARMORS/Exoskeleton/Big.png
+      1030: Resources/ARMORS/AlloyArmor/Big.png
+      1040: Resources/ARMORS/EleriumExoskeleton/Big.png

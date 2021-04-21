@@ -17,5 +17,7 @@ extraSprites:
     # ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
     # ├─┤├┬┘││││ │├┬┘└─┐
     # ┴ ┴┴└─┴ ┴└─┘┴└─└─┘
-      1000: Resources/Armors/CombatArmor/Floor.gif
-      1010: Resources/Armors/PoweredLeg/Floor.png
+      1010: Resources/ARMORS/CombatArmor/Floor.gif
+      1020: Resources/ARMORS/Exoskeleton/Floor.png
+      1030: Resources/ARMORS/AlloyArmor/Floor.png
+      1040: Resources/ARMORS/EleriumExoskeleton/Floor.png
