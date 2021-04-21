@@ -53,7 +53,7 @@ manufacture:
 # ██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝██║     ██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║███████╗
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
   - name: STR_ALLOY_ARMOR
-    category: STR_ALLOY_ARMOR
+    category: STR_PERSONAL_ARMOR
     requires:
       - STR_ALIEN_ALLOYS
     space: 10

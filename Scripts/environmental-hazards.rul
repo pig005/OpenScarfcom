@@ -28,7 +28,7 @@ extended:
 
           if and gt fire_duration 0 gt hazard_intensity 0;
             set fire_damage hazard_intensity;
-            #mul fire_damage 2;
+            mul fire_damage 2;
             unit.reduceByResistance fire_damage 2;
             mul fire_damage -1;
             if lt fire_damage 0;
