@@ -79,11 +79,11 @@ armors:
     rearArmor: 30
     underArmor: 12
     stats:
-      tu: 10
-      stamina: 30
+      tu: -5
+      stamina: 20
     recovery:
       energy:
-        flatHundred: 20
+        tu: 0.5
     personalLight: 20
     weight: -10
     turnCost: 3
