@@ -1,8 +1,8 @@
-name: "SCARFCOM"
-version: 0.0.6
+name: "OpenScarfCom"
+version: 0.1.0
 author: greenscarf
-description: "Security Council extrAteRastrial Forces combat Command"
-id: xcom1-scarfcom
+description: "Conversion Mod focused on Replayability"
+id: xcom1-openscarfcom
 master: xcom1
 reservedSpace: 2
 resourceConfig: transparency.rul
