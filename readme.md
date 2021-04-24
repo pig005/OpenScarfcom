@@ -75,7 +75,8 @@ if you are the author of these mods and do not wish these mods to be used, pleas
 
 [**Community Map Pack**](https://openxcom.mod.io/community-map-pack)
 by CMP admin and various contributers
-licsenced under CC-BY-NC
+
+licenced under CC-BY-NC
 
 [**Extra Explosions**](https://openxcom.mod.io/extra-explosions)
 by Arathanor, Strarvingpoet
