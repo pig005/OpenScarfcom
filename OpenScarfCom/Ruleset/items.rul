@@ -1,3 +1,9 @@
+extended:
+  tags:
+    RuleItem:
+      ALLOW_AMMO_TO_RESPRITE: int
+      OFFSET_BIGOB_WEAPON: int
+      START_PRIMED: int
 items:
 # ═══════════════════════════════════════════════════════════════════
 #  ██████╗ ███████╗███╗   ███╗ ██████╗ ██╗   ██╗███████╗██████╗
