@@ -3,26 +3,7 @@
 # ╚═╝╩╚═╩╚═╝╩╝╚╝╩ ╩╩═╝  ╩ ╩╚═╝═╩╝  ╚═╝ ╩   ╩╚═╚═╝═╩╝ ╚╝
 # https://openxcom.org/forum/index.php?topic=2952
 #
-#  ██████╗██████╗  █████╗ ███████╗████████╗███████╗
-# ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝
-# ██║     ██████╔╝███████║█████╗     ██║   ███████╗
-# ██║     ██╔══██╗██╔══██║██╔══╝     ██║   ╚════██║
-# ╚██████╗██║  ██║██║  ██║██║        ██║   ███████║
-#  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝        ╚═╝   ╚══════╝
 crafts:
- # ┌─┐┬┌─┐┬ ┬┌┬┐┌─┐┬─┐
- # ├┤ ││ ┬├─┤ │ ├┤ ├┬┘
- # └  ┴└─┘┴ ┴ ┴ └─┘┴└─
-  - type: STR_SKYRANGER
-    radarChance: 30
-  - type: STR_INTERCEPTOR
-    radarChance: 30
-  - type: STR_FIRESTORM
-    radarChance: 30
-  - type: STR_LIGHTNING
-    radarChance: 30
-  - type: STR_AVENGER
-    radarChance: 50
  # ┬─┐┌─┐┌┬┐┌─┐┬─┐  ┌─┐┬┬─┐┌─┐┬─┐┌─┐┌─┐┌┬┐
  # ├┬┘├─┤ ││├┤ ├┬┘  ├─┤│├┬┘│  ├┬┘├─┤├┤  │
  # ┴└─┴ ┴─┴┘└─┘┴└─  ┴ ┴┴┴└─└─┘┴└─┴ ┴└   ┴
@@ -35,8 +16,6 @@ crafts:
     costBuy: 500000
     costRent: 500000
     refuelRate: 75
-    radarRange: 1550
-    radarChance: 25
     transferTime: 96
     score: 250
     listOrder: 207
@@ -50,12 +29,9 @@ crafts:
     costBuy: 700000
     costRent: 700000
     refuelRate: 75
-    radarRange: 1700
-    radarChance: 40
     transferTime: 96
     score: 250
     listOrder: 208
-    autoPatrol: true
   - type: STR_DARKSTAR
     sprite: 28
     fuelMax: 2500
@@ -64,23 +40,9 @@ crafts:
     accel: 1
     costSell: 1090000
     refuelRate: 500
-    radarRange: 1900
-    radarChance: 60
     transferTime: 96
     score: 250
     listOrder: 209
-    autoPatrol: true
-# ███████╗ █████╗  ██████╗██╗██╗     ██╗████████╗██╗███████╗███████╗
-# ██╔════╝██╔══██╗██╔════╝██║██║     ██║╚══██╔══╝██║██╔════╝██╔════╝
-# █████╗  ███████║██║     ██║██║     ██║   ██║   ██║█████╗  ███████╗
-# ██╔══╝  ██╔══██║██║     ██║██║     ██║   ██║   ██║██╔══╝  ╚════██║
-# ██║     ██║  ██║╚██████╗██║███████╗██║   ██║   ██║███████╗███████║
-# ╚═╝     ╚═╝  ╚═╝ ╚═════╝╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝╚══════╝╚══════╝
-facilities:
-  - delete: STR_SMALL_RADAR_SYSTEM
-  - delete: STR_LARGE_RADAR_SYSTEM
-  - type: STR_HYPER_WAVE_DECODER
-    radarChance: 0
 # ██████╗ ███████╗███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗
 # ██╔══██╗██╔════╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║
 # ██████╔╝█████╗  ███████╗█████╗  ███████║██████╔╝██║     ███████║

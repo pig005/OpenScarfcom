@@ -1,0 +1,51 @@
+#  ██████╗██████╗  █████╗ ███████╗████████╗███████╗
+# ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝
+# ██║     ██████╔╝███████║█████╗     ██║   ███████╗
+# ██║     ██╔══██╗██╔══██║██╔══╝     ██║   ╚════██║
+# ╚██████╗██║  ██║██║  ██║██║        ██║   ███████║
+#  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝        ╚═╝   ╚══════╝
+crafts:
+ # ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+ # ║ ╦║  ║ ║╠╩╗╠═╣║
+ # ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+  - &CRAFT_GLOBAL
+    type: CRAFT_GLOBAL
+    radarChance: 30
+    autoPatrol: true
+  - &CRAFT_RADAR_GLOBAL
+    type: CRAFT_RADAR_GLOBAL
+    refNode: *CRAFT_GLOBAL
+ # ┌┬┐┬─┐┌─┐┌┐┌┌─┐┌─┐┌─┐┬─┐┌┬┐
+ #  │ ├┬┘├─┤│││└─┐├─┘│ │├┬┘ │
+ #  ┴ ┴└─┴ ┴┘└┘└─┘┴  └─┘┴└─ ┴
+  - type: STR_SKYRANGER
+    refNode: *CRAFT_GLOBAL
+  - type: STR_INTERCEPTOR
+    refNode: *CRAFT_GLOBAL
+ # ┬┌┐┌┌┬┐┌─┐┬─┐┌─┐┌─┐┌─┐┌┬┐┌─┐┬─┐
+ # ││││ │ ├┤ ├┬┘│  ├┤ ├─┘ │ │ │├┬┘
+ # ┴┘└┘ ┴ └─┘┴└─└─┘└─┘┴   ┴ └─┘┴└─
+  - type: STR_FIRESTORM
+    refNode: *CRAFT_GLOBAL
+ # ┬ ┬┬ ┬┌┐ ┬─┐┬┌┬┐
+ # ├─┤└┬┘├┴┐├┬┘│ ││
+ # ┴ ┴ ┴ └─┘┴└─┴─┴┘
+  - type: STR_LIGHTNING
+    refNode: *CRAFT_GLOBAL
+  - type: STR_AVENGER
+    refNode: *CRAFT_GLOBAL
+ # ┬─┐┌─┐┌┬┐┌─┐┬─┐
+ # ├┬┘├─┤ ││├─┤├┬┘
+ # ┴└─┴ ┴─┴┘┴ ┴┴└─
+  - type: STR_HAWKEYE
+    refNode: *CRAFT_RADAR_GLOBAL
+    radarRange: 1550
+    radarChance: 40
+  - type: STR_AWACS
+    refNode: *CRAFT_RADAR_GLOBAL
+    radarRange: 1700
+    radarChance: 50
+  - type: STR_DARKSTAR
+    refNode: *CRAFT_RADAR_GLOBAL
+    radarRange: 1900
+    radarChance: 60
