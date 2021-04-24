@@ -63,7 +63,7 @@ soldiers:
     kneelHeight: 16
     femaleFrequency: 100
     soldierNames:
-      - Names/ai-names.nam
+      - _Names/ai-names.nam
     deathFemale: 23
     allowPromotion: false
 #   █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗

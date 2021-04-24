@@ -1,0 +1,75 @@
+extended:
+  scripts:
+    newTurnUnit:
+    # ┌─┐┌┐┌┬  ┬┬┬─┐┌─┐┌┐┌┌┬┐┌─┐┌┐┌┌┬┐┌─┐┬    ┌┬┐┌─┐┌┬┐┌─┐┌─┐┌─┐
+    # ├┤ │││└┐┌┘│├┬┘│ │││││││├┤ │││ │ ├─┤│     ││├─┤│││├─┤│ ┬├┤
+    # └─┘┘└┘ └┘ ┴┴└─└─┘┘└┘┴ ┴└─┘┘└┘ ┴ ┴ ┴┴─┘  ─┴┘┴ ┴┴ ┴┴ ┴└─┘└─┘
+      - offset: 2
+        code: |
+          var ptr Tile tile_info;
+
+          var int x;
+          var int y;
+          var int z;
+
+          var int hazard_intensity;
+          var int fire_duration;
+
+          var int unit_burnt 0;
+
+          unit.getPosition.getX x;
+          unit.getPosition.getY y;
+          unit.getPosition.getZ z;
+
+          battle_game.getTile tile_info x y z;
+
+          tile_info.getSmoke hazard_intensity;
+          tile_info.getFire fire_duration;
+          #debug_log "hazard intensity:" hazard_intensity "fire duration:" fire_duration;
+
+          if and gt fire_duration 0 gt hazard_intensity 0 eq unit_burnt 0;
+            begin;
+              var int fire_damage 0;
+              var int total_fire_damage 0;
+
+              debug_log "trauma report for:" unit;
+              debug_log "original hazard intensity:" hazard_intensity;
+              #normalizing
+              # from 01 02 03 04 05 06 07 08 09 10 11 12
+              # to   06 06 06 06 07 07 07 07 08 08 08 08
+              if gt hazard_intensity 8;
+                set hazard_intensity 8;
+              else gt hazard_intensity 4;
+                set hazard_intensity 7;
+              else gt hazard_intensity 0;
+                set hazard_intensity 6;
+              end;
+              debug_log "normalized hazard intensity:" hazard_intensity;
+              loop var i hazard_intensity;
+                #set fire_damage hazard_intensity;
+                battle_game.randomRange fire_damage 1 hazard_intensity;
+                unit.reduceByResistance fire_damage 2;
+                mul fire_damage -1;
+                debug_log "   fire damage for loop" i ":" fire_damage;
+                if lt fire_damage 0;
+                  unit.addHealth fire_damage;
+                  unit.addMorale fire_damage;
+                  add total_fire_damage fire_damage;
+                end;
+              end;
+              debug_log "total fire damage [" total_fire_damage "]";
+              if le total_fire_damage -15;
+                unit.addFatalwounds 0 fire_duration;
+                debug_log "adding fatal wounds";
+              end;
+            end;
+          else gt hazard_intensity 0;
+            div hazard_intensity 4;
+            battle_game.randomRange hazard_intensity 0 hazard_intensity;
+            unit.reduceByResistance hazard_intensity 9;
+            if gt hazard_intensity 0;
+              #debug_log "total smoke damage:" hazard_intensity;
+              unit.addStun hazard_intensity;
+            end;
+          end;
+          return;

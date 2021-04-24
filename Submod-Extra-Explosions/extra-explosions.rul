@@ -60,53 +60,53 @@ items:
   #   hitAnimation: 180
   # - type: SECTOPOD_HEAVY_PLASMA
   #   hitAnimation: 180
-# ═════════════════════════════════
-# ████████╗███████╗███████╗██████╗
-# ╚══██╔══╝██╔════╝██╔════╝██╔══██╗
-#    ██║   █████╗  █████╗  ██║  ██║
-#    ██║   ██╔══╝  ██╔══╝  ██║  ██║
-#    ██║   ██║     ██║     ██████╔╝
-#    ╚═╝   ╚═╝     ╚═╝     ╚═════╝
-# ═════════════════════════════════
- # ╔═╗╦═╗╔═╗╔═╗╔═╗╔═╗
- # ╠╣ ╠╦╝║╣ ║╣ ╔═╝║╣
- # ╚  ╩╚═╚═╝╚═╝╚═╝╚═╝
-  - type: STR_THERMAL_SHOK_BOMB
-    hitAnimation: 128
-  - type: STR_HALLUCINOID_STUN_WEAPON
-    hitAnimation: 128
- # ╔═╗╔╦╗╔═╗╦╔═╔═╗
- # ╚═╗║║║║ ║╠╩╗║╣
- # ╚═╝╩ ╩╚═╝╩ ╩╚═╝
-  - type: STR_DYE_GRENADE
-    hitAnimation: 148
- # ╦ ╦╔═╗
- # ╠═╣║╣
- # ╩ ╩╚═╝
-  - type: STR_HWP_DISPLACER_PWT
-    hitAnimation: 168
-  - type: STR_GC_HE_AMMO
-    hitAnimation: 168
-  - type: STR_GC_P_AMMO
-    hitAnimation: 168
-  - type: STR_HJC_HE_AMMO
-    hitAnimation: 168
-  - type: STR_HJC_P_AMMO
-    hitAnimation: 168
-  - type: STR_SMALL_TORPEDO
-    hitAnimation: 168
-  - type: STR_LARGE_TORPEDO
-    hitAnimation: 168
-  - type: STR_PHOSPHOROUS_TORPEDO
-    hitAnimation: 168
-  - type: STR_MAGNA_BLAST_GRENADE
-    hitAnimation: 168
-  - type: STR_PARTICLE_DISTURBANCE_GRENADE
-    hitAnimation: 168
-  - type: STR_MAGNA_PACK_EXPLOSIVE
-    hitAnimation: 168
-  - type: STR_DISRUPTOR_AMMO
-    hitAnimation: 168
+# # ═════════════════════════════════
+# # ████████╗███████╗███████╗██████╗
+# # ╚══██╔══╝██╔════╝██╔════╝██╔══██╗
+# #    ██║   █████╗  █████╗  ██║  ██║
+# #    ██║   ██╔══╝  ██╔══╝  ██║  ██║
+# #    ██║   ██║     ██║     ██████╔╝
+# #    ╚═╝   ╚═╝     ╚═╝     ╚═════╝
+# # ═════════════════════════════════
+#  # ╔═╗╦═╗╔═╗╔═╗╔═╗╔═╗
+#  # ╠╣ ╠╦╝║╣ ║╣ ╔═╝║╣
+#  # ╚  ╩╚═╚═╝╚═╝╚═╝╚═╝
+#   - type: STR_THERMAL_SHOK_BOMB
+#     hitAnimation: 128
+#   - type: STR_HALLUCINOID_STUN_WEAPON
+#     hitAnimation: 128
+#  # ╔═╗╔╦╗╔═╗╦╔═╔═╗
+#  # ╚═╗║║║║ ║╠╩╗║╣
+#  # ╚═╝╩ ╩╚═╝╩ ╩╚═╝
+#   - type: STR_DYE_GRENADE
+#     hitAnimation: 148
+#  # ╦ ╦╔═╗
+#  # ╠═╣║╣
+#  # ╩ ╩╚═╝
+#   - type: STR_HWP_DISPLACER_PWT
+#     hitAnimation: 168
+#   - type: STR_GC_HE_AMMO
+#     hitAnimation: 168
+#   - type: STR_GC_P_AMMO
+#     hitAnimation: 168
+#   - type: STR_HJC_HE_AMMO
+#     hitAnimation: 168
+#   - type: STR_HJC_P_AMMO
+#     hitAnimation: 168
+#   - type: STR_SMALL_TORPEDO
+#     hitAnimation: 168
+#   - type: STR_LARGE_TORPEDO
+#     hitAnimation: 168
+#   - type: STR_PHOSPHOROUS_TORPEDO
+#     hitAnimation: 168
+#   - type: STR_MAGNA_BLAST_GRENADE
+#     hitAnimation: 168
+#   - type: STR_PARTICLE_DISTURBANCE_GRENADE
+#     hitAnimation: 168
+#   - type: STR_MAGNA_PACK_EXPLOSIVE
+#     hitAnimation: 168
+#   - type: STR_DISRUPTOR_AMMO
+#     hitAnimation: 168
 # ███████╗██╗  ██╗████████╗██████╗  █████╗ ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
 # ██╔════╝╚██╗██╔╝╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
 # █████╗   ╚███╔╝    ██║   ██████╔╝███████║███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗

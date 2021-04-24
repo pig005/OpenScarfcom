@@ -975,7 +975,7 @@ regions:
         - [177.75, 178.25, 17.5, 17.875]
         - [164.625, 164.75, 20.5, 20.75]
       -
-#BEGIN NEW CITIES 
+#BEGIN NEW CITIES
         - [241, 241, 26.5, 26.5, -6, STR_EASTER_ISLAND]
         - [269, 269, 1, 1, -6, STR_GALAPAGOS_ISLAND]
         - [-130.1, -130.1, 25.066, 25.066, -6, STR_PITCAIRN]
@@ -1007,7 +1007,7 @@ regions:
 ##END SOUTH PACIFIC
 
 ##BEGIN NORTH ATLANTIC
-  - type: STR_NORTH_ATLANTIC 
+  - type: STR_NORTH_ATLANTIC
     cost: 500000
     areas:
       - [305, 335, -70, -30]
@@ -1117,7 +1117,7 @@ regions:
         - [291.6, 293.1, 53.75, 55]
         - [323.76, 324.92, 59.03, 60.16]
         - [319, 320.25, 16.22, 18.72]
-        - [359.82, 0.95, 60.21, 61.71]
+        - [359.82, 360.95, 60.21, 61.71]
         - [325.74, 328.18, -71.26, -69.39]
         - [15.76, 17.51, 25.02, 27.9]
         - [321.59, 324.09, 5.7, 8.2]
@@ -1168,7 +1168,7 @@ regions:
 ##END SOUTH ATLANTIC
 
 ##BEGIN INDIAN OCEAN
-  - type: STR_INDIAN_OCEAN 
+  - type: STR_INDIAN_OCEAN
     cost: 500000
     areas:
       - [55, 70, -15, 10]
