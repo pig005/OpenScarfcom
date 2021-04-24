@@ -1,5 +1,5 @@
 extended:
-  tags: # Remember to add these tags to the same file as items ruleset
+  tags:
     RuleItem:
       ALLOW_AMMO_TO_RESPRITE: int
       OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
