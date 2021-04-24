@@ -14,6 +14,8 @@ extraSprites:
     # ┴ ┴ └─┘┴ ┴└─┘
       300: Resources/Weapons/ballistics/rifle/Floor.png
       310: Resources/Weapons/ballistics/rifle-marksman/Floor.png
+
+      400: Resources/WEAPONS/ballistics/multiple-grenade-launcher/Floor.png
     # ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
     # ├─┤├┬┘││││ │├┬┘└─┐
     # ┴ ┴┴└─┴ ┴└─┘┴└─└─┘

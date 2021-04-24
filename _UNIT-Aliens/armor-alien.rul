@@ -10,11 +10,33 @@ armors:
     sideArmor: 55
     rearArmor: 40
     underArmor: 40
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.5
+      - 0.6
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
   - type: SECTOPOD_ARMOR
     frontArmor: 200
     sideArmor: 130
     rearArmor: 100
     underArmor: 100
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.8
+      - 1.5
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
 #  █████╗ ██╗     ██╗███████╗███╗   ██╗███████╗
 # ██╔══██╗██║     ██║██╔════╝████╗  ██║██╔════╝
 # ███████║██║     ██║█████╗  ██╔██╗ ██║███████╗

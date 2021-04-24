@@ -82,9 +82,9 @@
  # └─┘┴─┘└─┘└─┘└─┘  └─┘└└─┘┴ ┴┴└─ ┴ └─┘┴└─  └─┘└─┘┴ ┴└─┘┴ ┴ ┴
   enableCloseQuartersCombat: 1
   closeQuartersSneakUpGlobal: 100
-  closeQuartersAccuracyGlobal: 60
+  closeQuartersAccuracyGlobal: 90
   closeQuartersTuCostGlobal: 12
-  closeQuartersEnergyCostGlobal: 15
+  closeQuartersEnergyCostGlobal: 20
  # ┌┐ ┬ ┬┌─┐┬ ┬┬ ┬┌┐┌┌┬┐
  # ├┴┐│ ││ ┬├─┤│ ││││ │
  # └─┘└─┘└─┘┴ ┴└─┘┘└┘ ┴
@@ -119,4 +119,4 @@
 
     damageRange: 100
     explosiveDamageRange: 50
-    fireDamageRange: [10, 30]
+    fireDamageRange: [6, 16]

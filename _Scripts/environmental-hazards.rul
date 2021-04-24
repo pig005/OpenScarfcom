@@ -32,8 +32,16 @@ extended:
               var int fire_damage 0;
               var int total_fire_damage 0;
 
+              var ptr RuleArmor unit_armor;
+              var int unit_size; # 1 for small, 2 for big
+
+              unit.getRuleArmor unit_armor;
+              unit_armor.getSize unit_size;
+
               debug_log "trauma report for:" unit;
               debug_log "original hazard intensity:" hazard_intensity;
+              debug_log " armor size" unit_size;
+
               #normalizing
               # from 01 02 03 04 05 06 07 08 09 10 11 12
               # to   06 06 06 06 07 07 07 07 08 08 08 08
@@ -43,6 +51,9 @@ extended:
                 set hazard_intensity 7;
               else gt hazard_intensity 0;
                 set hazard_intensity 6;
+              end;
+              if gt unit_size 1;
+                div hazard_intensity 4;
               end;
               debug_log "normalized hazard intensity:" hazard_intensity;
               loop var i hazard_intensity;
