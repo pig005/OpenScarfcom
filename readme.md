@@ -69,7 +69,7 @@ just simply make a pull request. if it suits the design philosopy above, it will
 
 > i have no rights to any of the mods included below.
 
-scarfcom could not have been developed without help from these mods. mod assets are in seperate folders. these mods included are out of my bounds all rights goes to their respective owners. so please keep in mind as they may (certainly) not be cc0.
+scarfcom could not have been developed without help from these mods. mod assets are in seperate folders. these mods included are out of my bounds all rights goes to their respective owners.
 
 if you are the author of these mods and do not wish these mods to be used, please let me know, or PM me on openxcom forums, or contact me with `honestlawn005@gmail.com.` **it will be removed immediately**.
 
