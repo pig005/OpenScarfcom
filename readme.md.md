@@ -21,6 +21,15 @@ mod.io page will be added shortly.
 
 there is one design philosophy for OpenScarfCom (OSC for short): make it more replayable.
 
+- **Quality Of Life** features
+
+  - [x] All crafts now **auto-patrol**
+  - [x] [Hyper & Trajectory](https://openxcom.mod.io/oxce-hyper-velocity1) integrated
+  - [ ] Different sprites for loaded/unloaded weapons
+  - [ ] Reduce real-time spent on `Research` and `Manufacture` (priority)
+    - [ ] One item, multiple variations
+  - [ ] Easier item and units overhauls and upgrades
+
 - Improved **Alien AI**
   - [x] Spotter & Sniper tactics
   - [x] Carry multiple pre-primed grenades
@@ -37,12 +46,6 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
   - ufo shields
   - more meaningful interactions (other than careful/aggressive)
     - built-in cannons and afterbunners
-- **Quality Of Life** features
-  - [ ] Reduce real-time spent on `Research` and `Manufacture` (priority)
-    - [ ] One item, multiple variations
-  - [ ] Easier item and units overhauls and upgrades
-  - [x] All crafts now **auto-patrol**
-  - [x] [Hyper & Trajectory](https://openxcom.mod.io/oxce-hyper-velocity1) integrated
 - **Replayability**
   - Alien strategy changes based on your actions
   - Story arcs
