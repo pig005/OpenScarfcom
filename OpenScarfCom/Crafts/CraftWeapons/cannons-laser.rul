@@ -1,0 +1,19 @@
+craftWeapons:
+  - type: STR_LASER_CANNON_UC
+    sprite: 4
+    sound: 8
+    damage: 70
+    range: 42
+    accuracy: 35
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 100
+    rearmRate: 50
+    launcher: STR_LASER_CANNON
+    projectileType: 4
+items:
+  - type: STR_LASER_CANNON
+    size: 2.0
+    costSell: 211000
+    transferTime: 48

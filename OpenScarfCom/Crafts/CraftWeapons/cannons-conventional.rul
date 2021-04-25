@@ -1,0 +1,23 @@
+craftWeapons:
+  - type: STR_CANNON_UC
+    sprite: 2
+    sound: 4
+    damage: 20
+    range: 20
+    accuracy: 25
+    reloadCautious: 2
+    reloadStandard: 2
+    reloadAggressive: 2
+    ammoMax: 200
+    rearmRate: 100
+    clip: STR_NONE
+    launcher: STR_CANNON
+    projectileType: 2
+    projectileSpeed: 16
+items:
+  - delete: STR_CANNON_ROUNDS_X50
+  - type: STR_CANNON
+    size: 0.9
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 48

@@ -1,0 +1,25 @@
+craftWeapons:
+  - type: STR_FUSION_BALL_UC
+    sprite: 3
+    sound: 7
+    damage: 230
+    range: 65
+    accuracy: 100
+    reloadCautious: 64
+    reloadStandard: 48
+    reloadAggressive: 32
+    ammoMax: 4
+    launcher: STR_FUSION_BALL_LAUNCHER
+    clip: STR_FUSION_BALL
+    projectileType: 3
+    projectileSpeed: 8
+items:
+  - type: STR_FUSION_BALL_LAUNCHER
+    size: 2.0
+    costSell: 281000
+    transferTime: 48
+  - type: STR_FUSION_BALL
+    size: 0.6
+    costSell: 53300
+    transferTime: 48
+    clipSize: 1
