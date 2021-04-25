@@ -7,18 +7,18 @@ extraStrings:
 # ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
   - type: en-US
     strings:
-      STR_E115_EXOSKELETON_ARMOR: "Elerium Exoskeleton Armor"
-      STR_E115_EXOSKELETON_ARMOR_UC: "ELERIUM EXOSKELETON ARMOR"
-      STR_E115_EXOSKELETON_ARMOR_UC_UFOPEDIA: "Even more enchanced than previous exoskeleton with the newfound alien alloy and elerium-115 powered batteries."
+      STR_ALLOY_ARMOR: "Alloy Armor"
+      STR_ALLOY_ARMOR_UC: "ALLOY ARMOR"
+      STR_ALLOY_ARMOR_UC_UFOPEDIA: "Makeshift vest with alien alloy plates and wafers inserted. While light and durable, it still is a bit cumbersome."
   - type: en-GB
     strings:
-      STR_E115_EXOSKELETON_ARMOR: "Elerium Exoskeleton Armor"
-      STR_E115_EXOSKELETON_ARMOR_UC: "ELERIUM EXOSKELETON ARMOUR"
+      STR_ALLOY_ARMOR: "Alloy Armour"
+      STR_ALLOY_ARMOR_UC: "ALLOY ARMOUR"
   - type: ko
     strings:
-      STR_E115_EXOSKELETON_ARMOR: "일레륨 강화외골격 전투복"
-      STR_E115_EXOSKELETON_ARMOR_UC: "일레륨 강화외골격 전투복"
-      STR_E115_EXOSKELETON_ARMOR_UC_UFOPEDIA: "외계인 합금과 일레륨-115 배터리가 응용되어 기존 강화외골격보다 한층 더 개선되었다."
+      STR_ALLOY_ARMOR: "외계인 합금 전투복"
+      STR_ALLOY_ARMOR_UC: "외계인 합금 전투복"
+      STR_ALLOY_ARMOR_UC_UFOPEDIA: "외계인 합금판과 웨이퍼를 끼워넣어 만들어진 급조 조끼. 가볍고 튼튼하지만 여전히 움직이는데 불편하다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -29,18 +29,18 @@ items:
  # ┌─┐┬─┐┌┬┐┌─┐┬─┐┬┌┬┐┌─┐┌┬┐
  # ├─┤├┬┘││││ │├┬┘│ │ ├┤ │││
  # ┴ ┴┴└─┴ ┴└─┘┴└─┴ ┴ └─┘┴ ┴
-  - type: STR_E115_EXOSKELETON_ARMOR
-    size: 1.4
-    #costBuy: 32000
-    costSell: 28000
+  - type: STR_ALLOY_ARMOR
+    size: 0.8
+    #costBuy: 50000
+    costSell: 30000
  # ┌─┐┌─┐┬─┐┌─┐┌─┐┌─┐┬┌┬┐┌─┐┌┬┐
  # │  │ │├┬┘├─┘└─┐├┤ │ │ ├┤ │││
  # └─┘└─┘┴└─┴  └─┘└─┘┴ ┴ └─┘┴ ┴
-  - type: STR_CORPSE_E115_EXOSKELETON_ARMOR
+  - type: STR_CORPSE_ALLOY_ARMOR
     name: STR_CORPSE
-    weight: 42
-    bigSprite: 1040
-    floorSprite: 1040
+    weight: 24
+    bigSprite: 1030
+    floorSprite: 1030
     invWidth: 2
     invHeight: 3
     armor: 30
@@ -52,17 +52,15 @@ manufacture:
 # ██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ██╔══██║██║        ██║   ██║   ██║██╔══██╗██╔══╝
 # ██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝██║     ██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║███████╗
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
-  - name: STR_E115_EXOSKELETON_ARMOR
+  - name: STR_ALLOY_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ALIEN_ALLOYS
-      - STR_ELERIUM_115
-    space: 14
-    time: 1000
-    cost: 32000
+    space: 10
+    time: 400
+    cost: 18000
     requiredItems:
-      STR_ALIEN_ALLOYS: 5
-      STR_ELERIUM_115: 3
+      STR_ALIEN_ALLOYS: 3
 # ██╗   ██╗███████╗ ██████╗ ██████╗  █████╗ ███████╗██████╗ ██╗ █████╗
 # ██║   ██║██╔════╝██╔═══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗██║██╔══██╗
 # ██║   ██║█████╗  ██║   ██║██████╔╝███████║█████╗  ██║  ██║██║███████║
@@ -73,7 +71,6 @@ ufopaedia:
   - id: STR_ALLOY_ARMOR_UC
     requires:
       - STR_ALIEN_ALLOYS
-      - STR_ELERIUM_115
 armors:
 #  █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗
 # ██╔══██╗██╔══██╗████╗ ████║██╔═══██╗██╔══██╗██╔════╝
@@ -81,17 +78,21 @@ armors:
 # ██╔══██║██╔══██╗██║╚██╔╝██║██║   ██║██╔══██╗╚════██║
 # ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
-  - type: STR_E115_EXOSKELETON_ARMOR_UC
-    spriteSheet: XCOM_E_EXO.PCK
-    spriteInv: XCOM_E_EXO
+  - type: STR_ALLOY_ARMOR_UC
+    spriteSheet: XCOM_ALLOY.PCK
+    spriteInv: XCOM_ALLOY
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 11064, 11064, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3
     loftempsSet: [3]
     corpseBattle:
-      - STR_CORPSE_E115_EXOSKELETON_ARMOR
-    storeItem: STR_E115_EXOSKELETON_ARMOR
+      - STR_CORPSE_ALLOY_ARMOR
+    storeItem: STR_ALLOY_ARMOR
+    frontArmor: 44
+    sideArmor: 20
+    rearArmor: 30
+    underArmor: 24
     damageModifier:
       - 1.0
       - 1.0
@@ -101,73 +102,9 @@ armors:
       - 1.0
       - 0.9
       - 1.0
-      - 1.1
+      - 0.9
       - 1.0
-    frontArmor: 46
-    sideArmor: 24
-    rearArmor: 36
-    underArmor: 24
+    weight: 8
     stats:
-      stamina: 20
-    recovery:
-      energy:
-        tu: 0.6
-    personalLight: 20
-    weight: -20
-    turnCost: 2
-    allowsStrafing: false
-    camouflageAtDay: 0
-    camouflageAtDark: 0
-extraSprites:
-# ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
-# ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
-# ███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗
-# ╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
-# ███████║██║     ██║  ██║██║   ██║   ███████╗███████║
-# ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
- # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
- # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
- # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - type: XCOM_E_EXO.PCK
-    width: 512
-    height: 720
-    subX: 32
-    subY: 40
-    files:
-      0: Resources/Armors/EleriumExoskeleton/spritesheet.png
- # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
- # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
- # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
-  - type: XCOM_E_EXOF0.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/f0.png
-  - type: XCOM_E_EXOF1.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/f1.png
-  - type: XCOM_E_EXOF2.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/f2.png
-  - type: XCOM_E_EXOF3.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/f3.png
-  - type: XCOM_E_EXOM0.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/m0.png
-  - type: XCOM_E_EXOM1.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/m1.png
-  - type: XCOM_E_EXOM2.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/m2.png
-  - type: XCOM_E_EXOM3.SPK
-    singleImage: true
-    files:
-      0: Resources/Armors/EleriumExoskeleton/Inventory/m3.png
-
+      tu: -5
+      stamina: -5

@@ -1,0 +1,119 @@
+extended:
+# ╔╦╗╔═╗╔═╗╔═╗
+#  ║ ╠═╣║ ╦╚═╗
+#  ╩ ╩ ╩╚═╝╚═╝
+  tags:
+    RuleItem:
+      ALLOW_AMMO_TO_RESPRITE: int
+items:
+# ╦═╗╦╔═╗╦  ╔═╗  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+# ╠╦╝║╠╣ ║  ║╣   ║ ╦║  ║ ║╠╩╗╠═╣║
+# ╩╚═╩╚  ╩═╝╚═╝  ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+# 300
+  - &STR_RIFLE_GLOBAL
+    type: STR_RIFLE_GLOBAL
+   # Graphics
+    bigSprite: 301
+    floorSprite: 300
+    handSprite: 300
+    bulletSprite: 2
+    invWidth: 1
+    invHeight: 3
+   # Sounds
+    fireSound: 4
+   # Specs
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    kneelBonus: 120
+    size: 0.2
+    weight: 12
+    costBuy: 0
+    costSell: 0
+   # Ammo
+    ammo:
+      0:
+        compatibleAmmo: [ STR_RIFLE_CLIP ]
+        tuLoad: 15
+        tuUnload: 6
+   # Accuracy
+    accuracyMultiplier:
+      firing: 1
+      strength: 0.2
+      psiSkill: 0.2
+   # Firing Modes
+    tuSnap: 33
+    snapRange: 15
+    accuracySnap: 40
+    confSnap: # Burst Fire
+      name: STR_SHOT_TYPE_SNAP_BURST
+      ammoSlot: 0
+      followProjectiles: false
+      shots: 3
+    tuAuto: 80
+    autoRange: 7
+    accuracyAuto: 15
+    confAuto: # Full Auto
+      ammoSlot: 0
+      followProjectiles: false
+      shots: 10
+    tuAimed: 75
+    aimRange: 200
+    accuracyAimed: 80
+    confAimed:
+      ammoSlot: 0
+      followProjectiles: true
+      shots: 1
+   # Tags
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+# ┌─┐┬ ┬┌┬┐┌─┐┌┬┐┌─┐┌┬┐┬┌─┐  ┬─┐┬┌─┐┬  ┌─┐
+# ├─┤│ │ │ │ ││││├─┤ │ ││    ├┬┘│├┤ │  ├┤
+# ┴ ┴└─┘ ┴ └─┘┴ ┴┴ ┴ ┴ ┴└─┘  ┴└─┴└  ┴─┘└─┘
+# 300
+  - type: STR_AUTOMATIC_RIFLE
+    refNode: *STR_RIFLE_GLOBAL
+   # Graphics
+    bigSprite: 301
+    floorSprite: 300
+    handSprite: 30
+   # Specs
+    costBuy: 3000
+    costSell: 2250
+   # Miscs
+    sprayWaypoints: 2
+# ┌┬┐┌─┐┬─┐┬┌─┌─┐┌┬┐┌─┐┌┐┌┌─┐  ┬─┐┬┌─┐┬  ┌─┐
+# │││├─┤├┬┘├┴┐└─┐│││├─┤│││└─┐  ├┬┘│├┤ │  ├┤
+# ┴ ┴┴ ┴┴└─┴ ┴└─┘┴ ┴┴ ┴┘└┘└─┘  ┴└─┴└  ┴─┘└─┘
+# 310
+  - type: STR_MARKSMANS_RIFLE
+    refNode: *STR_RIFLE_GLOBAL
+   # Graphics
+    bigSprite: 311
+    floorSprite: 310
+    handSprite: 310
+   # Specs
+    costBuy: 5000
+    costSell: 3750
+    weight: 15
+    kneelBonus: 125
+   # Firing Modes
+    tuSnap: 80
+    snapRange: 200
+    accuracySnap: 110
+    confSnap: # Aimed
+      name: STR_SHOT_TYPE_AIMED
+      followProjectiles: true
+      shots: 1
+    tuAuto: 45
+    accuracyAuto: 50
+    confAuto: # Burst Fire
+      followProjectiles: false
+      shots: 3
+    tuAimed: 25
+    aimRange: 20
+    accuracyAimed: 70
+    confAimed: # Snap
+      name: STR_SHOT_TYPE_SNAP
+      followProjectiles: true
+      shots: 1

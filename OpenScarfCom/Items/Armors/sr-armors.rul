@@ -1,0 +1,34 @@
+armors:
+  - type: STR_POWER_SUIT_UC
+    stats:
+      tu: 25
+      strength: 30
+  - type: STR_FLYING_SUIT_UC
+    stats:
+      tu: 25
+      strength: 30
+
+  - type: STR_NONE_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_PERSONAL_ARMOR_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_POWER_SUIT_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_FLYING_SUIT_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_COMBAT_ARMOR_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_EXOSKELETON_ARMOR_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_ALLOY_ARMOR_UC
+    units:
+      - STR_SOLDIER
+  - type: STR_E115_EXOSKELETON_ARMOR_UC
+    units:
+      - STR_SOLDIER

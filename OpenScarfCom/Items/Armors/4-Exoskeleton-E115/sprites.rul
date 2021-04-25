@@ -1,0 +1,53 @@
+extraSprites:
+# ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
+# ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
+# ███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗
+# ╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
+# ███████║██║     ██║  ██║██║   ██║   ███████╗███████║
+# ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
+ # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
+ # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
+ # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
+  - type: XCOM_E_EXO.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/spritesheet.png
+ # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
+ # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
+ # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
+  - type: XCOM_E_EXOF0.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f0.png
+  - type: XCOM_E_EXOF1.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f1.png
+  - type: XCOM_E_EXOF2.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f2.png
+  - type: XCOM_E_EXOF3.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f3.png
+  - type: XCOM_E_EXOM0.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m0.png
+  - type: XCOM_E_EXOM1.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m1.png
+  - type: XCOM_E_EXOM2.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m2.png
+  - type: XCOM_E_EXOM3.SPK
+    singleImage: true
+    files:
+      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m3.png
+

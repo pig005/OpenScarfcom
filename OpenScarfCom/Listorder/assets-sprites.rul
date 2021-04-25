@@ -5,9 +5,9 @@ extraSprites:
     subX: 12
     subY: 20
     files:
-      0: Resources/UI/tank_armorpreviews.png
+      0: OpenScarfCom/UI/tank_armorpreviews.png
 
   - type: TANKF0.SPK
     singleImage: true
     files:
-      0: Resources/Units/UGV/Tank_Armor.gif
+      0: OpenScarfCom/Units/UGV/Tank_Armor.gif

@@ -1,0 +1,52 @@
+extraSprites:
+# ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
+# ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
+# ███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗
+# ╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
+# ███████║██║     ██║  ██║██║   ██║   ███████╗███████║
+# ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
+ # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
+ # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
+ # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
+  - type: XCOM_COMBAT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/CombatArmor/spritesheet.png
+ # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
+ # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
+ # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
+  - type: XCOM_COMBATF0.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/f0.gif
+  - type: XCOM_COMBATF1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/f1.gif
+  - type: XCOM_COMBATF2.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/f2.gif
+  - type: XCOM_COMBATF3.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/f3.gif
+  - type: XCOM_COMBATM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/m0.gif
+  - type: XCOM_COMBATM1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/m1.gif
+  - type: XCOM_COMBATM2.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/m2.gif
+  - type: XCOM_COMBATM3.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/CombatArmor/Inventory/m3.gif

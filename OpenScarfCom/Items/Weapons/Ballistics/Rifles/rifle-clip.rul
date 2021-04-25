@@ -1,0 +1,16 @@
+extended:
+# ╔╦╗╔═╗╔═╗╔═╗
+#  ║ ╠═╣║ ╦╚═╗
+#  ╩ ╩ ╩╚═╝╚═╝
+  tags:
+    RuleItem:
+      OFFSET_BIGOB_WEAPON: int
+items:
+# ┬─┐┬┌─┐┬  ┌─┐  ┌─┐┬  ┬┌─┐
+# ├┬┘│├┤ │  ├┤   │  │  │├─┘
+# ┴└─┴└  ┴─┘└─┘  └─┘┴─┘┴┴
+  - type: STR_RIFLE_CLIP
+    weight: 4
+    power: 42
+    tags:
+      OFFSET_BIGOB_WEAPON: 1

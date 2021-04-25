@@ -1,0 +1,52 @@
+extraSprites:
+# ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
+# ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
+# ███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗
+# ╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
+# ███████║██║     ██║  ██║██║   ██║   ███████╗███████║
+# ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
+ # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
+ # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
+ # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
+  - type: XCOM_ALLOY.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/AlloyArmor/spritesheet.png
+ # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
+ # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
+ # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
+  - type: XCOM_ALLOYF0.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/f0.png
+  - type: XCOM_ALLOYF1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/f1.png
+  - type: XCOM_ALLOYF2.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/f2.png
+  - type: XCOM_ALLOYF3.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/f3.png
+  - type: XCOM_ALLOYM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/m0.png
+  - type: XCOM_ALLOYM1.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/m1.png
+  - type: XCOM_ALLOYM2.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/m2.png
+  - type: XCOM_ALLOYM3.SPK
+    singleImage: true
+    files:
+      0: Resources/Armors/AlloyArmor/Inventory/m3.png
