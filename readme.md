@@ -70,11 +70,11 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
 
 ## HOW TO CONTRIBUTE
 
-just simply make a pull request. if it suits the design philosopy above, it will be merged as soon as possible. if not, we could always discuss to make possible modifications.
+you could always do a pull request! if it suits the design philosopy above, it will be merged as soon as possible. if not, we could always discuss to make possible modifications.
 
 ## SUBMOD CREDITS
 
-the [gpl license](./OpenScarfCom/LICENSE) only applies to `OpenScarfCom` directry. other folders are unaffected by this license.
+the [gpl license](./OpenScarfCom/LICENSE) only applies to `OpenScarfCom` directry. other folders are unaffected by this license. also if you're not satisfied with the license i could send you CC0-licensed codes that I wrote.
 
 > i have no rights to any of the mods included below.
 
