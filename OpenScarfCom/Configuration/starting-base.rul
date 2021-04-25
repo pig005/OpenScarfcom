@@ -71,7 +71,8 @@ startingBase:
       items:
         STR_PISTOL: 6
         STR_PISTOL_CLIP: 12
-        STR_RIFLE: 10
+        STR_AUTOMATIC_RIFLE: 10
+        STR_MARKSMANS_RIFLE: 4
         STR_RIFLE_CLIP: 20
         STR_HEAVY_CANNON: 4
         STR_HEAVY_CANNON_HE_CLIP: 8
