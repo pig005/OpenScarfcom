@@ -2,7 +2,7 @@
 
 **Total Conversion Mod** focused on **replayability** for **OpenXcom Extended**
 
-being developped by greenscarf (for now) and released under gpl v3.0[(*)](#submod-credits)
+being developped by _greenscarf_ (for now) and released under [gpl v3.0](./OpenScarfCom/LICENSE) [(*)](#submod-credits)
 
 please report any bugs/ideas on `issues`.
 
@@ -72,6 +72,8 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
 just simply make a pull request. if it suits the design philosopy above, it will be merged as soon as possible. if not, we could always discuss to make possible modifications.
 
 ## SUBMOD CREDITS
+
+the [gpl license](./OpenScarfCom/LICENSE) only applies to `OpenScarfCom` directry. other folders are unaffected by this license.
 
 > i have no rights to any of the mods included below.
 
