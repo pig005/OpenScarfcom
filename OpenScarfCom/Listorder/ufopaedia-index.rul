@@ -23,15 +23,15 @@ ufopaedia:
 # ██║   ██║   ███████╗██║ ╚═╝ ██║███████║
 # ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝
   - id: STR_AUTOMATIC_RIFLE
-    text: STR_MARKSMANS_RIFLE_UFOPEDIA
+    text: STR_AUTOMATIC_RIFLE_UFOPEDIA
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    listOrder: 2200
+    listOrder: 2100
   - id: STR_MARKSMANS_RIFLE
     text: STR_MARKSMANS_RIFLE_UFOPEDIA
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    listOrder: 2210
+    listOrder: 2110
 #  █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗
 # ██╔══██╗██╔══██╗████╗ ████║██╔═══██╗██╔══██╗██╔════╝
 # ███████║██████╔╝██╔████╔██║██║   ██║██████╔╝███████╗
