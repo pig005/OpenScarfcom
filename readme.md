@@ -6,6 +6,9 @@ being developped by _greenscarf_ (for now) and released under [gpl v3.0](./OpenS
 
 please report any bugs/ideas on `issues`.
 
+## CHANGELOGS
+check [**changelog.md**](./changelog.md)
+
 ## HOW TO INSTALL
 
 OSC needs latest [OXCE](https://openxcom.mod.io/openxcom-extended "link to OXCE mod.io page") to run properly.
