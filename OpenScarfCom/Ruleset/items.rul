@@ -8,8 +8,12 @@ items:
   - delete: STR_TANK_CANNON
   - delete: STR_TANK_ROCKET_LAUNCHER
   - delete: STR_TANK_LASER_CANNON
+  - delete: STR_HOVERTANK_PLASMA
+  - delete: STR_HOVERTANK_LAUNCHER
   - delete: STR_HWP_CANNON_SHELLS
   - delete: STR_HWP_ROCKETS
+
+
   - type: STR_HEAVY_CANNON
     bigSprite: 400
     handSprite: 400

@@ -9,13 +9,13 @@ items:
 # ╦═╗╦╔═╗╦  ╔═╗  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
 # ╠╦╝║╠╣ ║  ║╣   ║ ╦║  ║ ║╠╩╗╠═╣║
 # ╩╚═╩╚  ╩═╝╚═╝  ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
-# 200
+# 2200
   - &STR_RIFLE_GLOBAL
     type: STR_RIFLE_GLOBAL
    # Graphics
-    bigSprite: 201
-    floorSprite: 200
-    handSprite: 200
+    bigSprite: 2201
+    floorSprite: 2200
+    handSprite: 2200
     bulletSprite: 2
     invWidth: 1
     invHeight: 3
@@ -70,7 +70,7 @@ items:
 # ┌─┐┬ ┬┌┬┐┌─┐┌┬┐┌─┐┌┬┐┬┌─┐  ┬─┐┬┌─┐┬  ┌─┐
 # ├─┤│ │ │ │ ││││├─┤ │ ││    ├┬┘│├┤ │  ├┤
 # ┴ ┴└─┘ ┴ └─┘┴ ┴┴ ┴ ┴ ┴└─┘  ┴└─┴└  ┴─┘└─┘
-# 200
+# 2200
   - type: STR_AUTOMATIC_RIFLE
     refNode: *STR_RIFLE_GLOBAL
    # Graphics
