@@ -61,6 +61,8 @@ startingBase:
       weapons:
         - type: STR_STINGRAY
           ammo: 6
+        - type: STR_AVALANCHE
+          ammo: 3
         - type: STR_CANNON_UC
           ammo: 200
     - type: STR_SKYRANGER

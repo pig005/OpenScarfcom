@@ -1,0 +1,45 @@
+items:
+  - delete: STR_CANNON_ROUNDS_X50
+  - type: STR_CANNON
+    size: 1.5
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 48
+  # gun pods?
+craftWeapons:
+  - type: STR_CANNON_UC
+    sprite: 2
+    sound: 4
+    damage: 10
+    range: 10
+    accuracy: 25
+    reloadCautious: 3
+    reloadStandard: 3
+    reloadAggressive: 3
+    ammoMax: 200
+    rearmRate: 100
+    clip: STR_NONE
+    launcher: STR_CANNON
+    projectileType: 2
+    projectileSpeed: 16
+  # - type: STR_PLASMA_BEAM_UC
+  #   sprite: 5
+  #   sound: 9
+  #   damage: 140
+  #   range: 52
+  #   accuracy: 50
+  #   reloadCautious: 24
+  #   reloadStandard: 24
+  #   reloadAggressive: 24
+  #   ammoMax: 100
+  #   rearmRate: 50
+  #   launcher: STR_PLASMA_BEAM
+  #   projectileType: 5
+crafts:
+  - type: STR_INTERCEPTOR
+    weapons: 3
+    weaponTypes: [0, 0, 0, 0]
+    fixedWeapons: ["","", STR_CANNON_UC, ""]
+  # - type: STR_FIRESTORM
+  # - type: STR_LIGHTNING
+  # - type: STR_AVENGER
