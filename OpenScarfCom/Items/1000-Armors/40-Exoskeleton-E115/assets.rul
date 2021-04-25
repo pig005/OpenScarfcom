@@ -17,12 +17,13 @@ extraSprites:
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - typeSingle: XCOM_E_EXO.PCK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/spritesheet.png
+  - type: XCOM_E_EXO.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
+    files:
+      0: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴

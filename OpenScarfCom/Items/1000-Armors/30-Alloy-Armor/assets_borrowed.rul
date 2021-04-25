@@ -17,12 +17,13 @@ extraSprites:
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - typeSingle: XCOM_ALLOY.PCK
-    fileSingle: Resources/Armors/AlloyArmor/spritesheet.png
+  - type: XCOM_ALLOY.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
+    files:
+      0: Resources/Armors/AlloyArmor/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴

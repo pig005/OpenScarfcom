@@ -41,6 +41,9 @@ startingBase:
     - type: STR_LIVING_QUARTERS
       x: 3
       y: 4
+    - type: STR_ALIEN_CONTAINMENT
+      x: 4
+      y: 4
   crafts:
  #  ██████╗██████╗  █████╗ ███████╗████████╗███████╗
  # ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝

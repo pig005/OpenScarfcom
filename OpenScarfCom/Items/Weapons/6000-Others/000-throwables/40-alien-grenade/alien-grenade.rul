@@ -1,0 +1,16 @@
+extended:
+  tags:
+    RuleItem:
+      START_PRIMED: int
+items:
+  - type: STR_ALIEN_GRENADE
+    clipSize: 1
+    explosionSpeed: 3
+    damageAlter:
+      #RandomType: 5
+      ToItem: 1
+    fuseType: 0
+    #tuPrime: 20
+    tuThrow: 25
+    tags:
+      START_PRIMED: 1

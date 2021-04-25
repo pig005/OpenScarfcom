@@ -13,16 +13,6 @@ items:
   - delete: STR_HWP_CANNON_SHELLS
   - delete: STR_HWP_ROCKETS
 
-
-  - type: STR_HEAVY_CANNON
-    bigSprite: 400
-    handSprite: 400
-    floorSprite: 400
-    arcingShot: true
-    compatibleAmmo:
-      - STR_HC_HE_AMMO
-      - STR_HC_I_AMMO
-
 # ═════════════════════════════════════════════════════
 #  ██╗      █████╗ ███████╗███████╗██████╗ ███████╗
 #  ██║     ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝
@@ -139,31 +129,6 @@ items:
 #     ██║   ██║  ██║██║  ██║╚██████╔╝╚███╔███╔╝██║██║ ╚████║╚██████╔╝
 #     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝
 # ════════════════════════════════════════════════════════════════════
-  - type: STR_GRENADE
-    power: 60
-    fuseType: 0
-    explosionSpeed: 3
-    damageType: 3
-    damageAlter:
-      FixRadius: 3
-      RandomType: 1
-      ResistType: 1
-      RadiusReduction: 10
-      ToTile: 0.2
-      ToItem: 0.5
-      ToHealth: 1.5
-      ToArmor: 0.05
-      ArmorEffectiveness: 2.0
-      ToWound: 5.0
-      RandomWound: false
-
-  - type: STR_SMOKE_GRENADE
-    power: 30
-    damageAlter:
-      FixRadius: 5
-    fuseType: 0
-    tags:
-      START_PRIMED: 1
 
   - type: STR_ALIEN_GRENADE
     clipSize: 1
@@ -176,23 +141,6 @@ items:
     tuThrow: 25
     tags:
       START_PRIMED: 1
-# ══════════════════════════════════════════════════════
-#   █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗
-#  ██╔══██╗██╔══██╗████╗ ████║██╔═══██╗██╔══██╗██╔════╝
-#  ███████║██████╔╝██╔████╔██║██║   ██║██████╔╝███████╗
-#  ██╔══██║██╔══██╗██║╚██╔╝██║██║   ██║██╔══██╗╚════██║
-#  ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
-#  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
-# ══════════════════════════════════════════════════════
-  - type: STR_TACTICAL_ARMOR
-    size: 0.8
-    costBuy: 20000
-    costSell: 15000
-  - type: STR_EXOSKELETON_ARMOR
-    size: 0.8
-    costBuy: 25000
-    costSell: 20000
-
 # ══════════════════════════════════════════════════════
 #   ██████╗ ████████╗██╗  ██╗███████╗██████╗ ███████╗
 #  ██╔═══██╗╚══██╔══╝██║  ██║██╔════╝██╔══██╗██╔════╝

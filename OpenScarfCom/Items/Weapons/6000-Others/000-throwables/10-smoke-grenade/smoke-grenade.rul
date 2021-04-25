@@ -1,0 +1,12 @@
+extended:
+  tags:
+    RuleItem:
+      START_PRIMED: int
+items:
+  - type: STR_SMOKE_GRENADE
+    power: 30
+    damageAlter:
+      FixRadius: 5
+    fuseType: 0
+    tags:
+      START_PRIMED: 1

@@ -1,0 +1,18 @@
+items:
+  - type: STR_GRENADE
+    power: 60
+    fuseType: 0
+    explosionSpeed: 3
+    damageType: 3
+    damageAlter:
+      FixRadius: 3
+      RandomType: 1
+      ResistType: 1
+      RadiusReduction: 10
+      ToTile: 0.2
+      ToItem: 0.5
+      ToHealth: 1.5
+      ToArmor: 0.05
+      ArmorEffectiveness: 2.0
+      ToWound: 5.0
+      RandomWound: false

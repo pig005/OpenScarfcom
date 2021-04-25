@@ -4,6 +4,6 @@ author: "greenscarf"
 description: "Total Conversion focused on QOL & Replayability"
 id: OpenScarfCom
 master: xcom1
-ismaster: false
+isMaster: false
 reservedSpace: 20
 resourceConfig: transparency.rul

@@ -1,13 +1,7 @@
 extraSprites:
-  - type: CustomArmorPreviews
+  - typeSingle: CustomArmorPreviews
+    fileSingle: OpenScarfCom/UI/tank_armorpreviews.png
     width: 36
     height: 20
     subX: 12
     subY: 20
-    files:
-      0: OpenScarfCom/UI/tank_armorpreviews.png
-
-  - type: TANKF0.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Units/UGV/Tank_Armor.gif

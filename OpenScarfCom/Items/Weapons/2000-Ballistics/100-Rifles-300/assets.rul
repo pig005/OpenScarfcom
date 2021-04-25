@@ -6,54 +6,45 @@ extraSprites:
     width: 32
     height: 48
     files:
-      2100: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/100-rifle-clip/Big.png
+      2100: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/100-rifle-clip/Big.png"
 
-      2200: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/200-rifle-automatic/Big-Empty.png
-      2201: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/200-rifle-automatic/Big.png
+      2200: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/200-rifle-automatic/Big-Empty.png"
+      2201: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/200-rifle-automatic/Big.png"
 
-      2301: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/300-rifle-marksman/Big.png
-      2300: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/300-rifle-marksman/Big-Empty.png
+      2301: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/300-rifle-marksman/Big.png"
+      2300: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/300-rifle-marksman/Big-Empty.png"
   - type: HANDOB.PCK
     width: 256
     height: 40
     subX: 32
     subY: 40
     files:
-      2200: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/200-rifle-automatic/Hand.png
+      2200: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/200-rifle-automatic/Hand.png"
       # 2200: >
       #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
       #   ASSETS/200-rifle-automatic/Hand-Empty.png
 
-      2300: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/300-rifle-marksman/Hand.png
+      2300: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/300-rifle-marksman/Hand.png"
       # 2300: >
       #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
       #   ASSETS/300-rifle-marksman/Hand-Empty.png
   - type: FLOOROB.PCK
     files:
-      2200: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/200-rifle-automatic/Floor.png
+      2200: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/200-rifle-automatic/Floor.png"
       # 2200: >
       #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
       #   ASSETS/200-rifle-automatic/Floor-Empty.png
 
-      2300: >
-        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
-        ASSETS/300-rifle-marksman/Floor.png
+      2300: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/300-rifle-marksman/Floor.png"
       # 2300: >
       #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
       #   ASSETS/300-rifle-marksman/Floor-Empty.png

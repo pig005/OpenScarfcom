@@ -1,0 +1,9 @@
+items:
+  - type: STR_HEAVY_CANNON
+    bigSprite: 2400
+    handSprite: 2400
+    floorSprite: 2400
+    arcingShot: true
+    compatibleAmmo:
+      - STR_HC_HE_AMMO
+      - STR_HC_I_AMMO

@@ -1,8 +1,14 @@
 items:
   # because heavy cannon is now an grenade launcher
   - delete: STR_HC_AP_AMMO
-  # becasue dmr rifle now does the work
+  # becasue AR & MR now does the work
+  - delete: STR_RIFLE
   - delete: STR_AUTO_CANNON
   - delete: STR_AC_AP_AMMO
   - delete: STR_AC_HE_AMMO
   - delete: STR_AC_I_AMMO
+
+  # please go away
+  - delete: STR_TANK_LASER_CANNON
+manufacture:
+  - delete: STR_TANK_LASER_CANNON

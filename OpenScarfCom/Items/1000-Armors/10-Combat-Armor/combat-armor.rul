@@ -53,8 +53,8 @@ armors:
 # ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
   - type: STR_COMBAT_ARMOR_UC
-    spriteSheet: XCOM_COMBAT.PCK
-    spriteInv: XCOM_COMBAT
+    spriteSheet: XCOM_COMBAT_ARMOR.PCK
+    spriteInv: XCOM_COMBAT_ARMOR
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
