@@ -22,17 +22,16 @@ ufopaedia:
 # ██║   ██║   ██╔══╝  ██║╚██╔╝██║╚════██║
 # ██║   ██║   ███████╗██║ ╚═╝ ██║███████║
 # ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝
-  - id: STR_RIFLE_DMR
-    text: STR_RIFLE_DMR_UFOPEDIA
+  - id: STR_AUTOMATIC_RIFLE
+    text: STR_MARKSMANS_RIFLE_UFOPEDIA
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 2200
+  - id: STR_MARKSMANS_RIFLE
+    text: STR_MARKSMANS_RIFLE_UFOPEDIA
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 2210
-  - id: STR_PROTOTYPE_LASER_CAPACITOR
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-  - id: STR_LASER_ADVANCED_LENS
-    type_id: 4
-    section: STR_NOT_AVAILABLE
 #  █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗
 # ██╔══██╗██╔══██╗████╗ ████║██╔═══██╗██╔══██╗██╔════╝
 # ███████║██████╔╝██╔████╔██║██║   ██║██████╔╝███████╗

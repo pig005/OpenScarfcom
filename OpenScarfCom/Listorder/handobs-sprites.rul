@@ -13,13 +13,4 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-    # ┬┌┬┐┌─┐┌┬┐┌─┐
-    # │ │ ├┤ │││└─┐
-    # ┴ ┴ └─┘┴ ┴└─┘
-      300: Resources/Weapons/ballistics/rifle/Hand.png
-      310: Resources/Weapons/ballistics/rifle-marksman/Hand.png
-
       400: Resources/WEAPONS/ballistics/multiple-grenade-launcher/Hand.png
-    # ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
-    # ├─┤├┬┘││││ │├┬┘└─┐
-    # ┴ ┴┴└─┴ ┴└─┘┴└─└─┘

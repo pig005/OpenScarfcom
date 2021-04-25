@@ -10,35 +10,36 @@ extraSprites:
  # └─┘┴└─┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
   - type: BIGOBS.PCK
     files:
-      1010: Resources/ARMORS/CombatArmor/Big.gif
+      1020: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Big.png
   - type: FLOOROB.PCK
     files:
-      1010: Resources/ARMORS/CombatArmor/Floor.gif
+      1020: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Floor.png
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - typeSingle: XCOM_COMBAT.PCK
+  - typeSingle: XCOM_EXO.PCK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/spritesheet.png
     width: 512
     height: 720
     subX: 32
     subY: 40
-    fileSingle: Resources/ARMORS/CombatArmor/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
-  - typeSingle: XCOM_COMBATF0.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/f0.gif
-  - typeSingle: XCOM_COMBATF1.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/f1.gif
-  - typeSingle: XCOM_COMBATF2.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/f2.gif
-  - typeSingle: XCOM_COMBATF3.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/f3.gif
-  - typeSingle: XCOM_COMBATM0.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/m0.gif
-  - typeSingle: XCOM_COMBATM1.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/m1.gif
-  - typeSingle: XCOM_COMBATM2.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/m2.gif
-  - typeSingle: XCOM_COMBATM3.SPK
-    fileSingle: Resources/ARMORS/CombatArmor/Inventory/m3.gif
+  - typeSingle: XCOM_EXOF0.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f0.png
+  - typeSingle: XCOM_EXOF1.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f1.png
+  - typeSingle: XCOM_EXOF2.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f2.png
+  - typeSingle: XCOM_EXOF3.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f3.png
+  - typeSingle: XCOM_EXOM0.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m0.png
+  - typeSingle: XCOM_EXOM1.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m1.png
+  - typeSingle: XCOM_EXOM2.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m2.png
+  - typeSingle: XCOM_EXOM3.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m3.png
+

@@ -9,13 +9,13 @@ items:
 # ╦═╗╦╔═╗╦  ╔═╗  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
 # ╠╦╝║╠╣ ║  ║╣   ║ ╦║  ║ ║╠╩╗╠═╣║
 # ╩╚═╩╚  ╩═╝╚═╝  ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
-# 300
+# 200
   - &STR_RIFLE_GLOBAL
     type: STR_RIFLE_GLOBAL
    # Graphics
-    bigSprite: 301
-    floorSprite: 300
-    handSprite: 300
+    bigSprite: 201
+    floorSprite: 200
+    handSprite: 200
     bulletSprite: 2
     invWidth: 1
     invHeight: 3
@@ -70,13 +70,13 @@ items:
 # ┌─┐┬ ┬┌┬┐┌─┐┌┬┐┌─┐┌┬┐┬┌─┐  ┬─┐┬┌─┐┬  ┌─┐
 # ├─┤│ │ │ │ ││││├─┤ │ ││    ├┬┘│├┤ │  ├┤
 # ┴ ┴└─┘ ┴ └─┘┴ ┴┴ ┴ ┴ ┴└─┘  ┴└─┴└  ┴─┘└─┘
-# 300
+# 200
   - type: STR_AUTOMATIC_RIFLE
     refNode: *STR_RIFLE_GLOBAL
    # Graphics
-    bigSprite: 301
-    floorSprite: 300
-    handSprite: 30
+    bigSprite: 2201
+    floorSprite: 2200
+    handSprite: 2200
    # Specs
     costBuy: 3000
     costSell: 2250
@@ -89,9 +89,9 @@ items:
   - type: STR_MARKSMANS_RIFLE
     refNode: *STR_RIFLE_GLOBAL
    # Graphics
-    bigSprite: 311
-    floorSprite: 310
-    handSprite: 310
+    bigSprite: 2301
+    floorSprite: 2300
+    handSprite: 2300
    # Specs
     costBuy: 5000
     costSell: 3750

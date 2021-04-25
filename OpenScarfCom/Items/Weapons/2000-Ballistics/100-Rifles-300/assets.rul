@@ -1,0 +1,63 @@
+extraSprites:
+# ┌┐ ┬┌─┐   ┬   ┬ ┬┌─┐┌┐┌┌┬┐   ┬   ┌─┐┬  ┌─┐┌─┐┬─┐┌─┐┌┐ ┌─┐
+# ├┴┐││ ┬  ┌┼─  ├─┤├─┤│││ ││  ┌┼─  ├┤ │  │ ││ │├┬┘│ │├┴┐└─┐
+# └─┘┴└─┘  └┘   ┴ ┴┴ ┴┘└┘─┴┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
+  - type: BIGOBS.PCK
+    files:
+      2100: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle-clip/
+        Big.png
+
+      2200: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle/
+        Big-Empty.png
+      2201: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle/
+        Big.png
+
+      2301: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle-marksman/
+        Big.png
+      2300: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle-marksman/
+        Big-Empty.png
+  - type: HANDOBS.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2200: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle/Hand.png
+      # 2200: >
+      #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+      #   ASSETS/ballistics/rifle/Hand-Empty.png
+
+      2300: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle-marksman/Hand.png
+      # 2300: >
+      #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+      #   ASSETS/ballistics/rifle-marksman/Hand-Empty.png
+  - type: FLOOROBS.PCK
+    files:
+      2200: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle/Floor-Empty.png
+      # 2200: >
+      #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+      #   ASSETS/ballistics/rifle/Floor-Empty.png
+
+      2300: >
+        OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+        ASSETS/ballistics/rifle-marksman/Floor.png
+      # 2300: >
+      #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
+      #   ASSETS/ballistics/rifle-marksman/Floor-Empty.png
+

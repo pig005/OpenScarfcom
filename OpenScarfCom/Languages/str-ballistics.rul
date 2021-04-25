@@ -26,11 +26,11 @@ extraStrings:
     # ├┬┘│├┤ │  ├┤ └─┐
     # ┴└─┴└  ┴─┘└─┘└─┘
       # AUTOMATIC RILE
-      STR_RIFLE: "Automatic Rifle"
-      STR_RIFLE_UFOPEDIA: "This powerful battle rifle takes 7.62mm ammunition in 20 round clips. While powerful, it has high recoil."
+      STR_AUTOMATIC_RIFLE: "Automatic Rifle"
+      STR_AUTOMATIC_RIFLE_UFOPEDIA: "This powerful battle rifle takes 7.62mm ammunition in 20 round clips. While powerful, it has high recoil."
       # MARKSMAN'S RIFLE
-      STR_RIFLE_DMR: "Marksman's Rifle"
-      STR_RIFLE_DMR_UFOPEDIA: "This highly accurate rifle has scope and is suitable to aid XCom soldiers during mid range combat."
+      STR_MARKSMANS_RIFLE: "Marksman's Rifle"
+      STR_MARKSMANS_RIFLE_UFOPEDIA: "This highly accurate rifle has scope and is suitable to aid XCom soldiers during mid range combat."
 # ██╗  ██╗ ██████╗
 # ██║ ██╔╝██╔═══██╗
 # █████╔╝ ██║   ██║
@@ -47,9 +47,9 @@ extraStrings:
     # ├┬┘│├┤ │  ├┤ └─┐
     # ┴└─┴└  ┴─┘└─┘└─┘
       # 자동소총
-      STR_RIFLE: "자동소총"
-      STR_RIFLE_UFOPEDIA: "이 고위력 전투소총은 20발들이 7.62mm 탄창을 사용한다. 강력하지만, 반동이 심하다."
+      STR_AUTOMATIC_RIFLE: "자동소총"
+      STR_AUTOMATIC_RIFLE_UFOPEDIA: "이 고위력 전투소총은 20발들이 7.62mm 탄창을 사용한다. 강력하지만, 반동이 심하다."
       # 지정사수소총
-      STR_RIFLE_DMR: "지정사수소총"
-      STR_RIFLE_DMR_UFOPEDIA: "이 고정밀 소총은 조준경이 추가되었으며 중거리 교전에서 X-COM 분대원을 지원하기 적합하다."
+      STR_MARKSMANS_RIFLE: "지정사수소총"
+      STR_MARKSMANS_RIFLE_UFOPEDIA: "이 고정밀 소총은 조준경이 추가되었으며 중거리 교전에서 X-COM 분대원을 지원하기 적합하다."
 

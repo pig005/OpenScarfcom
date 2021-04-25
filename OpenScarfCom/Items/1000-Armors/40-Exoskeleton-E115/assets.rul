@@ -10,19 +10,19 @@ extraSprites:
  # └─┘┴└─┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
   - type: BIGOBS.PCK
     files:
-      1040: Resources/ARMORS/EleriumExoskeleton/Big.png
+      1040: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Big.png
   - type: FLOOROB.PCK
     files:
-      1040: Resources/ARMORS/EleriumExoskeleton/Floor.png
+      1040: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Floor.png
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
   - typeSingle: XCOM_E_EXO.PCK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/spritesheet.png
     width: 512
     height: 720
     subX: 32
     subY: 40
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴

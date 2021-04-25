@@ -1,8 +1,9 @@
 name: "OpenScarfCom"
-version: 0.1.0
-author: greenscarf
-description: "Conversion Mod focused on Replayability"
-id: xcom1-openscarfcom
+version: "0.1.0"
+author: "greenscarf"
+description: "Total Conversion focused on QOL & Replayability"
+id: OpenScarfCom
 master: xcom1
-reservedSpace: 2
+ismaster: false
+reservedSpace: 20
 resourceConfig: transparency.rul

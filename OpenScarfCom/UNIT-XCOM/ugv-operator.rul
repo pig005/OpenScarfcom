@@ -161,12 +161,6 @@ armors:
 #  ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝
 #
 items:
-  - delete: STR_TANK_CANNON
-  - delete: STR_TANK_ROCKET_LAUNCHER
-  - delete: STR_TANK_LASER_CANNON
-  - delete: STR_HWP_CANNON_SHELLS
-  - delete: STR_HWP_ROCKETS
-
   - &STR_UGV
     type: STR_UGV
     size: 6

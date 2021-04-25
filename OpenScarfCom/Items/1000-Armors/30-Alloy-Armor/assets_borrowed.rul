@@ -10,36 +10,35 @@ extraSprites:
  # └─┘┴└─┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
   - type: BIGOBS.PCK
     files:
-      1020: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Big.png
+      1030: Resources/ARMORS/AlloyArmor/Big.png
   - type: FLOOROB.PCK
     files:
-      1020: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Floor.png
+      1030: Resources/ARMORS/AlloyArmor/Floor.png
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - typeSingle: XCOM_EXO.PCK
+  - typeSingle: XCOM_ALLOY.PCK
+    fileSingle: Resources/Armors/AlloyArmor/spritesheet.png
     width: 512
     height: 720
     subX: 32
     subY: 40
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
-  - typeSingle: XCOM_EXOF0.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f0.png
-  - typeSingle: XCOM_EXOF1.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f1.png
-  - typeSingle: XCOM_EXOF2.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f2.png
-  - typeSingle: XCOM_EXOF3.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/f3.png
-  - typeSingle: XCOM_EXOM0.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m0.png
-  - typeSingle: XCOM_EXOM1.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m1.png
-  - typeSingle: XCOM_EXOM2.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m2.png
-  - typeSingle: XCOM_EXOM3.SPK
-    fileSingle: OpenScarfCom/Items/1000-ARMORS/20-Exoskeleton/ASSETS/Inventory/m3.png
-
+  - typeSingle: XCOM_ALLOYF0.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f0.png
+  - typeSingle: XCOM_ALLOYF1.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f1.png
+  - typeSingle: XCOM_ALLOYF2.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f2.png
+  - typeSingle: XCOM_ALLOYF3.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f3.png
+  - typeSingle: XCOM_ALLOYM0.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m0.png
+  - typeSingle: XCOM_ALLOYM1.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m1.png
+  - typeSingle: XCOM_ALLOYM2.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m2.png
+  - typeSingle: XCOM_ALLOYM3.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m3.png

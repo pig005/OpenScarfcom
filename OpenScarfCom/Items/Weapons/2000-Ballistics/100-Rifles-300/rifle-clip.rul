@@ -12,5 +12,6 @@ items:
   - type: STR_RIFLE_CLIP
     weight: 4
     power: 42
+    bigSprite: 2100
     tags:
       OFFSET_BIGOB_WEAPON: 1
