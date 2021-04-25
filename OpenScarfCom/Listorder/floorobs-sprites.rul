@@ -16,10 +16,3 @@ extraSprites:
       310: Resources/Weapons/ballistics/rifle-marksman/Floor.png
 
       400: Resources/WEAPONS/ballistics/multiple-grenade-launcher/Floor.png
-    # ┌─┐┬─┐┌┬┐┌─┐┬─┐┌─┐
-    # ├─┤├┬┘││││ │├┬┘└─┐
-    # ┴ ┴┴└─┴ ┴└─┘┴└─└─┘
-      1010: Resources/ARMORS/CombatArmor/Floor.gif
-      1020: Resources/ARMORS/Exoskeleton/Floor.png
-      1030: Resources/ARMORS/AlloyArmor/Floor.png
-      1040: Resources/ARMORS/EleriumExoskeleton/Floor.png

@@ -5,49 +5,40 @@ extraSprites:
 # ╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
 # ███████║██║     ██║  ██║██║   ██║   ███████╗███████║
 # ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
+ # ┌┐ ┬┌─┐   ┬   ┌─┐┬  ┌─┐┌─┐┬─┐┌─┐┌┐ ┌─┐
+ # ├┴┐││ ┬  ┌┼─  ├┤ │  │ ││ │├┬┘│ │├┴┐└─┐
+ # └─┘┴└─┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
+  - type: BIGOBS.PCK
+    files:
+      1030: Resources/ARMORS/AlloyArmor/Big.png
+  - type: FLOOROB.PCK
+    files:
+      1030: Resources/ARMORS/AlloyArmor/Floor.png
  # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
  # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
  # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
-  - type: XCOM_E_EXO.PCK
+  - typeSingle: XCOM_ALLOY.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/spritesheet.png
+    fileSingle: Resources/Armors/AlloyArmor/spritesheet.png
  # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
  # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
  # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
-  - type: XCOM_E_EXOF0.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f0.png
-  - type: XCOM_E_EXOF1.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f1.png
-  - type: XCOM_E_EXOF2.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f2.png
-  - type: XCOM_E_EXOF3.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/f3.png
-  - type: XCOM_E_EXOM0.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m0.png
-  - type: XCOM_E_EXOM1.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m1.png
-  - type: XCOM_E_EXOM2.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m2.png
-  - type: XCOM_E_EXOM3.SPK
-    singleImage: true
-    files:
-      0: OpenScarfCom/Items/Armors/4-Exoskeleton-E115/ASSETS/Inventory/m3.png
-
+  - typeSingle: XCOM_ALLOYF0.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f0.png
+  - typeSingle: XCOM_ALLOYF1.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f1.png
+  - typeSingle: XCOM_ALLOYF2.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f2.png
+  - typeSingle: XCOM_ALLOYF3.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/f3.png
+  - typeSingle: XCOM_ALLOYM0.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m0.png
+  - typeSingle: XCOM_ALLOYM1.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m1.png
+  - typeSingle: XCOM_ALLOYM2.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m2.png
+  - typeSingle: XCOM_ALLOYM3.SPK
+    fileSingle: Resources/Armors/AlloyArmor/Inventory/m3.png

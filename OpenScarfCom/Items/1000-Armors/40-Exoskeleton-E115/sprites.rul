@@ -1,0 +1,45 @@
+extraSprites:
+# ███████╗██████╗ ██████╗ ██╗████████╗███████╗███████╗
+# ██╔════╝██╔══██╗██╔══██╗██║╚══██╔══╝██╔════╝██╔════╝
+# ███████╗██████╔╝██████╔╝██║   ██║   █████╗  ███████╗
+# ╚════██║██╔═══╝ ██╔══██╗██║   ██║   ██╔══╝  ╚════██║
+# ███████║██║     ██║  ██║██║   ██║   ███████╗███████║
+# ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝
+ # ┌┐ ┬┌─┐   ┬   ┌─┐┬  ┌─┐┌─┐┬─┐┌─┐┌┐ ┌─┐
+ # ├┴┐││ ┬  ┌┼─  ├┤ │  │ ││ │├┬┘│ │├┴┐└─┐
+ # └─┘┴└─┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
+  - type: BIGOBS.PCK
+    files:
+      1040: Resources/ARMORS/EleriumExoskeleton/Big.png
+  - type: FLOOROB.PCK
+    files:
+      1040: Resources/ARMORS/EleriumExoskeleton/Floor.png
+ # ┌─┐┌─┐┬─┐┬┌┬┐┌─┐┌─┐┬ ┬┌─┐┌─┐┌┬┐
+ # └─┐├─┘├┬┘│ │ ├┤ └─┐├─┤├┤ ├┤  │
+ # └─┘┴  ┴└─┴ ┴ └─┘└─┘┴ ┴└─┘└─┘ ┴
+  - typeSingle: XCOM_E_EXO.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/spritesheet.png
+ # ┬┌┐┌┬  ┬┌─┐┌┐┌┌┬┐┌─┐┬─┐┬ ┬
+ # ││││└┐┌┘├┤ │││ │ │ │├┬┘└┬┘
+ # ┴┘└┘ └┘ └─┘┘└┘ ┴ └─┘┴└─ ┴
+  - typeSingle: XCOM_E_EXOF0.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/f0.png
+  - typeSingle: XCOM_E_EXOF1.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/f1.png
+  - typeSingle: XCOM_E_EXOF2.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/f2.png
+  - typeSingle: XCOM_E_EXOF3.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/f3.png
+  - typeSingle: XCOM_E_EXOM0.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/m0.png
+  - typeSingle: XCOM_E_EXOM1.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/m1.png
+  - typeSingle: XCOM_E_EXOM2.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/m2.png
+  - typeSingle: XCOM_E_EXOM3.SPK
+    fileSingle: OpenScarfCom/Items/1000-ARMORS/40-Exoskeleton-E115/ASSETS/Inventory/m3.png
+
