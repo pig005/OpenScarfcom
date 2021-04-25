@@ -71,6 +71,14 @@ items:
     type: VELOCITY_EXPLOSIVE_HYPER
     refNode: *VELOCITY_GLOBAL
     explosionSpeed: 4
+ # ┌─┐┬─┐┌─┐┬┌┐┌┌─┐  ┌─┐┬ ┬┌─┐┌┬┐
+ # ├─┤├┬┘│  │││││ ┬  └─┐├─┤│ │ │
+ # ┴ ┴┴└─└─┘┴┘└┘└─┘  └─┘┴ ┴└─┘ ┴
+  - &VELOCITY_ARC_LO
+    type: VELOCITY_ARC_LO
+    refNode: *VELOCITY_GLOBAL
+    bulletSpeed: 0
+    explosionSpeed: 3
  #  ┌─┐┌┬┐┬ ┬┌─┐┬─┐
  #  │ │ │ ├─┤├┤ ├┬┘
  #  └─┘ ┴ ┴ ┴└─┘┴└─
@@ -135,12 +143,12 @@ items:
     refNode: *VELOCITY_BALLISTIC_HYPER
   # Heavy Cannon
   - type: STR_HC_AP_AMMO
-    refNode: *VELOCITY_BALLISTIC_LO
+    refNode: *VELOCITY_ARC_LO
     explosionSpeed: 4
   - type: STR_HC_HE_AMMO
-    refNode: *VELOCITY_BALLISTIC_LO
+    refNode: *VELOCITY_ARC_LO
   - type: STR_HC_I_AMMO
-    refNode: *VELOCITY_BALLISTIC_LO
+    refNode: *VELOCITY_ARC_LO
   # Auto Cannon
   - type: STR_AC_AP_AMMO
     refNode: *VELOCITY_BALLISTIC_HI
@@ -168,11 +176,9 @@ items:
   - type: STR_HIGH_EXPLOSIVE
     refNode: *VELOCITY_EXPLOSIVE_HI
   - type: STR_STUN_BOMB
-    refNode: *VELOCITY_EXPLOSIVE_HI
-    bulletSpeed: 0
+    refNode: *VELOCITY_ARC_LO
   - type: STR_ALIEN_GRENADE
-    refNode: *VELOCITY_EXPLOSIVE_HI
-    bulletSpeed: 0
+    refNode: *VELOCITY_ARC_LO
  #  ┬  ┌─┐┌─┐┌─┐┬─┐
  #  │  ├─┤└─┐├┤ ├┬┘
  #  ┴─┘┴ ┴└─┘└─┘┴└─
