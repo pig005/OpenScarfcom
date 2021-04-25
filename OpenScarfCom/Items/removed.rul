@@ -17,3 +17,5 @@ items:
 manufacture:
   # please go away
   - delete: STR_TANK_LASER_CANNON
+ufopaedia:
+  - delete: STR_RIFLE
