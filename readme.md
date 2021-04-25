@@ -8,18 +8,19 @@ please report any bugs/ideas on `issues`.
 
 ## HOW TO INSTALL
 
-OSC needs latest [OXCE](https://openxcom.mod.io/openxcom-extended "link to mod.io page") to run properly.
+OSC needs latest [OXCE](https://openxcom.mod.io/openxcom-extended "link to OXCE mod.io page") to run properly.
 
-1. clone the repository
+
+1. download OSC on [mod.io](https://openxcom.mod.io/openscarfcom "link to OSC mod.io page")(relatively bug-free) or cloning the repository (nightly, bug-prone)
 2. move the repository to My `PC/Documents/OpenXcom/mods`
 3. run **latest** OXCE then press `mods`
 4. enable OpenScarfCom
 
-mod.io page will be added shortly.
-
-## GOALS
+## PLANNED FEATURES / DONE
 
 there is one design philosophy for OpenScarfCom (OSC for short): make it more replayable.
+
+([V]: done / [ ]: wip / everything else: **LONG TERM GOAL**)
 
 - **Quality Of Life** features
   - [x] All crafts now **auto-patrol**
@@ -41,12 +42,14 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
   - [ ] Sniper weapons have aimed shot as reaction fire
   - [ ] Automatic firearms have auto shot as reaction fire
   - [ ] More randomness (maps, enemy loadouts, etc../)
-  - [ ] One feature, multiple uses (laser weapons can switch to 'shotgun' mod)
+  - [ ] One feature, multiple uses (laser weapons can switch to 'shotgun' mod, plasma 'overcharge', etc)
   - Directional lightings and visions
 - Enhanced **Aerial Combat**
-  - hunter-killer ufos
+  - hunter-killer ufos (can also retreat)
+  - retaliation terror ship (can be either armed with missile or boarding troop)
   - make all weapons viable (apart from avalanche and plasma beam spam)
-  - ufo shields
+    - buff fusion ball launcher
+  - ufo shields and nukes to counter them
   - more meaningful interactions (other than careful/aggressive)
     - built-in cannons and afterbunners
 - **Replayability**
@@ -57,12 +60,12 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
   - Overall same or less playtime than vanilla X-COM
 - the **OSC** itself
   - [ ] Organized Directories
+  - [ ] Conventional Commits
+  - Automated changelog generation
   - Ruleset/Scripting Conventions
   - Detailed Documentations
   - Transifex support
   - Automatic uploads to mod.io after commits
-
-([x]: done | [ ]: wip)
 
 ## HOW TO CONTRIBUTE
 
@@ -74,22 +77,17 @@ just simply make a pull request. if it suits the design philosopy above, it will
 
 scarfcom could not have been developed without help from these mods. mod assets are in seperate folders. these mods included are out of my bounds all rights goes to their respective owners.
 
-if you are the author of these mods and do not wish these mods to be used, please let me know, or PM me on openxcom forums, or contact me with `honestlawn005@gmail.com.` **it will be removed immediately**.
+if you are the author of these mods and do not wish these mods to be used, please let me know, or PM me on openxcom forums, or contact me with `honestlawn005@gmail.com.` **it will be removed immediately**. 
 
-[**Community Map Pack**](https://openxcom.mod.io/community-map-pack)
-by CMP admin and various contributers
-
-licenced under CC-BY-NC
-
-[**Extra Explosions**](https://openxcom.mod.io/extra-explosions)
+included mods:
+- [**Community Map Pack**](https://openxcom.mod.io/community-map-pack)
+by CMP admin and various contributers, licenced under CC-BY-NC
+- [**Extra Explosions**](https://openxcom.mod.io/extra-explosions)
 by Arathanor, Strarvingpoet
-
-[**AWACS AIRCRAFT**](https://openxcom.org/forum/index.php?topic=2952)
+- [**AWACS AIRCRAFT**](https://openxcom.org/forum/index.php?topic=2952)
 by redv
-
-[**HQ sounds**](https://openxcom.mod.io/hqsounds-by-daedalus)
+- [**HQ sounds**](https://openxcom.mod.io/hqsounds-by-daedalus)
 by daedalus, hellrazor
-
-[**Combat Armor**](https://openxcom.org/forum/index.php?topic=1281)
+- [**Combat Armor**](https://openxcom.org/forum/index.php?topic=1281)
 by Warboy1982, Ryskeliini
 recolor by Solarius Scorch
