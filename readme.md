@@ -62,6 +62,7 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
   - [ ] Organized Directories
   - [ ] Conventional Commits
   - Automated changelog generation
+  - Automated release generation
   - Ruleset/Scripting Conventions
   - Detailed Documentations
   - Transifex support
