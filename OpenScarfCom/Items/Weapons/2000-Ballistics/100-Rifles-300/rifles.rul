@@ -6,12 +6,12 @@ extended:
     RuleItem:
       ALLOW_AMMO_TO_RESPRITE: int
 items:
-# ╦═╗╦╔═╗╦  ╔═╗  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
-# ╠╦╝║╠╣ ║  ║╣   ║ ╦║  ║ ║╠╩╗╠═╣║
-# ╩╚═╩╚  ╩═╝╚═╝  ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+# ┌─┐┬ ┬┌┬┐┌─┐┌┬┐┌─┐┌┬┐┬┌─┐  ┬─┐┬┌─┐┬  ┌─┐
+# ├─┤│ │ │ │ ││││├─┤ │ ││    ├┬┘│├┤ │  ├┤
+# ┴ ┴└─┘ ┴ └─┘┴ ┴┴ ┴ ┴ ┴└─┘  ┴└─┴└  ┴─┘└─┘
 # 2200
-  - &STR_RIFLE_GLOBAL
-    type: STR_RIFLE_GLOBAL
+  - &STR_AUTOMATIC_RIFLE
+    type: STR_AUTOMATIC_RIFLE
    # Graphics
     bigSprite: 2201
     floorSprite: 2200
@@ -28,8 +28,9 @@ items:
     kneelBonus: 120
     size: 0.2
     weight: 12
-    costBuy: 0
-    costSell: 0
+   # Specs
+    costBuy: 3000
+    costSell: 2250
    # Ammo
     ammo:
       0:
@@ -64,30 +65,17 @@ items:
       ammoSlot: 0
       followProjectiles: true
       shots: 1
+   # Miscs
+    sprayWaypoints: 2
    # Tags
     tags:
       ALLOW_AMMO_TO_RESPRITE: 1
-# ┌─┐┬ ┬┌┬┐┌─┐┌┬┐┌─┐┌┬┐┬┌─┐  ┬─┐┬┌─┐┬  ┌─┐
-# ├─┤│ │ │ │ ││││├─┤ │ ││    ├┬┘│├┤ │  ├┤
-# ┴ ┴└─┘ ┴ └─┘┴ ┴┴ ┴ ┴ ┴└─┘  ┴└─┴└  ┴─┘└─┘
-# 2200
-  - type: STR_AUTOMATIC_RIFLE
-    refNode: *STR_RIFLE_GLOBAL
-   # Graphics
-    bigSprite: 2201
-    floorSprite: 2200
-    handSprite: 2200
-   # Specs
-    costBuy: 3000
-    costSell: 2250
-   # Miscs
-    sprayWaypoints: 2
 # ┌┬┐┌─┐┬─┐┬┌─┌─┐┌┬┐┌─┐┌┐┌┌─┐  ┬─┐┬┌─┐┬  ┌─┐
 # │││├─┤├┬┘├┴┐└─┐│││├─┤│││└─┐  ├┬┘│├┤ │  ├┤
 # ┴ ┴┴ ┴┴└─┴ ┴└─┘┴ ┴┴ ┴┘└┘└─┘  ┴└─┴└  ┴─┘└─┘
 # 310
   - type: STR_MARKSMANS_RIFLE
-    refNode: *STR_RIFLE_GLOBAL
+    refNode: *STR_AUTOMATIC_RIFLE
    # Graphics
     bigSprite: 2301
     floorSprite: 2300
@@ -117,3 +105,5 @@ items:
       name: STR_SHOT_TYPE_SNAP
       followProjectiles: true
       shots: 1
+   # Miscs
+    sprayWaypoints: 0
