@@ -1,0 +1,3 @@
+[submodule "CMP-VANILLA_EXTENDED"]
+	path = CMP-VANILLA_EXTENDED
+	url = git@github.com:efrenespartano/CMP-VANILLA_EXTENDED.git
