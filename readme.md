@@ -22,9 +22,9 @@ mod.io page will be added shortly.
 there is one design philosophy for OpenScarfCom (OSC for short): make it more replayable.
 
 - **Quality Of Life** features
-
   - [x] All crafts now **auto-patrol**
   - [x] [Hyper & Trajectory](https://openxcom.mod.io/oxce-hyper-velocity1) integrated
+  - [x] Destroy alien base to make countries reconsider their pact with aliens and join X-COM project again 
   - [ ] Different sprites for loaded/unloaded weapons
   - [ ] Reduce real-time spent on `Research` and `Manufacture` (priority)
     - [ ] One item, multiple variations
@@ -37,6 +37,9 @@ there is one design philosophy for OpenScarfCom (OSC for short): make it more re
   - Change tactics depending on situations
 - Enhanced **Tactical Combat**
   - [x] Using environment for advantage (increased fire & smoke damage)
+  - [x] Medikit can be used alone and recovers more energy
+  - [ ] Sniper weapons have aimed shot as reaction fire
+  - [ ] Automatic firearms have auto shot as reaction fire
   - [ ] More randomness (maps, enemy loadouts, etc../)
   - [ ] One feature, multiple uses (laser weapons can switch to 'shotgun' mod)
   - Directional lightings and visions
