@@ -12,7 +12,7 @@ craftWeapons:
     launcher: STR_FUSION_BALL_LAUNCHER
     clip: STR_FUSION_BALL
     projectileType: 3
-    projectileSpeed: 8
+    projectileSpeed: 16
 items:
   - type: STR_FUSION_BALL_LAUNCHER
     size: 2.0

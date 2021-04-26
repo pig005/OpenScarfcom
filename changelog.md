@@ -2,6 +2,14 @@
 
 ### added
 
+- Hunter Killers
+
+  - ufos have around 20 ~ 40% chance to spawn as hunter killers
+  - hunter killers have 50% spawn chance to escape when damaged
+  - HK would target interceptors first, but could also target transport craft if alone
+    - which is the reason skyranger got built-in cannon
+  - repair rate **fivefolded** to compensate the HK threat
+
 - new grenade looks for smoke and frag
 
 - automatic rifle color brightened to match up more with other ballistic tier weapons
@@ -22,7 +30,7 @@ aircraft weapons buff: they were so useless before; now it would stand more chan
 
   - damage, rate of fire, firing range, projectile speed **doubled**
   - **_no ammo_ needed**: no chores, more fun!
-  - now interceptor's **built-in weapon** (your fightor has **3 weapons pod** total)
+  - now interceptor and skyranger **built-in weapon** (your fightor has **3 weapons pod** total)
 
 - laser cannon buffed
 
