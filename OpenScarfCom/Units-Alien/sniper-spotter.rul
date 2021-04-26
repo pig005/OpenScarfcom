@@ -1,0 +1,149 @@
+units:
+#  █████╗ ██╗
+# ██╔══██╗██║
+# ███████║██║
+# ██╔══██║██║
+# ██║  ██║██║
+# ╚═╝  ╚═╝╚═╝
+ # ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+ # ║ ╦║  ║ ║╠╩╗╠═╣║
+ # ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+  - &AI_GLOBAL
+    type: AI_GLOBAL
+    spotter: -1
+    sniper: 0
+  - &AI_MECH_GLOBAL
+    type: AI_MECH_GLOBAL
+    refNode: *AI_GLOBAL
+    spotter: 100
+    sniper: 80
+ # ┌─┐┌─┐┌─┐┬ ┬┌┬┐┌─┐
+ # └─┐│  │ ││ │ │ └─┐
+ # └─┘└─┘└─┘└─┘ ┴ └─┘
+  - &AI_MELEE
+    type: AI_MELEE
+    refNode: *AI_GLOBAL
+    sniper: 0
+  - &AI_LEEROY
+    type: AI_LEEROY
+    refNode: *AI_MELEE
+    isLeeroyJenkins: true
+  - &AI_SCOUT_TIER_0
+    type: AI_SCOUT_TIER_0
+    refNode: *AI_GLOBAL
+    sniper: 20
+  - &AI_SCOUT_TIER_1
+    type: AI_SCOUT_TIER_1
+    refNode: *AI_GLOBAL
+    sniper: 30
+  - &AI_SCOUT_TIER_2
+    type: AI_SCOUT_TIER_2
+    refNode: *AI_GLOBAL
+    sniper: 40
+ # ┌─┐┌┐┌┬┌─┐┌─┐┬─┐┌─┐
+ # └─┐││││├─┘├┤ ├┬┘└─┐
+ # └─┘┘└┘┴┴  └─┘┴└─└─┘
+  - &AI_SNIPER_TIER_0
+    type: AI_SNIPER_TIER_0
+    refNode: *AI_GLOBAL
+    sniper: 50
+  - &AI_SNIPER_TIER_1
+    type: AI_SNIPER_TIER_1
+    refNode: *AI_GLOBAL
+    sniper: 60
+  - &AI_SNIPER_TIER_2
+    type: AI_SNIPER_TIER_2
+    refNode: *AI_GLOBAL
+    sniper: 75
+  - &AI_SNIPER_TIER_3
+    type: AI_SNIPER_TIER_3
+    refNode: *AI_GLOBAL
+    sniper: 80
+  - &AI_SNIPER_TIER_4
+    type: AI_SNIPER_TIER_4
+    refNode: *AI_GLOBAL
+    sniper: 90
+  - &AI_SNIPER_TIER_5
+    type: AI_SNIPER_TIER_5
+    refNode: *AI_GLOBAL
+    sniper: 100
+#  █████╗ ██╗     ██╗███████╗███╗   ██╗███████╗
+# ██╔══██╗██║     ██║██╔════╝████╗  ██║██╔════╝
+# ███████║██║     ██║█████╗  ██╔██╗ ██║███████╗
+# ██╔══██║██║     ██║██╔══╝  ██║╚██╗██║╚════██║
+# ██║  ██║███████╗██║███████╗██║ ╚████║███████║
+# ╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝
+ # ┌─┐┌─┐┌─┐┌┬┐┌─┐┬┌┬┐
+ # └─┐├┤ │   │ │ ││ ││
+ # └─┘└─┘└─┘ ┴ └─┘┴─┴┘
+  - type: STR_SECTOID_NAVIGATOR
+    refNode: *AI_SCOUT_TIER_0
+  - type: STR_SECTOID_ENGINEER
+    refNode: *AI_SCOUT_TIER_2
+
+  - type: STR_SECTOID_MEDIC
+    refNode: *AI_SNIPER_TIER_2
+  - type: STR_SECTOID_SOLDIER
+    refNode: *AI_SNIPER_TIER_2
+  - type: STR_SECTOID_LEADER
+    refNode: *AI_SNIPER_TIER_4
+  - type: STR_SECTOID_COMMANDER
+    refNode: *AI_SNIPER_TIER_4
+#CYBERDISK
+  - type: STR_CYBERDISC_TERRORIST
+    refNode: *AI_MECH_GLOBAL
+
+#FLOATER
+  - type: STR_FLOATER_NAVIGATOR
+    refNode: *AI_SNIPER_TIER_0
+  - type: STR_FLOATER_ENGINEER
+    refNode: *AI_SNIPER_TIER_2
+  - type: STR_FLOATER_SOLDIER
+    refNode: *AI_SNIPER_TIER_3
+  - type: STR_FLOATER_MEDIC
+    refNode: *AI_SNIPER_TIER_4
+  - type: STR_FLOATER_LEADER
+    refNode: *AI_SNIPER_TIER_4
+  - type: STR_FLOATER_COMMANDER
+    refNode: *AI_SNIPER_TIER_5
+#REAPER
+  - type: STR_REAPER_TERRORIST
+    refNode: *AI_LEEROY
+#SNAKEMAN
+  - type: STR_SNAKEMAN_NAVIGATOR
+    refNode: *AI_SCOUT_TIER_1
+  - type: STR_SNAKEMAN_ENGINEER
+    refNode: *AI_SCOUT_TIER_2
+  - type: STR_SNAKEMAN_SOLDIER
+    refNode: *AI_SNIPER_TIER_2
+  - type: STR_SNAKEMAN_LEADER
+    refNode: *AI_SNIPER_TIER_4
+  - type: STR_SNAKEMAN_COMMANDER
+    refNode: *AI_SNIPER_TIER_5
+#CHRYSSALID
+  - type: STR_CHRYSSALID_TERRORIST
+    refNode: *AI_LEEROY
+#MUTON
+  - type: STR_MUTON_NAVIGATOR
+    refNode: *AI_SCOUT_TIER_0
+  - type: STR_MUTON_ENGINEER
+    refNode: *AI_SCOUT_TIER_0
+  - type: STR_MUTON_SOLDIER
+    refNode: *AI_SCOUT_TIER_2
+#SILACOID
+  - type: STR_SILACOID_TERRORIST
+#CELATID
+  - type: STR_CELATID_TERRORIST
+#ETHEREAL
+  - type: STR_FLOATER_COMMANDER
+    refNode: *AI_SNIPER_TIER_4
+  - type: STR_FLOATER_COMMANDER
+    refNode: *AI_SNIPER_TIER_5
+  - type: STR_FLOATER_COMMANDER
+    refNode: *AI_SNIPER_TIER_5
+#SECTOPOD
+  - type: STR_SECTOPOD_TERRORIST
+    refNode: *AI_MECH_GLOBAL
+#ZOMBIE
+  - type: STR_ZOMBIE
+    refNode: *AI_LEEROY
