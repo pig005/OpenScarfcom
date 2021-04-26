@@ -32,18 +32,18 @@ startingBase:
     - type: STR_GENERAL_STORES
       x: 0
       y: 4
-    - type: STR_LABORATORY
-      x: 1
-      y: 4
+    - type: STR_ALIEN_CONTAINMENT
+      x: 0
+      y: 5
     - type: STR_WORKSHOP
+      x: 1
+      y: 5
+    - type: STR_LABORATORY
       x: 2
-      y: 4
+      y: 5
     - type: STR_LIVING_QUARTERS
       x: 3
-      y: 4
-    - type: STR_ALIEN_CONTAINMENT
-      x: 4
-      y: 4
+      y: 5
   crafts:
  #  ██████╗██████╗  █████╗ ███████╗████████╗███████╗
  # ██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝
@@ -68,18 +68,20 @@ startingBase:
     - type: STR_SKYRANGER
       id: 1
       fuel: 1500
+      weapons:
+        - type: STR_CANNON_UC
+          ammo: 200
       items:
         STR_PISTOL: 6
         STR_PISTOL_CLIP: 12
         STR_AUTOMATIC_RIFLE: 10
         STR_MARKSMANS_RIFLE: 4
         STR_RIFLE_CLIP: 20
-        STR_HEAVY_CANNON: 4
-        STR_HEAVY_CANNON_HE_CLIP: 8
-        STR_HEAVY_CANNON_I_CLIP: 8
+        STR_HEAVY_CANNON: 3
+        STR_HC_HE_AMMO: 4
+        STR_HC_I_AMMO: 2
         STR_GRENADE: 20
         STR_SMOKE_GRENADE: 20
-
   items:
  # ██╗████████╗███████╗███╗   ███╗███████╗
  # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -94,7 +96,9 @@ startingBase:
     STR_GRENADE: 20
     STR_SMOKE_GRENADE: 20
     STR_PISTOL_CLIP: 8
-    STR_RIFLE_CLIP: 8
+    STR_RIFLE_CLIP: 10
+    STR_HC_HE_AMMO: 8
+    STR_HC_I_AMMO: 8
     STR_ROCKET_LAUNCHER: 1
     STR_SMALL_ROCKET: 4
  # ██████╗ ███████╗██████╗ ███████╗ ██████╗ ███╗   ██╗███╗   ██╗███████╗██╗
@@ -107,3 +111,4 @@ startingBase:
   engineers: 10
   randomSoldiers:
     STR_SOLDIER: 10
+    STR_UGV_OPERATOR_UNIT: 1
