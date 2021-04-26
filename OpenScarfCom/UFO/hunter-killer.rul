@@ -23,33 +23,40 @@ ufos:
   - &HK_AGGRESSIVE
     type: HK_AGGRESSIVE
     refNode: *HK_GLOBAL
-    hunterKillerPercentage: 30
     huntMode: 0
     huntSpeed: 0
     huntBehavior: 2
-    radarChance: 60
+    radarChance: 40
   - &HK_AGGRESSIVE_TIER_0
     type: HK_AGGRESSIVE_TIER_0
     refNode: *HK_AGGRESSIVE
-
+    hunterKillerPercentage: 20
+  - &HK_AGGRESSIVE_TIER_1
+    type: HK_AGGRESSIVE_TIER_1
+    refNode: *HK_AGGRESSIVE
+    hunterKillerPercentage: 30
+  - &HK_AGGRESSIVE_TIER_2
+    type: HK_AGGRESSIVE_TIER_2
+    refNode: *HK_AGGRESSIVE
+    hunterKillerPercentage: 40
 # ┬ ┬┬ ┬┌┐┌┌┬┐┌─┐┬─┐  ┬┌─┬┬  ┬  ┌─┐┬─┐
 # ├─┤│ ││││ │ ├┤ ├┬┘  ├┴┐││  │  ├┤ ├┬┘
 # ┴ ┴└─┘┘└┘ ┴ └─┘┴└─  ┴ ┴┴┴─┘┴─┘└─┘┴└─
   - type: STR_SMALL_SCOUT
     refNode: *HK_PASSIVE
   - type: STR_MEDIUM_SCOUT
-    refNode: *HK_PASSIVE
+    refNode: *HK_AGGRESSIVE_TIER_0
   - type: STR_LARGE_SCOUT
-    refNode: *HK_PASSIVE
+    refNode: *HK_AGGRESSIVE_TIER_0
   - type: STR_HARVESTER
-    refNode: *HK_PASSIVE
+    refNode: *HK_AGGRESSIVE_TIER_1
   - type: STR_ABDUCTOR
-    refNode: *HK_PASSIVE
+    refNode: *HK_AGGRESSIVE_TIER_1
   - type: STR_TERROR_SHIP
-    refNode: *HK_PASSIVE
-    armor: 10
+    refNode: *HK_AGGRESSIVE_TIER_2
+    armor: 5
   - type: STR_BATTLESHIP
-    refNode: *HK_PASSIVE
-    armor: 20
+    refNode: *HK_AGGRESSIVE_TIER_2
+    armor: 10
   - type: STR_SUPPLY_SHIP
     refNode: *HK_PASSIVE

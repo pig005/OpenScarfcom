@@ -1,4 +1,8 @@
 crafts:
+  - type: STR_SKYRANGER
+    weapons: 1
+    weaponTypes: [0, 0, 0, 0]
+    fixedWeapons: [STR_CANNON_UC, "", "", ""]
   - type: STR_INTERCEPTOR
     weapons: 3
     weaponTypes: [0, 0, 0, 0]
