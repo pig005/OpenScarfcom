@@ -1,0 +1,10 @@
+armors:
+  - type: ETHEREAL_ARMOR0
+    psiVision: 5
+    heatVision: 100
+  - type: ETHEREAL_ARMOR1
+    psiVision: 10
+    heatVision: 100
+  - type: ETHEREAL_ARMOR2
+    psiVision: 20
+    heatVision: 100
