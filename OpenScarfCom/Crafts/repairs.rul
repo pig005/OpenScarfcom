@@ -1,0 +1,35 @@
+crafts:
+ # ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+ # ║ ╦║  ║ ║╠╩╗╠═╣║
+ # ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+  - &REPAIR_GLOBAL
+    type: REPAIR_GLOBAL
+    repairRate: 5
+ # ┌┬┐┬─┐┌─┐┌┐┌┌─┐┌─┐┌─┐┬─┐┌┬┐
+ #  │ ├┬┘├─┤│││└─┐├─┘│ │├┬┘ │
+ #  ┴ ┴└─┴ ┴┘└┘└─┘┴  └─┘┴└─ ┴
+  - type: STR_SKYRANGER
+    refNode: *REPAIR_GLOBAL
+  - type: STR_INTERCEPTOR
+    refNode: *REPAIR_GLOBAL
+ # ┬┌┐┌┌┬┐┌─┐┬─┐┌─┐┌─┐┌─┐┌┬┐┌─┐┬─┐
+ # ││││ │ ├┤ ├┬┘│  ├┤ ├─┘ │ │ │├┬┘
+ # ┴┘└┘ ┴ └─┘┴└─└─┘└─┘┴   ┴ └─┘┴└─
+  - type: STR_FIRESTORM
+    refNode: *REPAIR_GLOBAL
+ # ┬ ┬┬ ┬┌┐ ┬─┐┬┌┬┐
+ # ├─┤└┬┘├┴┐├┬┘│ ││
+ # ┴ ┴ ┴ └─┘┴└─┴─┴┘
+  - type: STR_LIGHTNING
+    refNode: *REPAIR_GLOBAL
+  - type: STR_AVENGER
+    refNode: *REPAIR_GLOBAL
+ # ┬─┐┌─┐┌┬┐┌─┐┬─┐
+ # ├┬┘├─┤ ││├─┤├┬┘
+ # ┴└─┴ ┴─┴┘┴ ┴┴└─
+  - type: STR_HAWKEYE
+    refNode: *REPAIR_GLOBAL
+  - type: STR_AWACS
+    refNode: *REPAIR_GLOBAL
+  - type: STR_DARKSTAR
+    refNode: *REPAIR_GLOBAL
