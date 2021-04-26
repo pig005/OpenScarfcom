@@ -1,5 +1,11 @@
 ## 2021.04.26 - "Air Day"
 
+### added
+
+- new grenade looks for smoke and frag
+
+- automatic rifle color brightened to match up more with other ballistic tier weapons
+
 ### modified
 
 aircraft weapons buff: they were so useless before; now it would stand more chance against ufos and prove some usefulness. to balance, maybe increase cost? to compensate with overall easier dogfight, ufos will also have its buffs, to be added someday...
