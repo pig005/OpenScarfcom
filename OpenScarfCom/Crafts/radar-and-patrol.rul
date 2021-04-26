@@ -18,6 +18,7 @@ crafts:
   - &CRAFT_RADAR_GLOBAL
     type: CRAFT_RADAR_GLOBAL
     refNode: *CRAFT_GLOBAL
+    undetectable: true
  # ┌┬┐┬─┐┌─┐┌┐┌┌─┐┌─┐┌─┐┬─┐┌┬┐
  #  │ ├┬┘├─┤│││└─┐├─┘│ │├┬┘ │
  #  ┴ ┴└─┴ ┴┘└┘└─┘┴  └─┘┴└─ ┴

@@ -1,0 +1,3 @@
+ufos:
+  - type: STR_SMALL_SCOUT
+    breakOffTime: 400

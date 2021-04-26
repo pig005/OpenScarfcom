@@ -1,0 +1,55 @@
+ufos:
+#  ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗
+# ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
+# ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+# ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+# ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+#  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
+ # ╔═╗╦  ╔═╗╔╗ ╔═╗╦
+ # ║ ╦║  ║ ║╠╩╗╠═╣║
+ # ╚═╝╩═╝╚═╝╚═╝╩ ╩╩═╝
+  - &HK_GLOBAL
+    type: HK_GLOBAL
+ # ┌─┐┌─┐┌─┐┌─┐┬┬  ┬┌─┐
+ # ├─┘├─┤└─┐└─┐│└┐┌┘├┤
+ # ┴  ┴ ┴└─┘└─┘┴ └┘ └─┘
+  - &HK_PASSIVE
+    type: HK_PASSIVE
+    refNode: *HK_GLOBAL
+    hunterKillerPercentage: 0
+ # ┌─┐┌─┐┌─┐┬─┐┌─┐┌─┐┌─┐┬┬  ┬┌─┐
+ # ├─┤│ ┬│ ┬├┬┘├┤ └─┐└─┐│└┐┌┘├┤
+ # ┴ ┴└─┘└─┘┴└─└─┘└─┘└─┘┴ └┘ └─┘
+  - &HK_AGGRESSIVE
+    type: HK_AGGRESSIVE
+    refNode: *HK_GLOBAL
+    hunterKillerPercentage: 30
+    huntMode: 0
+    huntSpeed: 0
+    huntBehavior: 2
+    radarChance: 60
+  - &HK_AGGRESSIVE_TIER_0
+    type: HK_AGGRESSIVE_TIER_0
+    refNode: *HK_AGGRESSIVE
+
+# ┬ ┬┬ ┬┌┐┌┌┬┐┌─┐┬─┐  ┬┌─┬┬  ┬  ┌─┐┬─┐
+# ├─┤│ ││││ │ ├┤ ├┬┘  ├┴┐││  │  ├┤ ├┬┘
+# ┴ ┴└─┘┘└┘ ┴ └─┘┴└─  ┴ ┴┴┴─┘┴─┘└─┘┴└─
+  - type: STR_SMALL_SCOUT
+    refNode: *HK_PASSIVE
+  - type: STR_MEDIUM_SCOUT
+    refNode: *HK_PASSIVE
+  - type: STR_LARGE_SCOUT
+    refNode: *HK_PASSIVE
+  - type: STR_HARVESTER
+    refNode: *HK_PASSIVE
+  - type: STR_ABDUCTOR
+    refNode: *HK_PASSIVE
+  - type: STR_TERROR_SHIP
+    refNode: *HK_PASSIVE
+    armor: 10
+  - type: STR_BATTLESHIP
+    refNode: *HK_PASSIVE
+    armor: 20
+  - type: STR_SUPPLY_SHIP
+    refNode: *HK_PASSIVE
