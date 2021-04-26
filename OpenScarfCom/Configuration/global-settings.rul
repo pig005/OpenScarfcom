@@ -119,4 +119,4 @@
 
     damageRange: 100
     explosiveDamageRange: 50
-    fireDamageRange: [6, 16]
+    fireDamageRange: [5, 10]

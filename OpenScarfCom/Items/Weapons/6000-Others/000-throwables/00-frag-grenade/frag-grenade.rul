@@ -3,7 +3,7 @@ items:
     bigSprite: 6000
     handSprite: 6000
     floorSprite: 6000
-    power: 70
+    power: 50
     fuseType: 0
     explosionSpeed: 3
     damageType: 3
@@ -18,7 +18,7 @@ items:
       ToArmor: 0.05
       ArmorEffectiveness: 2.0
       ToWound: 6.0
-      RandomWound: true
+      RandomWound: false
 extraSprites:
   - type: BIGOBS.PCK
     files:
