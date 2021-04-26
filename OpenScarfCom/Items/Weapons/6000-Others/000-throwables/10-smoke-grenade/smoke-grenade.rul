@@ -4,9 +4,15 @@ extended:
       START_PRIMED: int
 items:
   - type: STR_SMOKE_GRENADE
+    bigSprite: 6010
     power: 30
     damageAlter:
       FixRadius: 5
     fuseType: 0
     tags:
       START_PRIMED: 1
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+     6010: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+     10-Smoke-Grenade/ASSETS/Big.png"

@@ -1,6 +1,7 @@
 items:
   - type: STR_GRENADE
-    power: 60
+    bigSprite: 6000
+    power: 50
     fuseType: 0
     explosionSpeed: 3
     damageType: 3
@@ -14,5 +15,10 @@ items:
       ToHealth: 1.5
       ToArmor: 0.05
       ArmorEffectiveness: 2.0
-      ToWound: 5.0
-      RandomWound: false
+      ToWound: 6.0
+      RandomWound: true
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      6000: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+      00-Frag-Grenade/ASSETS/Big.png"
