@@ -5,6 +5,8 @@ extended:
 items:
   - type: STR_SMOKE_GRENADE
     bigSprite: 6010
+    handSprite: 6010
+    floorSprite: 6010
     power: 30
     damageAlter:
       FixRadius: 5
@@ -16,3 +18,15 @@ extraSprites:
     files:
      6010: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
      10-Smoke-Grenade/ASSETS/Big.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+     6010: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+     10-Smoke-Grenade/ASSETS/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+     6010: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+     10-Smoke-Grenade/ASSETS/Floor.png"

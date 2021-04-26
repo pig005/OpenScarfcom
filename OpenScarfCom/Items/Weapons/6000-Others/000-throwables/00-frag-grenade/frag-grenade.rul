@@ -1,18 +1,20 @@
 items:
   - type: STR_GRENADE
     bigSprite: 6000
-    power: 50
+    handSprite: 6000
+    floorSprite: 6000
+    power: 70
     fuseType: 0
     explosionSpeed: 3
     damageType: 3
     damageAlter:
-      FixRadius: 3
+      FixRadius: 7
       RandomType: 1
       ResistType: 1
-      RadiusReduction: 10
-      ToTile: 0.2
+      RadiusReduction: 8
+      ToTile: 0.1
       ToItem: 0.5
-      ToHealth: 1.5
+      ToHealth: 1
       ToArmor: 0.05
       ArmorEffectiveness: 2.0
       ToWound: 6.0
@@ -22,3 +24,15 @@ extraSprites:
     files:
       6000: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
       00-Frag-Grenade/ASSETS/Big.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      6000: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+      00-Frag-Grenade/ASSETS/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+      6000: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+      00-Frag-Grenade/ASSETS/Floor.png"
