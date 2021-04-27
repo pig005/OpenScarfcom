@@ -10,6 +10,7 @@ items:
     bulletSprite: 4
     tags:
       OFFSET_BIGOB_WEAPON: 2
+    fireSound: 12
     #bigSprite: 2410
     #handSprite: 2410
     #floorSprite: 2410
@@ -17,3 +18,4 @@ items:
     bulletSprite: 4
     tags:
       OFFSET_BIGOB_WEAPON: 2
+    fireSound: 12

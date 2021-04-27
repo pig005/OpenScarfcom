@@ -36,6 +36,9 @@ extraSprites:
       #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
       #   ASSETS/200-rifle-automatic/Hand-Empty.png
 
+      2220: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/220-rifle-grenade/Hand.png"
+
       2300: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
       ASSETS/300-rifle-marksman/Hand.png"
       # 2300: >
@@ -48,6 +51,8 @@ extraSprites:
       # 2200: >
       #   OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/
       #   ASSETS/200-rifle-automatic/Floor-Empty.png
+      2220: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/220-rifle-grenade/Floor.png"
 
       2300: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
       ASSETS/300-rifle-marksman/Floor.png"

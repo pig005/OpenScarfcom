@@ -11,8 +11,12 @@ items:
 # ┴└─┴└  ┴─┘└─┘  └─┘┴─┘┴┴
   - type: STR_RIFLE_CLIP
     bulletSprite: 2
-    weight: 4
-    power: 42
+   # Graphics
     bigSprite: 2100
     tags:
       OFFSET_BIGOB_WEAPON: 1
+   # Sounds
+    fireSound: 4
+   # Specs
+    weight: 4
+    power: 42
