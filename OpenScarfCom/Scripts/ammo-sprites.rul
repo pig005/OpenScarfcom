@@ -8,30 +8,22 @@ extended:
     selectItemSprite:
       - offset: 1
         code: |
-          var ptr BattleItem ammoItem;
-          var ptr RuleItem weaponRuleset;
-          var ptr RuleItem ammoRuleset;
-          var int ammos_that_resprite;
+          var ptr BattleItem loaded_ammo;
+          var int ammo_types;
           var int paedia_offset;
 
-          var int base_index;
           var int ammo_offset;
 
           if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
-            item.getRuleItem weaponRuleset; # get ruleset of item as weaponRuleset
-            weaponRuleset.getTag ammos_that_resprite Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
+            item.getTag ammo_types Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
 
-            if gt ammos_that_resprite 0; # if ammos_that_resprite > 0; -> tagged as resprite
-              weaponRuleset.getTag paedia_offset Tag.PAEDIA_OFFSET;
+            if gt ammo_types 0; # if ammo_types > 0; -> tagged as resprite
+              item.getTag paedia_offset Tag.PAEDIA_OFFSET;
               mul paedia_offset -1; # paedia offset given is natural number
-              add sprite_index paedia_offset; # Simulates ammo done
-              #add ammos_that_resprite -1; # loop needs to start from 0
-              #debug_log sprite_index ammos_that_resprite;
-              loop var i ammos_that_resprite;
-                item.getAmmoForSlot ammoItem i; # get ammo item as ammoItem
-                #debug_log ammoItem i;
-                ammoItem.getRuleItem ammoRuleset; # get ruleset of item as ammoRuleset
-                ammoRuleset.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset value as ammo_offset
+              add sprite_index paedia_offset; # negates pedia offset
+              loop var i ammo_types;
+                item.getAmmoForSlot loaded_ammo i; # get ammo item as loaded_ammo
+                loaded_ammo.getTag ammo_offset Tag.OFFSET_BIGOB_WEAPON; # find offset value as ammo_offset
                 add sprite_index ammo_offset; # ammo offset applied to sprite_index
               end;
               return sprite_index;
