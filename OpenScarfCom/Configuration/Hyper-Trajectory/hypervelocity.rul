@@ -144,11 +144,14 @@ items:
   # Heavy Cannon
   - type: STR_HC_AP_AMMO
     refNode: *VELOCITY_ARC_LO
+    bulletSpeed: -5
     explosionSpeed: 4
   - type: STR_HC_HE_AMMO
     refNode: *VELOCITY_ARC_LO
+    bulletSpeed: -5
   - type: STR_HC_I_AMMO
     refNode: *VELOCITY_ARC_LO
+    bulletSpeed: -5
   # Auto Cannon
   - type: STR_AC_AP_AMMO
     refNode: *VELOCITY_BALLISTIC_HI

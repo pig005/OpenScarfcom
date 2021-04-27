@@ -10,6 +10,7 @@ items:
 # ├┬┘│├┤ │  ├┤   │  │  │├─┘
 # ┴└─┴└  ┴─┘└─┘  └─┘┴─┘┴┴
   - type: STR_RIFLE_CLIP
+    bulletSprite: 2
     weight: 4
     power: 42
     bigSprite: 2100

@@ -6,18 +6,24 @@ extraSprites:
     width: 32
     height: 48
     files:
-      2100: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
-      ASSETS/100-rifle-clip/Big.png"
-
       2200: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
-      ASSETS/200-rifle-automatic/Big-Empty.png"
+      ASSETS/200-rifle-automatic/Big-00.png"
       2201: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
-      ASSETS/200-rifle-automatic/Big.png"
+      ASSETS/200-rifle-automatic/Big-01.png"
 
-      2301: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
-      ASSETS/300-rifle-marksman/Big.png"
+      2220: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/220-rifle-grenade/Big-00.png"
+      2221: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/220-rifle-grenade/Big-01.png"
+      2222: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/220-rifle-grenade/Big-02.png"
+      2223: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/220-rifle-grenade/Big-03.png"
+
       2300: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
-      ASSETS/300-rifle-marksman/Big-Empty.png"
+      ASSETS/300-rifle-marksman/Big-00.png"
+      2301: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/300-rifle-marksman/Big-01.png"
   - type: HANDOB.PCK
     width: 256
     height: 40

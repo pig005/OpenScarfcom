@@ -1,6 +1,8 @@
 items:
   - type: STR_AUTOMATIC_RIFLE
     listOrder: 2100
+  - type: STR_RIFLE_GRENADE
+    listOrder: 2110
   - type: STR_MARKSMANS_RIFLE
     listOrder: 2200
   - type: STR_RIFLE_CLIP

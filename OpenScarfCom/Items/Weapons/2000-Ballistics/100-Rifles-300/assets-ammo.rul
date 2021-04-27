@@ -1,0 +1,10 @@
+extraSprites:
+# ┌┐ ┬┌─┐   ┬   ┬ ┬┌─┐┌┐┌┌┬┐   ┬   ┌─┐┬  ┌─┐┌─┐┬─┐┌─┐┌┐ ┌─┐
+# ├┴┐││ ┬  ┌┼─  ├─┤├─┤│││ ││  ┌┼─  ├┤ │  │ ││ │├┬┘│ │├┴┐└─┐
+# └─┘┴└─┘  └┘   ┴ ┴┴ ┴┘└┘─┴┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      2100: "OpenScarfCom/Items/Weapons/2000-Ballistics/100-Rifles-300/\
+      ASSETS/100-rifle-clip/Big.png"

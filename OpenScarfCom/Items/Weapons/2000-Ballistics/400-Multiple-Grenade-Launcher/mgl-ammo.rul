@@ -1,0 +1,19 @@
+extended:
+# ╔╦╗╔═╗╔═╗╔═╗
+#  ║ ╠═╣║ ╦╚═╗
+#  ╩ ╩ ╩╚═╝╚═╝
+  tags:
+    RuleItem:
+      OFFSET_BIGOB_WEAPON: int
+items:
+  - type: STR_HC_HE_AMMO
+    bulletSprite: 4
+    tags:
+      OFFSET_BIGOB_WEAPON: 2
+    #bigSprite: 2410
+    #handSprite: 2410
+    #floorSprite: 2410
+  - type: STR_HC_I_AMMO
+    bulletSprite: 4
+    tags:
+      OFFSET_BIGOB_WEAPON: 2

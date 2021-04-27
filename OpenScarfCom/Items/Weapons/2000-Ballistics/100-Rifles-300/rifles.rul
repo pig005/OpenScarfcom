@@ -5,6 +5,7 @@ extended:
   tags:
     RuleItem:
       ALLOW_AMMO_TO_RESPRITE: int
+      PAEDIA_OFFSET: int
 items:
 # ╦═╗╦╔═╗╦  ╔═╗  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
 # ╠╦╝║╠╣ ║  ║╣   ║ ╦║  ║ ║╠╩╗╠═╣║
@@ -12,9 +13,11 @@ items:
   - &STR_RIFLE_GLOBAL
     type: STR_RIFLE_GLOBAL
    # Graphics
-    bulletSprite: 2
     invWidth: 1
     invHeight: 3
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+      PAEDIA_OFFSET: 1
    # Sounds
     fireSound: 4
    # Specs
@@ -58,9 +61,6 @@ items:
       ammoSlot: 0
       followProjectiles: true
       shots: 1
-   # Tags
-    tags:
-      ALLOW_AMMO_TO_RESPRITE: 1
 # ┌─┐┬ ┬┌┬┐┌─┐┌┬┐┌─┐┌┬┐┬┌─┐  ┬─┐┬┌─┐┬  ┌─┐
 # ├─┤│ │ │ │ ││││├─┤ │ ││    ├┬┘│├┤ │  ├┤
 # ┴ ┴└─┘ ┴ └─┘┴ ┴┴ ┴ ┴ ┴└─┘  ┴└─┴└  ┴─┘└─┘
@@ -80,7 +80,7 @@ items:
 # ┌┬┐┌─┐┬─┐┬┌─┌─┐┌┬┐┌─┐┌┐┌┌─┐  ┬─┐┬┌─┐┬  ┌─┐
 # │││├─┤├┬┘├┴┐└─┐│││├─┤│││└─┐  ├┬┘│├┤ │  ├┤
 # ┴ ┴┴ ┴┴└─┴ ┴└─┘┴ ┴┴ ┴┘└┘└─┘  ┴└─┴└  ┴─┘└─┘
-# 2310
+# 2300
   - type: STR_MARKSMANS_RIFLE
     refNode: *STR_RIFLE_GLOBAL
    # Graphics
@@ -112,3 +112,50 @@ items:
       name: STR_SHOT_TYPE_SNAP
       followProjectiles: true
       shots: 1
+
+# ┬─┐┬┌─┐┬  ┌─┐       ┌─┐┬─┐┌─┐┌┐┌┌─┐┌┬┐┌─┐
+# ├┬┘│├┤ │  ├┤   ───  │ ┬├┬┘├┤ │││├─┤ ││├┤
+# ┴└─┴└  ┴─┘└─┘       └─┘┴└─└─┘┘└┘┴ ┴─┴┘└─┘
+# 2250
+  - type: STR_RIFLE_GRENADE
+    refNode: *STR_RIFLE_GLOBAL
+   # Graphics
+    bigSprite: 2223 #2220 + 3 (ammo offset)
+    floorSprite: 2200
+    handSprite: 2200
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 2
+      PAEDIA_OFFSET: 3
+   # Specs
+    costBuy: 3600
+    costSell: 2450
+    weight: 16
+   # Ammo
+    ammo:
+      0:
+        compatibleAmmo: [ STR_RIFLE_CLIP ]
+        tuLoad: 15
+        tuUnload: 6
+      1:
+        compatibleAmmo: [ STR_HC_HE_AMMO, STR_HC_I_AMMO ]
+        tuLoad: 32
+        tuUnload: 14
+   # Firing Modes
+    tuSnap: 40
+    accuracySnap: 40
+    tuAimed: 80
+    accuracyAimed: 80
+    tuAuto: 50
+    autoRange: 15
+    accuracyAuto: 50
+    confAuto: # Fire Grenade
+      name: STR_SHOT_TYPE_FIRE_GRENADE
+      ammoSlot: 1
+      arcing: true
+      followProjectiles: true
+      shots: 1
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_RIFLE_GRENADE: "Automatic Rifle/Grenade Launcher"
