@@ -1,4 +1,21 @@
-## 2021.04.26 - "Air Day"
+## 2021.04.27 - v0.1.3a "Ammo Day"
+
+### added
+
+- weapons can now show different sprites up to 4 based on loaded ammo
+
+  - total 16 possible combinations (for (possible) modders)
+
+- new weapon: automatic rifle/grenade launcher
+  - uses same ammo with heavy cannon
+  - currently wip: seriously OP because all 6 HC clips are loaded at once; will make a feature to compensate this asap
+  - use at your own risk!
+
+### modified
+
+- sprite assets for weapons with different sprites based on different ammo renamed to be more intuitive
+
+## 2021.04.26 - v0.1.2a "Air Day"
 
 ### added
 
@@ -44,6 +61,6 @@ aircraft weapons buff: they were so useless before; now it would stand more chan
 - spritesheet load error (don't use `singlefile` on _spritesheet_))
 - also various ones with rifles
 
-## 2021.04.25
+## 2021.04.25 - v0.1.0a
 
 - initial release
