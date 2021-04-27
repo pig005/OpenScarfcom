@@ -27,6 +27,11 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 2100
+  - id: STR_RIFLE_GRENADE
+    text: STR_RIFLE_GRENADE_UFOPEDIA
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 2105
   - id: STR_MARKSMANS_RIFLE
     text: STR_MARKSMANS_RIFLE_UFOPEDIA
     type_id: 4
