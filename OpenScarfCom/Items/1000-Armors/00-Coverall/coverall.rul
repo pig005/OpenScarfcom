@@ -1,7 +1,18 @@
+extraStrings:
+  - type: en-US
+    strings:
+      STR_COVERALL: "Coverall"
+      STR_COVERALL_UC: "COVERALL"
+      STR_COVERALL_UFOPEDIA: "Standard X-COM uniform. While it does not give protection it is comfortable to move with."
+  - type: ko
+    strings:
+      STR_COVERALL: "근무복"
+      STR_COVERALL_UC: "근무복"
+      STR_COVERALL_UFOPEDIA: "제식 X-COM 근무복. 방호력은 없지만 움직임에 편하다."
 armors:
   - delete: STR_NONE_UC
-  - &STR_NONE_UC
-    type: STR_NONE_UC
+  - &STR_COVERALL_UC
+    type: STR_COVERALL_UC
     spriteSheet: XCOM_0.PCK
     spriteInv: MAN_0
     spriteFaceGroup: 6

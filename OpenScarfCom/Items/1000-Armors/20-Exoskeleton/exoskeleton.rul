@@ -7,18 +7,18 @@ extraStrings:
 # ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
   - type: en-US
     strings:
-      STR_EXOSKELETON_ARMOR: "Exoskeleton Armor"
-      STR_EXOSKELETON_ARMOR_UC: "EXOSKELETON ARMOR"
-      STR_EXOSKELETON_ARMOR_UC_UFOPEDIA: "New hydraulic and battery technologies have made powered exoskeleton possible, which greatly increases soldier's mobility and helps with heavy loads."
+      STR_EXOSKELETON: "Exoskeleton Armor"
+      STR_EXOSKELETON_UC: "EXOSKELETON ARMOR"
+      STR_EXOSKELETON_UFOPEDIA: "New hydraulic and battery technologies have made powered exoskeleton possible, which greatly increases soldier's mobility and helps with heavy loads."
   - type: en-GB
     strings:
-      STR_EXOSKELETON_ARMOR: "Exoskeleton Armor"
-      STR_EXOSKELETON_ARMOR_UC: "EXOSKELETON ARMOUR"
+      STR_EXOSKELETON: "Exoskeleton Armor"
+      STR_EXOSKELETON_UC: "EXOSKELETON ARMOUR"
   - type: ko
     strings:
-      STR_EXOSKELETON_ARMOR: "강화외골격 전투복"
-      STR_EXOSKELETON_ARMOR_UC: "강화외골격 전투복"
-      STR_EXOSKELETON_ARMOR_UC_UFOPEDIA: "유압 구동과 배터리 신기술의 발달로 동력 강화외골격의 개발이 가능해졌다. 병사의 이동력을 크게 향상시켜주고 고중량 하중을 짊어지는데 도움을 준다."
+      STR_EXOSKELETON: "강화외골격 전투복"
+      STR_EXOSKELETON_UC: "강화외골격 전투복"
+      STR_EXOSKELETON_UFOPEDIA: "유압 구동과 배터리 신기술의 발달로 동력 강화외골격의 개발이 가능해졌다. 병사의 이동력을 크게 향상시켜주고 고중량 하중을 짊어지는데 도움을 준다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -29,7 +29,7 @@ items:
  # ┌─┐┬─┐┌┬┐┌─┐┬─┐┬┌┬┐┌─┐┌┬┐
  # ├─┤├┬┘││││ │├┬┘│ │ ├┤ │││
  # ┴ ┴┴└─┴ ┴└─┘┴└─┴ ┴ └─┘┴ ┴
-  - type: STR_EXOSKELETON_ARMOR
+  - type: STR_EXOSKELETON
     size: 1.2
     costBuy: 30000
     costSell: 24000
@@ -52,7 +52,7 @@ armors:
 # ██╔══██║██╔══██╗██║╚██╔╝██║██║   ██║██╔══██╗╚════██║
 # ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
-  - type: STR_EXOSKELETON_ARMOR_UC
+  - type: STR_EXOSKELETON_UC
     spriteSheet: XCOM_EXO.PCK
     spriteInv: XCOM_EXO
     spriteFaceGroup: 6
@@ -62,7 +62,7 @@ armors:
     loftempsSet: [3]
     corpseBattle:
       - STR_CORPSE_EXOSKELETON_ARMOR
-    storeItem: STR_EXOSKELETON_ARMOR
+    storeItem: STR_EXOSKELETON
     damageModifier:
       - 1.0
       - 1.0

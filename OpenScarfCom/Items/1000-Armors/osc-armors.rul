@@ -23,12 +23,12 @@ armors:
   - type: STR_COMBAT_ARMOR_UC
     units:
       - STR_SOLDIER
-  - type: STR_EXOSKELETON_ARMOR_UC
+  - type: STR_EXOSKELETON_UC
     units:
       - STR_SOLDIER
   - type: STR_ALLOY_ARMOR_UC
     units:
       - STR_SOLDIER
-  - type: STR_E115_EXOSKELETON_ARMOR_UC
+  - type: STR_E115_EXOSKELETON_UC
     units:
       - STR_SOLDIER

@@ -7,18 +7,18 @@ extraStrings:
 # ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
   - type: en-US
     strings:
-      STR_E115_EXOSKELETON_ARMOR: "Elerium Exoskeleton Armor"
-      STR_E115_EXOSKELETON_ARMOR_UC: "ELERIUM EXOSKELETON ARMOR"
-      STR_E115_EXOSKELETON_ARMOR_UC_UFOPEDIA: "Even more enchanced than previous exoskeleton with the newfound alien alloy and elerium-115 powered batteries."
+      STR_E115_EXOSKELETON: "Elerium Exoskeleton Armor"
+      STR_E115_EXOSKELETON_UC: "ELERIUM EXOSKELETON ARMOR"
+      STR_E115_EXOSKELETON_UFOPEDIA: "Even more enchanced than previous exoskeleton with the newfound alien alloy and elerium-115 powered batteries."
   - type: en-GB
     strings:
-      STR_E115_EXOSKELETON_ARMOR: "Elerium Exoskeleton Armor"
-      STR_E115_EXOSKELETON_ARMOR_UC: "ELERIUM EXOSKELETON ARMOUR"
+      STR_E115_EXOSKELETON: "Elerium Exoskeleton Armor"
+      STR_E115_EXOSKELETON_UC: "ELERIUM EXOSKELETON ARMOUR"
   - type: ko
     strings:
-      STR_E115_EXOSKELETON_ARMOR: "일레륨 강화외골격 전투복"
-      STR_E115_EXOSKELETON_ARMOR_UC: "일레륨 강화외골격 전투복"
-      STR_E115_EXOSKELETON_ARMOR_UC_UFOPEDIA: "외계인 합금과 일레륨-115 배터리가 응용되어 기존 강화외골격보다 한층 더 개선되었다."
+      STR_E115_EXOSKELETON: "일레륨 강화외골격 전투복"
+      STR_E115_EXOSKELETON_UC: "일레륨 강화외골격 전투복"
+      STR_E115_EXOSKELETON_UFOPEDIA: "외계인 합금과 일레륨-115 배터리가 응용되어 기존 강화외골격보다 한층 더 개선되었다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -29,7 +29,7 @@ items:
  # ┌─┐┬─┐┌┬┐┌─┐┬─┐┬┌┬┐┌─┐┌┬┐
  # ├─┤├┬┘││││ │├┬┘│ │ ├┤ │││
  # ┴ ┴┴└─┴ ┴└─┘┴└─┴ ┴ └─┘┴ ┴
-  - type: STR_E115_EXOSKELETON_ARMOR
+  - type: STR_E115_EXOSKELETON
     size: 1.4
     #costBuy: 32000
     costSell: 28000
@@ -52,7 +52,7 @@ manufacture:
 # ██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██╔══╝  ██╔══██║██║        ██║   ██║   ██║██╔══██╗██╔══╝
 # ██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝██║     ██║  ██║╚██████╗   ██║   ╚██████╔╝██║  ██║███████╗
 # ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝
-  - name: STR_E115_EXOSKELETON_ARMOR
+  - name: STR_E115_EXOSKELETON
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ALIEN_ALLOYS
@@ -70,7 +70,7 @@ ufopaedia:
 # ██║   ██║██╔══╝  ██║   ██║██╔═══╝ ██╔══██║██╔══╝  ██║  ██║██║██╔══██║
 # ╚██████╔╝██║     ╚██████╔╝██║     ██║  ██║███████╗██████╔╝██║██║  ██║
 #  ╚═════╝ ╚═╝      ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝
-  - id: STR_E115_EXOSKELETON_ARMOR_UC
+  - id: STR_E115_EXOSKELETON_UC
     requires:
       - STR_ALIEN_ALLOYS
       - STR_ELERIUM_115
@@ -81,7 +81,7 @@ armors:
 # ██╔══██║██╔══██╗██║╚██╔╝██║██║   ██║██╔══██╗╚════██║
 # ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
-  - type: STR_E115_EXOSKELETON_ARMOR_UC
+  - type: STR_E115_EXOSKELETON_UC
     spriteSheet: XCOM_E_EXO.PCK
     spriteInv: XCOM_E_EXO
     spriteFaceGroup: 6
@@ -91,7 +91,7 @@ armors:
     loftempsSet: [3]
     corpseBattle:
       - STR_CORPSE_E115_EXOSKELETON_ARMOR
-    storeItem: STR_E115_EXOSKELETON_ARMOR
+    storeItem: STR_E115_EXOSKELETON
     damageModifier:
       - 1.0
       - 1.0

@@ -9,7 +9,7 @@ extraStrings:
     strings:
       STR_ALLOY_ARMOR: "Alloy Armor"
       STR_ALLOY_ARMOR_UC: "ALLOY ARMOR"
-      STR_ALLOY_ARMOR_UC_UFOPEDIA: "Makeshift vest with alien alloy plates and wafers inserted. While light and durable, it still is a bit cumbersome."
+      STR_ALLOY_ARMOR_UFOPEDIA: "Makeshift vest with alien alloy plates and wafers inserted. While light and durable, it still is a bit cumbersome."
   - type: en-GB
     strings:
       STR_ALLOY_ARMOR: "Alloy Armour"
@@ -18,7 +18,7 @@ extraStrings:
     strings:
       STR_ALLOY_ARMOR: "외계인 합금 전투복"
       STR_ALLOY_ARMOR_UC: "외계인 합금 전투복"
-      STR_ALLOY_ARMOR_UC_UFOPEDIA: "외계인 합금판과 웨이퍼를 끼워넣어 만들어진 급조 조끼. 가볍고 튼튼하지만 여전히 움직이는데 불편하다."
+      STR_ALLOY_ARMOR_UFOPEDIA: "외계인 합금판과 웨이퍼를 끼워넣어 만들어진 급조 조끼. 가볍고 튼튼하지만 여전히 움직이는데 불편하다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝

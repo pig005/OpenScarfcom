@@ -43,23 +43,28 @@ ufopaedia:
 # ██╔══██║██╔══██╗██║╚██╔╝██║██║   ██║██╔══██╗╚════██║
 # ██║  ██║██║  ██║██║ ╚═╝ ██║╚██████╔╝██║  ██║███████║
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+  - id: STR_COVERALL_UC
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_COVERALL_UFOPEDIA
+    listOrder: 1600
   - id: STR_COMBAT_ARMOR_UC
-    text: STR_COMBAT_ARMOR_UC_UFOPEDIA
+    text: STR_COMBAT_ARMOR_UFOPEDIA
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 1610
-  - id: STR_EXOSKELETON_ARMOR_UC
-    text: STR_EXOSKELETON_ARMOR_UC_UFOPEDIA
+  - id: STR_EXOSKELETON_UC
+    text: STR_EXOSKELETON_UFOPEDIA
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 1620
   - id: STR_ALLOY_ARMOR_UC
-    text: STR_ALLOY_ARMOR_UC_UFOPEDIA
+    text: STR_ALLOY_ARMOR_UFOPEDIA
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 1630
-  - id: STR_E115_EXOSKELETON_ARMOR_UC
-    text: STR_E115_EXOSKELETON_ARMOR_UC_UFOPEDIA
+  - id: STR_E115_EXOSKELETON_UC
+    text: STR_E115_EXOSKELETON_UFOPEDIA
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 1640

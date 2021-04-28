@@ -9,7 +9,7 @@ extraStrings:
     strings:
       STR_COMBAT_ARMOR: "Combat Armor"
       STR_COMBAT_ARMOR_UC: "COMBAT ARMOR"
-      STR_COMBAT_ARMOR_UC_UFOPEDIA: "Military grade bulletproof kevlar vest with integraded loadouts. It's heavy but still better than wearing nothing."
+      STR_COMBAT_ARMOR_UFOPEDIA: "Military grade kevlar vest with ceramic plates and integraded loadouts. It's heavy but still better than wearing nothing."
   - type: en-GB
     strings:
       STR_COMBAT_ARMOR: "Combat Armour"
@@ -18,7 +18,7 @@ extraStrings:
     strings:
       STR_COMBAT_ARMOR: "전투복"
       STR_COMBAT_ARMOR_UC: "전투복"
-      STR_COMBAT_ARMOR_UC_UFOPEDIA: "군용 방탄 케블라 조끼와 군장. 무겁긴 하지만 없는 것보단 낫다."
+      STR_COMBAT_ARMOR_UFOPEDIA: "군용 방탄판이 보강된 케블라 조끼와 군장. 무겁긴 하지만 없는 것보단 낫다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
