@@ -1,0 +1,34 @@
+extended:
+  tags:
+    RuleItem:
+      REMEMBER_LAST_POS: int
+      INVENTORY_LAST_POS: int
+  scripts:
+    selectItemSprite:
+      - offset: 2
+        code: |
+          var int is_this_ammo;
+
+          var int allow_div_ammo;
+          var ptr BattleUnit owner;
+
+          #item.isAmmo is_this_ammo;
+
+          #if eq is_this_ammo 1;
+
+            #if eq blit_part blit_item_big;
+
+              #var ptr RuleInventory items_inventory;
+              #item.getTag allow_div_ammo Tag.ALLOW_AMMO_MULTI_SPRITE;
+
+              #if gt allow_div_ammo 0;
+                #add allow_div_ammo -1;
+
+                #item.getSlot items_inventory;
+
+                  #debug_log item "ammo slot:" items_inventory;
+                  #items_inventory.getType inventory_slot;
+              #end;
+            #end;
+          #end;
+          return sprite_index;

@@ -18,7 +18,7 @@ extraStrings:
     strings:
       STR_COMBAT_ARMOR: "전투복"
       STR_COMBAT_ARMOR_UC: "전투복"
-      STR_COMBAT_ARMOR_UFOPEDIA: "군용 방탄판이 보강된 케블라 조끼와 군장. 무겁긴 하지만 없는 것보단 낫다."
+      STR_COMBAT_ARMOR_UFOPEDIA: "방탄판이 보강된 군용 케블라 조끼와 군장. 무겁긴 하지만 없는 것보단 낫다."
 items:
 # ██╗████████╗███████╗███╗   ███╗███████╗
 # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝

@@ -3,19 +3,19 @@ extended:
     newTurnUnit:
       - offset: 1
         code: |
-          var int fatal_wounds;
-          var int moral_damage;
+          var int Fatal_Wounds;
+          var int Moral_Damage;
 
-          unit.getFatalwoundsTotal fatal_wounds;
+          unit.getFatalwoundsTotal Fatal_Wounds;
 
-          if gt fatal_wounds 0;
+          if gt Fatal_Wounds 0;
             begin;
               loop var i 4;
-                unit.reduceByBravery fatal_wounds;
-                battle_game.randomRange moral_damage 0 fatal_wounds;
-                mul moral_damage -1;
-                unit.addMorale moral_damage;
-                #debug_log "moral dmg:" moral_damage;
+                unit.reduceByBravery Fatal_Wounds;
+                battle_game.randomRange Moral_Damage 0 Fatal_Wounds;
+                mul Moral_Damage -1;
+                unit.addMorale Moral_Damage;
+                #debug_log "moral dmg:" Moral_Damage;
               end;
             end;
           end;

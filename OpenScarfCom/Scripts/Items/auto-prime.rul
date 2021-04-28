@@ -1,0 +1,28 @@
+extended:
+  tags:
+    RuleItem:
+      START_PRIMED: int
+  scripts:
+    newTurnItem:
+      - offset: 52
+        code: |
+          var int Current_Turn;
+          battle_game.getTurn Current_Turn;
+
+          if eq Current_Turn 1;
+            var ptr RuleInventory Items_Inventory;
+            var int Inventory_Slot;
+            item.getSlot Items_Inventory;
+            Items_Inventory.getType Inventory_Slot;
+
+            if neq Inventory_Slot INV_GROUND;
+              var int Start_Primed;
+              item.getTag Start_Primed Tag.START_PRIMED;
+
+              if eq Start_Primed 1;
+                item.setFuseTimer 0;
+                return;
+              end;
+            end;
+          end;
+          return;

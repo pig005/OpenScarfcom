@@ -1,0 +1,31 @@
+extended:
+  tags:
+    RuleItem:
+      ALLOW_AMMO_MULTI_SPRITE: int
+      PAEDIA_OFFSET: int
+  scripts:
+    selectItemSprite:
+      - offset: 2
+        code: |
+          var int Is_Ammo;
+          var int Allow_Ammo_Multi_Sprite;
+
+          item.isAmmo Is_Ammo;
+
+          if eq Is_Ammo 1;
+
+            if eq blit_part blit_item_big;
+              item.getTag Allow_Ammo_Multi_Sprite Tag.ALLOW_AMMO_MULTI_SPRITE;
+
+              if eq Allow_Ammo_Multi_Sprite 1;
+                var int Ammo_Count;
+                var int Paedia_Offset;
+                item.getTag Paedia_Offset Tag.PAEDIA_OFFSET;
+                mul Paedia_Offset -1;
+                add sprite_index Paedia_Offset;
+                item.getAmmoQuantity Ammo_Count;
+                add sprite_index Ammo_Count;
+              end;
+            end;
+          end;
+          return sprite_index;

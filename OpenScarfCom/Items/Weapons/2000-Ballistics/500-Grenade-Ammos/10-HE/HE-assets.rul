@@ -1,0 +1,34 @@
+extraSprites:
+# ┌┐ ┬┌─┐   ┬   ┬ ┬┌─┐┌┐┌┌┬┐   ┬   ┌─┐┬  ┌─┐┌─┐┬─┐┌─┐┌┐ ┌─┐
+# ├┴┐││ ┬  ┌┼─  ├─┤├─┤│││ ││  ┌┼─  ├┤ │  │ ││ │├┬┘│ │├┴┐└─┐
+# └─┘┴└─┘  └┘   ┴ ┴┴ ┴┘└┘─┴┘  └┘   └  ┴─┘└─┘└─┘┴└─└─┘└─┘└─┘
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      #2510: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      #10-HE/ASSETS/Big-Single.png"
+      2511: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      10-HE/ASSETS/Big-01.png"
+      2512: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      10-HE/ASSETS/Big-02.png"
+      2513: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      10-HE/ASSETS/Big-03.png"
+      2514: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      10-HE/ASSETS/Big-04.png"
+      2515: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      10-HE/ASSETS/Big-05.png"
+      2516: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+      10-HE/ASSETS/Big-06.png"
+  # - type: HANDOB.PCK
+  #   width: 256
+  #   height: 40
+  #   subX: 32
+  #   subY: 40
+  #   files:
+  #     2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+  #     10-HE/ASSETS/Hand.png"
+  # - type: FLOOROB.PCK
+  #   files:
+  #     2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/500-Grenade-Ammos/\
+  #     10-HE/ASSETS/Floor.png"

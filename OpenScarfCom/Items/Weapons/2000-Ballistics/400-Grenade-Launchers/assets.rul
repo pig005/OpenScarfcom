@@ -6,7 +6,7 @@ extraSprites:
     width: 32
     height: 48
     files:
-      2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/400-Multiple-Grenade-Launcher/\
+      2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/400-Grenade-Launchers/\
       ASSETS/Big.png"
   - type: HANDOB.PCK
     width: 256
@@ -14,9 +14,9 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/400-Multiple-Grenade-Launcher/\
+      2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/400-Grenade-Launchers/\
       ASSETS/Hand.png"
   - type: FLOOROB.PCK
     files:
-      2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/400-Multiple-Grenade-Launcher/\
+      2400: "OpenScarfCom/Items/Weapons/2000-Ballistics/400-Grenade-Launchers/\
       ASSETS/Floor.png"

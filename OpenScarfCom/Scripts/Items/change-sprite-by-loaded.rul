@@ -1,0 +1,33 @@
+extended:
+  tags:
+    RuleItem:
+      ALLOW_AMMO_TO_RESPRITE: int # 0: NO, 1 ~ 4: how many ammos to compute, recommended max 3
+      PAEDIA_OFFSET: int # on ufopaedia weapon on max loadout is shown; negates that offset. usu. sum of ommo offsets
+      OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
+  scripts:
+    selectItemSprite:
+      - offset: 1
+        code: |
+          var ptr BattleItem Loaded_Ammo;
+          var int Ammo_Types;
+          var int Paedia_Offset;
+
+          var int Ammo_Offset;
+
+          if eq blit_part blit_item_big; # if blit_part == blit_item_big; -> on bliting big item
+            item.getTag Ammo_Types Tag.ALLOW_AMMO_TO_RESPRITE; # find matching tag: ALLOW_AMMO_TO_RESPRITE
+
+            if gt Ammo_Types 0; # if Ammo_Types > 0; -> tagged as resprite
+              # NEGATES PEDIA OFFSET
+              item.getTag Paedia_Offset Tag.PAEDIA_OFFSET;
+              mul Paedia_Offset -1; # paedia offset given is natural number
+              add sprite_index Paedia_Offset;
+              # LOOP THROUGH AMMO SLOTS
+              loop var i Ammo_Types;
+                item.getAmmoForSlot Loaded_Ammo i; # get ammo item as Loaded_Ammo
+                Loaded_Ammo.getTag Ammo_Offset Tag.OFFSET_BIGOB_WEAPON; # find offset value as Ammo_Offset
+                add sprite_index Ammo_Offset; # ammo offset applied to sprite_index
+              end;
+            end;
+          end;
+          return sprite_index;
