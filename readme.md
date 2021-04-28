@@ -44,7 +44,8 @@ there is one design philosophy for OpenScarfCom: make it more replayable.
   - [x] All crafts now **auto-patrol**
   - [x] [Hyper & Trajectory](https://openxcom.mod.io/oxce-hyper-velocity1) integrated
   - [x] Destroy alien base to make countries reconsider their pact with aliens and join X-COM project again
-  - [ ] Different sprites for loaded/unloaded weapons
+  - [x] Different sprites for loaded/unloaded weapons
+  - [x] Different sprites for magazines by ammos left
   - [ ] Reduce real-time spent on `Research` and `Manufacture` (priority)
     - [ ] One item, multiple variations
   - [ ] Easier item and units overhauls and upgrades

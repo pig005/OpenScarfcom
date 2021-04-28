@@ -1,3 +1,16 @@
+## 2021.04.28 - v0.1.4a "Ammo Day 2"
+
+### added
+
+- magazines now show different sprites for ammos left
+  - currently on Heavy Cannon ammo
+
+### modified
+
+- several assets rearrangements
+- scripts refactored to be more intuitive
+  - changed local variable styles to be distinctive from API variables
+
 ## 2021.04.27 - v0.1.3a "Ammo Day"
 
 ### added
