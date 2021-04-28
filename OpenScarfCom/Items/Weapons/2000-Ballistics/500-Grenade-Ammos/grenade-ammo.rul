@@ -5,10 +5,12 @@ extended:
   tags:
     RuleItem:
       OFFSET_BIGOB_WEAPON: int
-      REMEMBER_LAST_POS: int
-      INVENTORY_LAST_POS: int
+
       ALLOW_AMMO_MULTI_SPRITE: int
       PAEDIA_OFFSET: int
+
+      REMEMBER_LAST_POS: int
+
 items:
   - &GRENADE_GLOBAL
     type: GRENADE_GLOBAL
@@ -21,7 +23,6 @@ items:
       PAEDIA_OFFSET: 6
 
       REMEMBER_LAST_POS: 1
-      INVENTORY_LAST_POS: 0
 
   - type: STR_HC_HE_AMMO
     refNode: *GRENADE_GLOBAL

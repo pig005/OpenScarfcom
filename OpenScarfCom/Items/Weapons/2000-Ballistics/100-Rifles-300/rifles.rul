@@ -7,7 +7,7 @@ extended:
       ALLOW_AMMO_TO_RESPRITE: int
       PAEDIA_OFFSET: int
       LIMITED_AMMO_NOTATION: int #1 ~ 4: corresponding slot; reduce by one when accounting
-      LIMITED_AMMO_AMOUNT: int
+      LIMITED_AMMO_ROUNDS: int
 items:
 # ╦═╗╦╔═╗╦  ╔═╗  ╔═╗╦  ╔═╗╔╗ ╔═╗╦
 # ╠╦╝║╠╣ ║  ║╣   ║ ╦║  ║ ║╠╩╗╠═╣║
@@ -91,7 +91,7 @@ items:
       ALLOW_AMMO_TO_RESPRITE: 2
       PAEDIA_OFFSET: 3
       LIMITED_AMMO_NOTATION: 2 # 1 + 1
-      LIMITED_AMMO_AMOUNT: 1
+      LIMITED_AMMO_ROUNDS: 1
    # Specs
     costBuy: 4000
     costSell: 3000

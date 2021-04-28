@@ -3,7 +3,7 @@
 ### added
 
 - magazines now show different sprites for ammos left
-  - currently on Heavy Cannon ammo
+  - currently for Heavy Cannon ammo
 
 ### modified
 

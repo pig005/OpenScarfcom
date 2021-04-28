@@ -1,0 +1,40 @@
+extended:
+  tags:
+    RuleItem:
+    #1 ~ 4: corresponding slot; reduce by one when accounting
+      LIMITED_AMMO_NOTATION: int
+      LIMITED_AMMO_ROUNDS: int
+  scripts:
+    selectItemSprite:
+      - offset: 1
+        code: |
+          var int Limited_Ammo_Notation;
+
+          item.getTag Limited_Ammo_Notation Tag.LIMITED_AMMO_NOTATION;
+          if gt Limited_Ammo_Notation 1;
+            var int Limited_Ammo_Rounds;
+
+            var ptre BattleItem Loaded_Ammo;
+            var int Loaded_Ammo_Rounds;
+
+            # GET LIMITED AMMO ROUNDS
+            item.getTag Limited_Ammo_Rounds Tag.LIMITED_AMMO_ROUNDS;
+
+            # GET LOADED AMMO ROUNDS
+            add Limited_Ammo_Notation -1; # matches offset, range needs to be from 0 to 3
+            debug_log "ammo notation " Limited_Ammo_Notation;
+
+            item.getAmmoForSlot Loaded_Ammo Limited_Ammo_Notation;
+            Loaded_Ammo.getAmmoQuantity Loaded_Ammo_Rounds;
+
+            debug_log Loaded_Ammo;
+
+            debug_log "limit" Limited_Ammo_Rounds "rounds" Loaded_Ammo_Rounds;
+
+            # COMPARE AND
+            if gt Loaded_Ammo_Rounds Limited_Ammo_Rounds;
+              Loaded_Ammo.setAmmoQuantity Limited_Ammo_Rounds;
+            end;
+
+          end;
+          return;
