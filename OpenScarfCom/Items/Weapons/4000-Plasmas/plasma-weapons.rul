@@ -1,0 +1,39 @@
+items:
+  # plasma weapons get huge bonus from psi
+  - &STR_PLASMA_ACCURACY_MODULE
+    type: STR_PLASMA_ACCURACY_MODULE
+    accuracyMultiplier:
+      firing: 1
+      psiSkill: 0.3
+      psiStrength: 0.2
+
+  - type: STR_PLASMA_PISTOL
+    refNode: *STR_PLASMA_ACCURACY_MODULE
+
+  - type: STR_PLASMA_RIFLE
+    refNode: *STR_PLASMA_ACCURACY_MODULE
+
+  - type: STR_HEAVY_PLASMA
+    refNode: *STR_PLASMA_ACCURACY_MODULE
+
+  - &STR_PLASMA_CLIP_GLOBAL
+    type: STR_PLASMA_CLIP_GLOBAL
+    # blastRadius: 1
+    # damageType: 3
+    damageAlter:
+      # FixRadius: 1
+      # ResistType: 5
+      # RandomType: 1
+      ToArmorPre: 0.2
+      ToArmor: 0.2
+      FireThreshold: 60
+
+  - type: STR_PLASMA_PISTOL_CLIP
+    refNode: *STR_PLASMA_CLIP_GLOBAL
+    power: 80
+  - type: STR_PLASMA_RIFLE_CLIP
+    refNode: *STR_PLASMA_CLIP_GLOBAL
+    power: 100
+  - type: STR_HEAVY_PLASMA_CLIP
+    refNode: *STR_PLASMA_CLIP_GLOBAL
+    power: 140

@@ -1,0 +1,78 @@
+items:
+  - &STR_UGV_HEAVY_MACHINEGUN
+    type: STR_UGV_HEAVY_MACHINEGUN #12.7mm
+    costBuy: 80000
+    costSell: 50000
+    transferTime: 96
+    size: 2
+    fireSound: 73
+    hitSound: 79
+    hitAnimation: 36
+    bigSprite: 43
+    invWidth: 2
+    invHeight: 3
+    bulletSprite: 4
+    battleType: 1
+    weight: 40
+    turretType: 1
+    fixedWeapon: true
+    listOrder: 1110
+    accuracySnap: 65
+    accuracyAuto: 40
+    tuSnap: 18
+    tuAuto: 45
+    tuAimed: 0
+    confSnap:
+      shots: 3
+      followProjectiles: false
+    confAuto:
+      shots: 10
+      followProjectiles: false
+    clipSize: 100
+    power: 60
+    damageType: 1
+    damageAlter:
+      RandomType: 7
+      ToTile: 0.6
+
+  - type: STR_UGV_AUTO_CANNON
+    refNode: *STR_UGV_HEAVY_MACHINEGUN
+    weight: 50
+    fireSound: 72
+    hitSound: 13
+    listOrder: 1120
+    confSnap:
+      shots: 3
+    confAuto:
+      shots: 5
+    clipSize: 50
+    power: 80
+    damageType: 3
+    damageAlter:
+      RandomType: 7
+      ToTile: 0.6
+      FixRadius: 2
+
+  - type: STR_UGV_GRENADE_MACHINEGUN #40mm automatic grenade launcher
+    refNode: *STR_UGV_HEAVY_MACHINEGUN
+    listOrder: 1130
+    turretType: -1
+    bigSprite: 11
+    fireSound: 72
+    hitSound: 13
+    hitAnimation: 0
+    weight: 50
+    tuSnap: 20
+    tuAuto: 33
+    accuracySnap: 60
+    accuracyAuto: 35
+    confSnap:
+      shots: 1
+    confAuto:
+      shots: 3
+    clipSize: 32
+    power: 60
+    damageType: 3
+    damageAlter:
+      FixRadius: 2
+      ToTile: 0.45

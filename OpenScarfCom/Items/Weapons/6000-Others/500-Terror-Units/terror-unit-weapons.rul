@@ -1,0 +1,93 @@
+items:
+  - type: SECTOPOD_HEAVY_PLASMA
+    weight: 3
+    bigSprite: 1
+    floorSprite: 31
+    handSprite: 104
+    fireSound: 18
+    hitSound: 19
+    hitAnimation: 46
+    damageType: 4
+    #accuracyAuto: 50
+    accuracySnap: 75
+    #accuracyAimed: 110
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: 10
+    bulletSprite: 8
+    recover: false
+    #aimRange: 10
+    power: 60
+    #tuAuto: 0
+    tuSnap: 80
+    tuAimed: 0
+    tuAuto: 0
+    #confAuto:
+    #  shots: 2
+    #shotgunBehavior: 1
+    #shotgunPellets: 2
+    #shotgunSpread: 80
+    bulletSpeed: 60
+    explosionSpeed: 3
+
+  - &STR_SECTOPOD_AUX_WEAPON
+    type: STR_SECTOPOD_AUX_WEAPON
+    weight: 16
+    invWidth: 2
+    invHeight: 3
+    battleType: 1
+    bigSprite: 35
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 10
+    fireSound: 53
+    recover: false
+    fixedWeapon: true
+    bulletSpeed: 20
+    blastRadius: -1
+    clipSize: 6
+    power: 120
+    tuAuto: 70
+    tuSnap: 50
+    accuracySnap: 40
+    accuracyAuto: 30
+
+  - &STR_SECTOPOD_AUX_EXPLOSIVE
+    refNode: *STR_SECTOPOD_AUX_WEAPON
+    type: STR_SECTOPOD_AUX_EXPLOSIVE
+    confAuto:
+      followProjectiles: false
+    #minRange: 5
+    #dropoff: 5
+    vaporColorSurface: 0
+    vaporDensitySurface: 40
+    damageType: 3
+    arcingShot: true
+
+  - type: STR_SECTOPOD_MULTI_LAUNCHER
+    refNode: *STR_SECTOPOD_AUX_EXPLOSIVE
+    tuSnap: 10
+    accuracySnap: 99
+    snapRange: 15
+    confSnap:
+      shots: 4
+      followProjectiles: false
+    explosionSpeed: 4
+    #waypoints: 2
+    #minRange: 4
+
+  - type: STR_SECTOPOD_BLASTER_LAUNCHER
+    refNode: *STR_SECTOPOD_AUX_EXPLOSIVE
+    confAimed:
+      followProjectiles: true
+    maxRange: 200
+    aimRange: 200
+    accuracyAimed: 140
+    tuAimed: 1
+    power: 200
+    clipSize: 1
+    bulletSpeed: 0
+    vaporColorSurface: 2
+    vaporDensitySurface: 100

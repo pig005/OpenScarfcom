@@ -1,0 +1,43 @@
+items:
+  - &STR_LASER_GLOBAL
+    type: STR_LASER_GLOBAL
+    shotgunBehavior: 1
+    shotgunSpread: 60
+    shotgunChoke: 50
+    shotgunPellets: 8
+    vaporColorSurface: 8
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 2
+    powerRangeThreshold: 6
+    powerRangeReduction: 3
+    power: 14
+    explosionSpeed:  2
+    clipSize: -1
+    confSnap:
+      ammoSlot: 0
+      name: STR_SHOT_TYPE_SPECTRUM_LASER
+    confAimed:
+      ammoSlot: 1
+    confAuto:
+      ammoSlot: 1
+  - type: STR_LASER_PISTOL
+    refNode: *STR_LASER_GLOBAL
+    # ammo:
+    #   1:
+    #     compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
+      # powerRangeThreshold: 8
+      # powerRangeReduction: 5
+
+  - type: STR_LASER_RIFLE
+    shotgunBehavior: 1
+    shotgunSpread: 30
+    shotgunChoke: 80
+    shotgunPellets: 10
+    powerRangeThreshold: 8
+    powerRangeReduction: 2
+    power: 24
+    vaporColorSurface: 8
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 2
+    explosionSpeed:  2
+

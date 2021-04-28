@@ -1,19 +1,4 @@
 units:
-#HWP
-  #- delete: STR_TANK_CANNON
-
-  # - type: STR_HOVERTANK_PLASMA
-  #   stats:
-  #     tu: 100
-  #     reactions: 30
-  #     firing: 60
-  #   armor: HOVERTANK_ARMOR
-  # - type: STR_HOVERTANK_LAUNCHER
-  #   stats:
-  #     tu: 100
-  #     reactions: 30
-  #     firing: 60
-  #   armor: HOVERTANK_ARMOR
 #CIVILIAN
   - type: MALE_CIVILIAN
     stats:
