@@ -1,5 +1,10 @@
 items:
+  - type: STR_LARGE_ROCKET
+    #weight: &ROCKET 12
+    damageAlter:
+      ArmorEffectiveness: 0.75
   - type: STR_INCENDIARY_ROCKET
+    #weight: *ROCKET
     power: 80
     damageType: 3
     damageAlter:

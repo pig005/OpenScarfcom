@@ -1,0 +1,22 @@
+extraSprites:
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      2700: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
+      ASSETS/Big-00.png"
+      2701: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
+      ASSETS/Big-01.png"
+      2702: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
+      ASSETS/Big-02.png"
+extended:
+  tags:
+    RuleItem:
+      ALLOW_AMMO_TO_RESPRITE: int
+      PAEDIA_OFFSET: int
+items:
+  - type: STR_ROCKET_LAUNCHER
+    bigSprite: 2701 #2700 + 1
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+      PAEDIA_OFFSET: 1

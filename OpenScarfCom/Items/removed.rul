@@ -7,6 +7,8 @@ items:
   - delete: STR_AC_AP_AMMO
   - delete: STR_AC_HE_AMMO
   - delete: STR_AC_I_AMMO
+  # because no one loves you
+  - delete: STR_SMALL_ROCKET
 
   # because hwp will be replaced by ugvs
   - delete: STR_TANK_CANNON
@@ -19,3 +21,4 @@ manufacture:
   - delete: STR_TANK_LASER_CANNON
 ufopaedia:
   - delete: STR_RIFLE
+  - delete: STR_SMALL_ROCKET
