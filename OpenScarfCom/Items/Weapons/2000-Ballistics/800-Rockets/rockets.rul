@@ -3,12 +3,12 @@ items:
     power: 80
     damageType: 3
     damageAlter:
-      FixRadius: 5
+      FixRadius: 4
       FireBlastCalc: false
       ResistType: 2
       RandomType: 2
       ArmorEffectiveness: 0.25
-      FireThreshold: 40
+      FireThreshold: 50
       ToItem: 1
       ToTile: 0.35
       ToWound: 1

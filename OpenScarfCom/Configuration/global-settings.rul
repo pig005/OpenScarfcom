@@ -118,5 +118,5 @@
     extendedUnderwaterThrowFactor: 10
 
     damageRange: 100
-    explosiveDamageRange: 50
+    explosiveDamageRange: 25
     fireDamageRange: [5, 10]

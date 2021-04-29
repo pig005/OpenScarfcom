@@ -1,4 +1,7 @@
 items:
+# ┌┬┐┌─┐┬┌┐┌  ┬ ┬┌─┐┌─┐┌─┐┌─┐┌┐┌
+# │││├─┤││││  │││├┤ ├─┤├─┘│ ││││
+# ┴ ┴┴ ┴┴┘└┘  └┴┘└─┘┴ ┴┴  └─┘┘└┘
   - type: SECTOPOD_HEAVY_PLASMA
     weight: 3
     bigSprite: 1
@@ -10,7 +13,7 @@ items:
     damageType: 4
     #accuracyAuto: 50
     accuracySnap: 75
-    #accuracyAimed: 110
+    accuracyAimed: 110
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -19,19 +22,21 @@ items:
     bulletSprite: 8
     recover: false
     #aimRange: 10
-    power: 60
+    power: 10
     #tuAuto: 0
-    tuSnap: 80
-    tuAimed: 0
+    tuSnap: 33
+    tuAimed: 50
     tuAuto: 0
     #confAuto:
     #  shots: 2
-    #shotgunBehavior: 1
-    #shotgunPellets: 2
-    #shotgunSpread: 80
+    shotgunBehavior: 1
+    shotgunPellets: 2
+    shotgunSpread: 80
     bulletSpeed: 60
     explosionSpeed: 3
-
+# ┌─┐┬  ┌─┐┌┐ ┌─┐┬
+# │ ┬│  │ │├┴┐├─┤│
+# └─┘┴─┘└─┘└─┘┴ ┴┴─┘
   - &STR_SECTOPOD_AUX_WEAPON
     type: STR_SECTOPOD_AUX_WEAPON
     weight: 16
@@ -65,16 +70,20 @@ items:
     vaporDensitySurface: 40
     damageType: 3
     arcingShot: true
-
+# ┬  ┌─┐┬ ┬┌┐┌┌─┐┬ ┬┌─┐┬─┐
+# │  ├─┤│ │││││  ├─┤├┤ ├┬┘
+# ┴─┘┴ ┴└─┘┘└┘└─┘┴ ┴└─┘┴└─
   - type: STR_SECTOPOD_MULTI_LAUNCHER
     refNode: *STR_SECTOPOD_AUX_EXPLOSIVE
     tuSnap: 10
-    accuracySnap: 99
+    accuracySnap: 40
     snapRange: 15
     confSnap:
       shots: 4
       followProjectiles: false
     explosionSpeed: 4
+    tuAuto: 0
+    tuAimed: 0
     #waypoints: 2
     #minRange: 4
 

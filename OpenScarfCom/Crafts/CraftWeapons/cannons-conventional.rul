@@ -16,8 +16,3 @@ craftWeapons:
     projectileSpeed: 16
 items:
   - delete: STR_CANNON_ROUNDS_X50
-  - type: STR_CANNON
-    size: 0.9
-    costBuy: 30000
-    costSell: 22500
-    transferTime: 48
