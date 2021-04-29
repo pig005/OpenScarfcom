@@ -1,0 +1,33 @@
+alienDeployments:
+  - type: STR_TERROR_MISSION
+    width: &LARGE 50
+    length: &LARGE 50
+    height: &TERROR_HEIGHT 7
+  - type: STR_TERROR_MISSION_INDUSTRIAL
+    width: *LARGE
+    length: *LARGE
+    height: *TERROR_HEIGHT
+  - type: STR_TERROR_MISSION_SNOW
+    width: *LARGE
+    length: *LARGE
+    height: *TERROR_HEIGHT
+  - type: STR_TERROR_MISSION_RURAL
+    width: *LARGE
+    length: *LARGE
+    height: *TERROR_HEIGHT
+  - type: STR_TERROR_MISSION_ISLAND
+    width: *LARGE
+    length: *LARGE
+    height: *TERROR_HEIGHT
+  - type: STR_TERROR_MISSION_PORT
+    width: *LARGE
+    length: *LARGE
+    height: *TERROR_HEIGHT
+  - type: STR_TERROR_MISSION_AIRPORT
+    width: *LARGE
+    length: *LARGE
+    height: *TERROR_HEIGHT
+  - type: STR_TERROR_MISSION_SHIPPING_LINES
+    width: &SMALL 30
+    length: &GIGANTIC 70
+    height: 15

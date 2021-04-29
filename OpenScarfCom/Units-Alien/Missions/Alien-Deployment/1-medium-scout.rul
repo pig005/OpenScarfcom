@@ -1,0 +1,32 @@
+alienDeployments:
+  - type: STR_MEDIUM_SCOUT
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets: &PISTOL_RIFLE_HEAVY
+          - &PISTOL
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          - &RIFLE
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          - &HEAVY
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+        extraRandomItems:
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets: *PISTOL_RIFLE_HEAVY
+        extraRandomItems:
+          - [ STR_ALIEN_GRENADE, STR_MIND_PROBE ]
+          - [ STR_ALIEN_GRENADE ]

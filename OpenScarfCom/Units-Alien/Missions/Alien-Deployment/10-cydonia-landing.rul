@@ -6,51 +6,35 @@ alienDeployments:
         highQty: 6
         dQty: 0
         percentageOutsideUfo: 60
-        itemSets: &RIFLE_HEAVY_HEAVY
-          -
+        itemSets: &RIFLE_RIFLE_HEAVY
+          - &RIFLE
             - STR_PLASMA_RIFLE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
-          -
+          - *RIFLE
+          - &HEAVY
             - STR_HEAVY_PLASMA
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
             - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
+        extraRandomItems: &GRENADES_EXTRA
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
       - alienRank: 1
         lowQty: 3
         highQty: 5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &HEAVY_HEAVY_BLASTER
-          -
+          - &HEAVY_GRENADE
             - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
+          - *HEAVY_GRENADE
+          - &BLASTER
             - STR_BLASTER_LAUNCHER
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
@@ -67,16 +51,7 @@ alienDeployments:
         highQty: 4
         dQty: 0
         percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    width: 50
-    length: 50
-    height: 4
+        itemSets: &TERROR [[],[],[]]
     terrains:
       - MARS
     shade: 15

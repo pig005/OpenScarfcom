@@ -1,0 +1,61 @@
+alienDeployments:
+ # ┬ ┬┌─┐┌─┐
+ # │ │├┤ │ │
+ # └─┘└  └─┘
+  - type: STR_SMALL_SCOUT
+    width: &POCKET 20
+    length: &POCKET 20
+    height: &UFO_HEIGHT 9
+  - type: STR_MEDIUM_SCOUT
+    width: &SMALL 30
+    length: &SMALL 30
+    height: *UFO_HEIGHT
+  - type: STR_LARGE_SCOUT
+    width: *SMALL
+    length: *SMALL
+    height: *UFO_HEIGHT
+  - type: STR_HARVESTER
+    width: &MEDIUM 40
+    length: &MEDIUM 40
+    height: *UFO_HEIGHT
+  - type: STR_ABDUCTOR
+    width: *MEDIUM
+    length: *MEDIUM
+    height: *UFO_HEIGHT
+  - type: STR_TERROR_SHIP
+    width: *MEDIUM
+    length: *MEDIUM
+    height: *UFO_HEIGHT
+  - type: STR_SUPPLY_SHIP
+    width: *MEDIUM
+    length: *MEDIUM
+    height: *UFO_HEIGHT
+  - type: STR_BATTLESHIP
+    width: &LARGE 50
+    length: &LARGE 50
+    height: *UFO_HEIGHT
+ # ┌─┐┬  ┬┌─┐┌┐┌  ┌┐ ┌─┐┌─┐┌─┐
+ # ├─┤│  │├┤ │││  ├┴┐├─┤└─┐├┤
+ # ┴ ┴┴─┘┴└─┘┘└┘  └─┘┴ ┴└─┘└─┘
+  - type: STR_ALIEN_BASE_ASSAULT
+    width: &VERY_LARGE 60
+    length: &VERY_LARGE 60
+    height: &BASE_HEIGHT 2
+ # ┌┐ ┌─┐┌─┐┌─┐  ┌┬┐┌─┐┌─┐┌─┐┌┐┌┌─┐┌─┐
+ # ├┴┐├─┤└─┐├┤    ││├┤ ├┤ ├┤ │││└─┐├┤
+ # └─┘┴ ┴└─┘└─┘  ─┴┘└─┘└  └─┘┘└┘└─┘└─┘
+  - type: STR_BASE_DEFENSE
+    width: *VERY_LARGE
+    length: *VERY_LARGE
+    height: *BASE_HEIGHT
+ # ┌─┐┬ ┬┌┬┐┌─┐┌┐┌┬┌─┐
+ # │  └┬┘ │││ │││││├─┤
+ # └─┘ ┴ ─┴┘└─┘┘└┘┴┴ ┴
+  - type: STR_MARS_CYDONIA_LANDING
+    width: *LARGE
+    length: *LARGE
+    height: *UFO_HEIGHT
+  - type: STR_MARS_THE_FINAL_ASSAULT
+    width: *VERY_LARGE
+    length: *VERY_LARGE
+    height: *BASE_HEIGHT

@@ -39,19 +39,19 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 20
         itemSets: &PISTOL_LAUNCHER_BLASTER
-          -
+          - &PISTOL_GRENADE
             - STR_PLASMA_PISTOL
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
             - STR_PLASMA_PISTOL_CLIP
             - STR_PLASMA_PISTOL_CLIP
-          -
+          - &LAUNCHER
             - STR_SMALL_LAUNCHER
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
-          -
+          - &BLASTER
             - STR_BLASTER_LAUNCHER
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
@@ -69,14 +69,14 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &RIFLE_HEAVY_BLASTER
-          -
+          - &RIFLE_GRENADE
             - STR_PLASMA_RIFLE
             - STR_ALIEN_GRENADE
             - STR_PLASMA_RIFLE_CLIP
             - STR_ALIEN_GRENADE
             - STR_PLASMA_RIFLE_CLIP
             - STR_ALIEN_GRENADE
-          -
+          - &HEAVY_GRENADE
             - STR_HEAVY_PLASMA
             - STR_ALIEN_GRENADE
             - STR_HEAVY_PLASMA_CLIP
@@ -84,61 +84,25 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
+          - *BLASTER
       - alienRank: 0
         lowQty: 1
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
-        itemSets: &HEAVY_HEAVY_BLASTER
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
+        itemSets: [*HEAVY_GRENADE, *HEAVY_GRENADE, *BLASTER ]
       - alienRank: 6
         lowQty: 0
         highQty: 2
         dQty: 1
         percentageOutsideUfo: 50
-        itemSets: &TERRORIST
-          -
-            []
-          -
-            []
-          -
-            []
+        itemSets: &TERROR [[],[],[]]
       - alienRank: 7
         lowQty: 0
         highQty: 2
         dQty: 1
         percentageOutsideUfo: 50
-        itemSets: *TERRORIST
-    width: 60
-    length: 60
-    height: 2
+        itemSets: *TERROR
     terrains:
       - XBASE
     shade: 5

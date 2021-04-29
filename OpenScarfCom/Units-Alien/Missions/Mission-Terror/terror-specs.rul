@@ -1,0 +1,28 @@
+alienDeployments:
+  - &STR_TERROR_MISSION
+    type: STR_TERROR_MISSION
+    civilians: 16
+    alert: STR_ALIENS_TERRORISE
+    alertBackground: BACK03.SCR
+    briefing:
+      palette: 2
+      music: GMENBASE
+    markerName: STR_TERROR_SITE
+    duration: [4, 10]
+    despawnPenalty: 1000
+
+  - type: STR_TERROR_MISSION_INDUSTRIAL
+    refNode: *STR_TERROR_MISSION
+  - type: STR_TERROR_MISSION_SNOW
+    refNode: *STR_TERROR_MISSION
+  - type: STR_TERROR_MISSION_RURAL
+    refNode: *STR_TERROR_MISSION
+  - type: STR_TERROR_MISSION_ISLAND
+    refNode: *STR_TERROR_MISSION
+  - type: STR_TERROR_MISSION_PORT
+    refNode: *STR_TERROR_MISSION
+  - type: STR_TERROR_MISSION_AIRPORT
+    refNode: *STR_TERROR_MISSION
+  - type: STR_TERROR_MISSION_SHIPPING_LINES
+    refNode: *STR_TERROR_MISSION
+    despawnPenalty: 2000

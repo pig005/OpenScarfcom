@@ -6,26 +6,19 @@ alienDeployments:
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 50
-        itemSets:
-          -
+        itemSets: &PISTOL_RIFLE_HEAVY
+          - &PISTOL
             - STR_PLASMA_PISTOL
             - STR_PLASMA_PISTOL_CLIP
-            - STR_ALIEN_GRENADE
             - STR_PLASMA_PISTOL_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_MIND_PROBE
-          -
+          - &RIFLE
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
             - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_MIND_PROBE
-          -
+          - &HEAVY
             - STR_HEAVY_PLASMA
             - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_MIND_PROBE
-    width: 40
-    length: 40
-    height: 4
+        extraRandomItems: &GRENADES_PROBES
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_MIND_PROBE ]

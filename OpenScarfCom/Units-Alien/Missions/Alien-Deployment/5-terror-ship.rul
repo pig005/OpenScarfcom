@@ -1,0 +1,73 @@
+alienDeployments:
+  - type: STR_TERROR_SHIP
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: &PISTOL_RIFLE_HEAVY
+          - &PISTOL
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          - &RIFLE
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          - &HEAVY
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+        extraRandomItems: &GRENADES
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets: *PISTOL_RIFLE_HEAVY
+        extraRandomItems: &PROBE_GRENADE
+          - [ STR_ALIEN_GRENADE, STR_MIND_PROBE ]
+          - [ STR_ALIEN_GRENADE ]
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          - *PISTOL
+          - *RIFLE
+          - &LAUNCHER
+            - STR_SMALL_LAUNCHER
+            - STR_ALIEN_GRENADE
+        extraRandomItems: &GRENADES_EXTRA
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets: *PISTOL_RIFLE_HEAVY
+        extraRandomItems: *GRENADES
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: [*RIFLE, *HEAVY, *HEAVY]
+        extraRandomItems: *GRENADES
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets: &TERROR [[],[],[]]
+      - alienRank: 7
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets: *TERROR

@@ -88,9 +88,6 @@ alienDeployments:
             []
           -
             []
-    width: 60
-    length: 60
-    height: 2
     terrains:
       - UBASE
     shade: 5

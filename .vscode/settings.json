@@ -1,5 +1,8 @@
 {
     "conventionalCommits.scopes": [
-        "items"
+        "items",
+        "units",
+        "scripts",
+        "alienDeploy"
     ]
 }
