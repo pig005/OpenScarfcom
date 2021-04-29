@@ -81,27 +81,4 @@ alienDeployments:
         highQty: 6
         dQty: 0
         percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    terrains:
-      - UBASE
-    shade: 5
-    race: STR_MIXED
-    winCutscene: winGame
-    loseCutscene: loseGame
-    abortCutscene: loseGame
-    briefing:
-      textOffset: -16
-      palette: 6
-      music: GMNEWMAR
-      showTarget: false
-      showCraft: false
-      background: BACK01.SCR
-    script: BOSSBATTLE
-    objectiveType: 14
-    objectivesRequired: 1
+        itemSets: &TERROR [[],[],[]]

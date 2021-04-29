@@ -52,16 +52,3 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 100
         itemSets: &TERROR [[],[],[]]
-    terrains:
-      - MARS
-    shade: 15
-    race: STR_SECTOID
-    nextStage: STR_MARS_THE_FINAL_ASSAULT
-    finalDestination: true
-    loseCutscene: loseGame
-    abortCutscene: loseGame
-    briefing:
-      textOffset: -16
-      palette: 6
-      music: GMNEWMAR
-      showTarget: false

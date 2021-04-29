@@ -1,0 +1,60 @@
+alienDeployments:
+  - type: STR_ALIEN_BASE_ASSAULT
+    terrains:
+      - UBASE
+    shade: 15
+    script: ALIENBASE
+    briefing:
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+    objectiveType: 3
+    markerName: STR_ALIEN_BASE
+    markerIcon: 7
+    genMission:
+      STR_ALIEN_SUPPLY: 100
+    genMissionFreq: 6
+    alienBase: true    # this is only to tell new battle mode what to do with this deployment
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
+    objectivePopup: STR_CONTROL_CENTER_DESTROYED
+    points: 5
+  - type: STR_BASE_DEFENSE
+    terrains:
+      - XBASE
+    shade: 5
+    briefing:
+      palette: 0
+      background: BACK01.SCR
+      music: GMENBASE
+  - type: STR_MARS_CYDONIA_LANDING
+    terrains:
+      - MARS
+    shade: 15
+    race: STR_SECTOID
+    nextStage: STR_MARS_THE_FINAL_ASSAULT
+    finalDestination: true
+    loseCutscene: loseGame
+    abortCutscene: loseGame
+    briefing:
+      textOffset: -16
+      palette: 6
+      music: GMNEWMAR
+      showTarget: false
+  - type: STR_MARS_THE_FINAL_ASSAULT
+    terrains:
+      - UBASE
+    shade: 5
+    race: STR_MIXED
+    winCutscene: winGame
+    loseCutscene: loseGame
+    abortCutscene: loseGame
+    briefing:
+      textOffset: -16
+      palette: 6
+      music: GMNEWMAR
+      showTarget: false
+      showCraft: false
+      background: BACK01.SCR
+    script: BOSSBATTLE
+    objectiveType: 14
+    objectivesRequired: 1
