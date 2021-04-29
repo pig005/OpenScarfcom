@@ -1,9 +1,10 @@
 name: "OpenScarfCom"
-version: "0.1.3a"
+version: "0.1.5a"
 author: "greenscarf"
-description: "Total Conversion focused on QOL & Replayability"
+description: "Total Conversion focused on QOL & Replayability. contributions welcome!!"
 id: OpenScarfCom
 master: xcom1
 isMaster: false
 reservedSpace: 20
+requiredExtendedVersion: "7.0"
 resourceConfig: transparency.rul

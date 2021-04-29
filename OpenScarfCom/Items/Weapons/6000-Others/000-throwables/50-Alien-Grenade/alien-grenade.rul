@@ -9,8 +9,9 @@ items:
     damageAlter:
       #RandomType: 5
       ToItem: 1
+      FireThreshold: 60
     fuseType: 0
     #tuPrime: 20
     tuThrow: 25
     tags:
-      START_PRIMED: 1
+      START_PRIMED: 0

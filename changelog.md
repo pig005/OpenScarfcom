@@ -1,3 +1,12 @@
+## 2021.04.29 - v0.1.5a "Ammo Day 3"
+
+### modified
+
+- incendiary rounds changed to thermobaric rounds
+  - power is _literal_ now; deals heavy incendiary damage
+  - can break through one or two brick walls
+  - one-shots sectoids and floaters
+
 ## 2021.04.28 - v0.1.4a "Ammo Day 2"
 
 ### added

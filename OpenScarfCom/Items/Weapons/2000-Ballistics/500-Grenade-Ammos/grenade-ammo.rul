@@ -1,7 +1,4 @@
 extended:
-# ╔╦╗╔═╗╔═╗╔═╗
-#  ║ ╠═╣║ ╦╚═╗
-#  ╩ ╩ ╩╚═╝╚═╝
   tags:
     RuleItem:
       OFFSET_BIGOB_WEAPON: int
@@ -31,9 +28,24 @@ items:
     #handSprite: 2410
     #floorSprite: 2410
 
+
   - type: STR_HC_I_AMMO
     refNode: *GRENADE_GLOBAL
    # Graphics
     bigSprite: 2526 #2520 + 6
     #handSprite: 2420
     #floorSprite: 2420
+   # Specs
+    power: 48
+    damageType: 3
+    damageAlter:
+      FixRadius: 2
+      ResistType: 2
+      RandomType: 2
+      ArmorEffectiveness: 0.25
+      FireThreshold: 36
+      ToItem: 0.5
+      ToTile: 0.35
+      ToWound: 1
+      ToStun: 0.25
+      RadiusReduction: 10

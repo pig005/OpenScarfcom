@@ -104,7 +104,7 @@ items:
         tuUnload: 6
       1:
         compatibleAmmo: [ STR_HC_HE_AMMO, STR_HC_I_AMMO ]
-        tuLoad: 32
+        tuLoad: 30
         tuUnload: 14
    # Firing Modes
     tuSnap: 40
@@ -112,7 +112,7 @@ items:
     tuAimed: 80
     accuracyAimed: 80
    # Fire Grenade
-    tuAuto: 70
+    tuAuto: 80
     autoRange: 12
     accuracyAuto: 50
     confAuto:
@@ -121,6 +121,7 @@ items:
       arcing: true
       followProjectiles: true
       shots: 1
+      spendPerShot: 6
 # ┌┬┐┌─┐┬─┐┬┌─┌─┐┌┬┐┌─┐┌┐┌┌─┐  ┬─┐┬┌─┐┬  ┌─┐
 # │││├─┤├┬┘├┴┐└─┐│││├─┤│││└─┐  ├┬┘│├┤ │  ├┤
 # ┴ ┴┴ ┴┴└─┴ ┴└─┘┴ ┴┴ ┴┘└┘└─┘  ┴└─┴└  ┴─┘└─┘

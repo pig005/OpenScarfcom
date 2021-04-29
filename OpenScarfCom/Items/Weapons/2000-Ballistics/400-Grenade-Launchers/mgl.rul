@@ -4,6 +4,8 @@ items:
     handSprite: 2400
     floorSprite: 2400
     arcingShot: true
-    compatibleAmmo:
-      - STR_HC_HE_AMMO
-      - STR_HC_I_AMMO
+    ammo:
+      0:
+        compatibleAmmo: [ STR_HC_HE_AMMO, STR_HC_I_AMMO ]
+        tuLoad: 20
+        tuUnload: 8

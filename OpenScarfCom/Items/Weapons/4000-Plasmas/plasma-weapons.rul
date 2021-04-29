@@ -24,7 +24,7 @@ items:
       # FixRadius: 1
       # ResistType: 5
       # RandomType: 1
-      ToArmorPre: 0.2
+      ToArmorPre: 0.5
       ToArmor: 0.2
       FireThreshold: 60
 
