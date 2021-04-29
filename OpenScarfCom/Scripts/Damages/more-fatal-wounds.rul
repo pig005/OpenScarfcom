@@ -1,0 +1,20 @@
+extended:
+  scripts:
+    damageUnit:
+      - offset: 1
+        code: |
+          var int LOG 2; # 0: none; 1: simple 2: detailed
+
+          var int Temp 0;
+
+          if ge LOG 2;debug_log "start:" to_health to_wound unit;end;
+
+          set to_wound 0;
+
+          loop var i to_health;
+            battle_game.randomRange Temp 0 3; #25% chance
+            if eq Temp 0; add to_wound 1;end;
+          end;
+
+          if ge LOG 1;debug_log "end:" to_health to_wound;end;
+          return;

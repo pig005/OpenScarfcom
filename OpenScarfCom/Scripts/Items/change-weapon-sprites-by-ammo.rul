@@ -17,12 +17,12 @@ extended:
               var int Paedia_Offset;
               var int Ammo_Offset;
               var ptr BattleItem Loaded_Ammo;
+
               # NEGATES PEDIA OFFSET
               item.getTag Paedia_Offset Tag.PAEDIA_OFFSET;
-              mul Paedia_Offset -1; # paedia offset given is natural number
-              add sprite_index Paedia_Offset;
-              # LOOP THROUGH AMMO SLOTS
+              sub sprite_index Paedia_Offset;
 
+              # LOOP THROUGH AMMO SLOTS
               loop var i Ammo_Types;
                 item.getAmmoForSlot Loaded_Ammo i; # get ammo item as Loaded_Ammo
                 Loaded_Ammo.getTag Ammo_Offset Tag.OFFSET_BIGOB_WEAPON; # find offset value as Ammo_Offset
