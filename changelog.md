@@ -1,6 +1,12 @@
 ## 2021.04.29 - v0.1.5a "Ammo Day 3"
 
+### added
+
+- new sprite for rocket launcher
+
 ### modified
+
+- rocket launcher blind shot firing mode added; low tu cost but almost zero accuracy
 
 - incendiary rounds changed to thermobaric rounds
 
@@ -11,8 +17,11 @@
   - TODO: make rounds tagged as thermobaric deal small damage to units immune to incendiary too
 
 - aliens does not carry primed grenades anymore
-  - it could hinder UFO breaching
+
+  - because it might discourage players from fighting inside UFO
   - opinions are welcome (a: revert, b: keep it, c: make it random, etc)
+
+- refactored alien deployment and missions
 
 ## 2021.04.28 - v0.1.4a "Ammo Day 2"
 
