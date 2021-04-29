@@ -1,0 +1,5 @@
+armors:
+  - type: STR_POWER_SUIT_UC
+    stats:
+      tu: 25
+      strength: 30

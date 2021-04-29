@@ -1,0 +1,5 @@
+armors:
+  - type: STR_FLYING_SUIT_UC
+    stats:
+      tu: 25
+      strength: 35
