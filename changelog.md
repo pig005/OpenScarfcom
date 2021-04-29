@@ -3,9 +3,16 @@
 ### modified
 
 - incendiary rounds changed to thermobaric rounds
+
   - power is _literal_ now; deals heavy incendiary damage
   - can break through one or two brick walls
   - one-shots sectoids and floaters
+  - more costly and slightly less powerful than HE equivalent
+  - TODO: make rounds tagged as thermobaric deal small damage to units immune to incendiary too
+
+- aliens does not carry primed grenades anymore
+  - it could hinder UFO breaching
+  - opinions are welcome (a: revert, b: keep it, c: make it random, etc)
 
 ## 2021.04.28 - v0.1.4a "Ammo Day 2"
 

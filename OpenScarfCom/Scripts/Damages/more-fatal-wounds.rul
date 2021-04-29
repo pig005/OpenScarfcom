@@ -3,7 +3,7 @@ extended:
     damageUnit:
       - offset: 1
         code: |
-          var int LOG 2; # 0: none; 1: simple 2: detailed
+          var int LOG 0; # 0: none; 1: simple 2: detailed
 
           var int Temp 0;
 

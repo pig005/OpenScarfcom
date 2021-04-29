@@ -55,7 +55,8 @@ there is one design philosophy for OpenScarfCom: make it more replayable.
 
 - Improved **Alien AI**
   - [x] Spotter & Sniper tactics
-  - [x] Carry multiple pre-primed grenades
+  - [x] Carry multiple grenades
+    - [ ] make aggressive alien carry them pre-primed
   - Melee attack for all & pick up weapons
   - Change tactics depending on situations
 - Enhanced **Tactical Combat**

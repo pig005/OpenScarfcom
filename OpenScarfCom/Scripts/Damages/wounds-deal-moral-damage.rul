@@ -3,6 +3,8 @@ extended:
     newTurnUnit:
       - offset: 1
         code: |
+          var int LOG 0; # 0: none; 1: simple 2: detailed
+
           var int Fatal_Wounds;
           var int Moral_Damage;
 
@@ -15,7 +17,7 @@ extended:
                 battle_game.randomRange Moral_Damage 0 Fatal_Wounds;
                 mul Moral_Damage -1;
                 unit.addMorale Moral_Damage;
-                #debug_log "moral dmg:" Moral_Damage;
+                if ge LOG 1;debug_log "moral dmg:" Moral_Damage;end;
               end;
             end;
           end;
