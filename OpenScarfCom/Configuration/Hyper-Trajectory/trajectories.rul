@@ -282,6 +282,21 @@ items:
     type: VAPOR_PLASMA_L
     refNode: *COLOR_GREEN_THICK
     vaporDensitySurface: 15
+  - &VAPOR_PLASMA_CLASS_C
+    type: VAPOR_PLASMA_CLASS_C
+    refNode: *COLOR_GREEN_THICK
+    vaporDensity: 35
+    vaporDensitySurface: 60
+  - &VAPOR_PLASMA_CLASS_D
+    type: VAPOR_PLASMA_CLASS_D
+    refNode: *COLOR_GREEN_THICK
+    vaporDensity: 80
+    vaporDensitySurface: 100
+  - &VAPOR_PLASMA_CLASS_E
+    type: VAPOR_PLASMA_CLASS_E
+    refNode: *COLOR_GREEN_THICK
+    vaporDensity: 80
+    vaporDensitySurface: 120
  #  ┌─┐┌┬┐┬ ┬┌─┐┬─┐┌─┐
  #  │ │ │ ├─┤├┤ ├┬┘└─┐
  #  └─┘ ┴ ┴ ┴└─┘┴└─└─┘
@@ -321,9 +336,11 @@ items:
  #   │ ├┤ ├┬┘├┬┘│ │├┬┘  │││├┤ ├─┤├─┘│ ││││└─┐
  #   ┴ └─┘┴└─┴└─└─┘┴└─  └┴┘└─┘┴ ┴┴  └─┘┘└┘└─┘
   - type: CYBERDISC_WEAPON
-    refNode: *VAPOR_PLASMA_L
+    refNode: *VAPOR_PLASMA_CLASS_C
   - type: SECTOPOD_WEAPON
     refNode: *VAPOR_PLASMA_L
+  - type: SECTOPOD_HEAVY_PLASMA
+    refNode: *VAPOR_PLASMA_CLASS_E
   - type: CELATID_WEAPON
     refNode: *VAPOR_PLASMA_M
  #  ┌─┐┌─┐┌┐┌┬ ┬┌─┐┌┐┌┌┬┐┬┌─┐┌┐┌┌─┐┬
