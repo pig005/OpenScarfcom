@@ -27,7 +27,8 @@ items:
     bigSprite: 2516 # 2510 + 6
     #handSprite: 2410
     #floorSprite: 2410
-
+    damageAlter:
+      ArmorEffectiveness: 0.85
 
   - type: STR_HC_I_AMMO
     refNode: *GRENADE_GLOBAL

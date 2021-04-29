@@ -26,7 +26,7 @@ items:
     oneHandedPenalty: 30
     kneelBonus: 120
     size: 0.2
-    weight: 12
+    weight: 8
    # Ammo
     ammo:
       0:
@@ -95,7 +95,7 @@ items:
    # Specs
     costBuy: 4000
     costSell: 3000
-    weight: 16
+    weight: 12
    # Ammo
     ammo:
       0:
@@ -135,7 +135,7 @@ items:
    # Specs
     costBuy: 5000
     costSell: 3750
-    weight: 15
+    weight: 12
     kneelBonus: 125
    # Firing Modes
     tuSnap: 80
