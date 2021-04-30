@@ -1,0 +1,24 @@
+#These commands are for the motion scanner re-skin. To change to the square screen please un-comment/comment the corresponding lines below.
+extraSprites:
+  - typeSingle: DETBORD.PCK # Scanner screen, Motion Scanner frame. Probably short for Detector Border
+    fileSingle: Borrowed/Scanner_ReSkin_Round/DETBORD_scxc.png
+  - typeSingle: DETBORD2.PCK # Scanner screen background, Motion Scanner background
+    fileSingle: Borrowed/Scanner_ReSkin_Round/DETBORD2_scxc_round.png #screen round grid
+  - type: BIGOBS.PCK
+    files:
+      23: Borrowed/Scanner_ReSkin_Round/bigob_scanner_round.png #screen round grid
+  - type: FLOOROB.PCK
+    files:
+      23: Borrowed/Scanner_ReSkin_Round/floorob_scanner.png
+  - type: HANDOB.PCK
+    height: 40
+    width: 256
+    subX: 32
+    subY: 40
+    files:
+      504: Borrowed/Scanner_ReSkin_Round/handob_scanner.png
+items:
+  - type: STR_MOTION_SCANNER
+    bigSprite: 23
+    floorSprite: 23
+    handSprite: 504

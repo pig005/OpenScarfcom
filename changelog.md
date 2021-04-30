@@ -1,3 +1,10 @@
+## 2021.04.30 - v0.1.6a "Takt1kz Impr0v3d"
+
+### modified
+
+- alien deployment numbers fixed to beginner default
+  - also any opinions welcome; does this make game _fun_ or it doesn't?
+
 ## 2021.04.29 - v0.1.5a "Ammo Day 3"
 
 ### added
