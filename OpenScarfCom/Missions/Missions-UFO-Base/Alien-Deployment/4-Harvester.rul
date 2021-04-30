@@ -1,9 +1,9 @@
 alienDeployments:
-  - type: STR_ABDUCTOR
+  - type: STR_HARVESTER
     data:
       - alienRank: 5
-        lowQty: 3
-        highQty: 5
+        lowQty: &SOL 5 #5
+        highQty: *SOL #9
         dQty: 4
         percentageOutsideUfo: 70
         itemSets: &PISTOL_RIFLE_HEAVY
@@ -22,17 +22,17 @@ alienDeployments:
           - [ STR_ALIEN_GRENADE ]
           - [ STR_ALIEN_GRENADE ]
       - alienRank: 4
-        lowQty: 1
-        highQty: 1
-        dQty: 1
+        lowQty: &NAV 1 #1
+        highQty: *NAV #2
+        dQty: 0
         percentageOutsideUfo: 20
         itemSets: *PISTOL_RIFLE_HEAVY
         extraRandomItems: &PROBE_GRENADE
           - [ STR_ALIEN_GRENADE, STR_MIND_PROBE ]
           - [ STR_ALIEN_GRENADE ]
       - alienRank: 3
-        lowQty: 2
-        highQty: 4
+        lowQty: &ENG 1 #1
+        highQty: *ENG #2
         dQty: 0
         percentageOutsideUfo: 20
         itemSets:
@@ -41,7 +41,6 @@ alienDeployments:
           - - STR_SMALL_LAUNCHER
             - STR_ALIEN_GRENADE
         extraRandomItems: &STUN_GRENADES
-          - [ STR_STUN_BOMB ]
           - [ STR_STUN_BOMB ]
           - [ STR_ALIEN_GRENADE ]
           - [ STR_ALIEN_GRENADE ]
@@ -55,7 +54,7 @@ alienDeployments:
       - alienRank: 1
         lowQty: 1
         highQty: 1
-        dQty: 0
+        dQty: 1
         percentageOutsideUfo: 0
         itemSets: [*RIFLE, *RIFLE, *HEAVY]
         extraRandomItems: *GRENADES

@@ -2,8 +2,8 @@ alienDeployments:
   - type: STR_BASE_DEFENSE
     data:
       - alienRank: 5
-        lowQty: 4
-        highQty: 8
+        lowQty: &SOL 4 #4
+        highQty: *SOL #8
         dQty: 4
         percentageOutsideUfo: 50
         itemSets: &PISTOL_RIFLE_HEAVY
@@ -28,14 +28,14 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
       - alienRank: 4
-        lowQty: 1
-        highQty: 2
+        lowQty: &NAV 1 #1
+        highQty: *NAV #2
         dQty: 0
         percentageOutsideUfo: 20
         itemSets: *PISTOL_RIFLE_HEAVY
       - alienRank: 3
-        lowQty: 1
-        highQty: 2
+        lowQty: &MED 1 #1
+        highQty: *MED #2
         dQty: 0
         percentageOutsideUfo: 20
         itemSets: &PISTOL_LAUNCHER_BLASTER
@@ -58,14 +58,14 @@ alienDeployments:
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
       - alienRank: 2
-        lowQty: 1
-        highQty: 2
+        lowQty: &ENG 1 #1
+        highQty: *ENG #2
         dQty: 0
         percentageOutsideUfo: 20
         itemSets: *PISTOL_LAUNCHER_BLASTER
       - alienRank: 1
-        lowQty: 1
-        highQty: 3
+        lowQty: &LED 1 #1
+        highQty: *LED #3
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &RIFLE_HEAVY_BLASTER
@@ -86,27 +86,20 @@ alienDeployments:
             - STR_ALIEN_GRENADE
           - *BLASTER
       - alienRank: 0
-        lowQty: 1
-        highQty: 1
+        lowQty: &COM 1 #1
+        highQty: *COM #1
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: [*HEAVY_GRENADE, *HEAVY_GRENADE, *BLASTER ]
       - alienRank: 6
-        lowQty: 0
-        highQty: 2
+        lowQty: &TER 1 #0
+        highQty: *TER #2
         dQty: 1
         percentageOutsideUfo: 50
         itemSets: &TERROR [[],[],[]]
       - alienRank: 7
-        lowQty: 0
-        highQty: 2
+        lowQty: *TER #0
+        highQty: *TER #2
         dQty: 1
         percentageOutsideUfo: 50
         itemSets: *TERROR
-    terrains:
-      - XBASE
-    shade: 5
-    briefing:
-      palette: 0
-      background: BACK01.SCR
-      music: GMENBASE

@@ -1,13 +1,14 @@
 alienDeployments:
   - &STR_TERROR_MISSION
     type: STR_TERROR_MISSION
-    civilians: 16
+    civilians: 10
     alert: STR_ALIENS_TERRORISE
     alertBackground: BACK03.SCR
     briefing:
       palette: 2
       music: GMENBASE
     markerName: STR_TERROR_SITE
+    objectiveComplete: [STR_ALIEN_TERROR_REPELED, 200]
     duration: [4, 10]
     despawnPenalty: 1000
 
@@ -25,4 +26,6 @@ alienDeployments:
     refNode: *STR_TERROR_MISSION
   - type: STR_TERROR_MISSION_SHIPPING_LINES
     refNode: *STR_TERROR_MISSION
+    duration: [10, 24]
+    objectiveComplete: [STR_ALIEN_TERROR_REPELED, 2500]
     despawnPenalty: 2000

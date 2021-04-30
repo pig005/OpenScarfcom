@@ -1,0 +1,88 @@
+alienDeployments:
+  - type: STR_ALIEN_BASE_ASSAULT
+    data:
+      - alienRank: 6
+        lowQty: &TER 2 #1
+        highQty: *TER #3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: &TERROR [[],[],[]]
+      - alienRank: 7
+        lowQty: &TER2 1 #0
+        highQty: *TER2 #2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *TERROR
+      - alienRank: 5
+        lowQty: &SOL 5 #5
+        highQty: *SOL #7
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets: &PISTOL_RIFLE_HEAVY
+          - &PISTOL
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          - &RIFLE
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          - &HEAVY
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+        extraRandomItems: &GRENADES
+          - [ STR_ALIEN_GRENADE ]
+          - [ STR_ALIEN_GRENADE ]
+      - alienRank: 4
+        lowQty: &NAV 1 #1
+        highQty: *NAV #2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *PISTOL_RIFLE_HEAVY
+        extraRandomItems: *GRENADES
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *PISTOL_RIFLE_HEAVY
+        extraRandomItems: *GRENADES
+      - alienRank: 2
+        lowQty: &ENG 1 #1
+        highQty: *ENG #2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: &RIFLE_HEAVY_BLASTER
+          - &RIFLE_GRENADE
+            - STR_PLASMA_RIFLE
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          - &HEAVY_GRENADE
+            - STR_HEAVY_PLASMA
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          - &BLASTER
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 1
+        lowQty: &LED 2 #2
+        highQty: *LED #4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *RIFLE_HEAVY_BLASTER
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: [*HEAVY_GRENADE, *HEAVY_GRENADE, *BLASTER]

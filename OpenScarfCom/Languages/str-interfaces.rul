@@ -30,6 +30,7 @@ extraStrings:
     # └─┘└─┘└─┘└─┘└─┘┴ ┴┴  └─┘
       # COUNTRIES
       STR_SOUTH_KOREA: "SOUTH KOREA"
+      STR_ALIEN_TERROR_REPELED: "ALIEN TERROR REPELED"
 # ██╗  ██╗ ██████╗
 # ██║ ██╔╝██╔═══██╗
 # █████╔╝ ██║   ██║
@@ -50,3 +51,4 @@ extraStrings:
     # └─┘└─┘└─┘└─┘└─┘┴ ┴┴  └─┘
       # 국가명
       STR_SOUTH_KOREA: "대한민국"
+      STR_ALIEN_TERROR_REPELED: "외계인 테러 격퇴함!"

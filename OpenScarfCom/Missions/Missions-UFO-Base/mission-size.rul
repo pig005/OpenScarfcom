@@ -3,20 +3,20 @@ alienDeployments:
  # │ │├┤ │ │
  # └─┘└  └─┘
   - type: STR_SMALL_SCOUT
-    width: &POCKET 20
-    length: &POCKET 20
-    height: &UFO_HEIGHT 9
-  - type: STR_MEDIUM_SCOUT
     width: &SMALL 30
     length: &SMALL 30
-    height: *UFO_HEIGHT
-  - type: STR_LARGE_SCOUT
-    width: *SMALL
-    length: *SMALL
-    height: *UFO_HEIGHT
-  - type: STR_HARVESTER
+    height: &UFO_HEIGHT 9
+  - type: STR_MEDIUM_SCOUT
     width: &MEDIUM 40
     length: &MEDIUM 40
+    height: *UFO_HEIGHT
+  - type: STR_LARGE_SCOUT
+    width: *MEDIUM
+    length: *MEDIUM
+    height: *UFO_HEIGHT
+  - type: STR_HARVESTER
+    width: *MEDIUM
+    length: *MEDIUM
     height: *UFO_HEIGHT
   - type: STR_ABDUCTOR
     width: *MEDIUM
@@ -52,8 +52,8 @@ alienDeployments:
  # │  └┬┘ │││ │││││├─┤
  # └─┘ ┴ ─┴┘└─┘┘└┘┴┴ ┴
   - type: STR_MARS_CYDONIA_LANDING
-    width: *LARGE
-    length: *LARGE
+    width: *VERY_LARGE
+    length: *VERY_LARGE
     height: *UFO_HEIGHT
   - type: STR_MARS_THE_FINAL_ASSAULT
     width: *VERY_LARGE

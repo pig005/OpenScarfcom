@@ -2,8 +2,8 @@ alienDeployments:
   - type: STR_MARS_THE_FINAL_ASSAULT
     data:
       - alienRank: 0
-        lowQty: 2
-        highQty: 4
+        lowQty: &COM 2 #2
+        highQty: *COM #4
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &HEAVY_HEAVY_HEAVY
@@ -29,14 +29,14 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
       - alienRank: 1
-        lowQty: 1
-        highQty: 3
+        lowQty: &LED 1 #1
+        highQty: *LED #3
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *HEAVY_HEAVY_HEAVY
       - alienRank: 2
-        lowQty: 3
-        highQty: 5
+        lowQty: &ENG 3 #3
+        highQty: *ENG #5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &BLASTER_BLASTER_BLASTER
@@ -59,26 +59,26 @@ alienDeployments:
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
       - alienRank: 3
-        lowQty: 3
-        highQty: 5
+        lowQty: &MED 3 #3
+        highQty: *MED #5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *HEAVY_HEAVY_HEAVY
       - alienRank: 4
-        lowQty: 3
-        highQty: 5
+        lowQty: &NAV 3 #3
+        highQty: *NAV #5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *HEAVY_HEAVY_HEAVY
       - alienRank: 5
-        lowQty: 3
-        highQty: 5
+        lowQty: &SOL 3 #3
+        highQty: *SOL #5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *HEAVY_HEAVY_HEAVY
       - alienRank: 6
-        lowQty: 2
-        highQty: 6
+        lowQty: &TER 2 #2
+        highQty: *TER #6
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &TERROR [[],[],[]]

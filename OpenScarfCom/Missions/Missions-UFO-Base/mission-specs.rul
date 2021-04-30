@@ -15,7 +15,7 @@ alienDeployments:
       STR_ALIEN_SUPPLY: 100
     genMissionFreq: 6
     alienBase: true    # this is only to tell new battle mode what to do with this deployment
-    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 500]
+    objectiveComplete: [STR_ALIEN_BASE_CONTROL_DESTROYED, 2500]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED
     points: 5
   - type: STR_BASE_DEFENSE
@@ -43,7 +43,7 @@ alienDeployments:
   - type: STR_MARS_THE_FINAL_ASSAULT
     terrains:
       - UBASE
-    shade: 5
+    shade: 15
     race: STR_MIXED
     winCutscene: winGame
     loseCutscene: loseGame

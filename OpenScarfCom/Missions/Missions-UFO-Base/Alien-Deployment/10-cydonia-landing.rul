@@ -2,8 +2,8 @@ alienDeployments:
   - type: STR_MARS_CYDONIA_LANDING
     data:
       - alienRank: 5
-        lowQty: 4
-        highQty: 6
+        lowQty: &SOL 4 #4
+        highQty: *SOL #6
         dQty: 0
         percentageOutsideUfo: 60
         itemSets: &RIFLE_RIFLE_HEAVY
@@ -20,8 +20,8 @@ alienDeployments:
           - [ STR_ALIEN_GRENADE ]
           - [ STR_ALIEN_GRENADE ]
       - alienRank: 1
-        lowQty: 3
-        highQty: 5
+        lowQty: &LED 3 #3
+        highQty: *LED #5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: &HEAVY_HEAVY_BLASTER
@@ -41,14 +41,14 @@ alienDeployments:
             - STR_BLASTER_BOMB
             - STR_BLASTER_BOMB
       - alienRank: 0
-        lowQty: 3
-        highQty: 5
+        lowQty: &COM 3 #3
+        highQty: *COM #5
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *HEAVY_HEAVY_BLASTER
       - alienRank: 6 #Cyberdisk
-        lowQty: 2
-        highQty: 4
+        lowQty: &TER 2 #2
+        highQty: *TER #4
         dQty: 0
         percentageOutsideUfo: 100
         itemSets: &TERROR [[],[],[]]

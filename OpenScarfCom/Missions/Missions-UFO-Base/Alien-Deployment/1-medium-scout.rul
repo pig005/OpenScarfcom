@@ -2,8 +2,8 @@ alienDeployments:
   - type: STR_MEDIUM_SCOUT
     data:
       - alienRank: 5
-        lowQty: 2
-        highQty: 4
+        lowQty: &SOL 2 #2
+        highQty: *SOL #4
         dQty: 2
         percentageOutsideUfo: 60
         itemSets: &PISTOL_RIFLE_HEAVY
@@ -22,8 +22,8 @@ alienDeployments:
           - [ STR_ALIEN_GRENADE ]
           - [ STR_ALIEN_GRENADE ]
       - alienRank: 4
-        lowQty: 1
-        highQty: 2
+        lowQty: &NAV 1
+        highQty: *NAV # 2
         dQty: 1
         percentageOutsideUfo: 20
         itemSets: *PISTOL_RIFLE_HEAVY

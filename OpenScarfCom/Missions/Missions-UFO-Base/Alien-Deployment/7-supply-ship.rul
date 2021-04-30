@@ -1,11 +1,11 @@
 alienDeployments:
-  - type: STR_HARVESTER
+  - type: STR_SUPPLY_SHIP
     data:
       - alienRank: 5
-        lowQty: 5
-        highQty: 9
-        dQty: 4
-        percentageOutsideUfo: 70
+        lowQty: &SOL 5 #5
+        highQty: *SOL #7
+        dQty: 6
+        percentageOutsideUfo: 50
         itemSets: &PISTOL_RIFLE_HEAVY
           - &PISTOL
             - STR_PLASMA_PISTOL
@@ -22,39 +22,36 @@ alienDeployments:
           - [ STR_ALIEN_GRENADE ]
           - [ STR_ALIEN_GRENADE ]
       - alienRank: 4
-        lowQty: 1
-        highQty: 2
+        lowQty: &NAV 1 #1
+        highQty: *NAV #2
         dQty: 0
         percentageOutsideUfo: 20
         itemSets: *PISTOL_RIFLE_HEAVY
-        extraRandomItems: &PROBE_GRENADE
-          - [ STR_ALIEN_GRENADE, STR_MIND_PROBE ]
-          - [ STR_ALIEN_GRENADE ]
+        extraRandomItems: *GRENADES
       - alienRank: 3
-        lowQty: 1
-        highQty: 2
+        lowQty: &MED 1 #1
+        highQty: *MED #2
         dQty: 0
         percentageOutsideUfo: 20
         itemSets:
-          - - STR_SMALL_LAUNCHER
-          - - STR_SMALL_LAUNCHER
-          - - STR_SMALL_LAUNCHER
-            - STR_ALIEN_GRENADE
-        extraRandomItems: &STUN_GRENADES
-          - [ STR_STUN_BOMB ]
-          - [ STR_ALIEN_GRENADE ]
-          - [ STR_ALIEN_GRENADE ]
+          - *PISTOL
+          - *RIFLE
+          - &LAUNCHER
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+        extraRandomItems: *GRENADES
       - alienRank: 2
-        lowQty: 2
-        highQty: 2
+        lowQty: &ENG 1 #1
+        highQty: *ENG #2
         dQty: 0
-        percentageOutsideUfo: 30
+        percentageOutsideUfo: 20
         itemSets: *PISTOL_RIFLE_HEAVY
         extraRandomItems: *GRENADES
       - alienRank: 1
         lowQty: 1
         highQty: 1
-        dQty: 1
+        dQty: 0
         percentageOutsideUfo: 0
         itemSets: [*RIFLE, *RIFLE, *HEAVY]
         extraRandomItems: *GRENADES
