@@ -25,7 +25,7 @@ alienDeployments:
     briefing:
       palette: 0
       background: BACK01.SCR
-      music: GMENBASE
+      music: EAS #GMENBASE
   - type: STR_MARS_CYDONIA_LANDING
     terrains:
       - MARS

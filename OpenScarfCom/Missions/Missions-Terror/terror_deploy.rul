@@ -5,7 +5,7 @@ alienDeployments:
         lowQty: &SOL 4 #4
         highQty: *SOL #6
         dQty: 1
-        percentageOutsideUfo: 70
+        percentageOutsideUfo: &OUT 90 #70
         itemSets: &PISTOL_RIFLE_HEAVY
           - &PISTOL
             - STR_PLASMA_PISTOL
@@ -26,14 +26,14 @@ alienDeployments:
         lowQty: &NAV 1 #1
         highQty: *NAV #2
         dQty: 0
-        percentageOutsideUfo: 20
+        percentageOutsideUfo: &out 60 #20
         itemSets: *PISTOL_RIFLE_HEAVY
         extraRandomItems: *GRENADES
       - alienRank: 3
         lowQty: &MED 1 #1
         highQty: *MED #1
         dQty: 1
-        percentageOutsideUfo: 20
+        percentageOutsideUfo: *out #20
         itemSets:
           - *PISTOL
           - *RIFLE
@@ -46,27 +46,27 @@ alienDeployments:
         lowQty: &ENG 1 #1
         highQty: *ENG #2
         dQty: 0
-        percentageOutsideUfo: 20
+        percentageOutsideUfo: *out #20
         itemSets: *PISTOL_RIFLE_HEAVY
         extraRandomItems: *GRENADES
       - alienRank: 1
         lowQty: &LED 1 #1
         highQty: *LED #1
         dQty: 0
-        percentageOutsideUfo: 0
+        percentageOutsideUfo: *out
         itemSets: [*RIFLE, *RIFLE, *HEAVY]
         extraRandomItems: *GRENADES
       - alienRank: 6
         lowQty: &TER 1 #1
         highQty: *TER #3
         dQty: 2
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: *OUT #50
         itemSets: &TERROR [[],[],[]]
       - alienRank: 7
         lowQty: *TER #1
         highQty: *TER #3
         dQty: 2
-        percentageOutsideUfo: 50
+        percentageOutsideUfo: *OUT #50
         itemSets: *TERROR
 
   - type: STR_TERROR_MISSION_INDUSTRIAL

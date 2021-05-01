@@ -6,7 +6,7 @@ alienDeployments:
     alertBackground: BACK03.SCR
     briefing:
       palette: 2
-      music: GMENBASE
+      music: EAS #GMENBASE
     markerName: STR_TERROR_SITE
     objectiveComplete: [STR_ALIEN_TERROR_REPELED, 200]
     duration: [4, 10]

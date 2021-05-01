@@ -1,0 +1,36 @@
+units:
+  - delete: MALE_CIVILIAN
+  - delete: FEMALE_CIVILIAN
+  - type: MALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats: &CIVILIAN_STAT
+      tu: 20
+      stamina: 40
+      health: 30
+      bravery: 10
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 20
+      psiStrength: 5
+      psiSkill: 0
+      melee: 50
+    armor: CIVM_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: &CIV_SCORE 80
+    intelligence: 4
+    aggression: 0
+    energyRecovery: 20
+    deathSound: [41, 42, 43]
+  - type: FEMALE_CIVILIAN
+    race: STR_CIVILIAN
+    stats: *CIVILIAN_STAT
+    armor: CIVF_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: *CIV_SCORE
+    intelligence: 4
+    aggression: 0
+    energyRecovery: 20
+    deathSound: [44, 45, 46]
