@@ -2,20 +2,25 @@ items:
   - type: STR_LARGE_ROCKET
     #weight: &ROCKET 12
     damageAlter:
-      ArmorEffectiveness: 0.75
+      FixRadius: 5
+      ArmorEffectiveness: 0.6 # Penetrates a lot
+      ToItem: 1
+      ToTile: 0.35
+      ToStun: 0.4
+      ToMorale: 1
   - type: STR_INCENDIARY_ROCKET
     #weight: *ROCKET
     power: 80
     damageType: 3
     damageAlter:
-      FixRadius: 4
+      FixRadius: 5
+      RadiusReduction: 10
       FireBlastCalc: false
       ResistType: 2
       RandomType: 2
-      ArmorEffectiveness: 0.25
+      ArmorEffectiveness: 0.25 # incendiary resistance affected more
       FireThreshold: 50
       ToItem: 1
       ToTile: 0.35
-      ToWound: 1
-      ToStun: 0.25
-      RadiusReduction: 10
+      ToStun: 0.4
+      ToMorale: 1

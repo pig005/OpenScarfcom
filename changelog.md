@@ -1,7 +1,9 @@
-## 2021.05.01 - v0.1.7a "Q0L Impr0v3d"
+## 2021.05.01 - v0.1.7a "Day of Terror"
 
 ### added
 
+- new music for terror mission & base defense
+  - credits on [SOUND](./SOUND/credits.md) folder
 - newer sprite for rocket launcher and rockets
   - rockets are now 1x2, might add 1x3 ones someday
 
@@ -10,6 +12,7 @@
 - researching alien weaponary also unlocks clips for free
   - total research costs are same
   - half the chore, double the fun
+- higher terror mission score rewards
 
 ## 2021.04.30 - v0.1.6a "Takt1kz Impr0v3d"
 

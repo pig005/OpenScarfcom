@@ -88,6 +88,8 @@ there is one design philosophy for OpenScarfCom: make it more replayable.
   - more meaningful interactions (other than careful/aggressive)
     - [x] built-in cannons for interceptor and skyranger
 - **Replayability**
+  - [ ] Making you _actually_ want to play difficult missions
+    - [x] Higher score for completing terror missions & base assault
   - [ ] Balancing based on **IRONMAN** playthrough
   - Alien strategy changes based on your actions
   - Story arcs
