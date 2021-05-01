@@ -1,3 +1,16 @@
+## 2021.05.01 - v0.1.7a "Q0L Impr0v3d"
+
+### added
+
+- newer sprite for rocket launcher and rockets
+  - rockets are now 1x2, might add 1x3 ones someday
+
+### modified
+
+- researching alien weaponary also unlocks clips for free
+  - total research costs are same
+  - half the chore, double the fun
+
 ## 2021.04.30 - v0.1.6a "Takt1kz Impr0v3d"
 
 ### modified

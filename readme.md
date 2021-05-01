@@ -40,19 +40,23 @@ there is one design philosophy for OpenScarfCom: make it more replayable.
 ([V]: done / [ ]: wip / everything else: **LONG TERM GOAL**)
 
 - **Quality Of Life** features
+
   - [x] All crafts now **auto-patrol**
   - [x] [Hyper & Trajectory](https://openxcom.mod.io/oxce-hyper-velocity1) integrated
-  - [x] Destroy alien base to make countries reconsider their pact with aliens and join X-COM project again
+
   - [x] Different sprites for loaded/unloaded weapons
   - [x] Different sprites for magazines by ammos left
   - [x] Alien numbers are same throughout difficulties;
     - so your superhuman playthrough does not take 2 hour fighting hordes of aliens in a single mission
+  - [x] Destroy alien base to make countries reconsider their pact with aliens and join X-COM project again
   - [ ] Reduce real-time spent on `Research` and `Manufacture`
+    - [x] researching alien weapons unlocks corresponding ammos at tandem (same overall costs but half the researchs)
     - [ ] One item, multiple variations
   - [ ] Easier item and units overhauls and upgrades
   - better fund mechanics
     - disable making profit with manufacture
     - huge score-driven fund bonuses
+
 - Improved **Alien AI**
   - [x] Spotter & Sniper tactics
   - [x] Carry multiple grenades
