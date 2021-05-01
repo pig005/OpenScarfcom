@@ -41,3 +41,5 @@ items:
     vaporProbabilitySurface: 2
     explosionSpeed:  2
 
+  - type: STR_HEAVY_LASER
+    power: 120

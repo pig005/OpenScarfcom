@@ -12,11 +12,17 @@ extended:
     RuleItem:
       OFFSET_BIGOB_WEAPON: int
 items:
+  - &ROCKET_GLOBAL
+    type: ROFCKET_GLOBAL
+    invWidth: 1
+    invHeight: 2
   - type: STR_LARGE_ROCKET
+    refNode: *ROCKET_GLOBAL
     bigSprite: 2800
     tags:
       OFFSET_BIGOB_WEAPON: 1
   - type: STR_INCENDIARY_ROCKET
+    refNode: *ROCKET_GLOBAL
     bigSprite: 2810
     tags:
       OFFSET_BIGOB_WEAPON: 2

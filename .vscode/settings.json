@@ -3,6 +3,7 @@
         "items",
         "units",
         "scripts",
-        "alienDeploy"
+        "alienDeploy",
+        "research"
     ]
 }

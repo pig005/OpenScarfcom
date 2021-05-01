@@ -119,182 +119,203 @@ items:
  #  ┌┐ ┌─┐┬  ┬  ┬┌─┐┌┬┐┬┌─┐┌─┐
  #  ├┴┐├─┤│  │  │└─┐ │ ││  └─┐
  #  └─┘┴ ┴┴─┘┴─┘┴└─┘ ┴ ┴└─┘└─┘
+  - &VAPOR_BALLISTIC_GLOBAL
+    type: VAPOR_BALLISTIC
+    refNode: *COLOR_TRACER_ROUND
   - &VAPOR_BALLISTIC_S
     type: VAPOR_BALLISTIC_S
-    refNode: *COLOR_TRACER_ROUND
+    refNode: *VAPOR_BALLISTIC_GLOBAL
     vaporDensity: 3
     vaporDensitySurface: 1
     vaporProbabilitySurface: 20
     # so it resembles line more
   - &VAPOR_BALLISTIC_M
     type: VAPOR_BALLISTIC_M
-    refNode: *COLOR_TRACER_ROUND
+    refNode: *VAPOR_BALLISTIC_GLOBAL
     vaporDensity: 7
     vaporDensitySurface: 3
   - &VAPOR_BALLISTIC_L
     type: VAPOR_BALLISTIC_L
-    refNode: *COLOR_TRACER_ROUND
+    refNode: *VAPOR_BALLISTIC_GLOBAL
     vaporDensity: 10
     vaporDensitySurface: 7
   - &VAPOR_BALLISTIC_XL
     type: VAPOR_BALLISTIC_L
-    refNode: *COLOR_TRACER_ROUND
+    refNode: *VAPOR_BALLISTIC_GLOBAL
     vaporDensity: 12
     vaporDensitySurface: 10
   - &VAPOR_BALLISTIC_XXL
     type: VAPOR_BALLISTIC_L
-    refNode: *COLOR_TRACER_ROUND
+    refNode: *VAPOR_BALLISTIC_GLOBAL
     vaporDensity: 15
     vaporDensitySurface: 15
  #  ┌─┐─┐ ┬┌─┐┬  ┌─┐┌─┐┬┬  ┬┌─┐
  #  ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤
  #  └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘
+  - &VAPOR_EXPLOSIVE_GLOBAL
+    type: VAPOR_EXPLOSIVE_GLOBAL
+    refNode: *COLOR_CYAN
   - &VAPOR_EXPLOSIVE_S
     type: VAPOR_EXPLOSIVE_S
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 3
     vaporDensitySurface: 1
     vaporProbabilitySurface: 20
     # so it resembles line more
   - &VAPOR_EXPLOSIVE_M
     type: VAPOR_EXPLOSIVE_M
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 7
     vaporDensitySurface: 3
   - &VAPOR_EXPLOSIVE_L
     type: VAPOR_EXPLOSIVE_L
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 10
     vaporDensitySurface: 7
   - &VAPOR_EXPLOSIVE_XL
     type: VAPOR_EXPLOSIVE_XL
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 12
     vaporDensitySurface: 10
   - &VAPOR_EXPLOSIVE_XXL
     type: VAPOR_EXPLOSIVE_XXL
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 15
     vaporDensitySurface: 15
   - &VAPOR_EXPLOSIVE_CLASS_C
     type: VAPOR_EXPLOSIVE_CLASS_C
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 35
     vaporDensitySurface: 60
   - &VAPOR_EXPLOSIVE_CLASS_E
     type: VAPOR_EXPLOSIVE_CLASS_E
-    refNode: *COLOR_CYAN
+    refNode: *VAPOR_EXPLOSIVE_GLOBAL
     vaporDensity: 80
     vaporDensitySurface: 120
  #  ┬┌┐┌┌─┐┌─┐┌┐┌┌┬┐┬┌─┐┬─┐┬ ┬
  #  │││││  ├┤ │││ │││├─┤├┬┘└┬┘
  #  ┴┘└┘└─┘└─┘┘└┘─┴┘┴┴ ┴┴└─ ┴
+  - &VAPOR_INCENDIARY_GLOBAL
+    type: VAPOR_INCENDIARY_GLOBAL
+    refNode: *COLOR_RED
   - &VAPOR_INCENDIARY_S
     type: VAPOR_INCENDIARY_S
-    refNode: *COLOR_RED
+    refNode: *VAPOR_INCENDIARY_GLOBAL
     vaporDensity: 3
     vaporDensitySurface: 1
     vaporProbabilitySurface: 20
     # so it resembles line more
   - &VAPOR_INCENDIARY_M
     type: VAPOR_INCENDIARY_M
-    refNode: *COLOR_RED
+    refNode: *VAPOR_INCENDIARY_GLOBAL
     vaporDensity: 7
     vaporDensitySurface: 3
   - &VAPOR_INCENDIARY_L
     type: VAPOR_INCENDIARY_L
-    refNode: *COLOR_RED
+    refNode: *VAPOR_INCENDIARY_GLOBAL
     vaporDensity: 10
     vaporDensitySurface: 7
   - &VAPOR_INCENDIARY_XL
     type: VAPOR_INCENDIARY_XL
-    refNode: *COLOR_RED
+    refNode: *VAPOR_INCENDIARY_GLOBAL
     vaporDensity: 12
     vaporDensitySurface: 10
   - &VAPOR_INCENDIARY_XXL
     type: VAPOR_INCENDIARY_XXL
-    refNode: *COLOR_RED
+    refNode: *VAPOR_INCENDIARY_GLOBAL
     vaporDensity: 15
     vaporDensitySurface: 15
   - &VAPOR_INCENDIARY_CLASS_D
     type: VAPOR_INCENDIARY_CLASS_D
-    refNode: *COLOR_RED
+    refNode: *VAPOR_INCENDIARY_GLOBAL
     vaporDensity: 80
     vaporDensitySurface: 100
  #  ┬─┐┌─┐┌─┐┬┌─┌─┐┌┬┐
  #  ├┬┘│ ││  ├┴┐├┤  │
  #  ┴└─└─┘└─┘┴ ┴└─┘ ┴
+  - &VAPOR_ROCKET_GLOBAL
+    type: VAPOR_ROCKET_GLOBAL
+    refNode: *COLOR_WHITE
   - &VAPOR_ROCKET_CLASS_A
     type: VAPOR_ROCKET_CLASS_A
-    refNode: *COLOR_WHITE
+    refNode: *VAPOR_ROCKET_GLOBAL
     vaporDensity: 15
     vaporDensitySurface: 20
   - &VAPOR_ROCKET_CLASS_B
     type: VAPOR_ROCKET_CLASS_B
-    refNode: *COLOR_WHITE
+    refNode: *VAPOR_ROCKET_GLOBAL
     vaporDensity: 20
     vaporDensitySurface: 30
   - &VAPOR_ROCKET_CLASS_C
     type: VAPOR_ROCKET_CLASS_C
-    refNode: *COLOR_WHITE
+    refNode: *VAPOR_ROCKET_GLOBAL
     vaporDensity: 35
     vaporDensitySurface: 60
   - &VAPOR_ROCKET_CLASS_D
     type: VAPOR_ROCKET_CLASS_D
-    refNode: *COLOR_WHITE
+    refNode: *VAPOR_ROCKET_GLOBAL
     vaporDensity: 80
     vaporDensitySurface: 100
   - &VAPOR_ROCKET_CLASS_E
     type: VAPOR_ROCKET_CLASS_E
-    refNode: *COLOR_WHITE
+    refNode: *VAPOR_ROCKET_GLOBAL
     vaporDensity: 80
     vaporDensitySurface: 120
  #  ┬  ┌─┐┌─┐┌─┐┬─┐
  #  │  ├─┤└─┐├┤ ├┬┘
  #  ┴─┘┴ ┴└─┘└─┘┴└─
+  - &VAPOR_LASER_GLOBAL_LO
+    type: VAPOR_LASER_GLOBAL_LO
+    refNode: *COLOR_ORANGE
+  - &VAPOR_LASER_GLOBAL_HI
+    type: VAPOR_LASER_GLOBAL_HI
+    refNode: *COLOR_ORANGE_THICK
   - &VAPOR_LASER_S
     type: VAPOR_LASER_S
-    refNode: *COLOR_ORANGE_THICK
+    refNode: *VAPOR_LASER_GLOBAL_LO
     vaporDensitySurface: 2
     vaporProbabilitySurface: 15
   - &VAPOR_LASER_M
     type: VAPOR_LASER_M
-    refNode: *COLOR_ORANGE_THICK
+    refNode: *VAPOR_LASER_GLOBAL_LO
     vaporDensitySurface: 3
     vaporProbabilitySurface: 20
   - &VAPOR_LASER_L
     type: VAPOR_LASER_L
-    refNode: *COLOR_ORANGE_THICK
+    refNode: *VAPOR_LASER_GLOBAL_LO
     vaporDensitySurface: 5
     vaporProbabilitySurface: 20
  #  ┌─┐┬  ┌─┐┌─┐┌┬┐┌─┐
  #  ├─┘│  ├─┤└─┐│││├─┤
  #  ┴  ┴─┘┴ ┴└─┘┴ ┴┴ ┴
+  - &VAPOR_PLASMA_GLOBAL
+    type: VAPOR_PLASMA_GLOBAL
+    refNode: *COLOR_GREEN_THICK
   - &VAPOR_PLASMA_S
     type: VAPOR_PLASMA_S
-    refNode: *COLOR_GREEN_THICK
+    refNode: *VAPOR_PLASMA_GLOBAL
     vaporDensitySurface: 7
   - &VAPOR_PLASMA_M
     type: VAPOR_PLASMA_M
-    refNode: *COLOR_GREEN_THICK
+    refNode: *VAPOR_PLASMA_GLOBAL
     vaporDensitySurface: 10
   - &VAPOR_PLASMA_L
     type: VAPOR_PLASMA_L
-    refNode: *COLOR_GREEN_THICK
+    refNode: *VAPOR_PLASMA_GLOBAL
     vaporDensitySurface: 15
   - &VAPOR_PLASMA_CLASS_C
     type: VAPOR_PLASMA_CLASS_C
-    refNode: *COLOR_GREEN_THICK
+    refNode: *VAPOR_PLASMA_GLOBAL
     vaporDensity: 35
     vaporDensitySurface: 60
   - &VAPOR_PLASMA_CLASS_D
     type: VAPOR_PLASMA_CLASS_D
-    refNode: *COLOR_GREEN_THICK
+    refNode: *VAPOR_PLASMA_GLOBAL
     vaporDensity: 80
     vaporDensitySurface: 100
   - &VAPOR_PLASMA_CLASS_E
     type: VAPOR_PLASMA_CLASS_E
-    refNode: *COLOR_GREEN_THICK
+    refNode: *VAPOR_PLASMA_GLOBAL
     vaporDensity: 80
     vaporDensitySurface: 120
  #  ┌─┐┌┬┐┬ ┬┌─┐┬─┐┌─┐

@@ -78,7 +78,7 @@ armors:
       - 1.0
       - 1.1
       - 1.0
-    weight: 8
+    weight: 6
     stats:
       tu: -5
       stamina: -5

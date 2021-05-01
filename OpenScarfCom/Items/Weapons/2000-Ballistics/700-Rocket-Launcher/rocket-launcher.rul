@@ -4,9 +4,3 @@ items:
     compatibleAmmo: [STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET]
     tuLoad: 20
     tuUnload: 12
-    tuAuto: 30
-    autoRange: 12
-    accuracyAuto: 10
-    confAuto:
-      name: STR_SHOT_TYPE_BLIND
-      shots: 1

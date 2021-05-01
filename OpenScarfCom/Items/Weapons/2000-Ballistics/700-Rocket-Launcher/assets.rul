@@ -9,6 +9,20 @@ extraSprites:
       ASSETS/Big-01.png"
       2702: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
       ASSETS/Big-02.png"
+      2703: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
+      ASSETS/Big-03.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2700: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
+      ASSETS/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+      2700: "OpenScarfCom/Items/Weapons/2000-Ballistics/700-Rocket-Launcher/\
+      ASSETS/Floor.png"
 extended:
   tags:
     RuleItem:
@@ -17,6 +31,8 @@ extended:
 items:
   - type: STR_ROCKET_LAUNCHER
     bigSprite: 2701 #2700 + 1
+    handSprite: 2700
+    floorSprite: 2700
     tags:
       ALLOW_AMMO_TO_RESPRITE: 1
       PAEDIA_OFFSET: 1
