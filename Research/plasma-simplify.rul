@@ -1,0 +1,28 @@
+research:
+  - name: STR_PLASMA_PISTOL
+    cost: 1000
+    getOneFree: [STR_PLASMA_PISTOL_CLIP]
+  - name: STR_PLASMA_PISTOL_CLIP
+    cost: 0
+    requires: [STR_PLASMA_PISTOL]
+
+  - name: STR_PLASMA_RIFLE
+    cost: 1100
+    getOneFree: [STR_PLASMA_RIFLE_CLIP]
+  - name: STR_PLASMA_RIFLE_CLIP
+    cost: 0
+    requires: [STR_PLASMA_RIFLE]
+
+  - name: STR_HEAVY_PLASMA
+    cost: 1200
+    getOneFree: [STR_HEAVY_PLASMA_CLIP]
+  - name: STR_HEAVY_PLASMA_CLIP
+    cost: 0
+    requires: [STR_HEAVY_PLASMA]
+
+  - name: STR_BLASTER_LAUNCHER
+    cost: 1200
+    getOneFree: [STR_BLASTER_BOMB]
+  - name: STR_BLASTER_BOMB
+    cost: 0
+    requires: [STR_BLASTER_LAUNCHER]
