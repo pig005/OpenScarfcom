@@ -186,7 +186,7 @@ armors:
   - type: CYBERDISC_ARMOR
     frontArmor: 60
     sideArmor: 60
-    rearArmor: 60
+    rearArmor: 50
     underArmor: 40
     damageModifier:
       - 1.0

@@ -37,6 +37,11 @@ ufopaedia:
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     listOrder: 2110
+  - id: STR_STUN_GRENADE
+    text: STR_STUN_GRENADE_UFOPEDIA
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    listOrder: 4000
 #  █████╗ ██████╗ ███╗   ███╗ ██████╗ ██████╗ ███████╗
 # ██╔══██╗██╔══██╗████╗ ████║██╔═══██╗██╔══██╗██╔════╝
 # ███████║██████╔╝██╔████╔██║██║   ██║██████╔╝███████╗
