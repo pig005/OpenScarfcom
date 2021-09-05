@@ -12,6 +12,7 @@ items:
     blastRadius: 4
     fuseType: 0
     battleType: 4
+    explosionSpeed: 3
 
 extraSprites:
   - type: BIGOBS.PCK

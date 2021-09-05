@@ -34,6 +34,14 @@ extraStrings:
       # MARKSMAN'S RIFLE
       STR_MARKSMANS_RIFLE: "Marksman's Rifle"
       STR_MARKSMANS_RIFLE_UFOPEDIA: "This highly accurate rifle has scope and is suitable to aid XCom soldiers during mid range combat."
+    # ┌─┐─┐ ┬┌─┐┬  ┌─┐┌─┐┬┬  ┬┌─┐┌─┐
+    # ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤ └─┐
+    # └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘└─┘
+      # HEAVY CANNON
+      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon. Its versatility comes from the fact that it can take multiple types of ammunition - for example incendiary and high explosive."
+      # ROCKET LAUNCHER
+      STR_LARGE_ROCKET: "HEAT Rocket"
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher is a laser guided system which can fire multiple different sizes of missile. Given time, it can even control missile's flight time, allowing to attack enemies with indirect fire."
 # ██╗  ██╗ ██████╗
 # ██║ ██╔╝██╔═══██╗
 # █████╔╝ ██║   ██║
@@ -58,4 +66,11 @@ extraStrings:
       # 지정사수소총
       STR_MARKSMANS_RIFLE: "지정사수소총"
       STR_MARKSMANS_RIFLE_UFOPEDIA: "이 고정밀 소총은 조준경이 추가되었으며 중거리 교전에서 X-COM 분대원을 지원하기 적합하다."
-
+    # ┌─┐─┐ ┬┌─┐┬  ┌─┐┌─┐┬┬  ┬┌─┐┌─┐
+    # ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤ └─┐
+    # └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘└─┘
+      # 중형 유탄발사기
+      STR_HEAVY_CANNON_UFOPEDIA: "중형 유탄발사기는 파괴적이지만 둔중한 무기입니다. 이 무기의 범용성은 다양한 유탄 - 예를 들어 소이, 고폭 - 을 사용할 수 있다는 데에서 온다."
+      # 로켓 발사기
+      STR_LARGE_ROCKET: "성형작약탄"
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "로켓 발사기는 레이저 유도되는 여러 종류의 미사일을 발사할 수 있다. 시간만 들인다면 미사일의 발사 시간을 조정하여 곡사 궤도로 적을 공격할 수도 있다."
