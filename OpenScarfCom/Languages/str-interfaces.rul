@@ -26,6 +26,7 @@ extraStrings:
       STR_SHOT_TYPE_SPECTRUM_LASER: "Spectrum Shot"
       STR_SHOT_TYPE_GRENADE: "Fire Grenade"
       STR_SHOT_TYPE_CHARGED: "Charged Shot"
+      STR_SHOT_TYPE_ARCED: "Arced Shot"
     # ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
     # │ ┬├┤ │ │└─┐│  ├─┤├─┘├┤
     # └─┘└─┘└─┘└─┘└─┘┴ ┴┴  └─┘
@@ -48,6 +49,7 @@ extraStrings:
       STR_SHOT_TYPE_SPECTRUM_LASER: "분광 사격"
       STR_SHOT_TYPE_GRENADE: "유탄 발사"
       STR_SHOT_TYPE_CHARGED: "충전 사격"
+      STR_SHOT_TYPE_ARCED: "고각 사격"
     # ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
     # │ ┬├┤ │ │└─┐│  ├─┤├─┘├┤
     # └─┘└─┘└─┘└─┘└─┘┴ ┴┴  └─┘

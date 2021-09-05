@@ -4,9 +4,29 @@ items:
     costBuy: 500
     costSell: 400
     weight: 3
-    bigSprite: 21
-    floorSprite: 21
+    bigSprite: 6020
+    floorSprite: 6020
+    handSprite: 6020
     power: 50
     damageType: 6
-    battleType: 4
     blastRadius: 4
+    fuseType: 0
+    battleType: 4
+
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+     6020: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+     20-Stun-Grenade/ASSETS/Big.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+     6020: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+     20-Stun-Grenade/ASSETS/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+     6020: "OpenScarfCom/Items/Weapons/6000-Others/000-Throwables/\
+     20-Stun-Grenade/ASSETS/Floor.png"
