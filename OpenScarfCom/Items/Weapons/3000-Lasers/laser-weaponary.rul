@@ -25,41 +25,32 @@ items:
     clipSize: 20
     confAuto:
       spendPerShot: 2
+      name: STR_SHOT_TYPE_SPECTRUM_LASER
     confSnap:
       spendPerShot: 3
     confAimed:
       spendPerShot: 12
+      followProjectiles: true
       name: STR_SHOT_TYPE_CHARGED
     tags:
       AMMO_CHARGE_RATE: 9
+      AUTO_POWER_MUL_PERCENT: -25
       AIMED_POWER_MUL_PERCENT: 25
 
   - type: STR_LASER_PISTOL
     refNode: *STR_LASER_GLOBAL
-    # ammo:
-    #   1:
-    #     compatibleAmmo: [ STR_LASER_ADVANCED_LENS ]
-      # powerRangeThreshold: 8
-      # powerRangeReduction: 5
 
   - type: STR_LASER_RIFLE
     refNode: *STR_LASER_GLOBAL
-    # shotgunBehavior: 1
-    # shotgunSpread: 30
-    # shotgunChoke: 80
-    # shotgunPellets: 10
-    # powerRangeThreshold: 8
-    # powerRangeReduction: 2
-    # power: 24
-    # vaporColorSurface: 8
-    # vaporDensitySurface: 1
-    # vaporProbabilitySurface: 2
-    # explosionSpeed:  2
 
   - type: STR_HEAVY_LASER
     refNode: *STR_LASER_GLOBAL
-    tuAuto: 60
-    accuracyAuto: 50
+    clipSize: 31
+    accuracySnap: 60
+    accuracyAuto: 40
+    tuAuto: 45
+    confAuto:
+      shots: 6
+    accuracyAimed: 100
     tags:
-      AMMO_CHARGE_RATE: 12
       AIMED_POWER_MUL_PERCENT: 50

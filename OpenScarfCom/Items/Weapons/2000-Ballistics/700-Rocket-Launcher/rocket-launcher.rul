@@ -4,3 +4,9 @@ items:
     compatibleAmmo: [STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET]
     tuLoad: 20
     tuUnload: 12
+    tuAuto: 75
+    accuracyAuto: 35
+    confAuto:
+      name: STR_SHOT_TYPE_ARCED
+      shots: 1
+      arcing: true
