@@ -1,4 +1,13 @@
 items:
   - type: STR_MEDI_KIT
+    medikitType: 0
     medikitTargetSelf: true
-    energyRecovery: 25
+    medikitTargetMatrix: 63
+    heal: 10
+    stimulant: 10
+    painKiller: 10
+    woundRecovery: 3
+    healthRecovery: 3
+    stunRecovery: 8
+    energyRecovery: 20
+    painKillerRecovery: 1

@@ -1,4 +1,6 @@
 items:
+  # because it makes gameplay more passive
+  - delete: STR_PROXIMITY_GRENADE
   # because heavy cannon is now an grenade launcher
   - delete: STR_HC_AP_AMMO
   # becasue AR & MR replaced them
@@ -7,6 +9,7 @@ items:
   - delete: STR_AC_AP_AMMO
   - delete: STR_AC_HE_AMMO
   - delete: STR_AC_I_AMMO
+
   # because no one loves you
   - delete: STR_SMALL_ROCKET
 
@@ -22,3 +25,4 @@ manufacture:
 ufopaedia:
   - delete: STR_RIFLE
   - delete: STR_SMALL_ROCKET
+  - delete: STR_PROXIMITY_GRENADE

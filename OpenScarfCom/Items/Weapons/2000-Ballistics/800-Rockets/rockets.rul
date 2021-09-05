@@ -1,6 +1,6 @@
 items:
   - type: STR_LARGE_ROCKET
-    #weight: &ROCKET 12
+    weight: &ROCKET 10
     damageAlter:
       FixRadius: 5
       ArmorEffectiveness: 0.6 # Penetrates a lot
@@ -9,7 +9,7 @@ items:
       ToStun: 0.4
       ToMorale: 1
   - type: STR_INCENDIARY_ROCKET
-    #weight: *ROCKET
+    weight: *ROCKET
     power: 80
     damageType: 3
     damageAlter:

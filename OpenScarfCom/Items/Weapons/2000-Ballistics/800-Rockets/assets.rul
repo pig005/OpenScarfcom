@@ -13,7 +13,7 @@ extended:
       OFFSET_BIGOB_WEAPON: int
 items:
   - &ROCKET_GLOBAL
-    type: ROFCKET_GLOBAL
+    type: ROCKET_GLOBAL
     invWidth: 1
     invHeight: 2
   - type: STR_LARGE_ROCKET
