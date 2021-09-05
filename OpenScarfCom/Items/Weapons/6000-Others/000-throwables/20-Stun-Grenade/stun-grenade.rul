@@ -6,7 +6,7 @@ items:
     weight: 3
     bigSprite: 21
     floorSprite: 21
-    power: 70
-    damageType: 3
-    battleType: 5
-    blastRadius: 5
+    power: 50
+    damageType: 6
+    battleType: 4
+    blastRadius: 4

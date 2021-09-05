@@ -1,25 +1,39 @@
 items:
+  # - &STR_LASER_GLOBAL
+    # type: STR_LASER_GLOBAL
+    # shotgunBehavior: 1
+    # shotgunSpread: 60
+    # shotgunChoke: 50
+    # shotgunPellets: 8
+    # vaporColorSurface: 8
+    # vaporDensitySurface: 1
+    # vaporProbabilitySurface: 2
+    # powerRangeThreshold: 6
+    # powerRangeReduction: 3
+    # power: 14
+    # explosionSpeed:  2
+    # clipSize: -1
+    # confSnap:
+    #   ammoSlot: 0
+    #   name: STR_SHOT_TYPE_SPECTRUM_LASER
+    # confAimed:
+    #   ammoSlot: 1
+    # confAuto:
+    #   ammoSlot: 1
   - &STR_LASER_GLOBAL
     type: STR_LASER_GLOBAL
-    shotgunBehavior: 1
-    shotgunSpread: 60
-    shotgunChoke: 50
-    shotgunPellets: 8
-    vaporColorSurface: 8
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 2
-    powerRangeThreshold: 6
-    powerRangeReduction: 3
-    power: 14
-    explosionSpeed:  2
-    clipSize: -1
-    confSnap:
-      ammoSlot: 0
-      name: STR_SHOT_TYPE_SPECTRUM_LASER
-    confAimed:
-      ammoSlot: 1
+    clipSize: 20
     confAuto:
-      ammoSlot: 1
+      spendPerShot: 2
+    confSnap:
+      spendPerShot: 3
+    confAimed:
+      spendPerShot: 12
+      name: STR_SHOT_TYPE_CHARGED
+    tags:
+      AMMO_CHARGE_RATE: 9
+      AIMED_POWER_MUL_PERCENT: 25
+
   - type: STR_LASER_PISTOL
     refNode: *STR_LASER_GLOBAL
     # ammo:
@@ -29,17 +43,23 @@ items:
       # powerRangeReduction: 5
 
   - type: STR_LASER_RIFLE
-    shotgunBehavior: 1
-    shotgunSpread: 30
-    shotgunChoke: 80
-    shotgunPellets: 10
-    powerRangeThreshold: 8
-    powerRangeReduction: 2
-    power: 24
-    vaporColorSurface: 8
-    vaporDensitySurface: 1
-    vaporProbabilitySurface: 2
-    explosionSpeed:  2
+    refNode: *STR_LASER_GLOBAL
+    # shotgunBehavior: 1
+    # shotgunSpread: 30
+    # shotgunChoke: 80
+    # shotgunPellets: 10
+    # powerRangeThreshold: 8
+    # powerRangeReduction: 2
+    # power: 24
+    # vaporColorSurface: 8
+    # vaporDensitySurface: 1
+    # vaporProbabilitySurface: 2
+    # explosionSpeed:  2
 
   - type: STR_HEAVY_LASER
-    power: 120
+    refNode: *STR_LASER_GLOBAL
+    tuAuto: 60
+    accuracyAuto: 50
+    tags:
+      AMMO_CHARGE_RATE: 12
+      AIMED_POWER_MUL_PERCENT: 50

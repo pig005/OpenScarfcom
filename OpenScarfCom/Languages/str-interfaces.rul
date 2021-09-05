@@ -21,10 +21,11 @@ extraStrings:
     # ┌┐ ┌─┐┌┬┐┌┬┐┬  ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
     # ├┴┐├─┤ │  │ │  ├┤ └─┐│  ├─┤├─┘├┤
     # └─┘┴ ┴ ┴  ┴ ┴─┘└─┘└─┘└─┘┴ ┴┴  └─┘
-      STR_SHOT_TYPE_SNAP_BURST: "Burst Fire"
-      STR_SHOT_TYPE_BLIND: "Blind Fire"
-      STR_SHOT_TYPE_SPECTRUM_LASER: "Spectrum Fire"
+      STR_SHOT_TYPE_SNAP_BURST: "Burst Shot"
+      STR_SHOT_TYPE_BLIND: "Blind Shot"
+      STR_SHOT_TYPE_SPECTRUM_LASER: "Spectrum Shot"
       STR_SHOT_TYPE_GRENADE: "Fire Grenade"
+      STR_SHOT_TYPE_CHARGED: "Charged Shot"
     # ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
     # │ ┬├┤ │ │└─┐│  ├─┤├─┘├┤
     # └─┘└─┘└─┘└─┘└─┘┴ ┴┴  └─┘
@@ -46,6 +47,7 @@ extraStrings:
       STR_SHOT_TYPE_BLIND: "난사"
       STR_SHOT_TYPE_SPECTRUM_LASER: "분광 사격"
       STR_SHOT_TYPE_GRENADE: "유탄 발사"
+      STR_SHOT_TYPE_CHARGED: "충전 사격"
     # ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐
     # │ ┬├┤ │ │└─┐│  ├─┤├─┘├┤
     # └─┘└─┘└─┘└─┘└─┘┴ ┴┴  └─┘

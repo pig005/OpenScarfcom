@@ -1,0 +1,9 @@
+extraStrings:
+  - type: en-US
+    strings:
+      STR_STUN_GRENADE: "Stun Grenade"
+      STR_STUN_GRENADE_UFOPEDIA: "A less-lethal explosive device used to temporarily disorient an enemy's senses with blinding light and noises up to 170dB."
+  - type: ko
+    strings:
+      STR_STUN_GRENADE: "섬광탄"
+      STR_STUN_GRENADE_UFOPEDIA: "폭음과 섬광으로 상대방을 무력화시키는 비살상 무기."

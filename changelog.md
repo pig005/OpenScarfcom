@@ -1,3 +1,11 @@
+## 2021.09.05 - v0.1.7a "Day of Laser"
+
+### modified
+
+- charge shot for laser weapons:
+  - aimed shot now deals 30% (50% for heavy laser) more damage
+  - laser shotgun gimmick removed
+
 ## 2021.05.01 - v0.1.7a "Day of Terror"
 
 ### added
