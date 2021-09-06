@@ -21,27 +21,27 @@ extraStrings:
     # ┌─┐┬┌─┐┌┬┐┌─┐┬
     # ├─┘│└─┐ │ │ ││
     # ┴  ┴└─┘ ┴ └─┘┴─┘
-      STR_PISTOL_UFOPEDIA: "Standard issue automatic pistol with 17 round capacity. Can spray out bullets but is rather weak."
+      STR_PISTOL_UFOPEDIA: The standard issue XCom pistol is a high powered semi-automatic with a 15 round capacity.
     # ┬─┐┬┌─┐┬  ┌─┐┌─┐
     # ├┬┘│├┤ │  ├┤ └─┐
     # ┴└─┴└  ┴─┘└─┘└─┘
       # AUTOMATIC RILE
-      STR_AUTOMATIC_RIFLE: "Automatic Rifle"
-      STR_AUTOMATIC_RIFLE_UFOPEDIA: "This powerful battle rifle takes 7.62mm ammunition in 20 round clips. While powerful, it has high recoil."
+      STR_AUTOMATIC_RIFLE: Automatic Rifle
+      STR_AUTOMATIC_RIFLE_UFOPEDIA: This powerful battle rifle takes 7.62mm ammunition in 20 round clips. While powerful, it has high recoil.
       # AUTOMATIC RIFLE/GRENADE LAUNCHER
-      STR_RIFLE_GRENADE: "Automatic Rifle/Grenade"
-      STR_RIFLE_GRENADE_UFOPEDIA: "This rifle has increased firepower with underrail attached grenade launcher."
+      STR_RIFLE_GRENADE: Automatic Rifle/Grenade
+      STR_RIFLE_GRENADE_UFOPEDIA: This rifle has increased firepower with underrail attached grenade launcher.
       # MARKSMAN'S RIFLE
-      STR_MARKSMANS_RIFLE: "Marksman's Rifle"
-      STR_MARKSMANS_RIFLE_UFOPEDIA: "This highly accurate rifle has scope and is suitable to aid XCom soldiers during mid range combat."
+      STR_MARKSMANS_RIFLE: Marksman's Rifle
+      STR_MARKSMANS_RIFLE_UFOPEDIA: This highly accurate rifle has scope and is suitable to aid XCom soldiers during mid range combat.
     # ┌─┐─┐ ┬┌─┐┬  ┌─┐┌─┐┬┬  ┬┌─┐┌─┐
     # ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤ └─┐
     # └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘└─┘
       # HEAVY CANNON
-      STR_HEAVY_CANNON_UFOPEDIA: "The heavy cannon is a devastating, but cumbersome, weapon. Its versatility comes from the fact that it can take multiple types of ammunition - for example incendiary and high explosive."
+      STR_HEAVY_CANNON_UFOPEDIA: The heavy cannon is a devastating, but cumbersome, weapon. Its versatility comes from the fact that it can take multiple types of ammunition - for example incendiary and high explosive.
       # ROCKET LAUNCHER
-      STR_LARGE_ROCKET: "HEAT Rocket"
-      STR_ROCKET_LAUNCHER_UFOPEDIA: "The rocket launcher is a laser guided system which can fire multiple different sizes of missile. Given time, it can even control missile's flight time, allowing to attack enemies with indirect fire."
+      STR_LARGE_ROCKET: HEAT Rocket
+      STR_ROCKET_LAUNCHER_UFOPEDIA: The rocket launcher is a laser guided system which can fire multiple different sizes of missile. Given time, it can even control missile's flight time, allowing to attack enemies with indirect fire.
 # ██╗  ██╗ ██████╗
 # ██║ ██╔╝██╔═══██╗
 # █████╔╝ ██║   ██║
@@ -53,16 +53,16 @@ extraStrings:
     # ┌─┐┬┌─┐┌┬┐┌─┐┬
     # ├─┘│└─┐ │ │ ││
     # ┴  ┴└─┘ ┴ └─┘┴─
-      STR_PISTOL_UFOPEDIA: "17발들이 탄창을 사용하는 제식 자동권총이다. 총알을 흩뿌릴 수 있지만 위력이 비교적 낮다."
+      STR_PISTOL_UFOPEDIA: 이 제식 X-COM 권총은 15발들이 탄창을 사용하는 고위력 반자동 권총이다.
     # ┬─┐┬┌─┐┬  ┌─┐┌─┐
     # ├┬┘│├┤ │  ├┤ └─┐
     # ┴└─┴└  ┴─┘└─┘└─┘
       # 자동소총
-      STR_AUTOMATIC_RIFLE: "자동소총"
-      STR_AUTOMATIC_RIFLE_UFOPEDIA: "이 고위력 전투소총은 20발들이 7.62mm 탄창을 사용한다. 강력하지만, 반동이 심하다."
+      STR_AUTOMATIC_RIFLE: 자동소총
+      STR_AUTOMATIC_RIFLE_UFOPEDIA: 이 고위력 전투소총은 20발들이 7.62mm 탄창을 사용한다. 강력하지만, 반동이 심하다.
       # 자동소총/유탄발사기
-      STR_RIFLE_GRENADE: "자동소총/유탄발사기"
-      STR_RIFLE_GRENADE_UFOPEDIA: "총열 하부에 유탄발사기를 장착하여 화력을 증진한 무기이다."
+      STR_RIFLE_GRENADE: 자동소총/유탄발사기
+      STR_RIFLE_GRENADE_UFOPEDIA: 총열 하부에 유탄발사기를 장착한 강력한 무기이다.
       # 지정사수소총
       STR_MARKSMANS_RIFLE: "지정사수소총"
       STR_MARKSMANS_RIFLE_UFOPEDIA: "이 고정밀 소총은 조준경이 추가되었으며 중거리 교전에서 X-COM 분대원을 지원하기 적합하다."
@@ -70,7 +70,7 @@ extraStrings:
     # ├┤ ┌┴┬┘├─┘│  │ │└─┐│└┐┌┘├┤ └─┐
     # └─┘┴ └─┴  ┴─┘└─┘└─┘┴ └┘ └─┘└─┘
       # 중형 유탄발사기
-      STR_HEAVY_CANNON_UFOPEDIA: "중형 유탄발사기는 파괴적이지만 둔중한 무기입니다. 이 무기의 범용성은 다양한 유탄 - 예를 들어 소이, 고폭 - 을 사용할 수 있다는 데에서 온다."
+      STR_HEAVY_CANNON_UFOPEDIA: "중형 유탄발사기는 파괴적이지만 둔중한 무기입니다. 이 무기의 범용성은 - 소이, 고폭 등 - 다양한 종류의 유탄을 사용할 수 있다는 데에서 온다."
       # 로켓 발사기
-      STR_LARGE_ROCKET: "성형작약탄"
-      STR_ROCKET_LAUNCHER_UFOPEDIA: "로켓 발사기는 레이저 유도되는 여러 종류의 미사일을 발사할 수 있다. 시간만 들인다면 미사일의 발사 시간을 조정하여 곡사 궤도로 적을 공격할 수도 있다."
+      STR_LARGE_ROCKET: "성형작약 로켓"
+      STR_ROCKET_LAUNCHER_UFOPEDIA: "로켓 발사기는 레이저 유도되는 여러 크기의 미사일을 발사할 수 있다. 시간을 들인다면 미사일의 발사 시간을 조정하여 곡사 궤도로 적을 공격하는 것도 가능하다."

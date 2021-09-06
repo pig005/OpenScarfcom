@@ -1,0 +1,43 @@
+extended:
+# ╔╦╗╔═╗╔═╗╔═╗
+#  ║ ╠═╣║ ╦╚═╗
+#  ╩ ╩ ╩╚═╝╚═╝
+  tags:
+    RuleItem:
+      ALLOW_AMMO_TO_RESPRITE: int
+      PAEDIA_OFFSET: int
+      OFFSET_BIGOB_WEAPON: int
+items:
+  - type: STR_PISTOL_CLIP
+    tags:
+      OFFSET_BIGOB_WEAPON: 1
+
+  - type: STR_PISTOL
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+      PAEDIA_OFFSET: 1
+    bigSprite: 2041 # loaded
+    handSprite: 2040
+    floorSprite: 2040
+
+extraSprites:
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      2040: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+      ASSETS/40-pistol/Big-00.png"
+      2041: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+      ASSETS/40-pistol/Big-01.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      2040: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+      ASSETS/40-pistol/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+      2040: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+      ASSETS/40-pistol/Floor.png"

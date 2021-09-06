@@ -1,0 +1,25 @@
+items:
+  - type: STR_PISTOL_CLIP
+    bigSprite: 2010
+    # handSprite: 2010
+    # floorSprite: 2010
+
+extraSprites:
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      2010: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+      ASSETS/10-pistol-clip/Big.png"
+  # - type: HANDOB.PCK
+  #   width: 256
+  #   height: 40
+  #   subX: 32
+  #   subY: 40
+  #   files:
+  #     2010: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+  #     ASSETS/10-pistol-clip/Hand.png"
+  # - type: FLOOROB.PCK
+  #   files:
+  #     2010: "OpenScarfCom/Items/Weapons/2000-Ballistics/000-Pistol/\
+  #     ASSETS/10-pistol-clip/Floor.png"
