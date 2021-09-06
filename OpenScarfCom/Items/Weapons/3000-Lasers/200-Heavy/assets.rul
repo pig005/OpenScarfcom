@@ -1,0 +1,25 @@
+items:
+  - type: STR_HEAVY_LASER
+    bigSprite: 3200
+    handSprite: 3200
+    floorSprite: 3200
+
+extraSprites:
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      3200: "OpenScarfCom/Items/Weapons/3000-Lasers/200-Heavy/\
+      ASSETS/Big.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      3200: "OpenScarfCom/Items/Weapons/3000-Lasers/200-Heavy/\
+      ASSETS/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+      3200: "OpenScarfCom/Items/Weapons/3000-Lasers/200-Heavy/\
+      ASSETS/Floor.png"

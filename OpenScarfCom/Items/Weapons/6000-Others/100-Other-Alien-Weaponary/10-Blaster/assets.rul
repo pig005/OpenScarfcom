@@ -1,0 +1,25 @@
+# items:
+#   - type: STR_BLASTER_LAUNCHER
+#     bigSprite: 6110
+#     handSprite: 6110
+#     floorSprite: 6110
+
+extraSprites:
+  - type: BIGOBS.PCK
+    width: 32
+    height: 48
+    files:
+      6110: "OpenScarfCom/Items/Weapons/6000-Others/100-Other-Alien-Weaponary/10-Blaster/\
+      ASSETS/Big.png"
+  - type: HANDOB.PCK
+    width: 256
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      6110: "OpenScarfCom/Items/Weapons/6000-Others/100-Other-Alien-Weaponary/10-Blaster/\
+      ASSETS/Hand.png"
+  - type: FLOOROB.PCK
+    files:
+      6110: "OpenScarfCom/Items/Weapons/6000-Others/100-Other-Alien-Weaponary/10-Blaster/\
+      ASSETS/Floor.png"
