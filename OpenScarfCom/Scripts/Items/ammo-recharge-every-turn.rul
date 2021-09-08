@@ -10,17 +10,18 @@ extended:
         code: |
           var int Rate 0;
 
+          if neq side FACTION_PLAYER; return; end;
+
           item.getTag Rate Tag.AMMO_CHARGE_RATE;
           if neq Rate 0;
             var int Clip 0;
 
-            div Rate 3; # Xcom, Alien, Cvilian
             item.getAmmoQuantity Clip;
             add Clip Rate;
             if gt Clip 40;
               set Clip 40;
             end;
-            # debug_log "Clip: " Clip " Rate: " Rate;
+            debug_log "Clip: " Clip " Rate: " Rate;
             item.setAmmoQuantity Clip;
           end;
           return;
