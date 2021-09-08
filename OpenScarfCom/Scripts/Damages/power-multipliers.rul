@@ -1,0 +1,29 @@
+extended:
+  tags:
+    RuleItem:
+      AUTO_POWER_MUL_PERCENT: int
+      AIMED_POWER_MUL_PERCENT: int
+
+  scripts:
+    hitUnit:
+      - offset: 0.1
+        code: |
+          var int temp;
+          var int percent;
+
+          if eq battle_action battle_action_aimshoot;
+            weapon_item.getTag percent Tag.AIMED_POWER_MUL_PERCENT;
+          else eq battle_action battle_action_autoshoot;
+            weapon_item.getTag percent Tag.AUTO_POWER_MUL_PERCENT;
+          end;
+
+          if neq percent 0;
+            set temp percent;
+            mul temp power;
+            div temp 100;
+            # debug_log "power:" power " + <" temp ">! (" percent "%)";
+            add power temp;
+          end;
+
+          return power part side;
+
