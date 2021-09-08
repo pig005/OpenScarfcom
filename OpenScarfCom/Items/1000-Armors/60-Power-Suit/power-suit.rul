@@ -1,5 +1,7 @@
 armors:
   - type: STR_POWER_SUIT_UC
+    weight: -20
     stats:
       tu: 25
       strength: 30
+      reactions: 20

@@ -82,6 +82,10 @@ startingBase:
         STR_HC_I_AMMO: 2
         STR_GRENADE: 20
         STR_SMOKE_GRENADE: 20
+        STR_ROCKET_LAUNCHER: 2
+        STR_LARGE_ROCKET: 4
+        STR_INCENDIARY_ROCKET: 4
+        STR_ELECTRO_FLARE: 10
   items:
  # ██╗████████╗███████╗███╗   ███╗███████╗
  # ██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
@@ -99,9 +103,6 @@ startingBase:
     STR_RIFLE_CLIP: 10
     STR_HC_HE_AMMO: 8
     STR_HC_I_AMMO: 8
-    STR_ROCKET_LAUNCHER: 2
-    STR_LARGE_ROCKET: 4
-    STR_INCENDIARY_ROCKET: 4
  # ██████╗ ███████╗██████╗ ███████╗ ██████╗ ███╗   ██╗███╗   ██╗
  # ██╔══██╗██╔════╝██╔══██╗██╔════╝██╔═══██╗████╗  ██║████╗  ██║
  # ██████╔╝█████╗  ██████╔╝███████╗██║   ██║██╔██╗ ██║██╔██╗ ██║
