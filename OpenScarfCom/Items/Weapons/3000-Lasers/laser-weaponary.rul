@@ -1,56 +1,59 @@
 items:
-  # - &STR_LASER_GLOBAL
-    # type: STR_LASER_GLOBAL
-    # shotgunBehavior: 1
-    # shotgunSpread: 60
-    # shotgunChoke: 50
-    # shotgunPellets: 8
-    # vaporColorSurface: 8
-    # vaporDensitySurface: 1
-    # vaporProbabilitySurface: 2
-    # powerRangeThreshold: 6
-    # powerRangeReduction: 3
-    # power: 14
-    # explosionSpeed:  2
-    # clipSize: -1
-    # confSnap:
-    #   ammoSlot: 0
-    #   name: STR_SHOT_TYPE_SPECTRUM_LASER
-    # confAimed:
-    #   ammoSlot: 1
-    # confAuto:
-    #   ammoSlot: 1
   - &STR_LASER_GLOBAL
     type: STR_LASER_GLOBAL
-    clipSize: 20
-    confAuto:
-      spendPerShot: 2
-      name: STR_SHOT_TYPE_SPECTRUM_LASER
+    clipSize: 40
     confSnap:
-      spendPerShot: 3
+      spendPerShot: 6
+    confAuto:
+      spendPerShot: 6
+      name: STR_SHOT_TYPE_SPECTRUM_LASER
     confAimed:
-      spendPerShot: 12
+      spendPerShot: 24
       followProjectiles: true
       name: STR_SHOT_TYPE_CHARGED
     tags:
-      AMMO_CHARGE_RATE: 9
+      AMMO_CHARGE_RATE: 18
       AUTO_POWER_MUL_PERCENT: -25
       AIMED_POWER_MUL_PERCENT: 25
 
   - type: STR_LASER_PISTOL
     refNode: *STR_LASER_GLOBAL
+    power: 58 # 46 -> 58 (125%): indicates AIMED
+  # AIMED (reaction)
+    # tuSnap: 55
+    # accuracySnap: 68
+  # SNAP (prev.aimed)
+    # tuAimed: 20
+    # accuracyAimed: 40
 
   - type: STR_LASER_RIFLE
     refNode: *STR_LASER_GLOBAL
+    power: 75 # 60 -> 75 (125%): indicates AIMED
+  # AIMED (reaction)
+    # tuSnap: 50
+    # accuracySnap: 100
+  # SNAP (prev.aimed)
+    # tuAimed: 25
+    # accuracyAimed: 65
 
   - type: STR_HEAVY_LASER
     refNode: *STR_LASER_GLOBAL
-    clipSize: 31
-    accuracySnap: 60
-    accuracyAuto: 40
+    power: 128 # 50% increment of 85;
+  # AUTO
     tuAuto: 45
+    accuracyAuto: 40
     confAuto:
+      spendPerShot: 3
       shots: 6
-    accuracyAimed: 100
+  # AIMED (reaction)
+    accuracySnap: 110 # AIMED
+    tuSnap: 70
+  # SNAP (prev.aimed)
+    tuAimed: 30
+    accuracyAimed: 60 # SNAP
+    confAimed:
+      spendPerShot: 9
     tags:
-      AIMED_POWER_MUL_PERCENT: 50
+      AUTO_POWER_MUL_PERCENT: -50 # 50% of 128 = 64 -> 64
+      AIMED_POWER_MUL_PERCENT: -35 # 35% of 128 = 44.8 -> 83.2
+      AMMO_CHARGE_RATE: 15

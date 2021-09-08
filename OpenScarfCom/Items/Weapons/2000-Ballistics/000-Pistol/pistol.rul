@@ -1,3 +1,7 @@
 items:
   - type: STR_PISTOL_CLIP
     clipSize: 15
+
+  - type: STR_PISTOL
+    aimRange: 20
+    snapRange: 10

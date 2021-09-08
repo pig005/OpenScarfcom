@@ -12,20 +12,24 @@ items:
     hitAnimation: 46
     damageType: 4
     #accuracyAuto: 50
-    accuracySnap: 75
-    accuracyAimed: 110
+    # accuracySnap: 75
+    # accuracyAimed: 110
     battleType: 1
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
-    clipSize: 10
+    clipSize: 1
     bulletSprite: 8
     recover: false
     #aimRange: 10
-    power: 10
+    power: 200
     #tuAuto: 0
-    tuSnap: 33
-    tuAimed: 50
+    tuSnap: 0 #33
+    # confAuto:
+    #   spendPerShot: 2
+    tuAimed: 0 #50
+    # confAimed:
+    #   spendPerShot: 2
     tuAuto: 0
     #confAuto:
     #  shots: 2
@@ -79,7 +83,7 @@ items:
     accuracySnap: 40
     snapRange: 15
     confSnap:
-      shots: 4
+      shots: 3
       followProjectiles: false
     explosionSpeed: 4
     tuAuto: 0

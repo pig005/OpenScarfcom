@@ -36,4 +36,4 @@ items:
     power: 100
   - type: STR_HEAVY_PLASMA_CLIP
     refNode: *STR_PLASMA_CLIP_GLOBAL
-    power: 120
+    power: 130
