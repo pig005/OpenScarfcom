@@ -13,12 +13,12 @@ items:
       name: STR_SHOT_TYPE_CHARGED
     tags:
       AMMO_CHARGE_RATE: 18
-      AUTO_POWER_MUL_PERCENT: -25
+      AUTO_POWER_MUL_PERCENT: -20
       AIMED_POWER_MUL_PERCENT: 25
 
   - type: STR_LASER_PISTOL
     refNode: *STR_LASER_GLOBAL
-    power: 58 # 46 -> 58 (125%): indicates AIMED
+    power: 52 # 46 -> 52
   # AIMED (reaction)
     # tuSnap: 55
     # accuracySnap: 68
@@ -28,7 +28,7 @@ items:
 
   - type: STR_LASER_RIFLE
     refNode: *STR_LASER_GLOBAL
-    power: 75 # 60 -> 75 (125%): indicates AIMED
+    power: 75 # 60 -> 75
   # AIMED (reaction)
     # tuSnap: 50
     # accuracySnap: 100
@@ -48,12 +48,16 @@ items:
   # AIMED (reaction)
     accuracySnap: 110 # AIMED
     tuSnap: 70
+    confSnap:
+      name: STR_SHOT_TYPE_CHARGED
   # SNAP (prev.aimed)
     tuAimed: 30
     accuracyAimed: 60 # SNAP
     confAimed:
       spendPerShot: 9
+      name: STR_SNAP_SHOT
+  # TAGS
     tags:
-      AUTO_POWER_MUL_PERCENT: -50 # 50% of 128 = 64 -> 64
-      AIMED_POWER_MUL_PERCENT: -35 # 35% of 128 = 44.8 -> 83.2
+      AUTO_POWER_MUL_PERCENT: -40 # 60% -> 76.8
+      AIMED_POWER_MUL_PERCENT: -25 # 75% -> 96
       AMMO_CHARGE_RATE: 15
