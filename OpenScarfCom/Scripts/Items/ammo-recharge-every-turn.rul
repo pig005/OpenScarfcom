@@ -21,7 +21,7 @@ extended:
             if gt Clip 40;
               set Clip 40;
             end;
-            debug_log "Clip: " Clip " Rate: " Rate;
+            # debug_log "Clip: " Clip " Rate: " Rate;
             item.setAmmoQuantity Clip;
           end;
           return;

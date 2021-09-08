@@ -1,0 +1,93 @@
+extended:
+  tags:
+    BattleUnit:
+      LAST_HIT_FRAME: int
+      LAST_HIT_COLOR: int
+      LAST_HIT_WAIT: int
+
+  scripts:
+    hitUnit:
+      - offset: 10
+        code: |
+          var int Temp;
+
+          if eq battle_action battle_action_autoshoot;
+            set Temp -1;
+          else eq battle_action battle_action_snapshot;
+            set Temp -3;
+          else;
+            set Temp -5;
+          end;
+          unit.setTag Tag.LAST_HIT_WAIT Temp;
+          return power part side;
+
+    damageUnit:
+      - offset: 10
+        code: |
+          begin; # Frames
+            var int temp;
+            battle_game.getAnimFrame temp;
+            unit.setTag Tag.LAST_HIT_FRAME temp;
+          end;
+          begin; # Colors
+            var int health;
+            var int Color;
+            var int Percent 100;
+
+            unit.getHealthMax health;
+            mul Percent to_health;
+            div Percent health;
+
+            debug_log "wnd:" to_wound "pow:" to_health "max:" health "-> (" Percent ")%";
+
+            if or gt to_wound 5 gt Percent 50;
+              set Color 2; # Red
+            else or gt to_wound 3 gt Percent 20;
+              set Color 1; # Yellow
+            else or gt to_wound 0 gt Percent 0;
+              set Color 14; # Special
+            end;
+
+            unit.setTag Tag.LAST_HIT_COLOR Color;
+          end;
+          return;
+
+    recolorUnitSprite:
+      - offset: 10
+        code: |
+          var int temp;
+          var int Color;
+          var int Wait;
+
+          unit.getTag temp Tag.LAST_HIT_FRAME;
+          unit.getTag Color Tag.LAST_HIT_COLOR;
+          unit.getTag Wait Tag.LAST_HIT_WAIT;
+          if and neq temp 0 neq Color 0;
+            sub temp anim_frame;
+            #only wait for 2 frames after hit have changed color
+            if gt temp Wait; #-2;
+              set_color new_pixel Color; #Color;
+            end;
+          end;
+
+          return new_pixel;
+
+
+# COLOR CODE #
+#2,6:red
+#3,4:green
+#5:yellow
+#7,8:blue 9:orange
+
+#BLUE  012 7,8,13
+#BROWN 012 6,9,10
+#FACE      9
+#YELLOW    1
+#RED       2
+#GREEN 01  3,4
+#GRAY      5
+#HAIR      6
+#NULL      0
+#PURPLE01  11,12
+#SILVER    14
+#SPECIAL   15
