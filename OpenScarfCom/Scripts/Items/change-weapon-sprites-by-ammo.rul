@@ -1,9 +1,9 @@
 extended:
   tags:
     RuleItem:
-      ALLOW_AMMO_TO_RESPRITE: int # 0: NO, 1 ~ 4: how many ammos to compute, recommended max 3
-      PAEDIA_OFFSET: int # on ufopaedia weapon on max loadout is shown; negates that offset. usu. sum of ommo offsets
-      OFFSET_BIGOB_WEAPON: int # 0: empty, 1 ~ 4: ammo type 1 ~ 4
+      ALLOW_AMMO_TO_RESPRITE: int #FOR WEAPONS - 0: NO, 1 ~ 4: how many ammos to compute, recommended max 3
+      PAEDIA_OFFSET: int # FOR WEAPONS - on ufopaedia weapon on max loadout is shown; negates that offset. usu. sum of ommo offsets
+      OFFSET_BIGOB_WEAPON: int # FOR CLIPS - 0: empty, 1 ~ 4: ammo type 1 ~ 4
   scripts:
     selectItemSprite:
       - offset: 1

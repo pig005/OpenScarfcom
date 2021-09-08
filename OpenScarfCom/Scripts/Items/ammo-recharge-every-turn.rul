@@ -2,7 +2,8 @@ extended:
   tags:
     RuleItem:
       AMMO_CHARGE_RATE: int
-  # Rechargeable ammos. max 20;
+  # Rechargeable ammos. max 40;
+
   scripts:
     newTurnItem:
       - offset: 0.1
@@ -16,8 +17,8 @@ extended:
             div Rate 3; # Xcom, Alien, Cvilian
             item.getAmmoQuantity Clip;
             add Clip Rate;
-            if gt Clip 20;
-              set Clip 20;
+            if gt Clip 40;
+              set Clip 40;
             end;
             # debug_log "Clip: " Clip " Rate: " Rate;
             item.setAmmoQuantity Clip;
@@ -36,9 +37,9 @@ extended:
             unit.getInventoryItem Item I;
             Item.getTag Rate Tag.AMMO_CHARGE_RATE;
               if neq Rate 0;
-                Item.setAmmoQuantity 20;
-                debug_log "recharged item" Item;
+                Item.setAmmoQuantity 40;
+                # debug_log "recharged item" Item;
               end;
-            debug_log "unit" unit "have in inv" Item;
+            # debug_log "unit" unit "have in inv" Item;
           end;
           return;
