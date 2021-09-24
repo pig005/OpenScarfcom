@@ -112,7 +112,7 @@ you could always do a pull request! if it suits the design philosopy above, it w
 
 ## SUBMOD CREDITS
 
-the [gpl license](./OpenScarfCom/LICENSE) only applies to `OpenScarfCom` directry. other folders are unaffected by this license. also if you're not satisfied with the license i could send you CC0-licensed codes that I wrote.
+the [public domain license](./OpenScarfCom/LICENSE) only applies to `OpenScarfCom` directry. other folders are unaffected by this license. also if you're not satisfied with the license i could send you CC0-licensed codes that I wrote.
 
 > i have no rights to any of the mods included below.
 
