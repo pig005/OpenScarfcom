@@ -2,7 +2,7 @@
 
 **Total Conversion Mod** focused on **replayability** for **OpenXcom Extended**
 
-being developped by _greenscarf_ (for now) and released under [gpl v3.0](./OpenScarfCom/LICENSE) [(\*)](#submod-credits)
+being developped by _greenscarf_ (for now) and released under [public domain](./OpenScarfCom/LICENSE) [(\*)](#submod-credits) - you're free to do whatever with it.
 
 please report any bugs/ideas on `issues`.
 
