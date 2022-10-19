@@ -1,3 +1,5 @@
 TERRAIN/** linguist-vendored
 ROUTES/** linguist-vendored
 GEODATA/** linguist-vendored
+
+*.rul linguist-language=yaml
